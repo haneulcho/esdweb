@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="Referrer" content="origin">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="엘소드 :: 스타일리쉬 액션 RPG">
+<meta property="og:url" content="http://elsword.nexon.com/">
+<!-- TODO: 270x270 Opengraph 이미지 삽입 필요 -->
+<meta property="og:image" content="http://s.nx.com/S2/Game/Elsword/2017/icon/img_opengraph.jpg">
+<meta property="og:description" content="박진감 있고 스피디한 액션 스타일리쉬 게임, 통쾌하고 유쾌한 인터렉티브 코믹, 대전과 RPG의 절묘한 조화! 엘소드!"/>
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="엘소드 :: 스타일리쉬 액션 RPG">
+<meta name="twitter:url" content="http://elsword.nexon.com/">
+<!-- TODO: 270x270 Opengraph 이미지 삽입 필요 -->
+<meta name="twitter:image" content="http://s.nx.com/S2/Game/Elsword/2017/icon/img_opengraph.jpg">
+<meta name="twitter:description" content="박진감 있고 스피디한 액션 스타일리쉬 게임, 통쾌하고 유쾌한 인터렉티브 코믹, 대전과 RPG의 절묘한 조화! 엘소드!"/>
+<title>엘소드 :: 스타일리쉬 액션 RPG</title>
+<link rel="Shortcut Icon" href="http://s.nx.com/S2/Game/Elsword/2012/icon/favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://s.nx.com/S2/Game/Elsword/2012/icon/favicon.ico" type="image/x-icon">
+
+<!-- TODO: CSS 경로 수정할 것 -->
+<link href="assets/css/style.css" rel="stylesheet">
+
+<!-- TODO: JS 경로 수정할 것 -->
+<script src="assets/components/jquery/jquery-1.12.4.min.js"></script>
+<script src="assets/components/modernizr/modernizr.js"></script>
+
+<script type="text/javascript" src="http://js.nx.com/s1/elsword/OBT/jquery.easing.min.js"></script>
+<script type="text/javascript" src="http://js.nx.com/s1/elsword/OBT/jquery.owl.carousel.min.js"></script>
+<script src="assets/js/common.js"></script>
+
+</head>
+<body>
+<!-- 스킵 내비게이션 -->
+<div class="u_skip">
+	<a href="#news_cast" onclick="document.getElementById('news_cast2').tabIndex = -1;document.getElementById('news_cast2').focus();return false;"><span>뉴스스탠드 바로가기</span></a>
+	<a href="#themecast" onclick="document.getElementById('themecast').tabIndex = -1;document.getElementById('themecast').focus();return false;"><span>주제별캐스트 바로가기</span></a>
+	<a href="#time_square" onclick="document.getElementById('time_square').tabIndex = -1;document.getElementById('time_square').focus();return false;"><span>타임스퀘어 바로가기</span></a>
+	<a href="#shop_cast" onclick="document.getElementById('shop_cast').tabIndex = -1;document.getElementById('shop_cast').focus();return false;"><span>쇼핑캐스트 바로가기</span></a>
+	<a href="#account" onclick="document.getElementById('account').tabIndex = -1;document.getElementById('account').focus();return false;"><span>로그인 바로가기</span></a>
+</div>
+<!-- //스킵 내비게이션 -->
+
+<!--[if lte IE 9]>
+	<p class="browserupgrade">엘소드 홈페이지는 익스플로러 9이상 최적화되어 있습니다. <a href="https://browsehappy.com/">여기를 클릭</a>하셔서 브라우저를 업그레이드 하세요.</p>
+<![endif]-->
+	<header id="header" class="row" role="banner">
+		<div class="inner">
+			<div class="logo">
+				<a href="/main/index.aspx">ELSWORD 엘소드</a>
+			</div>
+			<nav class="nav" role="navigation">
+				<h2 class="blind">엘소드 메뉴 바로가기</h2>
+				<ul class="gnb">
+					<li class="issue active">
+						<a href="/news/notice/list.aspx">게임소식<span class="pointer" aria-hidden="true"></span></a>
+						<ul class="gnb_sub">
+							<li><a href="/news/notice/list.aspx">공지사항</a></li>
+							<li class="current"><a href="/news/update/list.aspx">업데이트</a></li>
+							<li><a href="/news/press/list.aspx">보도자료</a></li>
+							<li><a href="/news/gmwebzine/list.aspx">GM메가폰</a></li>
+							<li><a href="/eltoon/eltype/list.aspx">엘타입</a></li>
+						</ul>
+					</li>
+					<li class="event">
+						<a href="/news/events/list.aspx">이벤트<span class="pointer" aria-hidden="true"></span></a>
+						<ul class="gnb_sub">
+							<li><a href="/news/events/list.aspx">진행중인이벤트</a></li>
+							<li><a href="/news/prize/list.aspx">당첨자확인</a></li>
+							<!-- TODO: 이벤트 일정보기 팝업 스크립트 확인할 것 -->
+	
+	
+							<li class="eventCalendar"><a href="/news/press/list.aspx">이벤트일정보기</a></li>
+	
+	
+	
+						</ul>
+					</li>
+					<li class="gameinfo">
+						<a href="/gameinfo/intro/feature.aspx">게임가이드<span class="pointer" aria-hidden="true"></span></a>
+						<ul class="gnb_sub">
+							<li><a href="/gameinfo/intro/feature.aspx">엘소드소개</a></li>
+							<li><a href="/gameinfo/character/elsword.aspx">캐릭터소개</a></li>
+							<li><a href="/gameinfo/info/elios/elios.aspx" onclick="ngwPopup(this.href, '1024', '768', '0', 'popElios');return false;">초보자가이드</a></li>
+						</ul>
+					</li>
+					<li class="ranking">
+						<a href="/ranking/global.aspx">랭킹<span class="pointer" aria-hidden="true"></span></a>
+						<ul class="gnb_sub">
+							<li><a href="/ranking/global.aspx">던전랭킹</a></li>
+							<li><a href="/ranking/war.aspx">대전랭킹</a></li>
+							<li><a href="/ranking/pve.aspx">점령전랭킹</a></li>
+							<!-- TODO: 헤니르의 시공 랭킹이 영웅대전 랭킹인지 확인할 것 -->
+							<li><a href="/ranking/hero.aspx">헤니르의시공</a></li>
+						</ul>
+					</li>
+					<li class="ucc">
+						<a href="/eltoon/cartoon/list.aspx">엘소드UCC<span class="pointer" aria-hidden="true"></span></a>
+						<ul class="gnb_sub">
+							<li><a href="/eltoon/cartoon/list.aspx">작가연재만화</a></li>
+							<li><a href="/community/screenshot/list.aspx">스크린샷</a></li>
+							<li><a href="/community/movie/list.aspx">동영상</a></li>
+							<li><a href="/community/fanart/list.aspx">팬아트</a></li>
+							<li><a href="/community/cartoon/list.aspx">팬카툰</a></li>
+						</ul>
+					</li>
+					<li class="community">
+						<a href="/community/free/list.aspx">커뮤니티<span class="pointer" aria-hidden="true"></span></a>
+						<ul class="gnb_sub">
+							<li><a href="/community/free/list.aspx">이슈게시판</a></li>
+							<li><a href="/community/strategy/list.aspx">공략게시판</a></li>
+							<li><a href="/community/trade/list.aspx">거래게시판</a></li>
+							<li><a href="/community/fansite/list.aspx">팬사이트</a></li>
+							<li><a href="/community/poll/view.aspx">설문조사</a></li>
+						</ul>
+					</li>
+					<li class="pds">
+						<a href="/pds/download.aspx">자료실<span class="pointer" aria-hidden="true"></span></a>
+						<ul class="gnb_sub">
+							<li><a href="/pds/download.aspx">다운로드</a></li>
+							<li><a href="/pds/multimedia.aspx">멀티미디어</a></li>
+							<li><a href="/pds/wallpaper.aspx">갤러리</a></li>
+						</ul>
+					</li>
+					<li class="help">
+						<a href="http://cs.nexon.com/HelpBoard/Nexon?gamecode=114" onclick="ngwPopup(this.href, '1024', '768', '1', 'popCustomer');return false;">고객지원<span class="pointer" aria-hidden="true"></span></a>
+						<ul class="gnb_sub">
+							<li><a href="http://cs.nexon.com/HelpBoard/Nexon?gamecode=114" onclick="ngwPopup(this.href, '1024', '768', '1', 'popCustomer');return false;">문의하기</a></li>
+							<li><a href="/community/idea/list.aspx">건의게시판</a></li>
+							<!-- TODO: 비매너/버그신고 게시판 신설, href URL 수정할 것 -->
+							<li><a href="/community/declare/list.aspx">비매너/버그신고</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- //.gnb -->
+			</nav>
+			<!-- //nav -->
+		</div>
+		<!-- //.inner -->
+	</header>
+	<!-- //===========================================================
+			#header END
+	=========================================================== // -->
+	
+		
+	<section id="promotion" class="wrap_banner row">
+		<div class="owl-carousel banner">
+			<div class="banner_item">
+				<a href="/news/events/view.aspx?n4ArticleSN=1656&amp;n4ArticleCategorySN=2&amp;utm_source=m"><img src="assets/img/banner1.jpg" alt="아인3종 아바타"></a>
+			</div>
+			<div class="banner_item">
+				<a href="/events2017/1103/ani.asp?utm_source=m"><img src="assets/img/banner2.jpg" alt="아인3종 아바타"></a>
+			</div>
+			<div class="banner_item">
+				<a href="/events2017/1103/winter.aspx?utm_source=m"><img src="assets/img/banner1.jpg" alt="아인3종 아바타"></a>
+			</div>
+			<div class="banner_item">
+				<a href="/eltoon/cartoon/view.aspx?n4ArticleSN=359&amp;n4ArticleCategorySN=1?utm_source=m"><img src="assets/img/banner2.jpg" alt="아인3종 아바타"></a>
+			</div>
+			<div class="banner_item">
+				<a href="/events2017/0928/bf.aspx?utm_source=m"><img src="assets/img/banner1.jpg" alt="아인3종 아바타"></a>
+			</div>
+			<div class="banner_item">
+				<a href="/news/events/view.aspx?n4ArticleSN=1655&amp;n4ArticleCategorySN=2&amp;utm_source=m"><img src="assets/img/banner2.jpg" alt="아인3종 아바타"></a>
+			</div>
+		</div>
+		<!-- //.banner -->
+	</section>
+	<!-- //===========================================================
+			#promotion END
+	=========================================================== // -->
+
+	<main id="main" role="main">
+		<div class="wrap_information row">
+			<div class="inner">
+				<!-- TODO, DEV: [S] 로그인 전 영역 시작!! -->
+				<div id="login" class="box">
+					<a href="#" class="btn_login" onclick="PS.nxlogin.showLoginLayer();return false;">LOGIN</a>
+					<ul class="login_menu">
+						<li class="find">
+							<a href="#" onclick="NgbMember.SearchNexonID( codeRegSite );">아이디</a>/<a href="#none" onclick="NgbMember.SearchPassword( codeRegSite );">비밀번호찾기</a>
+						</li>
+						<li class="join"><a href="#" onclick="NgbMember.GoRegisterPage( codeRegSite );">회원가입</a></li>
+						<li class="otp"><a href="#" class="ico_otp" onclick="window.open( 'http://security.nexon.com/otp/index.aspx');">U-OTP</a></li>
+					</ul>
+				</div>
+				<!-- //#login -->
+				<!-- TODO, DEV: [E] 로그인 전 영역 끝!! -->
+
+
+				<!-- TODO, DEV: [S] 로그인 후 영역 시작!! -->
+				<div id="logged" class="box">
+					<div class="myCharacter">
+						<div class="characterBadge rose">
+							<a href="/main/mypage.aspx" class="btn_editCharacter">대표 캐릭터 변경하러 가기</a>
+							<span class="medal" aria-hidden="true">나의 메달</span>
+						</div>
+					</div>
+					<!-- //.myCharacter -->
+					<div class="myInfo">
+						<div class="txts">
+							<p class="greeting"><strong>한글이름여덟글자</strong> 모험가님 안녕하세요!</p>
+							<p class="information">
+								<span class="serverName">가이아</span> |
+								<span class="level">Lv. 99</span> |
+								<span class="characterName">한글이름여덟글자</span>
+							</p>
+							<p class="information guild">
+								길드 | <span class="guildName">길드명도여덟글자</span>
+							</p>
+						</div>
+						<ul class="logged_menu">
+							<li class="couponBox"><a href="#" onclick="openCouponPop();">쿠폰함</a></li>
+							<li class="cashBox"><a href="#">캐시충전</a></li>
+							<li class="otp"><a href="#" class="ico_otp" onclick="window.open( 'http://security.nexon.com/otp/index.aspx');">보안센터</a></li>
+							<li class="logout"><a href="#" class="btn_logout" onclick="PS.nxlogin.showLoginLayer();return false;">LOGOUT</a></li>
+						</ul>
+					</div>
+					<!-- //.myInfo -->
+				</div>
+				<!-- //#logged -->
+				<!-- TODO, DEV: [E] 로그인 후 영역 끝!! -->
+
+
+				<!-- TODO, DEV: [S] 게임 스타트 버튼 시작!! -->
+				<div id="gameStart" class="gameStart">
+					<a href="#" class="btn_gameStart" onclick="GnxGameStartOnClick();return false;">GAME START</a>
+				</div>
+				<!-- //#gameStart -->
+				<!-- TODO, DEV: [E] 게임 스타트 버튼 끝!! -->
+
+			</div>
+			<!-- //.inner -->
+		</div>
+		<!-- //.wrap_login -->
+
+		<div class="wrap_goods">
+			<h3 class="blind">HOT! 아이템</h3>
+			<a href="#"><img src="assets/img/img_hotGoods.png" alt="[한벌아바타] 공존의 축제"></a>
+		</div>
+		<!-- //.wrap_goods -->
+
+		<div class="wrap_issue row">
+			<div class="inner">
+				<section class="issue_notice">
+					<h3 class="tit"><a href="/news/notice/list.aspx" class="btn_titMore"><span class="txt">엘소드 소식</span><span class="more">더보기</span></a></h3>
+					<ul class="lists">
+						<li>
+							<a href="http://elsword.nexon.com/main/../news/notice/view.aspx?noticearticlesn=120757">
+								<h4 class="subject">11/06(월) 클라이언트 패치 안내 (오후 04...<span class="ico new">NEW</span></h4>
+							</a>
+							<span class="date">2017.11.25</span>
+						</li>
+						<li>
+							<a href="http://elsword.nexon.com/main/../news/notice/view.aspx?noticearticlesn=120757">
+								<h4 class="subject">2017 영웅대전 온라인 예선 참가 신청 ...<span class="ico new">NEW</span></h4>
+							</a>
+							<span class="date">2017.11.25</span>
+						</li>
+						<li>
+							<a href="http://elsword.nexon.com/main/../news/notice/view.aspx?noticearticlesn=120757">
+								<h4 class="subject">11월 1주차 비정상 게임 이용에 대한 조...</h4>
+							</a>
+							<span class="date">2017.11.25</span>
+						</li>
+						<li>
+							<a href="http://elsword.nexon.com/main/../news/notice/view.aspx?noticearticlesn=120757">
+								<h4 class="subject">11/05(일) KCT 결제서비스 점검 안내</h4>
+							</a>
+							<span class="date">2017.11.25</span>
+						</li>
+						<li>
+							<a href="http://elsword.nexon.com/main/../news/notice/view.aspx?noticearticlesn=120757">
+								<h4 class="subject">(수정)11/02(목) 클라이언트 패치 공지 안...</h4>
+							</a>
+							<span class="date">2017.11.25</span>
+						</li>
+						<li>
+							<a href="http://elsword.nexon.com/main/../news/notice/view.aspx?noticearticlesn=120757">
+								<h4 class="subject">(수정) 개인정보처리방침 변경 안내</h4>
+							</a>
+							<span class="date">2017.11.25</span>
+						</li>
+					</ul>
+					<!-- //.lists -->
+				</section>
+				<!-- //.issue_notice -->
+
+				<section class="issue_megaphone">
+					<div class="owl-carousel megaphone">
+						<!-- [S] TODO, DEV: article class="megaphone_item" 반복 -->
+						<article class="megaphone_item">
+							<a href="/board/2046820368/300/">
+								<div class="des">
+									<h3 class="tit">GM 메가폰</h3>
+									<h4 class="subject">나는 보았다 3차전직</h4>
+									<p>따끈따끈한 업데이트 소식!</p>
+								</div>
+								<div class="thumb">
+									<img src="assets/img/dum/megaphone.jpg" alt="나는 보았다 3차전직">
+								</div>
+							</a>
+						</article>
+						<!-- [E] //TODO, DEV: article class="megaphnoe_item" 반복 -->
+
+						<!-- [S] TODO, DEV: article class="megaphone_item" 반복 -->
+						<article class="megaphone_item">
+							<a href="/board/2046820368/300/">
+								<div class="des">
+									<h3 class="tit">GM 메가폰</h3>
+									<h4 class="subject">메가폰 두번째 이야기는 제목이 두줄인 걸까요?</h4>
+									<p>따끈따끈한 업데이트 소식! 그런 소식이 있었다고 합니다람쥐입니다람쥐요!</p>
+								</div>
+								<div class="thumb">
+									<img src="assets/img/dum/megaphone2.png" alt="메가폰 두번째 이야기는 제목이 두줄인 걸까요?">
+								</div>
+							</a>
+						</article>
+						<!-- [E] //TODO, DEV: article class="megaphnoe_item" 반복 -->
+					</section>
+					</div>
+					<!-- //.owl-carousel.megaphone -->
+				<!-- //.issue_megaphone -->
+
+				<section class="issue_banner">
+					<article class="banner_item">
+						<a href="#" target="_blank">
+							<h3 class="blind">엘소드 애니메이션: 엘의 여인</h3>
+							<div class="thumb">
+								<img src="assets/img/dum/banner.jpg" alt="엘소드 엘의여인 애니메이션 4화 지금 시청하기">
+							</div>
+						</a>
+					</article>
+				</section>
+				<!-- //.issue_banner -->
+
+			</div>
+			<!-- //.inner -->
+		</div>
+		<!-- //.wrap_issue -->
+
+		<div class="wrap_ucc row">
+			<div class="inner">
+				<section class="ucc">
+					<h3 class="tit">엘소드 UCC</h3>
+					<div class="owl-carousel ucc">
+						<!-- [S] TODO, DEV: div class="ucc_item" 반복 -->
+						<div class="ucc_item">
+							<ul class="lists">
+								<li class="screenshot">
+									<span class="category"><a href="/community/screenshot/list.aspx">스크린샷</a></span>
+									<a href="/board/2046820368/300/">
+										<div class="des">
+											<div class="cell">
+												<h4 class="subject">나는 보았다 3차전직</h4>
+												<span class="author">GemCHOKY</span>
+											</div>
+										</div>
+										<div class="thumb">
+											<img src="assets/img/dum/ucc1.jpg" alt="제목입니다">
+										</div>
+									</a>
+								</li>
+								<li class="video">
+									<span class="category"><a href="/community/movie/list.aspx">동영상</a></span>
+									<a href="/board/2046820368/300/">
+										<div class="des">
+											<div class="cell">
+												<h4 class="subject">얘는 동영상이지롱 감자튀김</h4>
+												<span class="author">하늘</span>
+											</div>
+										</div>
+										<div class="thumb">
+											<img src="assets/img/dum/ucc2.jpg" alt="제목입니다">
+										</div>
+									</a>
+								</li>
+								<li class="fanart">
+									<span class="category"><a href="/community/fanart/list.aspx">팬아트</a></span>
+									<a href="/board/2046820368/300/">
+										<div class="des">
+											<div class="cell">
+												<h4 class="subject">제목이 엄청나게 긴 팬아트 게시물이다. 제목이 엄청나게 길다.</h4>
+												<span class="author">하하하하하하하</span>
+											</div>
+										</div>
+										<div class="thumb">
+											<img src="assets/img/dum/ucc3.jpg" alt="제목입니다">
+										</div>
+									</a>
+								</li>
+								<li class="cartoon">
+									<span class="category"><a href="/community/cartoon/list.aspx">카툰</a></span>
+									<a href="/board/2046820368/300/">
+										<div class="des">
+											<div class="cell">
+												<h4 class="subject">제목이 엄청나게 긴 카툰 게시물이다. 2줄 안 넘어가게 해주세용옹오</h4>
+												<span class="author">하엘소드으</span>
+											</div>
+										</div>
+										<div class="thumb">
+											<img src="assets/img/dum/ucc4.jpg" alt="제목입니다">
+										</div>
+									</a>
+								</li>
+							</ul>
+							<!-- //.lists -->
+						</div>
+						<!-- [E] //TODO, DEV: div class="ucc_item" 반복 -->
+
+						<!-- [S] TODO, DEV: div class="ucc_item" 반복 -->
+						<div class="ucc_item">
+							<ul class="lists">
+								<li class="screenshot">
+									<span class="category"><a href="/community/screenshot/list.aspx">스크린샷</a></span>
+									<a href="/board/2046820368/300/">
+										<div class="des">
+											<div class="cell">
+												<h4 class="subject">나는 보았다 3차전직</h4>
+												<span class="author">GemCHOKY</span>
+											</div>
+										</div>
+										<div class="thumb">
+											<img src="assets/img/dum/ucc1.jpg" alt="제목입니다">
+										</div>
+									</a>
+								</li>
+								<li class="video">
+									<span class="category"><a href="/community/movie/list.aspx">동영상</a></span>
+									<a href="/board/2046820368/300/">
+										<div class="des">
+											<div class="cell">
+												<h4 class="subject">얘는 동영상이지롱 감자튀김</h4>
+												<span class="author">하늘</span>
+											</div>
+										</div>
+										<div class="thumb">
+											<img src="assets/img/dum/ucc2.jpg" alt="제목입니다">
+										</div>
+									</a>
+								</li>
+								<li class="fanart">
+									<span class="category"><a href="/community/fanart/list.aspx">팬아트</a></span>
+									<a href="/board/2046820368/300/">
+										<div class="des">
+											<div class="cell">
+												<h4 class="subject">제목이 엄청나게 긴 팬아트 게시물이다. 제목이 엄청나게 길다.</h4>
+												<span class="author">하하하하하하하</span>
+											</div>
+										</div>
+										<div class="thumb">
+											<img src="assets/img/dum/ucc3.jpg" alt="제목입니다">
+										</div>
+									</a>
+								</li>
+								<li class="cartoon">
+									<span class="category"><a href="/community/cartoon/list.aspx">카툰</a></span>
+									<a href="/board/2046820368/300/">
+										<div class="des">
+											<div class="cell">
+												<h4 class="subject">제목이 엄청나게 긴 카툰 게시물이다. 2줄 안 넘어가게 해주세용옹오</h4>
+												<span class="author">하엘소드으</span>
+											</div>
+										</div>
+										<div class="thumb">
+											<img src="assets/img/dum/ucc4.jpg" alt="제목입니다">
+										</div>
+									</a>
+								</li>
+							</ul>
+							<!-- //.lists -->
+						</div>
+						<!-- [E] //TODO, DEV: div class="ucc_item" 반복 -->
+
+						<!-- [S] TODO, DEV: div class="ucc_item" 반복 -->
+						<div class="ucc_item">
+							<ul class="lists">
+								<li class="screenshot">
+									<span class="category"><a href="/community/screenshot/list.aspx">스크린샷</a></span>
+									<a href="/board/2046820368/300/">
+										<div class="des">
+											<div class="cell">
+												<h4 class="subject">나는 보았다 3차전직</h4>
+												<span class="author">GemCHOKY</span>
+											</div>
+										</div>
+										<div class="thumb">
+											<img src="assets/img/dum/ucc1.jpg" alt="제목입니다">
+										</div>
+									</a>
+								</li>
+								<li class="video">
+									<span class="category"><a href="/community/movie/list.aspx">동영상</a></span>
+									<a href="/board/2046820368/300/">
+										<div class="des">
+											<div class="cell">
+												<h4 class="subject">얘는 동영상이지롱 감자튀김</h4>
+												<span class="author">하늘</span>
+											</div>
+										</div>
+										<div class="thumb">
+											<img src="assets/img/dum/ucc2.jpg" alt="제목입니다">
+										</div>
+									</a>
+								</li>
+								<li class="fanart">
+									<span class="category"><a href="/community/fanart/list.aspx">팬아트</a></span>
+									<a href="/board/2046820368/300/">
+										<div class="des">
+											<div class="cell">
+												<h4 class="subject">제목이 엄청나게 긴 팬아트 게시물이다. 제목이 엄청나게 길다.</h4>
+												<span class="author">하하하하하하하</span>
+											</div>
+										</div>
+										<div class="thumb">
+											<img src="assets/img/dum/ucc3.jpg" alt="제목입니다">
+										</div>
+									</a>
+								</li>
+								<li class="cartoon">
+									<span class="category"><a href="/community/cartoon/list.aspx">카툰</a></span>
+									<a href="/board/2046820368/300/">
+										<div class="des">
+											<div class="cell">
+												<h4 class="subject">제목이 엄청나게 긴 카툰 게시물이다. 2줄 안 넘어가게 해주세용옹오</h4>
+												<span class="author">하엘소드으</span>
+											</div>
+										</div>
+										<div class="thumb">
+											<img src="assets/img/dum/ucc4.jpg" alt="제목입니다">
+										</div>
+									</a>
+								</li>
+							</ul>
+							<!-- //.lists -->
+						</div>
+						<!-- [E] //TODO, DEV: div class="ucc_item" 반복 -->
+
+						<!-- [S] TODO, DEV: div class="ucc_item" 반복 -->
+						<div class="ucc_item">
+							<ul class="lists">
+								<li class="screenshot">
+									<span class="category"><a href="/community/screenshot/list.aspx">스크린샷</a></span>
+									<a href="/board/2046820368/300/">
+										<div class="des">
+											<div class="cell">
+												<h4 class="subject">나는 보았다 3차전직</h4>
+												<span class="author">GemCHOKY</span>
+											</div>
+										</div>
+										<div class="thumb">
+											<img src="assets/img/dum/ucc1.jpg" alt="제목입니다">
+										</div>
+									</a>
+								</li>
+								<li class="video">
+									<span class="category"><a href="/community/movie/list.aspx">동영상</a></span>
+									<a href="/board/2046820368/300/">
+										<div class="des">
+											<div class="cell">
+												<h4 class="subject">얘는 동영상이지롱 감자튀김</h4>
+												<span class="author">하늘</span>
+											</div>
+										</div>
+										<div class="thumb">
+											<img src="assets/img/dum/ucc2.jpg" alt="제목입니다">
+										</div>
+									</a>
+								</li>
+								<li class="fanart">
+									<span class="category"><a href="/community/fanart/list.aspx">팬아트</a></span>
+									<a href="/board/2046820368/300/">
+										<div class="des">
+											<div class="cell">
+												<h4 class="subject">제목이 엄청나게 긴 팬아트 게시물이다. 제목이 엄청나게 길다.</h4>
+												<span class="author">하하하하하하하</span>
+											</div>
+										</div>
+										<div class="thumb">
+											<img src="assets/img/dum/ucc3.jpg" alt="제목입니다">
+										</div>
+									</a>
+								</li>
+								<li class="cartoon">
+									<span class="category"><a href="/community/cartoon/list.aspx">카툰</a></span>
+									<a href="/board/2046820368/300/">
+										<div class="des">
+											<div class="cell">
+												<h4 class="subject">제목이 엄청나게 긴 카툰 게시물이다. 2줄 안 넘어가게 해주세용옹오</h4>
+												<span class="author">하엘소드으</span>
+											</div>
+										</div>
+										<div class="thumb">
+											<img src="assets/img/dum/ucc4.jpg" alt="제목입니다">
+										</div>
+									</a>
+								</li>
+							</ul>
+							<!-- //.lists -->
+						</div>
+						<!-- [E] //TODO, DEV: div class="ucc_item" 반복 -->
+					</div>
+					<!-- //.owl-carousel.ucc -->
+				</section>
+				<!-- //.ucc_list -->
+			</div>
+		</div>
+		<!-- //.wrap_ucc -->
+
+		<div class="wrap_side row">
+			<div class="inner">
+				<section class="side_officialCartoon">
+					<h3 class="tit"><a href="/eltoon/cartoon/list.aspx" class="btn_titMore"><span class="txt">연재 만화</span><span class="more">더보기</span></a></h3>
+					<ul class="lists">
+						<li>
+							<a href="/board/2046820368/300/">
+								<div class="des">
+									<span class="author"><strong>공식</strong>작가님</span>
+								</div>
+								<div class="thumb">
+									<img src="assets/img/dum/cartoon1.jpg" alt="제목입니다">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="/board/2046820368/300/">
+								<div class="des">
+									<span class="author"><strong>뱀파이어</strong>작가님</span>
+								</div>
+								<div class="thumb">
+									<img src="assets/img/dum/cartoon2.jpg" alt="제목입니다">
+								</div>
+							</a>
+						</li>
+					</ul>
+				</section>
+				<!-- //.side_officialCartoon -->
+
+				<section class="side_survey">
+					<h3 class="tit"><a href="/community/poll/view.aspx" class="btn_titMore"><span class="txt">설문조사</span><span class="more">더보기</span></a></h3>
+					<div class="survey">
+						<a href="/board/2046820368/300/">
+							<div class="des">
+								<div class="cell">
+									<h4 class="subject">제목이 엄청나게 긴 설문조사이다. 음과장님~ 최대 세줄까지 보이도록 개발 부탁드립니다!</h4>
+									<span class="date">2017.09.12 ~ 2017.12.31</span>
+								</div>
+								<!-- [S] TODO, DEV: 투표 진행상황에 따른 class 수정 부탁드립니다. -->
+								<!--
+									1. 투표 진행 중일 때: <span class="status ing">진행 중</span>
+									2. 투표 마감되었을 때: <span class="status end">마감</span>	
+								-->
+								<span class="status ing">진행 중</span>
+								<!-- [E] //TODO, DEV: 투표 진행상황에 따른 class 수정 -->
+							</div>
+						</a>
+					</div>
+				</section>
+				<!-- //.side_survey -->
+
+				<section class="side_socialMedia">
+					<h3 class="blind">엘소드 소셜미디어</h3>
+					<div class="socialMedia_links">
+						<ul class="lists">
+							<li class="fb"><a href="https://www.facebook.com/ELSWORD.KOG/" target="_blank">엘소드 페이스북</a></li>
+							<li class="tw"><a href="https://twitter.com/elsword_kog" target="_blank">엘소드 트위터</a></li>
+							<li class="nv"><a href="http://post.naver.com/my.nhn?memberNo=31867698" target="_blank">엘소드 네이버 포스트</a></li>
+						</ul>
+					</div>
+					<!-- //.socialMedia_links -->
+					<!-- TODO, DEV: 유튜브 영상 삽입 구역 -->
+					<div class="socialMedia_youtube">
+
+					</div>
+					<!-- //.socialMedia_youtube -->
+				</section>
+				<!-- //.side_socialMedia -->
+			</div>
+			<!-- //.inner -->
+		</div>
+		<!-- //.wrap_side -->
+
+	</main>
+	<!-- //===========================================================
+			#main END
+	=========================================================== // -->
+
+
+	<!-- <aside class="sidebar" role="complementary">
+
+	</aside> -->
+
+	<footer id="footer" class="row" role="contentinfo">
+		<div class="inner">
+			<div class="terms">
+				<ul class="fnb">
+					<li><a href="http://company.nexon.com/" target="_blank">회사소개</a></li>
+					<li><a href="http://career.nexon.com/" target="_blank">채용안내</a></li>
+					<li><a href="https://member.nexon.com/policy/stipulation.aspx" target="_blank">이용약관</a></li>
+					<li><a href="http://elsword.nexon.com/footer/gameuse_grade.html" onclick="ngwPopup(this.href, '500', '440', '0', 'popGameUser');return false;">게임이용등급안내</a></li>
+					<li class="privacy"><a href="https://member.nexon.com/policy/privacy.aspx" target="_blank">개인정보처리방침</a></li>
+					<li><a href="https://member.nexon.com/policy/youthprotection.aspx" target="_blank">청소년보호정책</a></li>
+					<li><a href="http://elsword.nexon.com/footer/operation_rule_elsword.html" onclick="ngwPopup(this.href, '600', '560', '0', 'popOperationRule');return false;">운영정책</a></li>
+					<li><a href="http://pcbang.nexon.com/" target="_blank">넥슨 PC방</a></li>
+				</ul>
+				<address class="address">
+					<p class="copyright">
+						<span>㈜넥슨코리아 대표이사 박지원</span>
+						<span>경기도 성남시 분당구 판교로 256번길 7</span>
+						<span>전화 : 1588-7701</span>
+						<span>팩스 : 0502-258-8322</span><br>
+						<span>E-mail : contact-us@nexon.co.kr</span>
+						<span>사업자등록번호 : 220-87-17483호</span>
+						<span>통신판매업 신고번호 : 제2013-경기성남-1659호</span>
+						<a href="http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=2208717483" onclick="ngwPopup(this.href, '640', '588', '0', 'footerPopup2');return false;" class="bizInfo"><span>사업자정보확인</span></a>
+						<br>
+						<a href="http://company.nexon.com" target="_blank"><span>©2006 NEXON Korea Corp. &amp; KOG Corp. All Rights Reserved.</span></a>
+					</p>
+				</address>
+				<ul class="identity">
+					<li class="fnexon"><a href="http://www.nexon.com/" target="_blank">NEXON</a></li>
+					<li class="fkog"><a href="http://www.kog.co.kr/" target="_blank">KOG</a></li>
+				</ul>
+			</div>
+			<!-- //.terms -->
+			<div class="aside">
+				<ul class="asnb">
+					<li class="pcBenefit"><a href="/events2016/0421/benefit.aspx" target="_blank">PC방 혜택 가이드</a></li>
+					<li class="security"><a href="https://elsword.nexon.com/security/center/main.aspx" onclick="ngwPopup(this.href, '800', '600', '0', 'popSecurity'); $h.a2s.sendClickLog('ELSWORD_CLICK','{\'Name\':\'Security\'}'); return false;">보안센터</a></li>
+					<li class="probability"><a href="http://iteminfo.nexon.com/probability/games/elsword" target="_blank">확률형 아이템 획득 확률</a></li>
+				</ul>
+			</div>
+			<!-- //.aside -->
+		</div>
+	</footer>
+	<!-- //===========================================================
+			#footer END
+	=========================================================== // -->
+
+
+</body>
+</html>
