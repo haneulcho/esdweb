@@ -40,7 +40,8 @@
 .board_list .b_author .medal.bronze {background-position:-434px -76px}
 .board_list .b_author .author_header {overflow:hidden;margin:0 0 3px 0}
 .board_list .b_author .author_header > span {float:left;margin:0 8px 0 0;font-size:12px;line-height:14px}
-.board_list .b_author .author_header .server {color:#06a545}
+.board_list .b_author .author_header .server.g {color:#06a545}
+.board_list .b_author .author_header .server.s {color:#ee5f00}
 .board_list .b_author .author_header .level {color:#888}
 .board_list .b_author .author_header .level:before {float:left;content:'';width:1px;height:9px;margin:3px 7px 0 0;background:#989898}
 .board_list .b_author .nickname {font-size:14px;line-height:19px;color:#444}
