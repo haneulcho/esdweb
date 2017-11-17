@@ -14,14 +14,15 @@
 .board_list > li.notice {background:#f2f2f2}
 .board_list > li.notice:first-child {border-top:2px solid #acacac}
 .board_list > li.notice .b_subject {width:940px}
+.board_list > li.notice .b_subject .subject_header .category:after {display:none}
 .board_list > li.label {height:64px;border-top:2px solid #acacac;border-bottom:1px solid #acacac}
 .board_list > li > div {display:table-cell;padding:0 20px;vertical-align:middle}
 .board_list > li.label > div {text-align:center;font-size:16px;color:#444}
 .board_list .b_subject .subject_header {overflow:hidden;margin:0 0 3px 0}
 .board_list .b_subject .subject_header > span {float:left;margin:0 8px 0 0;font-size:12px;line-height:14px}
 .board_list .b_subject .subject_header .category {color:#e65700}
+.board_list .b_subject .subject_header .category:after {float:right;content:'';width:1px;height:9px;margin:3px 0 0 8px;background:#989898}
 .board_list .b_subject .subject_header .num {color:#888}
-.board_list .b_subject .subject_header .num:before {float:left;content:'';width:1px;height:9px;margin:3px 8px 0 0;background:#989898}
 .board_list .b_subject .subject {clear:both}
 .board_list .b_subject .subject:after {clear:both;display:table;content:'';*zoom:1}
 .board_list .b_subject .subject > a {float:left;overflow:hidden;max-width:500px;word-break:break-all;white-space:nowrap;text-overflow:ellipsis;font-size:16px;line-height:21px;color:#444}
