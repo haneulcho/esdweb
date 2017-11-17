@@ -1,12 +1,15 @@
 @charset "UTF-8";
-@import url('base.css');
 
 /* Board List: Type Default */
 #boardList {}
 .board_list {border-bottom:2px solid #acacac}
-.board_list.default {}
+.board_list:after {clear:both;display:table;content:'';*zoom:1}
+.board_list.default .b_subject {width:735px}
+.board_list.default .b_author {width:205px}
+.board_list.default .b_date {width:140px}
+.board_list.default .b_hit {width:120px}
 
-.board_list > li {display:table;min-height:60px;padding:22px 0 19px;border-top:1px solid #ccc}
+.board_list > li {display:table;width:100%;min-height:60px;padding:22px 0 19px;border-top:1px solid #ccc}
 .board_list > li:first-child {border-width:2px}
 .board_list > li.notice {background:#f2f2f2}
 .board_list > li.notice:first-child {border-top:2px solid #acacac}
@@ -14,7 +17,6 @@
 .board_list > li.label {height:64px;border-top:2px solid #acacac;border-bottom:1px solid #acacac}
 .board_list > li > div {display:table-cell;padding:0 20px;vertical-align:middle}
 .board_list > li.label > div {text-align:center;font-size:16px;color:#444}
-.board_list .b_subject {width:735px}
 .board_list .b_subject .subject_header {overflow:hidden;margin:0 0 3px 0}
 .board_list .b_subject .subject_header > span {float:left;margin:0 8px 0 0;font-size:12px;line-height:14px}
 .board_list .b_subject .subject_header .category {color:#e65700}
@@ -30,7 +32,7 @@
 .board_list .b_subject .subject .ico.new {background-position:-326px -85px}
 .board_list .b_subject .subject .ico.mobile {background-position:-350px -85px}
 .board_list .b_subject .subject .ico.pic {background-position:-374px -85px}
-.board_list .b_author {position:relative;width:205px;padding:0 20px 0 50px}
+.board_list .b_author {position:relative;padding:0 20px 0 50px}
 .board_list .b_author .medal {position:absolute;top:50%;left:20px;width:24px;height:34px;margin:-16px 0 0 0;background:url('../img/spr_global.png') no-repeat 0 0}
 .board_list .b_author .medal.gold {background-position:-434px 0}
 .board_list .b_author .medal.silver {background-position:-434px -38px}
@@ -42,10 +44,11 @@
 .board_list .b_author .author_header .level:before {float:left;content:'';width:1px;height:9px;margin:3px 7px 0 0;background:#989898}
 .board_list .b_author .nickname {font-size:14px;line-height:19px;color:#444}
 .board_list .b_date, .board_list .b_hit {font-size:16px;text-align:center}
-.board_list .b_date {width:140px}
 .board_list .b_date .date {color:#888}
-.board_list .b_hit {width:120px}
 .board_list .b_hit .hit {color:#e65700}
+.board_list .b_thumb .thumb,
+.board_list .b_thumb .thumb > a,
+.board_list .b_thumb .thumb > a > img {display:block;width:100%;height:100%}
 
 /* Board Buttons */
 .b_btns .btn.write {width:420px;height:69px;background-position:0 -300px}
