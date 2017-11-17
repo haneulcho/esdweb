@@ -5,7 +5,7 @@
 /* Board List: Type Eltype */
 .eltype .board_list {padding:55px 0 0;border-top:2px solid #acacac}
 .eltype .board_list > li {float:left;display:block;width:275px;margin:0 0 44px 33px;padding:0;text-align:center;border:none}
-.eltype .board_list > li:first-child, .eltype .board_list > li:nth-child(5n) {margin-left:0}
+.eltype .board_list > li:first-child, .eltype .board_list > li:nth-child(4n+1) {margin-left:0}
 .eltype .board_list > li > div {display:block;padding:0}
 .eltype .board_list .b_subject {display:inline-block;margin:0 0 9px 0}
 .eltype .board_list .b_subject .subject > a {max-width:235px}
