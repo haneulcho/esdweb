@@ -1,0 +1,7 @@
+@charset "UTF-8";
+@import url('sub.css');
+@import url('board.css');
+
+/* Board List: Type Notice */
+.notice .board_list .b_subject {width:940px}
+.notice .board_list .b_subject .subject > a {max-width:800px}
