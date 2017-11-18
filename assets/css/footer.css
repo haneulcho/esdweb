@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* Footer */
+#footer {border-top:1px solid #d4d4d4}
+#footer a {color:inherit}
+#footer .inner {height:255px;padding:60px 0}
+#footer .terms {float:left;width:660px}
+#footer .terms a:hover, #footer .terms a:focus {text-decoration:underline}
+#footer .terms .fnb {overflow:hidden;margin:0 0 22px 0}
+#footer .terms .fnb > li {float:left;padding:0 10px;background:url('http://s.nx.com/S2/Game/Elsword/renewal/layout/f_menu_dv.gif') 0 4px no-repeat}
+#footer .terms .fnb > li:first-child {padding-left:0;background:none}
+#footer .terms .fnb > li > a {display:block;font-size:12px;line-height:17px;letter-spacing:-0.2px;color:#888}
+#footer .terms .fnb > li.privacy > a {font-weight:bold;color:#000}
+#footer .terms .address {margin:0 0 21px 0}
+#footer .terms .address .copyright {font-size:10.5px;line-height:16px;color:#a2a2a2}
+#footer .terms .address .copyright span {margin:0 6px 0 0}
+#footer .terms .address .copyright .bizInfo {text-decoration:underline}
+#footer .terms .identity {overflow:hidden}
+#footer .terms .identity li {float:left}
+#footer .terms .identity li:first-child {margin:0 15px 0 0}
+#footer .terms .identity li > a {height:25px}
+#footer .terms .identity li.fnexon > a {width:70px;background:url('http://s.nx.com/S2/Game/Elsword/renewal/layout/f_logo_nx_2017.png') no-repeat 0 0}
+#footer .terms .identity li.fkog > a {width:45px;background:url('http://s.nx.com/S2/Game/Elsword/renewal/layout/f_logo_kog_2017.png') no-repeat 0 0}
+#footer .aside {float:right}
+#footer .aside .asnb {overflow:hidden;margin:-5px 0 0 0}
+#footer .aside .asnb > li {float:left;margin:0 0 0 13px}
+#footer .aside .asnb > li > a {width:131px;height:131px;background:url('../img/spr_global.png') no-repeat 0 0}
+#footer .aside .asnb > li.pcBenefit > a {background-position:-136px -202px}
+#footer .aside .asnb > li.pcBenefit > a:hover,
+#footer .aside .asnb > li.pcBenefit > a:focus {background-position:-136px -338px}
+#footer .aside .asnb > li.security > a {background-position:-272px -202px}
+#footer .aside .asnb > li.security > a:hover,
+#footer .aside .asnb > li.security > a:focus {background-position:-272px -338px}
+#footer .aside .asnb > li.probability > a {background-position:-408px -202px}
+#footer .aside .asnb > li.probability > a:hover,
+#footer .aside .asnb > li.probability > a:focus {background-position:-408px -338px}

@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@import url('base.css');
+
+/* Promotion */
+.wrap_banner.sub {position:relative;overflow:hidden;height:460px;background:#1b1b1b}
+.wrap_banner.sub .banner {position:absolute;left:50%;overflow:hidden;width:2560px;height:460px;margin-left:-1280px}
+.wrap_banner.sub .banner_item {position:absolute;overflow:hidden;top:0;left:0;width:100%;height:460px;text-align:center}
+.wrap_banner .banner_item > a {display:inline-block}
+.wrap_banner .owl-dots {position:relative;width:1200px;height:0;margin:400px auto 0;padding:0 0 0 8px;z-index:3}
+.wrap_banner .owl-dots .owl-dot {float:left;margin:0 0 0 12px}
+.wrap_banner .owl-dots .owl-dot > span {display:block;width:19px;height:19px;background:url('../img/spr_global.png') no-repeat -386px -95px}
+.wrap_banner .owl-dots .owl-dot.active > span {background-position:-409px -95px}
+
+/* Game Start */
+.sub .wrap_information {height:145px;padding:35px 0 0 0;background:url('../img/bg_main_login.jpg') repeat-x 0 0}
+.sub .wrap_information .inner {position:relative}
+.sub .wrap_information .gameStart {position:absolute;top:-160px;left:397px;z-index:3}
+.sub .wrap_information .gameStart .btn_gameStart {width:400px;height:240px;background:url('../img/btn_gameStart.jpg') no-repeat 0 0}
+
+/* Contents Container */
+.wrap_cont:after {clear:both;display:table;content:'';*zoom:1}
+
+/* Contents Header */
+.wrap_cont .cont_header {min-height:30px}
+.cont_header .titles {float:left;margin:0 0 12px 0}
+.cont_header .titles .tit {float:left;margin:-20px 20px 0 0;font-size:35px;color:#3a312a;letter-spacing:-1px}
+.cont_header .titles .category {float:left;overflow:hidden}
+.cont_header .titles .category > li {position:relative;float:left;padding:0 15px;font-size:16px;color:#444;letter-spacing:-0.5px}
+.cont_header .titles .category > li:first-child:before {left:0}
+.cont_header .titles .category > li:after {right:0;}
+.cont_header .titles .category > li:first-child:before,
+.cont_header .titles .category > li:after {position:absolute;display:block;content:'';top:50%;width:1px;height:11px;margin-top:-5px;background:#b4b4b4}
+.cont_header .titles .category > li.on {color:#e65700}
+.cont_header .titles .category > li > a {color:inherit}
+.cont_header .des {float:right;margin:6px 0 0 0}
+.cont_header .des > p {padding:0 0 0 22px;font-size:13px;color:#888;letter-spacing:-0.5px;background:url('../img/ico_leaf.png') no-repeat 0 0}
+
+/* Contents Body */
+.wrap_cont .cont_body {margin:0 0 36px 0}
+
+/* Contents Footer */
+.wrap_cont .cont_footer {}
+.cont_footer .b_btns {margin-bottom:31px;text-align:center}
+.cont_footer .b_btns .btn,
+.cont_footer .b_search_form .btn {display:inline-block;*display:inline;zoom:1;background:url('../img/spr_asset.png') no-repeat 0 0}
+.cont_footer .b_paging {margin-bottom:42px}
+.cont_footer .b_search {height:100px;padding:33px 0 0 0;background:#f7f7f7;text-align:center}
+.cont_footer .b_search .b_search_form {width:735px;height:38px;margin:0 auto}
+.cont_footer .b_search .b_search_form .iptBox_select {float:left;width:140px}
+.cont_footer .b_search .b_search_form .iptBox_search {float:right}
+.cont_footer .b_search .b_search_form .iptBox_search .ipt_keyword {float:left;width:482px;margin:0 4px 0 0}
+.cont_footer .b_search .b_search_form .iptBox_search .btn.search {float:right}

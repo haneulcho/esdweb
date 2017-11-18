@@ -23,7 +23,7 @@
 <link rel="icon" href="http://s.nx.com/S2/Game/Elsword/2012/icon/favicon.ico" type="image/x-icon">
 
 <!-- TODO: CSS 경로 수정할 것 -->
-<link href="assets/css/board.css" rel="stylesheet">
+<link href="assets/css/notice.css" rel="stylesheet">
  
 <!-- TODO: JS 경로 수정할것 -->
 <script src="assets/components/jquery/jquery-1.12.4.min.js"></script>
@@ -178,69 +178,32 @@
 		</div>
 		<!-- //.wrap_information -->
 
-		<section id="contents" role="main">			
+		<section id="contents" class="notice" role="main">			
 			<div class="wrap_cont row">
 				<div class="cont_header inner">
 					<div class="titles">
-						<h2 class="tit">이슈게시판</h2>
+						<h2 class="tit">공지사항</h2>
 						<ul class="category" role="tablist">
 							<!-- TODO, DEV: 탭메뉴 활성화 시 on 클래스 추가 -->
-							<li class="on"><a href="/list.aspx?n4ArticleCategorySN=0" role="tab">전체</a></li>
-							<li><a href="/list.aspx?n4ArticleCategorySN=1" role="tab">자유</a></li>
-							<li><a href="/list.aspx?n4ArticleCategorySN=2" role="tab">질문</a></li>
+							<li class="on"><a href="/news/notice/list.aspx" role="tab">전체</a></li>
+							<li><a href="/news/notice/list.aspx?emNoticeCode=Notice" role="tab">공지</a></li>
+							<li><a href="/news/notice/list.aspx?emNoticeCode=Inspection" role="tab">점검</a></li>
+							<li><a href="/news/notice/list.aspx?emNoticeCode=Patch" role="tab">패치</a></li>
+							<li><a href="/news/notice/list.aspx?emNoticeCode=News" role="tab">기타</a></li>
 						</ul>
 					</div>
 					<div class="des">
-						<p>모험가님들을 위한 커뮤니티 공간입니다.</p>
+						<p>엘소드의 새로운 소식들을 알려드립니다.</p>
 					</div>
 				</div>
 				<!-- //.cont_header -->
 				<div class="cont_body">
 					<div id="boardList" class="inner">
-						<h2 class="blind">게시판 목록입니다.</h2>
+						<h2 class="blind">공지사항 게시판 목록입니다.</h2>
 						<ul class="board_list default">
-							<li class="notice">
-								<div class="b_subject">
-									<div class="subject_header">
-										<span class="category">자유</span>
-									</div>
-									<h3 class="subject">
-										<a href="http://elsword.nexon.com/community/free/view.aspx?n4ArticleSN=4806286">일위아조씨가 도발해서</a>
-										<span class="cmt">[10000]</span>
-										<span class="ico new">New</span>
-									</h3>
-								</div>
-								<!-- //.b_subject -->
-								<div class="b_date"><span class="date">2017.12.30</span></div>
-								<!-- //b_date -->
-								<div class="b_hit"><span class="hit">213001</span></div>
-								<!-- //b_hit -->
-							</li>
-							<!-- //li.notice -->
-							<li class="notice">
-								<div class="b_subject">
-									<div class="subject_header">
-										<span class="category">자유</span>
-									</div>
-									<h3 class="subject">
-										<a href="http://elsword.nexon.com/community/free/view.aspx?n4ArticleSN=4806286">일위아조씨가 도발해서</a>
-										<span class="cmt">[10000]</span>
-										<span class="ico new">New</span>
-									</h3>
-								</div>
-								<!-- //.b_subject -->
-								<div class="b_date"><span class="date">2017.12.30</span></div>
-								<!-- //b_date -->
-								<div class="b_hit"><span class="hit">213001</span></div>
-								<!-- //b_hit -->
-							</li>
-							<!-- //li.notice -->
-							
-	
 							<!-- TODO: <li class="label">은 Table thead 역할입니다! -->
 							<li class="label">
 								<div class="b_subject"><strong>제목</strong></div>
-								<div class="b_author"><strong>작성자</strong></div>
 								<div class="b_date"><strong>작성일</strong></div>
 								<div class="b_hit"><strong>조회수</strong></div>
 							</li>
@@ -251,34 +214,15 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">자유</span>
+										<span class="category">패치</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
 										<a href="http://elsword.nexon.com/community/free/view.aspx?n4ArticleSN=4806286">일위아조씨가 도발해서</a>
-										<span class="cmt">[10000]</span>
 										<span class="ico new">New</span>
-										<span class="ico mobile">Mobile</span>
-										<span class="ico pic">Picture</span>
 									</h3>
 								</div>
 								<!-- //.b_subject -->
-								<div class="b_author">
-									<!-- TODO, DEV: [S] 개인화 영역 메달 시작!! -->
-									<!--
-										금메달: <span class="medal gold">메달</span>
-										은메달: <span class="medal silver">메달</span>
-										동메달: <span class="medal bronze">메달</span>
-									-->
-									<span class="medal gold">메달</span>
-									<!-- TODO, DEV: [E] 개인화 영역 메달 끝!! -->
-									<div class="author_header">
-										<span class="server">가이아</span>
-										<span class="level">Lv. 99</span>
-									</div>
-									<span class="nickname">한글이름여덟글자</span>
-								</div>
-								<!-- //.b_author -->
 								<div class="b_date"><span class="date">2017.12.30</span></div>
 								<!-- //b_date -->
 								<div class="b_hit"><span class="hit">213001</span></div>
@@ -289,29 +233,15 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">자유</span>
+										<span class="category">점검</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
 										<a href="http://elsword.nexon.com/community/free/view.aspx?n4ArticleSN=4806286">일위아조씨가 도발해서</a>
-										<span class="cmt">[10000]</span>
 										<span class="ico new">New</span>
-										<span class="ico mobile">Mobile</span>
-										<span class="ico pic">Picture</span>
 									</h3>
 								</div>
 								<!-- //.b_subject -->
-								<div class="b_author">
-									<!-- TODO, DEV: [S] 개인화 영역 메달 시작!! -->
-									<span class="medal silver">메달</span>
-									<!-- TODO, DEV: [E] 개인화 영역 메달 끝!! -->
-									<div class="author_header">
-										<span class="server">가이아</span>
-										<span class="level">Lv. 99</span>
-									</div>
-									<span class="nickname">한글이름여덟글자</span>
-								</div>
-								<!-- //.b_author -->
 								<div class="b_date"><span class="date">2017.12.30</span></div>
 								<!-- //b_date -->
 								<div class="b_hit"><span class="hit">213001</span></div>
@@ -322,26 +252,15 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">자유</span>
+										<span class="category">기타</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
 										<a href="http://elsword.nexon.com/community/free/view.aspx?n4ArticleSN=4806286">일위아조씨가 도발해서</a>
-										<span class="cmt">[10000]</span>
 										<span class="ico new">New</span>
-										<span class="ico mobile">Mobile</span>
-										<span class="ico pic">Picture</span>
 									</h3>
 								</div>
 								<!-- //.b_subject -->
-								<div class="b_author">
-									<div class="author_header">
-										<span class="server">가이아</span>
-										<span class="level">Lv. 99</span>
-									</div>
-									<span class="nickname">한글이름여덟글자</span>
-								</div>
-								<!-- //.b_author -->
 								<div class="b_date"><span class="date">2017.12.30</span></div>
 								<!-- //b_date -->
 								<div class="b_hit"><span class="hit">213001</span></div>
@@ -352,29 +271,15 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">자유</span>
+										<span class="category">패치</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
 										<a href="http://elsword.nexon.com/community/free/view.aspx?n4ArticleSN=4806286">일위아조씨가 도발해서</a>
-										<span class="cmt">[10000]</span>
 										<span class="ico new">New</span>
-										<span class="ico mobile">Mobile</span>
-										<span class="ico pic">Picture</span>
 									</h3>
 								</div>
 								<!-- //.b_subject -->
-								<div class="b_author">
-									<!-- TODO, DEV: [S] 개인화 영역 메달 시작!! -->
-									<span class="medal bronze">메달</span>
-									<!-- TODO, DEV: [E] 개인화 영역 메달 끝!! -->
-									<div class="author_header">
-										<span class="server">가이아</span>
-										<span class="level">Lv. 99</span>
-									</div>
-									<span class="nickname">한글이름여덟글자</span>
-								</div>
-								<!-- //.b_author -->
 								<div class="b_date"><span class="date">2017.12.30</span></div>
 								<!-- //b_date -->
 								<div class="b_hit"><span class="hit">213001</span></div>
@@ -385,239 +290,15 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">자유</span>
+										<span class="category">패치</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
 										<a href="http://elsword.nexon.com/community/free/view.aspx?n4ArticleSN=4806286">일위아조씨가 도발해서</a>
-										<span class="cmt">[10000]</span>
 										<span class="ico new">New</span>
-										<span class="ico mobile">Mobile</span>
-										<span class="ico pic">Picture</span>
 									</h3>
 								</div>
 								<!-- //.b_subject -->
-								<div class="b_author">
-									<div class="author_header">
-										<span class="server">가이아</span>
-										<span class="level">Lv. 99</span>
-									</div>
-									<span class="nickname">한글이름여덟글자</span>
-								</div>
-								<!-- //.b_author -->
-								<div class="b_date"><span class="date">2017.12.30</span></div>
-								<!-- //b_date -->
-								<div class="b_hit"><span class="hit">213001</span></div>
-								<!-- //b_hit -->
-							</li>
-							<!-- //li -->
-
-							<li>
-								<div class="b_subject">
-									<div class="subject_header">
-										<span class="category">자유</span>
-										<span class="num">No. 12345678900</span>
-									</div>
-									<h3 class="subject">
-										<a href="http://elsword.nexon.com/community/free/view.aspx?n4ArticleSN=4806286">일위아조씨가 도발해서</a>
-										<span class="cmt">[10000]</span>
-										<span class="ico new">New</span>
-										<span class="ico mobile">Mobile</span>
-										<span class="ico pic">Picture</span>
-									</h3>
-								</div>
-								<!-- //.b_subject -->
-								<div class="b_author">
-									<!-- TODO, DEV: [S] 개인화 영역 메달 시작!! -->
-									<span class="medal gold">메달</span>
-									<!-- TODO, DEV: [E] 개인화 영역 메달 끝!! -->
-									<div class="author_header">
-										<span class="server">가이아</span>
-										<span class="level">Lv. 99</span>
-									</div>
-									<span class="nickname">한글이름여덟글자</span>
-								</div>
-								<!-- //.b_author -->
-								<div class="b_date"><span class="date">2017.12.30</span></div>
-								<!-- //b_date -->
-								<div class="b_hit"><span class="hit">213001</span></div>
-								<!-- //b_hit -->
-							</li>
-							<!-- //li -->
-
-							<li>
-								<div class="b_subject">
-									<div class="subject_header">
-										<span class="category">자유</span>
-										<span class="num">No. 12345678900</span>
-									</div>
-									<h3 class="subject">
-										<a href="http://elsword.nexon.com/community/free/view.aspx?n4ArticleSN=4806286">일위아조씨가 도발해서</a>
-										<span class="cmt">[10000]</span>
-										<span class="ico new">New</span>
-										<span class="ico mobile">Mobile</span>
-										<span class="ico pic">Picture</span>
-									</h3>
-								</div>
-								<!-- //.b_subject -->
-								<div class="b_author">
-									<div class="author_header">
-										<span class="server">가이아</span>
-										<span class="level">Lv. 99</span>
-									</div>
-									<span class="nickname">한글이름여덟글자</span>
-								</div>
-								<!-- //.b_author -->
-								<div class="b_date"><span class="date">2017.12.30</span></div>
-								<!-- //b_date -->
-								<div class="b_hit"><span class="hit">213001</span></div>
-								<!-- //b_hit -->
-							</li>
-							<!-- //li -->
-
-							<li>
-								<div class="b_subject">
-									<div class="subject_header">
-										<span class="category">자유</span>
-										<span class="num">No. 12345678900</span>
-									</div>
-									<h3 class="subject">
-										<a href="http://elsword.nexon.com/community/free/view.aspx?n4ArticleSN=4806286">일위아조씨가 도발해서</a>
-										<span class="cmt">[10000]</span>
-										<span class="ico new">New</span>
-										<span class="ico mobile">Mobile</span>
-										<span class="ico pic">Picture</span>
-									</h3>
-								</div>
-								<!-- //.b_subject -->
-								<div class="b_author">
-									<div class="author_header">
-										<span class="server">가이아</span>
-										<span class="level">Lv. 99</span>
-									</div>
-									<span class="nickname">한글이름여덟글자</span>
-								</div>
-								<!-- //.b_author -->
-								<div class="b_date"><span class="date">2017.12.30</span></div>
-								<!-- //b_date -->
-								<div class="b_hit"><span class="hit">213001</span></div>
-								<!-- //b_hit -->
-							</li>
-							<!-- //li -->
-
-							<li>
-								<div class="b_subject">
-									<div class="subject_header">
-										<span class="category">자유</span>
-										<span class="num">No. 12345678900</span>
-									</div>
-									<h3 class="subject">
-										<a href="http://elsword.nexon.com/community/free/view.aspx?n4ArticleSN=4806286">일위아조씨가 도발해서</a>
-										<span class="cmt">[10000]</span>
-										<span class="ico new">New</span>
-										<span class="ico mobile">Mobile</span>
-										<span class="ico pic">Picture</span>
-									</h3>
-								</div>
-								<!-- //.b_subject -->
-								<div class="b_author">
-									<div class="author_header">
-										<span class="server">가이아</span>
-										<span class="level">Lv. 99</span>
-									</div>
-									<span class="nickname">한글이름여덟글자</span>
-								</div>
-								<!-- //.b_author -->
-								<div class="b_date"><span class="date">2017.12.30</span></div>
-								<!-- //b_date -->
-								<div class="b_hit"><span class="hit">213001</span></div>
-								<!-- //b_hit -->
-							</li>
-							<!-- //li -->
-
-														<li>
-								<div class="b_subject">
-									<div class="subject_header">
-										<span class="category">자유</span>
-										<span class="num">No. 12345678900</span>
-									</div>
-									<h3 class="subject">
-										<a href="http://elsword.nexon.com/community/free/view.aspx?n4ArticleSN=4806286">일위아조씨가 도발해서</a>
-										<span class="cmt">[10000]</span>
-										<span class="ico new">New</span>
-										<span class="ico mobile">Mobile</span>
-										<span class="ico pic">Picture</span>
-									</h3>
-								</div>
-								<!-- //.b_subject -->
-								<div class="b_author">
-									<div class="author_header">
-										<span class="server">가이아</span>
-										<span class="level">Lv. 99</span>
-									</div>
-									<span class="nickname">한글이름여덟글자</span>
-								</div>
-								<!-- //.b_author -->
-								<div class="b_date"><span class="date">2017.12.30</span></div>
-								<!-- //b_date -->
-								<div class="b_hit"><span class="hit">213001</span></div>
-								<!-- //b_hit -->
-							</li>
-							<!-- //li -->
-
-							<li>
-								<div class="b_subject">
-									<div class="subject_header">
-										<span class="category">자유</span>
-										<span class="num">No. 12345678900</span>
-									</div>
-									<h3 class="subject">
-										<a href="http://elsword.nexon.com/community/free/view.aspx?n4ArticleSN=4806286">일위아조씨가 도발해서</a>
-										<span class="cmt">[10000]</span>
-										<span class="ico new">New</span>
-										<span class="ico mobile">Mobile</span>
-										<span class="ico pic">Picture</span>
-									</h3>
-								</div>
-								<!-- //.b_subject -->
-								<div class="b_author">
-									<div class="author_header">
-										<span class="server">가이아</span>
-										<span class="level">Lv. 99</span>
-									</div>
-									<span class="nickname">한글이름여덟글자</span>
-								</div>
-								<!-- //.b_author -->
-								<div class="b_date"><span class="date">2017.12.30</span></div>
-								<!-- //b_date -->
-								<div class="b_hit"><span class="hit">213001</span></div>
-								<!-- //b_hit -->
-							</li>
-							<!-- //li -->
-
-							<li>
-								<div class="b_subject">
-									<div class="subject_header">
-										<span class="category">자유</span>
-										<span class="num">No. 12345678900</span>
-									</div>
-									<h3 class="subject">
-										<a href="http://elsword.nexon.com/community/free/view.aspx?n4ArticleSN=4806286">일위아조씨가 도발해서</a>
-										<span class="cmt">[10000]</span>
-										<span class="ico new">New</span>
-										<span class="ico mobile">Mobile</span>
-										<span class="ico pic">Picture</span>
-									</h3>
-								</div>
-								<!-- //.b_subject -->
-								<div class="b_author">
-									<div class="author_header">
-										<span class="server">가이아</span>
-										<span class="level">Lv. 99</span>
-									</div>
-									<span class="nickname">한글이름여덟글자</span>
-								</div>
-								<!-- //.b_author -->
 								<div class="b_date"><span class="date">2017.12.30</span></div>
 								<!-- //b_date -->
 								<div class="b_hit"><span class="hit">213001</span></div>
@@ -633,10 +314,6 @@
 				<!-- //.cont_body -->
 				<div class="cont_footer">
 					<div id="boardFooter">
-						<div class="b_btns inner">
-							<!-- TODO: 글쓰기 경로 수정할 것 -->
-							<a href="sub_community_write.html" class="btn write">글쓰기</a>
-						</div>
 						<!-- [S] DEV: 게시판 페이지네이션 START!! -->
 						<div class="b_paging inner">
 							<!--
@@ -668,7 +345,6 @@
 										<div class="iptBox_select">
 											<select id="searchCategory" class="ipt_select" title="검색 조건 선택">
 												<option value="">제목</option>
-												<option value="">작성자</option>
 											</select>
 										</div>
 										<div class="iptBox_search">
