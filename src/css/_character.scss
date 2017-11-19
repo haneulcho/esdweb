@@ -66,7 +66,7 @@
 
 
 
-.character_line ul{width: 143px;padding: 1px;border: 1px solid #bebebe;}
+.character_line ul{display: inline-block;width: 143px;padding: 1px;border: 1px solid #bebebe;}
 .character_line ul li{width: 100%;padding: 10px 0;}
 .character_line ul li a{line-height: 22px;text-align: center;font-size: 14px;color: #666;}
 .character_line ul li a span{display: block;}

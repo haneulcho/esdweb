@@ -2485,14 +2485,8 @@ html, body {
 
 /* character main visual */
 #character.wrap_banner {
-  height: 750px; }
-
-#character.wrap_banner:after {
-  display: inline-block;
-  width: 2560px;
-  height: 100%;
-  background: url("../img/character/BG_CHARACTER_ main.png") repeat 50% 50%;
-  content: " "; }
+  height: 750px;
+  background: url("../img/character/BG_CHARACTER_ main.png") repeat 50% 0; }
 
 #character {
   position: relative; }
@@ -2508,7 +2502,6 @@ html, body {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: #000;
   opacity: .7;
   content: " "; }
 
@@ -2517,8 +2510,225 @@ html, body {
   margin: 0 auto; }
 
 #character .character_navi ul li {
-  float: left; }
+  float: left;
+  width: 92px;
+  height: 92px;
+  margin-left: 9px;
+  background: url("../img/character/etc_character_thumb.png") no-repeat 0 0;
+  border: 1px solid red; }
 
+#character .character_navi ul li:first-child {
+  margin-left: 0; }
+
+#character .character_navi ul li a {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+#character .character_navi ul li.elsword {
+  background-position: -64px -105px; }
+
+/**/
+.about_character section {
+  position: relative;
+  float: left;
+  width: 600px;
+  padding: 40px 0; }
+
+.about_character .about p {
+  line-height: 28.5px;
+  font-size: 14px;
+  color: #666666; }
+
+.about_character .about:after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 2px;
+  height: 84px;
+  margin-top: -42px;
+  background: url("../img/character/bg_dotted.png") no-repeat 0 0;
+  content: " "; }
+
+.character_name {
+  display: block;
+  width: 144px;
+  margin: 0 auto;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #000; }
+
+.elsword .character_name {
+  background-color: #c71c00; }
+
+.aisha .character_name {
+  background-color: #853ec8; }
+
+.rena .character_name {
+  background-color: #75ce18; }
+
+.raven .character_name {
+  background-color: #282828; }
+
+.eve .character_name {
+  background-color: #ef97bd; }
+
+.chung .character_name {
+  background-color: #00a8e6; }
+
+.ara .character_name {
+  background-color: #fe9f01; }
+
+.elesis .character_name {
+  background-color: #d00040; }
+
+.add .character_name {
+  background-color: #a79fdf; }
+
+.ru .character_name {
+  background-color: #202cf5; }
+
+.rose .character_name {
+  background-color: #fff653; }
+
+.ain .character_name {
+  background-color: #19d2a8; }
+
+.character_line ul {
+  display: inline-block;
+  width: 143px;
+  padding: 1px;
+  border: 1px solid #bebebe; }
+
+.character_line ul li {
+  width: 100%;
+  padding: 10px 0; }
+
+.character_line ul li a {
+  line-height: 22px;
+  text-align: center;
+  font-size: 14px;
+  color: #666; }
+
+.character_line ul li a span {
+  display: block; }
+
+/* 전직트리 공통 */
+.character_line .line_title {
+  position: relative;
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5; }
+
+.character_line .line_title + li {
+  border-bottom: 1px solid #bebebe; }
+
+.rose .line_title a {
+  color: #fff; }
+
+/* elsword 전직트리 */
+.elsword .line_title {
+  background-color: #c71c00;
+  border-bottom-color: #e9a499; }
+
+.elsword .line_title:after {
+  position: absolute;
+  left: 50%;
+  top: 26px;
+  margin-left: -12px;
+  border-top: 12px solid #c71c00;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid transparent;
+  content: " "; }
+
+/* aisha 전직트리 */
+.aisha .line_title {
+  background-color: #75ce18;
+  border-bottom-color: #c8eba3; }
+
+.aisha .line_title:after {
+  position: absolute;
+  left: 50%;
+  top: 26px;
+  margin-left: -12px;
+  border-top: 12px solid #75ce18;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid transparent;
+  content: " "; }
+
+/* rena 전직트리 */
+.rena .line_title {
+  background-color: #282828;
+  border-bottom-color: #a9a9a9; }
+
+.rena .line_title:after {
+  position: absolute;
+  left: 50%;
+  top: 26px;
+  margin-left: -12px;
+  border-top: 12px solid #282828;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid transparent;
+  content: " "; }
+
+/* raven 전직트리 */
+.raven .line_title {
+  background-color: #ef97bd;
+  border-bottom-color: #f9d5e5; }
+
+.raven .line_title:after {
+  position: absolute;
+  left: 50%;
+  top: 26px;
+  margin-left: -12px;
+  border-top: 12px solid #ef97bd;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid transparent;
+  content: " "; }
+
+/* eve 전직트리 */
+.eve .line_title {
+  background-color: #00a8e6;
+  border-bottom-color: #99dcf5; }
+
+.raven .line_title:after {
+  position: absolute;
+  left: 50%;
+  top: 26px;
+  margin-left: -12px;
+  border-top: 12px solid #00a8e6;
+  border-right: 12px eve transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid transparent;
+  content: " "; }
+
+/* rose 전직트리 */
+.rose .line_title {
+  background-color: #fff653;
+  border-bottom-color: #fffbba; }
+
+.rose .line_title:after {
+  position: absolute;
+  left: 50%;
+  top: 26px;
+  margin-left: -12px;
+  border-top: 12px solid #fff653;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid transparent;
+  content: " "; }
+
+.rose .line_title a {
+  color: #000; }
+
+/*.character .cont_header{position: relative;}
+.character .cont_header:before{position: absolute;bottom: 0;width: 100%;height: 1px;border-top: 1px solid #cccccc;content: " ";}*/
 /* Board List: Type Eltype */
 .eltype .board_list {
   padding: 55px 0 0;
