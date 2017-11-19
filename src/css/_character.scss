@@ -16,24 +16,28 @@
 #character.wrap_banner{height: 750px;background: url("../img/character/BG_CHARACTER_ main.png") repeat 50% 0;}
 
 #character{position: relative;}
+
+
+
+/* 캐릭터 딱지 기본 */
 #character .character_navi{position: absolute;bottom: 0;width: 100%;height: 116px;}
 #character .character_navi:after{position: absolute;bottom: 0;width: 100%;height: 100%;opacity: .7;content: " ";}
 #character .character_navi ul{width: 1200px;margin: 0 auto;}
-#character .character_navi ul li{float: left;width: 92px;height: 92px;margin-left: 9px;background: url('../img/character/etc_character_thumb.png') no-repeat 0 0;border: 1px solid red;}
+#character .character_navi ul li{float: left;width: 92px;height: 92px;margin-left: 9px;background: url('../img/character/etc_character_thumb_2.png') no-repeat 0 0;}
 #character .character_navi ul li:first-child{margin-left: 0;}
 #character .character_navi ul li a{display: block;width: 100%;height: 100%;}
-#character .character_navi ul li.elsword{background-position: -64px -105px;}
-#character .character_navi ul li.aisha{}
-#character .character_navi ul li.rena{}
-#character .character_navi ul li.raven{}
-#character .character_navi ul li.eve{}
-#character .character_navi ul li.chung{}
-#character .character_navi ul li.ara{}
-#character .character_navi ul li.elesis{}
-#character .character_navi ul li.add{}
-#character .character_navi ul li.ru{}
-#character .character_navi ul li.rose{}
-#character .character_navi ul li.ain{}
+#character .character_navi ul li.elsword{background-position: -46px -76px;}
+#character .character_navi ul li.aisha{background-position: -582px -76px;}
+#character .character_navi ul li.rena{background-position: -46px -455px;}
+#character .character_navi ul li.raven{background-position: -582px -455px;}
+#character .character_navi ul li.eve{background-position: -46px -839px;}
+#character .character_navi ul li.chung{background-position: -582px -839px;}
+#character .character_navi ul li.ara{background-position: -46px -1251px;}
+#character .character_navi ul li.elesis{background-position: -582px -1251px;}
+#character .character_navi ul li.add{background-position: -46px -1632px;}
+#character .character_navi ul li.ru{background-position: -582px -1632px;}
+#character .character_navi ul li.rose{background-position: -46px -2015px;}
+#character .character_navi ul li.ain{background-position: -582px -2015px;}
 
 
 
@@ -48,8 +52,8 @@
 
 
 
-
-.character_name{display: block;width: 144px;margin: 0 auto;padding: 15px 0;text-align: center;font-size: 14px;color: #000;}
+/* 전직 캐릭터 타이틀*/
+.character_name{display: block;width: 144px;margin: 0 auto 34px;padding: 15px 0;text-align: center;font-size: 14px;color: #000;}
 .elsword .character_name{background-color: #c71c00;}
 .aisha .character_name{background-color: #853ec8;}
 .rena .character_name{background-color: #75ce18;}
@@ -64,16 +68,22 @@
 .ain .character_name{background-color: #19d2a8;}
 
 
-
-
+.character_line {position: relative;}
+.character_line .line4:before{position: absolute;top: 92px;left: 50%;width: 445px;height: 23px;margin-left: -223px;background: url('../img/character/BG_line4.png');content: " ";}
+.character_line .line3 ul{margin-left: 27px;}
+.character_line .line3:before{position: absolute;top: 92px;left: 50%;width: 353px;height: 26px;margin-left: -173px;background: url('../img/character/BG_line3.png');content: " ";}
 .character_line ul{display: inline-block;width: 143px;padding: 1px;border: 1px solid #bebebe;}
-.character_line ul li{width: 100%;padding: 10px 0;}
+.character_line ul li{position: relative;width: 100%;padding: 10px 0;}
 .character_line ul li a{line-height: 22px;text-align: center;font-size: 14px;color: #666;}
 .character_line ul li a span{display: block;}
 
 /* 전직트리 공통 */
+.character_line .line4{width: 584px;margin: 0 auto;}
+.character_line .line3{width: 518px;margin: 0 auto;}
 .character_line .line_title{position: relative;width: 100%;padding: 5px 0;text-align: center;border-bottom: 1px solid #e5e5e5;}
-.character_line .line_title + li{border-bottom: 1px solid #bebebe;}
+.character_line ul li:after{position: absolute;bottom: -6px;width: 100%;height: 8px;background: url('../img/character/bg_line_arrow.png')no-repeat 0 0;content: " ";}
+.character_line ul li.line_title:after,
+.character_line ul li:last-child:after{content: none;}
 .rose .line_title a{color: #fff;}
 
 /* elsword 전직트리 */
@@ -95,7 +105,11 @@
 
 /* eve 전직트리 */
 .eve .line_title{background-color: #00a8e6;border-bottom-color: #99dcf5;}
-.raven .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #00a8e6;border-right: 12px eve transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
+.eve .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #00a8e6;border-right: 12px transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
+
+/* eve 전직트리 */
+.chung .line_title{background-color: #00a8e6;border-bottom-color: #99dcf5;}
+.chung .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #00a8e6;border-right: 12px transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
 
 
 /* rose 전직트리 */
