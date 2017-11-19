@@ -1,15 +1,12 @@
-@charset "UTF-8";
-@import url('base.css');
-
 /* Promotion */
 .wrap_banner.sub {position:relative;overflow:hidden;height:460px;background:#1b1b1b}
 .wrap_banner.sub .banner {position:absolute;left:50%;overflow:hidden;width:2560px;height:460px;margin-left:-1280px}
 .wrap_banner.sub .banner_item {position:absolute;overflow:hidden;top:0;left:0;width:100%;height:460px;text-align:center}
-.wrap_banner .banner_item > a {display:inline-block}
-.wrap_banner .owl-dots {position:relative;width:1200px;height:0;margin:400px auto 0;padding:0 0 0 8px;z-index:3}
-.wrap_banner .owl-dots .owl-dot {float:left;margin:0 0 0 12px}
-.wrap_banner .owl-dots .owl-dot > span {display:block;width:19px;height:19px;background:url('../img/spr_global.png') no-repeat -386px -95px}
-.wrap_banner .owl-dots .owl-dot.active > span {background-position:-409px -95px}
+.wrap_banner.sub .banner_item > a {display:inline-block}
+.wrap_banner.sub .owl-dots {position:relative;width:1200px;height:0;margin:400px auto 0;padding:0 0 0 8px;z-index:3}
+.wrap_banner.sub .owl-dots .owl-dot {float:left;margin:0 0 0 12px}
+.wrap_banner.sub .owl-dots .owl-dot > span {display:block;width:19px;height:19px;background:url('../img/spr_global.png') no-repeat -386px -95px}
+.wrap_banner.sub .owl-dots .owl-dot.active > span {background-position:-409px -95px}
 
 /* Game Start */
 .sub .wrap_information {height:145px;padding:35px 0 0 0;background:url('../img/bg_main_login.jpg') repeat-x 0 0}

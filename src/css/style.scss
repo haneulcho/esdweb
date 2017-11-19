@@ -1,0 +1,28 @@
+//----------------------------------*\
+// COMMON
+//----------------------------------*/
+@import 'common/_reset.scss';
+@import 'common/_font.scss';
+@import 'common/_board.scss';
+@import 'common/_vendor.scss';
+
+//----------------------------------*\
+// LAYOUT
+//----------------------------------*/
+@import 'layout/_header.scss';
+@import 'layout/_footer.scss';
+@import 'layout/_main.scss';
+@import 'layout/_sub.scss';
+
+//----------------------------------*\
+// PARTIALS
+//----------------------------------*/
+@import '_character.scss';
+@import '_eltype.scss';
+@import '_event.scss';
+@import '_multimedia.scss';
+@import '_notice.scss';
+@import '_strategy.scss';
+
+// @import '_community.scss';
+// @import '_download.scss';
