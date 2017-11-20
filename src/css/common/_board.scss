@@ -4,6 +4,7 @@
 .board_list:after {clear:both;display:table;content:'';*zoom:1}
 .board_list.default .b_subject {width:735px}
 .board_list.default .b_author {width:205px}
+.board_list.default .b_like {width:100px}
 .board_list.default .b_date {width:140px}
 .board_list.default .b_hit {width:120px}
 
@@ -43,8 +44,8 @@
 .board_list .b_author .author_header .level {color:#888}
 .board_list .b_author .author_header .level:before {float:left;content:'';width:1px;height:9px;margin:3px 7px 0 0;background:#989898}
 .board_list .b_author .nickname {font-size:14px;line-height:19px;color:#444}
-.board_list .b_date, .board_list .b_hit {font-size:16px;text-align:center}
-.board_list .b_date .date {color:#888}
+.board_list .b_date, .board_list .b_hit, .board_list .b_like {font-size:16px;text-align:center}
+.board_list .b_date .date, .board_list .b_like .like {color:#888}
 .board_list .b_hit .hit {color:#e65700}
 .board_list .b_thumb .thumb,
 .board_list .b_thumb .thumb > a,
