@@ -1,7 +1,6 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     browserSync = require('browser-sync').create(),
-    reload = browserSync.reload,
     autoprefixer = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify'),
     include = require('gulp-file-include'),
@@ -74,20 +73,15 @@ gulp.task('css', function () {
 //     .pipe(browserSync.stream());
 // });
 
-gulp.task('css-watch', ['css'], reload);
+gulp.task('html-watch', ['html'], function (done) {
+    browserSync.reload();
+    done();
+});
+gulp.task('css-watch', ['css'], function (done) {
+    browserSync.reload();
+    done();
+});
 // gulp.task('js-watch', ['js'], reload);
-gulp.task('html-watch', ['html'], reload);
-
-// gulp.task('default', ['css', 'js', 'html'], function () {
-//     browserSync.init({
-//         server: {
-//             baseDir: "./app/"
-//         }
-//     });
-//     gulp.watch(htmlWatchPath, ['html-watch']);
-//     gulp.watch(cssWatchPath, ['css-watch']);
-//     gulp.watch(jsWatchPath, ['js-watch']);
-// });
 
 gulp.task('default', ['css', 'html'], function () {
     browserSync.init({
@@ -97,4 +91,5 @@ gulp.task('default', ['css', 'html'], function () {
     });
     gulp.watch(htmlWatchPath, ['html-watch']);
     gulp.watch(cssWatchPath, ['css-watch']);
+    //gulp.watch(jsWatchPath, ['js-watch']);
 });
