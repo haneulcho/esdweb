@@ -1,0 +1,197 @@
+@@@include('./header_sub.html')
+<main id="main" class="sub" role="main">
+	<div class="wrap_information row">
+		<div class="inner">
+			<!-- TODO, DEV: [S] 게임 스타트 버튼 시작!! -->
+			<div id="gameStart" class="gameStart">
+				<a href="#" class="btn_gameStart" onclick="GnxGameStartOnClick();return false;">GAME START</a>
+			</div>
+			<!-- //#gameStart -->
+			<!-- TODO, DEV: [E] 게임 스타트 버튼 끝!! -->
+		</div>
+		<!-- //.inner -->
+	</div>
+	<!-- //.wrap_information -->
+
+	<section id="contents" class="notice" role="main">
+		<div class="wrap_cont row">
+			<div class="cont_header inner">
+				<div class="titles">
+					<h2 class="tit">업데이트</h2>
+				</div>
+				<div class="des">
+					<p>새로운 업데이트 내용을 확인하세요!</p>
+				</div>
+			</div>
+			<!-- //.cont_header -->
+			<div class="cont_body">
+				<div id="boardList" class="inner">
+					<h2 class="blind">공지사항 게시판 목록입니다.</h2>
+					<ul class="board_list default">
+						<!-- TODO: <li class="label">은 Table thead 역할입니다! -->
+						<li class="label">
+							<div class="b_subject"><strong>제목</strong></div>
+							<div class="b_date"><strong>작성일</strong></div>
+							<div class="b_hit"><strong>조회수</strong></div>
+						</li>
+						<!-- TODO: //<li class="label">은 Table thead 역할입니다! -->
+
+
+						<!-- TODO: <li>는 Table tbody 역할입니다! -->
+						<li>
+							<div class="b_subject">
+								<div class="subject_header">
+									<span class="num">No. 12345678900</span>
+								</div>
+								<h3 class="subject">
+									<a href="http://elsword.nexon.com/community/free/view.aspx?n4ArticleSN=4806286">일위아조씨가 도발해서</a>
+									<span class="ico new">New</span>
+								</h3>
+							</div>
+							<!-- //.b_subject -->
+							<div class="b_date"><span class="date">2017.12.30</span></div>
+							<!-- //b_date -->
+							<div class="b_hit"><span class="hit">213001</span></div>
+							<!-- //b_hit -->
+						</li>
+						<!-- //li -->
+
+						<li>
+							<div class="b_subject">
+								<div class="subject_header">
+									<span class="num">No. 12345678900</span>
+								</div>
+								<h3 class="subject">
+									<a href="http://elsword.nexon.com/community/free/view.aspx?n4ArticleSN=4806286">일위아조씨가 도발해서</a>
+									<span class="ico new">New</span>
+								</h3>
+							</div>
+							<!-- //.b_subject -->
+							<div class="b_date"><span class="date">2017.12.30</span></div>
+							<!-- //b_date -->
+							<div class="b_hit"><span class="hit">213001</span></div>
+							<!-- //b_hit -->
+						</li>
+						<!-- //li -->
+
+						<li>
+							<div class="b_subject">
+								<div class="subject_header">
+									<span class="num">No. 12345678900</span>
+								</div>
+								<h3 class="subject">
+									<a href="http://elsword.nexon.com/community/free/view.aspx?n4ArticleSN=4806286">일위아조씨가 도발해서</a>
+									<span class="ico new">New</span>
+								</h3>
+							</div>
+							<!-- //.b_subject -->
+							<div class="b_date"><span class="date">2017.12.30</span></div>
+							<!-- //b_date -->
+							<div class="b_hit"><span class="hit">213001</span></div>
+							<!-- //b_hit -->
+						</li>
+						<!-- //li -->
+
+						<li>
+							<div class="b_subject">
+								<div class="subject_header">
+									<span class="num">No. 12345678900</span>
+								</div>
+								<h3 class="subject">
+									<a href="http://elsword.nexon.com/community/free/view.aspx?n4ArticleSN=4806286">일위아조씨가 도발해서</a>
+									<span class="ico new">New</span>
+								</h3>
+							</div>
+							<!-- //.b_subject -->
+							<div class="b_date"><span class="date">2017.12.30</span></div>
+							<!-- //b_date -->
+							<div class="b_hit"><span class="hit">213001</span></div>
+							<!-- //b_hit -->
+						</li>
+						<!-- //li -->
+
+						<li>
+							<div class="b_subject">
+								<div class="subject_header">
+									<span class="num">No. 12345678900</span>
+								</div>
+								<h3 class="subject">
+									<a href="http://elsword.nexon.com/community/free/view.aspx?n4ArticleSN=4806286">일위아조씨가 도발해서</a>
+									<span class="ico new">New</span>
+								</h3>
+							</div>
+							<!-- //.b_subject -->
+							<div class="b_date"><span class="date">2017.12.30</span></div>
+							<!-- //b_date -->
+							<div class="b_hit"><span class="hit">213001</span></div>
+							<!-- //b_hit -->
+						</li>
+						<!-- //li -->
+						<!-- TODO: //<li>는 Table tbody 역할입니다! -->
+					</ul>
+					<!-- //.board_list.default -->
+				</div>
+				<!-- //#boardList -->
+			</div>
+			<!-- //.cont_body -->
+			<div class="cont_footer">
+				<div id="boardFooter">
+					<!-- [S] DEV: 게시판 페이지네이션 START!! -->
+					<div class="b_paging inner">
+						<!--
+							현재 페이지일 경우 <li class="num current">1</li>
+						-->
+						<ul class="paging">
+							<li class="btn first">첫 페이지</li>
+							<li class="btn prev"><a href="#">이전 페이지</a></li>
+							<li class="num current">1</li>
+							<li class="num"><a href="#">2</a></li>
+							<li class="num"><a href="#">3</a></li>
+							<li class="num"><a href="#">4</a></li>
+							<li class="num"><a href="#">5</a></li>
+							<li class="btn next"><a href="#">다음 페이지</a></li>
+							<li class="btn last">마지막 페이지</li>
+						</ul>
+						<!-- //.paging -->
+					</div>
+					<!-- //.b_paging -->
+					<!-- [E] DEV: 게시판 페이지네이션 END!! -->
+
+					<div class="b_search">
+						<!-- [S] DEV: 게시물 검색 FORM (pb-formSearch) START!! -->
+						<div class="b_search_form">
+							<form id="" action="" method="post" autocomplete="off">
+								<h3 class="blind">게시물 검색하기</h3>
+								<fieldset>
+									<legend class="blind">조건 검색</legend>
+									<div class="iptBox_select">
+										<select id="searchCategory" class="ipt_select" title="검색 조건 선택">
+											<option value="">제목</option>
+										</select>
+									</div>
+									<div class="iptBox_search">
+										<input type="text" id="" class="ipt_keyword" maxlength="20" placeholder="검색어를 입력하세요">
+										<a href="#" onclick="" class="btn search">SEARCH</a>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+						<!-- .b_search_form END -->
+						<!-- [E] DEV: 게시물 검색 FORM (pb-formSearch) END!! -->
+					</div>
+					<!-- //.b_search -->
+				</div>
+				<!-- //#boardFooter -->
+			</div>
+			<!-- //.cont_footer -->
+		</div>
+		<!-- //.wrap_cont -->
+	</section>
+	<!-- //===========================================================
+			#contents END
+	=========================================================== // -->
+</main>
+<!-- //===========================================================
+		#main END
+=========================================================== // -->
+@@@include('./footer.html')
