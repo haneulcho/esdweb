@@ -23,3 +23,6 @@ Thumbs.db
 *.rar
 *.tar
 *.zip
+
+# Output html files #
+/*.html
