@@ -10,7 +10,7 @@ var gulp = require('gulp'),
     cssnano = require('gulp-cssnano'),
     package = require('./package.json');
 
-var cssWatchPath = 'src/css/*.css',
+var cssWatchPath = ['src/css/*.scss', 'src/css/**/*.scss'],
     cssInputPath = 'src/css/style.scss',
     cssOutputPath = 'assets/css',
 //     jsWatchPath = 'src/js/*.js',
