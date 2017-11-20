@@ -1,0 +1,434 @@
+@@@include('./header_sub.html')
+	<main id="main" class="sub" role="main">
+		<div class="wrap_information row">
+			<div class="inner">
+				<!-- TODO, DEV: [S] 게임 스타트 버튼 시작!! -->
+				<div id="gameStart" class="gameStart">
+					<a href="#" class="btn_gameStart" onclick="GnxGameStartOnClick();return false;">GAME START</a>
+				</div>
+				<!-- //#gameStart -->
+				<!-- TODO, DEV: [E] 게임 스타트 버튼 끝!! -->
+			</div>
+			<!-- //.inner -->
+		</div>
+		<!-- //.wrap_information -->
+
+		<!-- TODO, DEV: 1차 Depth 엘소드UCC - 2차 Depth 팬아트 -->
+		<section id="contents" class="ucc fanart" role="main">
+			<div class="wrap_cont row">
+				<div class="cont_header inner">
+					<div class="titles">
+						<h2 class="tit">팬아트</h2>
+						<ul class="category" role="tablist">
+							<!-- TODO, DEV: 탭메뉴 활성화 시 on 클래스 추가 -->
+							<li><a href="/community/screenshot/list.aspx" role="tab">스크린샷</a></li>
+							<li><a href="/community/movie/list.aspx" role="tab">동영상</a></li>
+							<li class="on"><a href="/community/fanart/list.aspx" role="tab">팬아트</a></li>
+							<li><a href="/community/cartoon/list.aspx" role="tab">팬카툰</a></li>
+						</ul>
+					</div>
+					<div class="des">
+						<p>엘소드를 소재로 한 다양한 팬아트 작품을 공유해주세요!</p>
+					</div>
+				</div>
+				<!-- //.cont_header -->
+				<div class="cont_body">
+					<div id="boardList" class="inner">
+						<h2 class="blind">엘소드 UCC - 팬아트 목록입니다. 이미지를 클릭하시면 해당 게시물로 이동합니다.</h2>
+						<!-- [S] TODO, DEV: 상단 팬아트 베스트 4개 게시물 표시 -->
+						<!--
+							게시판 상단 대표 게시물 4개는 <ul class="board_list top">으로 시작합니다.
+							Best 게시물의 경우 <li class="best">
+						-->
+						<ul class="board_list top">
+							<li class="best">
+								<div class="b_thumb">
+									<span class="thumb">
+										<a href="#">
+											<img src="assets/img/dum/uccbest3.jpg" alt="팬아트">
+										</a>
+									</span>
+								</div>
+								<!-- //.b_thumb -->
+								<div class="b_subject">
+									<h3 class="subject">
+										<a href="#">얘는 팬아트 게시판 베스트인데 타이틀 몇자</a>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<span class="nickname">한글이름여덟글자</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_info">
+									<span class="date">2017.12.31</span>
+									<span class="cmt">댓글 50</span>
+									<span class="like"><span class="ico like">추천수</span>55</span>
+								</div>
+								<!-- //.b_info -->
+							</li>
+							<!-- //li -->
+
+							<li class="best">
+								<div class="b_thumb">
+									<span class="thumb">
+										<a href="#">
+											<img src="assets/img/dum/uccbest3.jpg" alt="팬아트">
+										</a>
+									</span>
+								</div>
+								<!-- //.b_thumb -->
+								<div class="b_subject">
+									<h3 class="subject">
+										<a href="#">얘는 팬아트 게시판 베스트인데 타이틀 몇자</a>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<span class="nickname">한글이름여덟글자</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_info">
+									<span class="date">2017.12.31</span>
+									<span class="cmt">댓글 50</span>
+									<span class="like"><span class="ico like">추천수</span>55</span>
+								</div>
+								<!-- //.b_info -->
+							</li>
+							<!-- //li -->
+
+							<li class="best">
+								<div class="b_thumb">
+									<span class="thumb">
+										<a href="#">
+											<img src="assets/img/dum/uccbest3.jpg" alt="팬아트">
+										</a>
+									</span>
+								</div>
+								<!-- //.b_thumb -->
+								<div class="b_subject">
+									<h3 class="subject">
+										<a href="#">얘는 팬아트 게시판 베스트인데 타이틀 몇자</a>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<span class="nickname">한글이름여덟글자</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_info">
+									<span class="date">2017.12.31</span>
+									<span class="cmt">댓글 50</span>
+									<span class="like"><span class="ico like">추천수</span>55</span>
+								</div>
+								<!-- //.b_info -->
+							</li>
+							<!-- //li -->
+
+							<li class="best">
+								<div class="b_thumb">
+									<span class="thumb">
+										<a href="#">
+											<img src="assets/img/dum/uccbest3.jpg" alt="팬아트">
+										</a>
+									</span>
+								</div>
+								<!-- //.b_thumb -->
+								<div class="b_subject">
+									<h3 class="subject">
+										<a href="#">얘는 팬아트 게시판 베스트인데 타이틀 몇자</a>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<span class="nickname">한글이름여덟글자</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_info">
+									<span class="date">2017.12.31</span>
+									<span class="cmt">댓글 50</span>
+									<span class="like"><span class="ico like">추천수</span>55</span>
+								</div>
+								<!-- //.b_info -->
+							</li>
+							<!-- //li -->
+						</ul>
+						<!-- //.board_list.top -->
+						<!-- [E] //TODO, DEV: 팬사이트 게시판 상단 공식, HOT 게시물 4개 표시 -->
+						<ul class="board_list">
+							<li>
+								<div class="b_thumb">
+									<span class="thumb">
+										<a href="#">
+											<img src="assets/img/dum/uccbest3.jpg" alt="팬아트">
+										</a>
+									</span>
+								</div>
+								<!-- //.b_thumb -->
+								<div class="b_subject">
+									<h3 class="subject">
+										<a href="#">얘는 팬아트 게시판 베스트인데 타이틀 몇자</a>
+										<span class="ico new">New</span>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<span class="nickname">한글이름여덟글자</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_info">
+									<span class="date">2017.12.31</span>
+									<span class="cmt">댓글 50</span>
+									<span class="like"><span class="ico like">추천수</span>55</span>
+								</div>
+								<!-- //.b_info -->
+							</li>
+							<!-- //li -->
+
+							<li>
+								<div class="b_thumb">
+									<span class="thumb">
+										<a href="#">
+											<img src="assets/img/dum/uccbest3.jpg" alt="팬아트">
+										</a>
+									</span>
+								</div>
+								<!-- //.b_thumb -->
+								<div class="b_subject">
+									<h3 class="subject">
+										<a href="#">얘는 팬아트 게시판 베스트인데 타이틀 몇자</a>
+										<span class="ico new">New</span>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<span class="nickname">한글이름여덟글자</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_info">
+									<span class="date">2017.12.31</span>
+									<span class="cmt">댓글 50</span>
+									<span class="like"><span class="ico like">추천수</span>55</span>
+								</div>
+								<!-- //.b_info -->
+							</li>
+							<!-- //li -->
+
+							<li>
+								<div class="b_thumb">
+									<span class="thumb">
+										<a href="#">
+											<img src="assets/img/dum/uccbest3.jpg" alt="팬아트">
+										</a>
+									</span>
+								</div>
+								<!-- //.b_thumb -->
+								<div class="b_subject">
+									<h3 class="subject">
+										<a href="#">얘는 팬아트 게시판 베스트인데 타이틀 몇자</a>
+										<span class="ico new">New</span>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<span class="nickname">한글이름여덟글자</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_info">
+									<span class="date">2017.12.31</span>
+									<span class="cmt">댓글 50</span>
+									<span class="like"><span class="ico like">추천수</span>55</span>
+								</div>
+								<!-- //.b_info -->
+							</li>
+							<!-- //li -->
+
+							<li>
+								<div class="b_thumb">
+									<span class="thumb">
+										<a href="#">
+											<img src="assets/img/dum/uccbest3.jpg" alt="팬아트">
+										</a>
+									</span>
+								</div>
+								<!-- //.b_thumb -->
+								<div class="b_subject">
+									<h3 class="subject">
+										<a href="#">얘는 팬아트 게시판 베스트인데 타이틀 몇자</a>
+										<span class="ico new">New</span>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<span class="nickname">한글이름여덟글자</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_info">
+									<span class="date">2017.12.31</span>
+									<span class="cmt">댓글 50</span>
+									<span class="like"><span class="ico like">추천수</span>55</span>
+								</div>
+								<!-- //.b_info -->
+							</li>
+							<!-- //li -->
+
+							<li>
+								<div class="b_thumb">
+									<span class="thumb">
+										<a href="#">
+											<img src="assets/img/dum/uccbest3.jpg" alt="팬아트">
+										</a>
+									</span>
+								</div>
+								<!-- //.b_thumb -->
+								<div class="b_subject">
+									<h3 class="subject">
+										<a href="#">얘는 팬아트 게시판 베스트인데 타이틀 몇자</a>
+										<span class="ico new">New</span>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<span class="nickname">한글이름여덟글자</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_info">
+									<span class="date">2017.12.31</span>
+									<span class="cmt">댓글 50</span>
+									<span class="like"><span class="ico like">추천수</span>55</span>
+								</div>
+								<!-- //.b_info -->
+							</li>
+							<!-- //li -->
+
+							<li>
+								<div class="b_thumb">
+									<span class="thumb">
+										<a href="#">
+											<img src="assets/img/dum/uccbest3.jpg" alt="팬아트">
+										</a>
+									</span>
+								</div>
+								<!-- //.b_thumb -->
+								<div class="b_subject">
+									<h3 class="subject">
+										<a href="#">얘는 팬아트 게시판 베스트인데 타이틀 몇자</a>
+										<span class="ico new">New</span>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<span class="nickname">한글이름여덟글자</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_info">
+									<span class="date">2017.12.31</span>
+									<span class="cmt">댓글 50</span>
+									<span class="like"><span class="ico like">추천수</span>55</span>
+								</div>
+								<!-- //.b_info -->
+							</li>
+							<!-- //li -->
+
+							<li>
+								<div class="b_thumb">
+									<span class="thumb">
+										<a href="#">
+											<img src="assets/img/dum/uccbest3.jpg" alt="팬아트">
+										</a>
+									</span>
+								</div>
+								<!-- //.b_thumb -->
+								<div class="b_subject">
+									<h3 class="subject">
+										<a href="#">얘는 팬아트 게시판 베스트인데 타이틀 몇자</a>
+										<span class="ico new">New</span>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<span class="nickname">한글이름여덟글자</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_info">
+									<span class="date">2017.12.31</span>
+									<span class="cmt">댓글 50</span>
+									<span class="like"><span class="ico like">추천수</span>55</span>
+								</div>
+								<!-- //.b_info -->
+							</li>
+							<!-- //li -->
+
+							<li>
+								<div class="b_thumb">
+									<span class="thumb">
+										<a href="#">
+											<img src="assets/img/dum/uccbest3.jpg" alt="팬아트">
+										</a>
+									</span>
+								</div>
+								<!-- //.b_thumb -->
+								<div class="b_subject">
+									<h3 class="subject">
+										<a href="#">얘는 팬아트 게시판 베스트인데 타이틀 몇자</a>
+										<span class="ico new">New</span>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<span class="nickname">한글이름여덟글자</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_info">
+									<span class="date">2017.12.31</span>
+									<span class="cmt">댓글 50</span>
+									<span class="like"><span class="ico like">추천수</span>55</span>
+								</div>
+								<!-- //.b_info -->
+							</li>
+							<!-- //li -->
+							<!-- TODO: //<li>는 Table tbody 역할입니다! -->
+						</ul>
+						<!-- //.board_list -->
+					</div>
+					<!-- //#boardList -->
+				</div>
+				<!-- //.cont_body -->
+				<div class="cont_footer">
+					<div id="boardFooter">
+						<!-- [S] DEV: 게시판 페이지네이션 START!! -->
+						<div class="b_paging inner">
+							<!--
+								현재 페이지일 경우 <li class="num current">1</li>
+							-->
+							<ul class="paging">
+								<li class="btn first">첫 페이지</li>
+								<li class="btn prev"><a href="#">이전 페이지</a></li>
+								<li class="num current">1</li>
+								<li class="num"><a href="#">2</a></li>
+								<li class="num"><a href="#">3</a></li>
+								<li class="num"><a href="#">4</a></li>
+								<li class="num"><a href="#">5</a></li>
+								<li class="btn next"><a href="#">다음 페이지</a></li>
+								<li class="btn last">마지막 페이지</li>
+							</ul>
+							<!-- //.paging -->
+						</div>
+						<!-- //.b_paging -->
+						<!-- [E] DEV: 게시판 페이지네이션 END!! -->
+
+					</div>
+					<!-- //#boardFooter -->
+				</div>
+				<!-- //.cont_footer -->
+			</div>
+			<!-- //.wrap_cont -->
+		</section>
+		<!-- //===========================================================
+				#contents END
+		=========================================================== // -->
+	</main>
+	<!-- //===========================================================
+			#main END
+	=========================================================== // -->
+@@@include('./footer.html')

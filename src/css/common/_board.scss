@@ -61,10 +61,10 @@
 .board_list > li.hot .b_thumb:before {background-position:-352px -142px}
 .board_list > li.official .b_thumb:before {background-position:-352px -219px}
 .board_list > li.best .b_thumb:before,
-.board_list.top > li.best:nth-child(1) .b_thumb:before {background-position:-192px -142px}
-.board_list.top > li.best:nth-child(2) .b_thumb:before {background-position:-192px -219px}
-.board_list.top > li.best:nth-child(3) .b_thumb:before {background-position:-272px -142px}
-.board_list.top > li.best:nth-child(4) .b_thumb:before {background-position:-272px -219px}
+.screenshot .board_list.top > li.best .b_thumb:before {background-position:-192px -142px}
+.movie .board_list.top > li.best .b_thumb:before {background-position:-192px -219px}
+.fanart .board_list.top > li.best .b_thumb:before {background-position:-272px -142px}
+.cartoon .board_list.top > li.best .b_thumb:before {background-position:-272px -219px}
 
 /* Board Buttons */
 .b_btns .btn.write {width:420px;height:69px;background-position:0 -300px}
