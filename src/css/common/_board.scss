@@ -48,9 +48,23 @@
 .board_list .b_date, .board_list .b_hit, .board_list .b_like, .board_list .b_server {font-size:16px;text-align:center}
 .board_list .b_date .date, .board_list .b_like .like, .board_list .b_server .server {color:#888}
 .board_list .b_hit .hit {color:#e65700}
+.board_list .b_thumb {position:relative}
 .board_list .b_thumb .thumb,
 .board_list .b_thumb .thumb > a,
 .board_list .b_thumb .thumb > a > img {display:block;width:100%;height:100%}
+
+/* Board List Top Articles Badge */
+.board_list > li.hot .b_thumb:before,
+.board_list > li.official .b_thumb:before,
+.board_list > li.best .b_thumb:before,
+.board_list.top .b_thumb:before {position:absolute;display:block;top:-3px;left:0;content:'';width:75px;height:72px;background:url('../img/spr_asset.png') no-repeat -352px -142px}
+.board_list > li.hot .b_thumb:before {background-position:-352px -142px}
+.board_list > li.official .b_thumb:before {background-position:-352px -219px}
+.board_list > li.best .b_thumb:before,
+.board_list.top > li.best:nth-child(1) .b_thumb:before {background-position:-192px -142px}
+.board_list.top > li.best:nth-child(2) .b_thumb:before {background-position:-192px -219px}
+.board_list.top > li.best:nth-child(3) .b_thumb:before {background-position:-272px -142px}
+.board_list.top > li.best:nth-child(4) .b_thumb:before {background-position:-272px -219px}
 
 /* Board Buttons */
 .b_btns .btn.write {width:420px;height:69px;background-position:0 -300px}
