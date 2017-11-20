@@ -34,16 +34,16 @@
 
 
 
-.multimedia .board_list {padding:55px 0 0;border-bottom: 0;}
-.multimedia .board_list > li {float:left;display:block;width:275px;margin:0 0 44px 33px;padding:0;text-align:center;border:none}
-.multimedia .board_list > li:first-child, .multimedia .board_list > li:nth-child(4n+1) {margin-left:0}
-.multimedia .board_list > li > div {display:block;padding:0}
-.multimedia .board_list .b_subject {display:inline-block;margin:0 0 9px 0}
-.multimedia .board_list .b_subject .subject > a {max-width:235px}
-.multimedia .board_list .b_date .date {font-size:12px}
-.multimedia .board_list .b_thumb {margin:0 0 18px 0}
-.multimedia .board_list .b_thumb .thumb {width: 286px;height: 162px}
-.multimedia .board_list + .cont_footer{margin-top: 38px;}
+.multimedia .board_list.thumbnail {padding:55px 0 0;border-bottom: 0;}
+.board_list.thumbnail > li {float:left;display:block;width:275px;margin:0 0 44px 33px;padding:0;text-align:center;border:none}
+.board_list.thumbnail > li:first-child, .board_list.thumbnail > li:nth-child(4n+1) {margin-left:0 !important;}
+.board_list.thumbnail > li > div {display:block;padding:0}
+.board_list.thumbnail .b_subject {display:inline-block;margin:0 0 9px 0}
+.board_list.thumbnail .b_subject .subject > a {max-width:235px}
+.board_list.thumbnail .b_date .date {font-size:12px}
+.board_list.thumbnail .b_thumb {margin:0 0 18px 0}
+.board_list.thumbnail .b_thumb .thumb {width: 286px;height: 162px}
+.board_list.thumbnail + .cont_footer{margin-top: 38px;}
 .multimedia .cont_body {margin:0 0 44px 0}
 .multimedia .cont_footer .b_paging {margin-bottom:95px}
 

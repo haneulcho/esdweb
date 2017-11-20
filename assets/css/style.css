@@ -379,12 +379,13 @@ html, body {
 .btn_editCharacter,
 .medal,
 .btn_titMore > span,
-.ucc .tit,
+.wrap_ucc .ucc .tit,
 .ucc_item .lists li .category > a,
 .wrap_side .side_survey .survey .status,
 .wrap_side .socialMedia_links .lists > li > a,
 .wrap_banner .owl-nav > div,
 .board_list .b_subject .subject .ico,
+.board_list .b_info .ico,
 #header .logo a,
 #header .gnb > li > a,
 #header .gnb > li > a > .pointer,
@@ -428,11 +429,17 @@ html, body {
 .board_list.default .b_author {
   width: 205px; }
 
+.board_list.default .b_like {
+  width: 100px; }
+
 .board_list.default .b_date {
   width: 140px; }
 
 .board_list.default .b_hit {
   width: 120px; }
+
+.board_list.default .b_server {
+  width: 100px; }
 
 .board_list > li {
   display: table;
@@ -593,15 +600,18 @@ html, body {
   line-height: 19px;
   color: #444; }
 
-.board_list .b_date, .board_list .b_hit {
+.board_list .b_date, .board_list .b_hit, .board_list .b_like, .board_list .b_server {
   font-size: 16px;
   text-align: center; }
 
-.board_list .b_date .date {
+.board_list .b_date .date, .board_list .b_like .like, .board_list .b_server .server {
   color: #888; }
 
 .board_list .b_hit .hit {
   color: #e65700; }
+
+.board_list .b_thumb {
+  position: relative; }
 
 .board_list .b_thumb .thumb,
 .board_list .b_thumb .thumb > a,
@@ -609,6 +619,39 @@ html, body {
   display: block;
   width: 100%;
   height: 100%; }
+
+/* Board List Top Articles Badge */
+.board_list > li.hot .b_thumb:before,
+.board_list > li.official .b_thumb:before,
+.board_list > li.best .b_thumb:before,
+.board_list.top .b_thumb:before {
+  position: absolute;
+  display: block;
+  top: -3px;
+  left: 0;
+  content: '';
+  width: 75px;
+  height: 72px;
+  background: url("../img/spr_asset.png") no-repeat -352px -142px; }
+
+.board_list > li.hot .b_thumb:before {
+  background-position: -352px -142px; }
+
+.board_list > li.official .b_thumb:before {
+  background-position: -352px -219px; }
+
+.board_list > li.best .b_thumb:before,
+.screenshot .board_list.top > li.best .b_thumb:before {
+  background-position: -192px -142px; }
+
+.movie .board_list.top > li.best .b_thumb:before {
+  background-position: -192px -219px; }
+
+.fanart .board_list.top > li.best .b_thumb:before {
+  background-position: -272px -142px; }
+
+.cartoon .board_list.top > li.best .b_thumb:before {
+  background-position: -272px -219px; }
 
 /* Board Buttons */
 .b_btns .btn.write {
@@ -2423,7 +2466,8 @@ html, body {
   display: inline-block;
   *display: inline;
   zoom: 1;
-  background: url("../img/spr_asset.png") no-repeat 0 0; }
+  background-image: url("../img/spr_asset.png");
+  background-repeat: no-repeat; }
 
 .cont_footer .b_paging {
   margin-bottom: 42px; }
@@ -2488,6 +2532,10 @@ html, body {
   height: 750px;
   background: url("../img/character/BG_CHARACTER_ main.png") repeat 50% 0; }
 
+.character .wrap_banner.sub .banner,
+.character .wrap_banner.sub .banner_item {
+  height: 750px; }
+
 #character {
   position: relative; }
 
@@ -2503,27 +2551,42 @@ html, body {
   bottom: 0;
   width: 100%;
   height: 100%;
+  background-color: #000;
   opacity: .7;
-  content: " "; }
+  content: " ";
+  z-index: 10; }
 
 #character .character_navi ul {
+  position: absolute;
+  top: 10px;
+  left: 50%;
   width: 1200px;
-  margin: 0 auto; }
+  margin-left: -600px;
+  z-index: 100; }
 
 #character .character_navi ul li {
   float: left;
   width: 92px;
   height: 92px;
   margin-left: 9px;
-  background: url("../img/character/etc_character_thumb_2.png") no-repeat 0 0; }
+  background: url("../img/character/etc_character_thumb_2.png") no-repeat 0 0;
+  filter: grayscale(100%) brightness(60%) contrast(70%); }
+
+#character .character_navi ul li.on {
+  filter: none; }
+
+#character .character_navi ul li:nth-child(-2n+6) {
+  margin-left: 8px; }
 
 #character .character_navi ul li:first-child {
   margin-left: 0; }
 
 #character .character_navi ul li a {
   display: block;
+  position: absolute;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  text-indent: -9999px; }
 
 #character .character_navi ul li.elsword {
   background-position: -46px -76px; }
@@ -2561,12 +2624,38 @@ html, body {
 #character .character_navi ul li.ain {
   background-position: -582px -2015px; }
 
+/* 주요스킬 */
+#characterwrap .board_list {
+  border-bottom: 0; }
+
+#characterwrap .board_list .b_subject .subject > a {
+  font-size: 14px;
+  color: #666; }
+
+#characterwrap .board_list.thumbnail > li {
+  width: 263px;
+  margin-left: 49px;
+  margin-bottom: 0; }
+
+#characterwrap .board_list.thumbnail .b_thumb .thumb {
+  width: 263px;
+  height: 162px; }
+
+.cont_sub_cont .titles {
+  margin-bottom: 43px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid #ccc; }
+
+.cont_sub_cont .titles h3 {
+  font-size: 20px;
+  color: #3a312a; }
+
 /**/
 .about_character section {
   position: relative;
   float: left;
   width: 600px;
-  padding: 40px 0; }
+  padding: 40px 0 68px; }
 
 .about_character .about p {
   line-height: 28.5px;
@@ -2591,7 +2680,7 @@ html, body {
   padding: 15px 0;
   text-align: center;
   font-size: 14px;
-  color: #000; }
+  color: #fff; }
 
 .elsword .character_name {
   background-color: #c71c00; }
@@ -2624,6 +2713,7 @@ html, body {
   background-color: #202cf5; }
 
 .rose .character_name {
+  color: #000;
   background-color: #fff653; }
 
 .ain .character_name {
@@ -2672,6 +2762,12 @@ html, body {
   font-size: 14px;
   color: #666; }
 
+.character_line ul li.on a {
+  color: #c71c00; }
+
+.character_line ul li:first-child a {
+  color: #fff; }
+
 .character_line ul li a span {
   display: block; }
 
@@ -2691,7 +2787,7 @@ html, body {
   text-align: center;
   border-bottom: 1px solid #e5e5e5; }
 
-.character_line ul li:after {
+.character_line ul li:before {
   position: absolute;
   bottom: -6px;
   width: 100%;
@@ -2699,12 +2795,9 @@ html, body {
   background: url("../img/character/bg_line_arrow.png") no-repeat 0 0;
   content: " "; }
 
-.character_line ul li.line_title:after,
-.character_line ul li:last-child:after {
+.character_line ul li.line_title:before,
+.character_line ul li:last-child:before {
   content: none; }
-
-.rose .line_title a {
-  color: #fff; }
 
 /* elsword 전직트리 */
 .elsword .line_title {
@@ -2724,10 +2817,26 @@ html, body {
 
 /* aisha 전직트리 */
 .aisha .line_title {
+  background-color: #853ec8;
+  border-bottom-color: #ceb2e9; }
+
+.aisha .line_title:after {
+  position: absolute;
+  left: 50%;
+  top: 26px;
+  margin-left: -12px;
+  border-top: 12px solid #853ec8;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid transparent;
+  content: " "; }
+
+/* rena 전직트리 */
+.rena .line_title {
   background-color: #75ce18;
   border-bottom-color: #c8eba3; }
 
-.aisha .line_title:after {
+.rena .line_title:after {
   position: absolute;
   left: 50%;
   top: 26px;
@@ -2738,12 +2847,12 @@ html, body {
   border-left: 12px solid transparent;
   content: " "; }
 
-/* rena 전직트리 */
-.rena .line_title {
+/* raven 전직트리 */
+.raven .line_title {
   background-color: #282828;
   border-bottom-color: #a9a9a9; }
 
-.rena .line_title:after {
+.raven .line_title:after {
   position: absolute;
   left: 50%;
   top: 26px;
@@ -2754,39 +2863,23 @@ html, body {
   border-left: 12px solid transparent;
   content: " "; }
 
-/* raven 전직트리 */
-.raven .line_title {
-  background-color: #ef97bd;
-  border-bottom-color: #f9d5e5; }
-
-.raven .line_title:after {
-  position: absolute;
-  left: 50%;
-  top: 26px;
-  margin-left: -12px;
-  border-top: 12px solid #ef97bd;
-  border-right: 12px solid transparent;
-  border-bottom: 12px solid transparent;
-  border-left: 12px solid transparent;
-  content: " "; }
-
 /* eve 전직트리 */
 .eve .line_title {
-  background-color: #00a8e6;
-  border-bottom-color: #99dcf5; }
+  background-color: #ef97bd;
+  border-bottom-color: #f9d5e5; }
 
 .eve .line_title:after {
   position: absolute;
   left: 50%;
   top: 26px;
   margin-left: -12px;
-  border-top: 12px solid #00a8e6;
+  border-top: 12px solid #ef97bd;
   border-right: 12px transparent;
   border-bottom: 12px solid transparent;
   border-left: 12px solid transparent;
   content: " "; }
 
-/* eve 전직트리 */
+/* chung 전직트리 */
 .chung .line_title {
   background-color: #00a8e6;
   border-bottom-color: #99dcf5; }
@@ -2798,6 +2891,70 @@ html, body {
   margin-left: -12px;
   border-top: 12px solid #00a8e6;
   border-right: 12px transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid transparent;
+  content: " "; }
+
+/* ara 전직트리 */
+.ara .line_title {
+  background-color: #fe9f01;
+  border-bottom-color: #ffd999; }
+
+.ara .line_title:after {
+  position: absolute;
+  left: 50%;
+  top: 26px;
+  margin-left: -12px;
+  border-top: 12px solid #fe9f01;
+  border-right: 12px transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid transparent;
+  content: " "; }
+
+/* elesis 전직트리 */
+.elesis .line_title {
+  background-color: #d00040;
+  border-bottom-color: #ec99b3; }
+
+.elesis .line_title:after {
+  position: absolute;
+  left: 50%;
+  top: 26px;
+  margin-left: -12px;
+  border-top: 12px solid #d00040;
+  border-right: 12px transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid transparent;
+  content: " "; }
+
+/* add 전직트리 */
+.add .line_title {
+  background-color: #a79fdf;
+  border-bottom-color: #dcd9f2; }
+
+.add .line_title:after {
+  position: absolute;
+  left: 50%;
+  top: 26px;
+  margin-left: -12px;
+  border-top: 12px solid #a79fdf;
+  border-right: 12px transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid transparent;
+  content: " "; }
+
+/* ru 전직트리 */
+.ru .line_title {
+  background-color: #202cf5;
+  border-bottom-color: #dcd9f2; }
+
+.ru .line_title:after {
+  position: absolute;
+  left: 50%;
+  top: 26px;
+  margin-left: -12px;
+  border-top: 12px solid #202cf5;
+  border-right: 12px solid transparent;
   border-bottom: 12px solid transparent;
   border-left: 12px solid transparent;
   content: " "; }
@@ -2820,6 +2977,25 @@ html, body {
 
 .rose .line_title a {
   color: #000; }
+
+.character_line .rose ul li:first-child a {
+  color: #000; }
+
+/* rose 전직트리 */
+.ain .line_title {
+  background-color: #19d2a8;
+  border-bottom-color: #a3eddc; }
+
+.ain .line_title:after {
+  position: absolute;
+  left: 50%;
+  top: 26px;
+  margin-left: -12px;
+  border-top: 12px solid #19d2a8;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid transparent;
+  content: " "; }
 
 /*.character .cont_header{position: relative;}
 .character .cont_header:before{position: absolute;bottom: 0;width: 100%;height: 1px;border-top: 1px solid #cccccc;content: " ";}*/
@@ -3040,11 +3216,11 @@ html, body {
   margin-left: 18px;
   background-position: -224px -85px; }
 
-.multimedia .board_list {
+.multimedia .board_list.thumbnail {
   padding: 55px 0 0;
   border-bottom: 0; }
 
-.multimedia .board_list > li {
+.board_list.thumbnail > li {
   float: left;
   display: block;
   width: 275px;
@@ -3053,31 +3229,31 @@ html, body {
   text-align: center;
   border: none; }
 
-.multimedia .board_list > li:first-child, .multimedia .board_list > li:nth-child(4n+1) {
-  margin-left: 0; }
+.board_list.thumbnail > li:first-child, .board_list.thumbnail > li:nth-child(4n+1) {
+  margin-left: 0 !important; }
 
-.multimedia .board_list > li > div {
+.board_list.thumbnail > li > div {
   display: block;
   padding: 0; }
 
-.multimedia .board_list .b_subject {
+.board_list.thumbnail .b_subject {
   display: inline-block;
   margin: 0 0 9px 0; }
 
-.multimedia .board_list .b_subject .subject > a {
+.board_list.thumbnail .b_subject .subject > a {
   max-width: 235px; }
 
-.multimedia .board_list .b_date .date {
+.board_list.thumbnail .b_date .date {
   font-size: 12px; }
 
-.multimedia .board_list .b_thumb {
+.board_list.thumbnail .b_thumb {
   margin: 0 0 18px 0; }
 
-.multimedia .board_list .b_thumb .thumb {
+.board_list.thumbnail .b_thumb .thumb {
   width: 286px;
   height: 162px; }
 
-.multimedia .board_list + .cont_footer {
+.board_list.thumbnail + .cont_footer {
   margin-top: 38px; }
 
 .multimedia .cont_body {
@@ -3150,8 +3326,395 @@ html, body {
   max-width: 800px; }
 
 /* Board List: Type Strategy */
-.notice .board_list .b_subject {
-  width: 940px; }
+.strategy .board_list .b_subject {
+  width: 635px; }
 
-.notice .board_list .b_subject .subject > a {
-  max-width: 800px; }
+.strategy .board_list .b_subject .subject > a {
+  max-width: 460px; }
+
+/* Board List: Type Trade */
+.trade .board_list .b_subject {
+  width: 635px; }
+
+.trade .board_list .b_subject .subject > a {
+  max-width: 460px; }
+
+/* Board List: Type Fansite */
+.fansite .board_list.top {
+  margin: 0 0 2px 0;
+  padding: 42px 0 0 0; }
+
+.fansite .board_list {
+  padding: 28px 0 0;
+  border-top: 2px solid #acacac; }
+
+.fansite .board_list > li {
+  float: left;
+  display: block;
+  width: 285px;
+  margin: 0 0 44px 20px;
+  padding: 0;
+  text-align: center;
+  border: none; }
+
+.fansite .board_list > li:first-child, .fansite .board_list > li:nth-child(4n+1) {
+  margin-left: 0; }
+
+.fansite .board_list > li > div {
+  display: block;
+  padding: 0; }
+
+.fansite .board_list .b_subject {
+  display: inline-block;
+  margin: 0 0 11px 0; }
+
+.fansite .board_list .b_subject .subject > a {
+  max-width: 235px; }
+
+.fansite .board_list .b_date .date {
+  font-size: 12px; }
+
+.fansite .board_list .b_thumb {
+  margin: 0 0 18px 0; }
+
+.fansite .board_list .b_thumb .thumb {
+  width: 285px;
+  height: 310px; }
+
+.fansite .board_list .b_des .des {
+  font-size: 12px;
+  line-height: 15px;
+  color: #888; }
+
+.fansite .board_list .b_des .des .links {
+  clear: both;
+  display: block;
+  margin: 2px 0 0;
+  color: #e16418; }
+
+.fansite .board_list .b_des .des .links > a {
+  color: inherit; }
+
+.fansite .cont_body {
+  margin: 0 0 44px 0; }
+
+.fansite .cont_footer .b_paging {
+  margin-bottom: 95px; }
+
+/* Board List: Type Elsword UCC */
+.ucc .board_list.top {
+  margin: 0 0 2px 0;
+  padding: 42px 0 0 0; }
+
+.ucc .board_list {
+  padding: 28px 0 0;
+  border-top: 2px solid #acacac; }
+
+.ucc .board_list > li {
+  position: relative;
+  float: left;
+  display: block;
+  width: 285px;
+  height: 380px;
+  margin: 0 0 44px 20px;
+  padding: 0;
+  text-align: center;
+  border: none; }
+
+.ucc .board_list > li:first-child, .ucc .board_list > li:nth-child(4n+1) {
+  margin-left: 0; }
+
+.ucc .board_list > li > div {
+  display: block;
+  padding: 0; }
+
+.ucc .board_list .b_subject {
+  position: absolute;
+  bottom: 83px;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+
+.ucc .board_list .b_subject .subject {
+  display: inline-block; }
+
+.ucc .board_list .b_subject .subject > a {
+  max-width: 250px;
+  color: #fff; }
+
+.ucc .board_list .b_author {
+  margin: 0 0 12px 0; }
+
+.ucc .board_list .b_author .nickname {
+  font-size: 16px; }
+
+.ucc .board_list .b_thumb {
+  margin: 0 0 22px 0; }
+
+.ucc .board_list .b_thumb:after {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 285px;
+  height: 115px;
+  background: url("../img/bg_uccItem.png") no-repeat 0 0; }
+
+.ucc .board_list .b_thumb .thumb {
+  width: 285px;
+  height: 310px; }
+
+.ucc .board_list .b_info {
+  font-size: 12px;
+  color: #888; }
+
+.ucc .board_list .b_info > span {
+  position: relative;
+  padding: 0 0 0 20px; }
+
+.ucc .board_list .b_info > span:before {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 50%;
+  left: 8px;
+  width: 1px;
+  height: 9px;
+  margin: -4px 0 0 0;
+  background: #888; }
+
+.ucc .board_list .b_info > span:first-child {
+  padding: -0; }
+
+.ucc .board_list .b_info > span:first-child:before {
+  display: none; }
+
+.ucc .board_list .b_info .ico {
+  display: inline-block;
+  vertical-align: -2px; }
+
+.ucc .board_list .b_info .ico.like {
+  width: 13px;
+  height: 11px;
+  margin: 0 3px 0 0;
+  background: url("../img/spr_asset.png") no-repeat -326px -108px; }
+
+.ucc .cont_body {
+  margin: 0 0 44px 0; }
+
+/* Board List: Type Eltoon */
+.eltoon_list:after {
+  clear: both;
+  display: table;
+  content: '';
+  *zoom: 1; }
+
+.eltoon_list {
+  margin: 0 0 2px 0;
+  padding: 42px 0 0 0;
+  border-top: 2px solid #acacac; }
+
+.eltoon_list > li {
+  float: left;
+  display: block;
+  width: 192px;
+  margin: 0 0 44px 20px;
+  padding: 0;
+  text-align: center;
+  border: none; }
+
+.eltoon_list > li:first-child, .eltoon_list > li:nth-child(4n+1) {
+  margin-left: 0; }
+
+.eltoon_list .b_subject .subject {
+  clear: both; }
+
+.eltoon_list .b_subject .subject:after {
+  clear: both;
+  display: table;
+  content: '';
+  *zoom: 1; }
+
+.eltoon_list .b_subject .subject > a {
+  float: left;
+  overflow: hidden;
+  max-width: 500px;
+  word-break: break-all;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  line-height: 21px;
+  color: #444; }
+
+.eltoon_list .b_subject .subject > span {
+  float: left;
+  margin: 0 0 0 3px;
+  line-height: 21px; }
+
+.eltoon_list .b_subject .subject .cmt {
+  margin: 0 3px 0 6px;
+  color: #e65700; }
+
+.eltoon_list .b_subject .subject .ico {
+  width: 19px;
+  height: 19px;
+  background: url("../img/spr_asset.png") no-repeat 0 0; }
+
+.eltoon_list .b_subject .subject .ico.new {
+  background-position: -326px -85px; }
+
+.eltoon_list .b_author {
+  position: relative;
+  padding: 0 20px 0 50px; }
+
+.eltoon_list .b_author .nickname {
+  font-size: 14px;
+  line-height: 19px;
+  color: #444; }
+
+.eltoon_list .b_date {
+  font-size: 16px;
+  text-align: center; }
+
+.eltoon_list .b_date .date {
+  color: #888; }
+
+.eltoon_list .b_thumb {
+  position: relative; }
+
+.eltoon_list .b_thumb .thumb,
+.eltoon_list .b_thumb .thumb > a,
+.eltoon_list .b_thumb .thumb > a > img {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+.eltoon_list > li:nth-child(6n+1) {
+  margin-left: 0; }
+
+.eltoon_list.top {
+  margin: 0 0 2px 0;
+  padding: 42px 0 0 0; }
+
+.eltoon_list {
+  padding: 28px 0 0;
+  border-top: 2px solid #acacac; }
+
+.eltoon_list > li > div {
+  display: block;
+  padding: 0; }
+
+.eltoon_list .b_subject {
+  display: inline-block;
+  margin: 0 0 11px 0; }
+
+.eltoon_list .b_subject .subject > a {
+  max-width: 235px; }
+
+.eltoon_list .b_date .date {
+  font-size: 12px; }
+
+.eltoon_list .b_thumb {
+  margin: 0 0 18px 0; }
+
+.eltoon_list .b_thumb .thumb {
+  width: 285px;
+  height: 310px; }
+
+.eltoon .board_list {
+  padding: 28px 0 0;
+  border-top: 2px solid #acacac; }
+
+.eltoon .board_list > li {
+  position: relative;
+  float: left;
+  display: block;
+  width: 285px;
+  height: 380px;
+  margin: 0 0 44px 20px;
+  padding: 0;
+  text-align: center;
+  border: none; }
+
+.eltoon .board_list > li:first-child, .eltoon .board_list > li:nth-child(4n+1) {
+  margin-left: 0; }
+
+.eltoon .board_list > li > div {
+  display: block;
+  padding: 0; }
+
+.eltoon .board_list .b_subject {
+  position: absolute;
+  bottom: 83px;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+
+.eltoon .board_list .b_subject .subject {
+  display: inline-block; }
+
+.eltoon .board_list .b_subject .subject > a {
+  max-width: 250px;
+  color: #fff; }
+
+.eltoon .board_list .b_author {
+  margin: 0 0 12px 0; }
+
+.eltoon .board_list .b_author .nickname {
+  font-size: 16px; }
+
+.eltoon .board_list .b_thumb {
+  margin: 0 0 22px 0; }
+
+.eltoon .board_list .b_thumb:after {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 285px;
+  height: 115px;
+  background: url("../img/bg_uccItem.png") no-repeat 0 0; }
+
+.eltoon .board_list .b_thumb .thumb {
+  width: 285px;
+  height: 310px; }
+
+.eltoon .board_list .b_info {
+  font-size: 12px;
+  color: #888; }
+
+.eltoon .board_list .b_info > span {
+  position: relative;
+  padding: 0 0 0 20px; }
+
+.eltoon .board_list .b_info > span:before {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 50%;
+  left: 8px;
+  width: 1px;
+  height: 9px;
+  margin: -4px 0 0 0;
+  background: #888; }
+
+.eltoon .board_list .b_info > span:first-child {
+  padding: -0; }
+
+.eltoon .board_list .b_info > span:first-child:before {
+  display: none; }
+
+.eltoon .board_list .b_info .ico {
+  display: inline-block;
+  vertical-align: -2px; }
+
+.eltoon .board_list .b_info .ico.like {
+  width: 13px;
+  height: 11px;
+  margin: 0 3px 0 0;
+  background: url("../img/spr_asset.png") no-repeat -326px -108px; }
+
+.eltoon .cont_body {
+  margin: 0 0 44px 0; }
