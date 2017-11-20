@@ -396,6 +396,10 @@
 				<!-- //.cont_body -->
 				<div class="cont_footer">
 					<div id="boardFooter">
+						<div class="b_btns inner">
+							<!-- TODO: 글쓰기 경로 수정할 것 -->
+							<a href="sub_community_write.html" class="btn write">글쓰기</a>
+						</div>
 						<!-- [S] DEV: 게시판 페이지네이션 START!! -->
 						<div class="b_paging inner">
 							<!--
@@ -417,6 +421,30 @@
 						<!-- //.b_paging -->
 						<!-- [E] DEV: 게시판 페이지네이션 END!! -->
 
+						<div class="b_search">
+							<!-- [S] DEV: 게시물 검색 FORM (pb-formSearch) START!! -->
+							<div class="b_search_form">
+								<form id="" action="" method="post" autocomplete="off">
+									<h3 class="blind">게시물 검색하기</h3>
+									<fieldset>
+										<legend class="blind">조건 검색</legend>
+										<div class="iptBox_select">
+											<select id="searchCategory" class="ipt_select" title="검색 조건 선택">
+												<option value="">제목</option>
+												<option value="">작성자</option>
+											</select>
+										</div>
+										<div class="iptBox_search">
+											<input type="text" id="" class="ipt_keyword" maxlength="20" placeholder="검색어를 입력하세요">
+											<a href="#" onclick="" class="btn search">SEARCH</a>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<!-- .b_search_form END -->
+							<!-- [E] DEV: 게시물 검색 FORM (pb-formSearch) END!! -->
+						</div>
+						<!-- //.b_search -->
 					</div>
 					<!-- //#boardFooter -->
 				</div>
