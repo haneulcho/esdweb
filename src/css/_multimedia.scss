@@ -19,7 +19,7 @@
 
 
 
-.calendar_y{position: relative;height: 110px;}
+.calendar_y{position: relative;height: 110px;margin-bottom: 55px;}
 .calendar_y:before,
 .calendar_y:after{display: block;position: absolute;width: 100%;height: 5px;background: url(../img/multimedia/bg_calendar_deco.png) repeat 0 0;content: " ";}
 .calendar_y:before{top: 0;}
@@ -34,7 +34,7 @@
 
 
 
-.multimedia .board_list.thumbnail {padding:55px 0 0;border-bottom: 0;}
+.multimedia .board_list.thumbnail {border-bottom: 0;}
 .board_list.thumbnail > li {float:left;display:block;width:275px;margin:0 0 44px 33px;padding:0;text-align:center;border:none}
 .board_list.thumbnail > li:first-child, .board_list.thumbnail > li:nth-child(4n+1) {margin-left:0 !important;}
 .board_list.thumbnail > li > div {display:block;padding:0}

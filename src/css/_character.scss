@@ -4,6 +4,37 @@
 .character .wrap_banner.sub .banner,
 .character .wrap_banner.sub .banner_item{height: 750px;}
 
+#characterwrap{position: relative;border-top: 2px solid #cccccc;}
+#characterwrap:before{position: absolute;top: -2px;left: 0;width: 270px;height: 2px;content: " ";}
+.character.elsword #characterwrap:before{background-color: #c71c00;}
+.character.aisha #characterwrap:before{background-color: #853ec8;}
+.character.rena #characterwrap:before{background-color: #75ce18;}
+.character.raven #characterwrap:before{background-color: #282828;}
+.character.eve #characterwrap:before{background-color: #ef97bd;}
+.character.chung #characterwrap:before{background-color: #00a8e6;}
+.character.ara #characterwrap:before{background-color: #fe9f01;}
+.character.elesis #characterwrap:before{background-color: #d00040;}
+.character.add #characterwrap:before{background-color: #a79fdf;}
+.character.ru #characterwrap:before{background-color: #202cf5;}
+.character.rose #characterwrap:before{background-color: #fff653;}
+.character.ain #characterwrap:before{background-color: #19d2a8;}
+
+.character .cont_header .titles{margin-top: 42px;}
+.character .cont_header .titles .tit{margin: 0;}
+.character .cont_header .character_txt{display: inline-block;min-width: 148px;margin: 2px 0 0 12px;padding: 9px 14px;text-align: center;vertical-align: middle;color: #fff;}
+.character.elsword .cont_header .character_txt{background-color: #c71c00;}
+.character.aisha .cont_header .character_txt{background-color: #853ec8;}
+.character.rena .cont_header .character_txt{background-color: #75ce18;}
+.character.raven .cont_header .character_txt{background-color: #282828;}
+.character.eve .cont_header .character_txt{background-color: #ef97bd;}
+.character.chung .cont_header .character_txt{background-color: #00a8e6;}
+.character.ara .cont_header .character_txt{background-color: #fe9f01;}
+.character.elesis .cont_header .character_txt{background-color: #d00040;}
+.character.add .cont_header .character_txt{background-color: #a79fdf;}
+.character.ru .cont_header .character_txt{background-color: #202cf5;}
+.character.rose .cont_header .character_txt{color: #000;background-color: #fff653;}
+.character.ain .cont_header .character_txt{background-color: #19d2a8;}
+
 /* 캐릭터 딱지 기본 */
 #character .character_navi{position: absolute;bottom: 0;width: 100%;height: 116px;}
 #character .character_navi:after{position: absolute;bottom: 0;width: 100%;height: 100%;background-color: #000;opacity: .7;content: " ";z-index: 10;}
@@ -13,18 +44,141 @@
 #character .character_navi ul li:nth-child(-2n+6){margin-left: 8px;}
 #character .character_navi ul li:first-child{margin-left: 0;}
 #character .character_navi ul li a{display: block;position: absolute;width: 100%;height: 100%;text-indent: -9999px;}
+/* 엘소드 딱지 */
 #character .character_navi ul li.elsword{background-position: -46px -76px;}
+#character .character_navi ul li.elsword_01{background-position: -170px -76px;}
+#character .character_navi ul li.elsword_02{background-position: -294px -76px;}
+#character .character_navi ul li.elsword_03{background-position: -417px -76px;}
+#character .character_navi ul li.elsword_04{background-position: -170px -187px;}
+#character .character_navi ul li.elsword_05{background-position: -294px -187px;}
+#character .character_navi ul li.elsword_06{background-position: -417px -187px;}
+#character .character_navi ul li.elsword_07{background-position: -170px -303px;}
+#character .character_navi ul li.elsword_08{background-position: -294px -303px;}
+#character .character_navi ul li.elsword_09{background-position: -417px -303px;}
+/* 아이샤 딱지 */
 #character .character_navi ul li.aisha{background-position: -582px -76px;}
+#character .character_navi ul li.aisha_01{background-position: -706px -76px;}
+#character .character_navi ul li.aisha_02{background-position: -829px -76px}
+#character .character_navi ul li.aisha_03{background-position: -953px -76px}
+#character .character_navi ul li.aisha_04{background-position: -706px -187px}
+#character .character_navi ul li.aisha_05{background-position: -829px -187px}
+#character .character_navi ul li.aisha_06{background-position: -953px -187px}
+#character .character_navi ul li.aisha_07{background-position: -706px -303px}
+#character .character_navi ul li.aisha_08{background-position: -829px -303px}
+#character .character_navi ul li.aisha_09{background-position: -953px -303px}
+/* 레나 딱지 */
 #character .character_navi ul li.rena{background-position: -46px -455px;}
+#character .character_navi ul li.rena_01{background-position: -170px -455px;}
+#character .character_navi ul li.rena_02{background-position: -294px -455px;}
+#character .character_navi ul li.rena_03{background-position: -417px -455px;}
+#character .character_navi ul li.rena_04{background-position: -170px -567px;}
+#character .character_navi ul li.rena_05{background-position: -294px -567px;}
+#character .character_navi ul li.rena_06{background-position: -417px -567px;}
+#character .character_navi ul li.rena_07{background-position: -170px -683px;}
+#character .character_navi ul li.rena_08{background-position: -294px -683px;}
+#character .character_navi ul li.rena_09{background-position: -417px -683px;}
+/* 레이븐 딱지 */
 #character .character_navi ul li.raven{background-position: -582px -455px;}
+#character .character_navi ul li.raven_01{background-position: -705px -455px;}
+#character .character_navi ul li.raven_02{background-position: -829px -455px;}
+#character .character_navi ul li.raven_03{background-position: -952px -455px;}
+#character .character_navi ul li.raven_04{background-position: -705px -566px;}
+#character .character_navi ul li.raven_05{background-position: -829px -566px;}
+#character .character_navi ul li.raven_06{background-position: -952px -566px;}
+#character .character_navi ul li.raven_07{background-position: -705px -681px;}
+#character .character_navi ul li.raven_08{background-position: -829px -681px;}
+#character .character_navi ul li.raven_09{background-position: -952px -681px;}
+/* 이브 딱지 */
 #character .character_navi ul li.eve{background-position: -46px -839px;}
+#character .character_navi ul li.eve_01{background-position: -170px -839px;}
+#character .character_navi ul li.eve_02{background-position: -294px -839px;}
+#character .character_navi ul li.eve_03{background-position: -418px -839px;}
+#character .character_navi ul li.eve_04{background-position: -170px -950px;}
+#character .character_navi ul li.eve_05{background-position: -294px -950px;}
+#character .character_navi ul li.eve_06{background-position: -418px -950px;}
+#character .character_navi ul li.eve_07{background-position: -170px -1066px;}
+#character .character_navi ul li.eve_08{background-position: -294px -1066px;}
+#character .character_navi ul li.eve_09{background-position: -418px -1066px;}
+/* 청 딱지 */
 #character .character_navi ul li.chung{background-position: -582px -839px;}
+#character .character_navi ul li.chung_01{background-position: -706px -839px;}
+#character .character_navi ul li.chung_02{background-position: -829px -839px;}
+#character .character_navi ul li.chung_03{background-position: -953px -839px;}
+#character .character_navi ul li.chung_04{background-position: -706px -951px;}
+#character .character_navi ul li.chung_05{background-position: -829px -951px;}
+#character .character_navi ul li.chung_06{background-position: -953px -951px;}
+#character .character_navi ul li.chung_07{background-position: -706px -1067px;}
+#character .character_navi ul li.chung_08{background-position: -829px -1067px;}
+#character .character_navi ul li.chung_09{background-position: -953px -1067px;}
+/* 아라 딱지 */
 #character .character_navi ul li.ara{background-position: -46px -1251px;}
+#character .character_navi ul li.ara_01{background-position: -170px -1251px;}
+#character .character_navi ul li.ara_02{background-position: -294px -1251px;}
+#character .character_navi ul li.ara_03{background-position: -417px -1251px;}
+#character .character_navi ul li.ara_04{background-position: -170px -1366px;}
+#character .character_navi ul li.ara_05{background-position: -294px -1366px;}
+#character .character_navi ul li.ara_06{background-position: -417px -1366px;}
+#character .character_navi ul li.ara_07{background-position: -170px -1477px;}
+#character .character_navi ul li.ara_08{background-position: -294px -1477px;}
+#character .character_navi ul li.ara_09{background-position: -417px -1477px;}
+/* 엘리시스 딱지 */
 #character .character_navi ul li.elesis{background-position: -582px -1251px;}
+#character .character_navi ul li.elesis_01{background-position: -706px -1251px;}
+#character .character_navi ul li.elesis_02{background-position: -829px -1251px;}
+#character .character_navi ul li.elesis_03{background-position: -951px -1251px;}
+#character .character_navi ul li.elesis_04{background-position: -706px -1359px;}
+#character .character_navi ul li.elesis_05{background-position: -829px -1359px;}
+#character .character_navi ul li.elesis_06{background-position: -951px -1359px;}
+#character .character_navi ul li.elesis_07{background-position: -706px -1470px;}
+#character .character_navi ul li.elesis_08{background-position: -829px -1470px;}
+#character .character_navi ul li.elesis_09{background-position: -951px -1470px;}
+/* 애드 딱지 */
 #character .character_navi ul li.add{background-position: -46px -1632px;}
+#character .character_navi ul li.add_01{background-position: -170px -1632px;}
+#character .character_navi ul li.add_02{background-position: -294px -1632px;}
+#character .character_navi ul li.add_03{background-position: -417px -1632px;}
+#character .character_navi ul li.add_04{background-position: -170px -1742px;}
+#character .character_navi ul li.add_05{background-position: -294px -1742px;}
+#character .character_navi ul li.add_06{background-position: -417px -1742px;}
+#character .character_navi ul li.add_07{background-position: -170px -1859px;}
+#character .character_navi ul li.add_08{background-position: -294px -1859px;}
+#character .character_navi ul li.add_09{background-position: -417px -1859px;}
+/* 루시엘 딱지 */
 #character .character_navi ul li.ru{background-position: -582px -1632px;}
+#character .character_navi ul li.ru_01{background-position: -706px -1632px;}
+#character .character_navi ul li.ru_02{background-position: -829px -1632px;}
+#character .character_navi ul li.ru_03{background-position: -953px -1632px;}
+#character .character_navi ul li.ru_04{background-position: -706px -1742px;}
+#character .character_navi ul li.ru_05{background-position: -829px -1742px;}
+#character .character_navi ul li.ru_06{background-position: -953px -1742px;}
+#character .character_navi ul li.ru_07{background-position: -706px -1858px;}
+#character .character_navi ul li.ru_08{background-position: -829px -1858px;}
+#character .character_navi ul li.ru_09{background-position: -953px -1858px;}
+/* 로제 딱지 */
 #character .character_navi ul li.rose{background-position: -46px -2015px;}
+#character .character_navi ul li.rose_01{background-position: -169px -2015px;}
+#character .character_navi ul li.rose_02{background-position: -294px -2015px;}
+#character .character_navi ul li.rose_03{background-position: -417px -2015px;}
+#character .character_navi ul li.rose_04{background-position: -170px -2125px;}
+#character .character_navi ul li.rose_05{background-position: -294px -2125px;}
+#character .character_navi ul li.rose_06{background-position: -417px -2125px;}
+#character .character_navi ul li.rose_07{background-position: -170px -2243px;}
+#character .character_navi ul li.rose_08{background-position: -294px -2243px;}
+#character .character_navi ul li.rose_09{background-position: -417px -2243px;}
+#character .character_navi ul li.rose_10{background-position: -170px -2359px;}
+#character .character_navi ul li.rose_11{background-position: -294px -2359px;}
+#character .character_navi ul li.rose_12{background-position: -417px -2359px;}
+/* 아인 딱지 */
 #character .character_navi ul li.ain{background-position: -582px -2015px;}
+#character .character_navi ul li.ain_01{background-position: -705px -2015px;}
+#character .character_navi ul li.ain_02{background-position: -829px -2015px;}
+#character .character_navi ul li.ain_03{background-position: -953px -2015px;}
+#character .character_navi ul li.ain_04{background-position: -705px -2126px;}
+#character .character_navi ul li.ain_05{background-position: -829px -2126px;}
+#character .character_navi ul li.ain_06{background-position: -953px -2126px;}
+#character .character_navi ul li.ain_07{background-position: -705px -2243px;}
+#character .character_navi ul li.ain_08{background-position: -829px -2243px;}
+#character .character_navi ul li.ain_09{background-position: -953px -2243px;}
 
 /* 주요스킬 */
 #characterwrap .board_list{border-bottom: 0;}
@@ -44,18 +198,18 @@
 
 /* 전직 캐릭터 타이틀*/
 .character_name{display: block;width: 144px;margin: 0 auto 34px;padding: 15px 0;text-align: center;font-size: 14px;color: #fff;}
-.elsword .character_name{background-color: #c71c00;}
-.aisha .character_name{background-color: #853ec8;}
-.rena .character_name{background-color: #75ce18;}
-.raven .character_name{background-color: #282828;}
-.eve .character_name{background-color: #ef97bd;}
-.chung .character_name{background-color: #00a8e6;}
-.ara .character_name{background-color: #fe9f01;}
-.elesis .character_name{background-color: #d00040;}
-.add .character_name{background-color: #a79fdf;}
-.ru .character_name{background-color: #202cf5;}
-.rose .character_name{color: #000;background-color: #fff653;}
-.ain .character_name{background-color: #19d2a8;}
+.character.elsword .character_name{background-color: #c71c00;}
+.character.aisha .character_name{background-color: #853ec8;}
+.character.rena .character_name{background-color: #75ce18;}
+.character.raven .character_name{background-color: #282828;}
+.character.eve .character_name{background-color: #ef97bd;}
+.character.chung .character_name{background-color: #00a8e6;}
+.character.ara .character_name{background-color: #fe9f01;}
+.character.elesis .character_name{background-color: #d00040;}
+.character.add .character_name{background-color: #a79fdf;}
+.character.ru .character_name{background-color: #202cf5;}
+.character.rose .character_name{color: #000;background-color: #fff653;}
+.character.ain .character_name{background-color: #19d2a8;}
 
 
 .character_line {position: relative;}
@@ -65,7 +219,18 @@
 .character_line ul{display: inline-block;width: 143px;padding: 1px;border: 1px solid #bebebe;}
 .character_line ul li{position: relative;width: 100%;padding: 10px 0;}
 .character_line ul li a{line-height: 22px;text-align: center;font-size: 14px;color: #666;}
-.character_line ul li.on a{color: #c71c00;}
+.character.elsword .character_line ul li.on a{color: #c71c00;}
+.character.aisha .character_line ul li.on a{color: #853ec8;}
+.character.rena .character_line ul li.on a{color: #75ce18;}
+.character.raven .character_line ul li.on a{color: #282828;}
+.character.eve .character_line ul li.on a{color: #ef97bd;}
+.character.chung .character_line ul li.on a{color: #00a8e6;}
+.character.ara .character_line ul li.on a{color: #fe9f01;}
+.character.elesis .character_line ul li.on a{color: #d00040;}
+.character.add .character_line ul li.on a{color: #a79fdf;}
+.character.ru .character_line ul li.on a{color: #202cf5;}
+.character.rose .character_line ul li.on a{color: #000;}
+.character.ain .character_line ul li.on a{color: #19d2a8;}
 .character_line ul li:first-child a{color: #fff;}
 .character_line ul li a span{display: block;}
 
@@ -79,68 +244,57 @@
 
 
 /* elsword 전직트리 */
-.elsword .line_title{background-color: #c71c00;border-bottom-color: #e9a499;}
-.elsword .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #c71c00;border-right: 12px solid transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
+.character.elsword .line_title{background-color: #c71c00;border-bottom-color: #e9a499;}
+.character.elsword .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #c71c00;border-right: 12px solid transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
 
 /* aisha 전직트리 */
-.aisha .line_title{background-color: #853ec8;border-bottom-color: #ceb2e9;}
-.aisha .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #853ec8;border-right: 12px solid transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
+.character.aisha .line_title{background-color: #853ec8;border-bottom-color: #ceb2e9;}
+character.aisha .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #853ec8;border-right: 12px solid transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
 
 
 /* rena 전직트리 */
-.rena .line_title{background-color: #75ce18;border-bottom-color: #c8eba3;}
-.rena .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #75ce18;border-right: 12px solid transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
+.character.rena .line_title{background-color: #75ce18;border-bottom-color: #c8eba3;}
+.character.rena .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #75ce18;border-right: 12px solid transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
 
 /* raven 전직트리 */
-.raven .line_title{background-color: #282828;border-bottom-color: #a9a9a9;}
-.raven .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #282828;border-right: 12px solid transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
+.character.raven .line_title{background-color: #282828;border-bottom-color: #a9a9a9;}
+.character.raven .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #282828;border-right: 12px solid transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
 
 /* eve 전직트리 */
-.eve .line_title{background-color: #ef97bd;border-bottom-color: #f9d5e5;}
-.eve .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #ef97bd;border-right: 12px transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
+.character.eve .line_title{background-color: #ef97bd;border-bottom-color: #f9d5e5;}
+.character.eve .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #ef97bd;border-right: 12px transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
 
 /* chung 전직트리 */
-.chung .line_title{background-color: #00a8e6;border-bottom-color: #99dcf5;}
-.chung .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #00a8e6;border-right: 12px transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
+.character.chung .line_title{background-color: #00a8e6;border-bottom-color: #99dcf5;}
+.character.chung .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #00a8e6;border-right: 12px transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
 
 
 /* ara 전직트리 */
-.ara .line_title{background-color: #fe9f01;border-bottom-color: #ffd999;}
-.ara .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #fe9f01;border-right: 12px transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
+.character.ara .line_title{background-color: #fe9f01;border-bottom-color: #ffd999;}
+.character.ara .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #fe9f01;border-right: 12px transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
 
 
 /* elesis 전직트리 */
-.elesis .line_title{background-color: #d00040;border-bottom-color: #ec99b3;}
-.elesis .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #d00040;border-right: 12px transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
+.character.elesis .line_title{background-color: #d00040;border-bottom-color: #ec99b3;}
+.character.elesis .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #d00040;border-right: 12px transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
 
 
 /* add 전직트리 */
-.add .line_title{background-color: #a79fdf;border-bottom-color: #dcd9f2;}
-.add .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #a79fdf;border-right: 12px transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
+.character.add .line_title{background-color: #a79fdf;border-bottom-color: #dcd9f2;}
+.character.add .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #a79fdf;border-right: 12px transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
 
 
 /* ru 전직트리 */
-.ru .line_title{background-color: #202cf5;border-bottom-color: #dcd9f2;}
-.ru .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #202cf5;border-right: 12px solid transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
+.character.ru .line_title{background-color: #202cf5;border-bottom-color: #dcd9f2;}
+.character.ru .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #202cf5;border-right: 12px solid transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
 
 
 /* rose 전직트리 */
-.rose .line_title{background-color: #fff653;border-bottom-color: #fffbba;}
-.rose .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #fff653;border-right: 12px solid transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
-.rose .line_title a{color: #000;}
-.character_line .rose ul li:first-child a{color: #000;}
+.character.rose .line_title{background-color: #fff653;border-bottom-color: #fffbba;}
+.character.rose .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #fff653;border-right: 12px solid transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
+.character.rose .line_title a{color: #000;}
+.character.rose .character_line ul li:first-child a{color: #000;}
 
-/* rose 전직트리 */
-.ain .line_title{background-color: #19d2a8;border-bottom-color: #a3eddc;}
-.ain .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #19d2a8;border-right: 12px solid transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
-
-
-
-
-
-
-
-
-
-/*.character .cont_header{position: relative;}
-.character .cont_header:before{position: absolute;bottom: 0;width: 100%;height: 1px;border-top: 1px solid #cccccc;content: " ";}*/
+/* ain 전직트리 */
+.character.ain .line_title{background-color: #19d2a8;border-bottom-color: #a3eddc;}
+.character.ain .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #19d2a8;border-right: 12px solid transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
