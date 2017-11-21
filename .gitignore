@@ -28,5 +28,5 @@ Thumbs.db
 /*.html
 
 # Output css files #
-assets/css/*.css
-assets/css/*.scss
+/assets/css/*.css
+/assets/css/*.scss
