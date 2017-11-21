@@ -15,9 +15,9 @@ var cssWatchPath = ['./src/css/*.scss', './src/css/**/*.scss'],
 //     jsWatchPath = 'src/js/*.js',
 //     jsInputPath = 'src/js/scripts.js',
 //     jsOutputPath = 'app/assets/js',
-    htmlWatchPath = './src/*.html',
-    htmlInputPath = ['./src/*.html'],
-    htmlOuputPath = './';
+    htmlWatchPath = ['./src/html/*.html', './src/html/**/*.html'],
+    htmlInputPath = ['./src/html/*.html', './src/html/**/*.html'],
+    htmlOuputPath = './html';
 
 var banner = [
   '/*!\n' +
@@ -32,7 +32,7 @@ var banner = [
 ].join('');
 
 gulp.task('html', function() {
-  gulp.src(htmlInputPath)
+    gulp.src(htmlInputPath, {base: './src/html'})
     .pipe(include({
       prefix: '@@@',
       basepath: '@file'
