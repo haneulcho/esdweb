@@ -1,0 +1,38 @@
+/* Game Download Page */
+.download .cont_body > .inner {padding:21px 0 0;border-top:2px solid #acacac}
+.download .help {font-size:12px;line-height:16px;color:#888}
+.download .headings {position:relative;width:1200px;height:410px;padding:146px 87px 0;margin:0 0 75px 0;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/download/bg_download.jpg') no-repeat 0 0}
+.download .headings .des {margin:0 0 12px 0;font-size:13px;color:#fff}
+.download .headings .des strong {color:#f17a3c}
+.download .headings .btn_gameDownload {width:623px;height:154px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/download/btn_gameDownload.jpg') no-repeat 0 0}
+.download .tit_sub {overflow:hidden;margin:0 0 13px 0;font-size:20px;color:#3a312a}
+.download .tit_sub > .help {margin:0 0 0 10px;font-weight:normal}
+.download .down_pcChk {margin-bottom:70px}
+.download .down_driver {margin-bottom:90px}
+
+/* Download - Guide Layer */
+.down_pcChk_tbl {position:relative}
+.down_pcChk_tbl .down_pcChk_help {position:absolute;bottom:1px;right:0;width:419px;height:365px;background-color:#f3f3f3}
+.down_pcChk_tbl .down_pcChk_help .btn_chkSpecStart {display:block;width:146px;height:50px;margin:155px auto 88px;font-size:14px;font-weight:bold;line-height:50px;text-align:center;color:#fff;background:#878787}
+.down_pcChk_tbl .down_pcChk_help ul {margin:0 0 10px 15px}
+.down_pcChk_tbl .down_pcChk_help ul > li {font-size:12px;line-height:20px;letter-spacing:-0.5px;color:#7c7c7c}
+
+/* Download - Table */
+.down_pcChk_tbl .pcChk_tbl {table-layout:fixed;width:100%;border-top:2px solid #acacac}
+.down_pcChk_tbl .pcChk_tbl th, .down_pcChk_tbl .pcChk_tbl td {padding:21px 0;text-align:center;font-size:16px;letter-spacing:-0.5px;line-height:18px;border-bottom:1px solid #ccc}
+.down_pcChk_tbl .pcChk_tbl thead th {color:#030303;border-bottom:2px solid #acacac;background-color:#fff !important}
+.down_pcChk_tbl .pcChk_tbl tbody th {color:#383838;background-color:#f2f2f2}
+.down_pcChk_tbl .pcChk_tbl td {color:#444}
+.down_pcChk_tbl .pcChk_tbl .tbl_type {width:175px}
+.down_pcChk_tbl .pcChk_tbl .tbl_min {width:285px}
+.down_pcChk_tbl .pcChk_tbl .tbl_max {width:285px}
+.down_pcChk_tbl .pcChk_tbl .tbl_mine {width:400px;background-color:#f3f3f3}
+
+/* Download - Driver Download List */
+.down_driver_list {overflow:hidden;margin:0 0 22px 0;border-top:2px solid #acacac;border-bottom:1px solid #ccc}
+.down_driver_list > li {display:block;position:relative;float:left;width:25%;padding:155px 0 32px;background-repeat:no-repeat;background-position:50% 25px}
+.down_driver_list > li > a {display:block;width:147px;height:33px;margin:0 auto;font-size:14px;font-weight:bold;line-height:33px;text-align:center;color:#fff;background:#878787}
+.down_driver_list .directX {background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/download/img_directx.jpg')}
+.down_driver_list .amd {background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/download/img_amd.jpg')}
+.down_driver_list .nvidia {background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/download/img_nvidia.jpg')}
+.down_driver_list .intel {background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/download/img_intel.jpg');background-position:50% 28px}

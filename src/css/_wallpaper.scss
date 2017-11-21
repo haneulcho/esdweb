@@ -1,0 +1,18 @@
+/* Board List: Type Elsword Wallpaper(Gallery) */
+.wallpaper .board_list {padding:42px 0 0;border-top:2px solid #acacac}
+.wallpaper .board_list > li {position:relative;float:left;display:block;width:285px;margin:0 0 44px 20px;padding:0;text-align:center;border:none}
+.wallpaper .board_list > li:first-child, .wallpaper .board_list > li:nth-child(4n+1) {margin-left:0}
+.wallpaper .board_list > li > div {display:block;padding:0}
+.wallpaper .board_list .b_subject {position:absolute;bottom:54px;left:0;width:100%;text-align:center}
+.wallpaper .board_list .b_subject .subject {display:inline-block}
+.wallpaper .board_list .b_subject .subject > a {max-width:250px;color:#fff}
+.wallpaper .board_list .b_author {margin:0 0 12px 0}
+.wallpaper .board_list .b_author .nickname {font-size:16px}
+.wallpaper .board_list .b_thumb {margin:0}
+.wallpaper .board_list .b_thumb:after {position:absolute;display:block;bottom:0;left:0;content:'';width:285px;height:115px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/bg_uccItem.png') no-repeat 0 0}
+.wallpaper .board_list .b_thumb .thumb {width:285px;height:310px}
+.wallpaper .board_list .b_download {text-align:center}
+.wallpaper .board_list .b_download .btn_download {display:block;height:41px;font-size:16px;font-weight:bold;line-height:41px;color:#414141;background:#ccc;text-decoration:none}
+.wallpaper .board_list .b_download .btn_download:hover,
+.wallpaper .board_list .b_download .btn_download:active {color:#fff;background:#e65700}
+.wallpaper .cont_body {margin:0 0 44px 0}
