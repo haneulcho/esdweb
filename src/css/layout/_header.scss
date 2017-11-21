@@ -35,17 +35,26 @@
 #header .gnb_sub li > a {padding:7px 0 8px;font-size:13px;line-height:30px;color:#666}
 #header .gnb_sub li > a:hover, #header .gnb_sub li.current > a {color:#e65700}
 #header .gnb_sub li.eventCalendar > a {width:83px;height:38px;margin:50px auto 0;background:url('../img/spr_global.png') no-repeat -14px -474px}
+#header nav.white {height:127px;background:#fff}
 #header .nav.on {height:300px;background:#fff}
 #header .nav.on .gnb {height:100%;margin:0 auto;padding:39px 0 0 0}
 #header .nav.on .gnb > li {height:100%}
 #header .nav.on .gnb > li > a > .pointer {opacity:1}
+#header .white .gnb > li.issue > a,
 #header .nav.on .gnb > li.issue > a {background-position:-20px -34px}
+#header .white .gnb > li.event > a,
 #header .nav.on .gnb > li.event > a {background-position:-28px -92px}
+#header .white .gnb > li.gameinfo > a,
 #header .nav.on .gnb > li.gameinfo > a {background-position:-10px -151px}
+#header .white .gnb > li.ranking > a,
 #header .nav.on .gnb > li.ranking > a {background-position:-38px -209px}
+#header .white .gnb > li.ucc > a,
 #header .nav.on .gnb > li.ucc > a {background-position:-7px -268px}
+#header .white .gnb > li.community > a,
 #header .nav.on .gnb > li.community > a {background-position:-20px -326px}
+#header .white .gnb > li.pds > a,
 #header .nav.on .gnb > li.pds > a {background-position:-28px -385px}
+#header .white .gnb > li.help > a,
 #header .nav.on .gnb > li.help > a {background-position:-19px -443px}
 #header .nav.on .gnb_sub {opacity:1;height:auto}
 #header .nav,

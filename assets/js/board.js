@@ -1,6 +1,9 @@
 (function ($, window, document, undefined) {
 
   $(function () {
+    if ($('#contents').hasClass('character')) {
+      $('#header nav').addClass('white');
+    }
     var owl_promotionBanner = $('.owl-carousel.banner');
     owl_promotionBanner.owlCarousel({
       items: 1,
