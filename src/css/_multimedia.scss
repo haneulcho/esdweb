@@ -21,7 +21,7 @@
 
 .calendar_y{position: relative;height: 110px;}
 .calendar_y:before,
-.calendar_y:after{display: block;position: absolute;width: 100%;height: 5px;background: url(../img/multimedia/bg_calendar_deco.png) repeat 0 0;content: " ";}
+.calendar_y:after{display: block;position: absolute;width: 100%;height: 5px;background: url('../img/multimedia/bg_calendar_deco.png') repeat 0 0;content: " ";}
 .calendar_y:before{top: 0;}
 .calendar_y:after{bottom: 0;}
 .calendar_y > ul{width: 515px;margin: 0 auto;padding-top: 27px;}
@@ -53,7 +53,7 @@
 #y_lst {display: none;position: absolute;top: 49px;left: 50%;width: 530px;margin-left: -40px;padding: 0 20px 45px;word-wrap: break-word;background: #fff;transition: top 1s;z-index:999;border: 4px solid #a2a2a2;border-radius: 15px;}
 #y_lst.on{display: block;}
 #y_lst .header{position: relative;padding: 29px 0;text-align: center;font-weight: 800;font-size: 26.5px;color: #000;}
-#y_lst .header:after{display: inline-block;position: absolute;left: 0;bottom: 0;width: 100%;height: 5px;background: url(../img/multimedia/bg_calendar_deco.png) repeat 0 0;content: " ";}
+#y_lst .header:after{display: inline-block;position: absolute;left: 0;bottom: 0;width: 100%;height: 5px;background: url('../img/multimedia/bg_calendar_deco.png') repeat 0 0;content: " ";}
 #y_lst .body{padding: 0 36px;}
 #y_lst .body .year li{float: left;margin: 36px 0 0 30px;}
 #y_lst .body .year li:nth-child(6n+1){margin-left: 0;}
