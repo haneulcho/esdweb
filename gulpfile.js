@@ -86,7 +86,7 @@ gulp.task('css-watch', ['css'], function (done) {
 gulp.task('default', ['css', 'html'], function () {
     browserSync.init({
         server: {
-            baseDir: "./"
+            baseDir: ["./html", "./"]
         }
     });
     gulp.watch(htmlWatchPath, ['html-watch']);
