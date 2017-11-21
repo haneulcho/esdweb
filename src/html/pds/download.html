@@ -1,0 +1,140 @@
+@@@include('../header_sub.html')
+<main id="main" class="sub" role="main">
+	<div class="wrap_information row">
+		<div class="inner">
+			<!-- TODO, DEV: [S] 게임 스타트 버튼 시작!! -->
+			<div id="gameStart" class="gameStart">
+				<a href="#" class="btn_gameStart" onclick="GnxGameStartOnClick();return false;">GAME START</a>
+			</div>
+			<!-- //#gameStart -->
+			<!-- TODO, DEV: [E] 게임 스타트 버튼 끝!! -->
+		</div>
+		<!-- //.inner -->
+	</div>
+	<!-- //.wrap_information -->
+
+	<!-- TODO, DEV: 작가연재만화 -->
+	<section id="contents" class="download" role="main">
+		<div class="wrap_cont row">
+			<div class="cont_header inner">
+				<div class="titles">
+					<h2 class="tit">다운로드</h2>
+				</div>
+				<div class="des">
+					<p>모험에 필요한 프로그램을 확인하세요!</p>
+				</div>
+			</div>
+			<!-- //.cont_header -->
+			<div class="cont_body">
+				<div class="inner">
+					<div class="headings">
+						<h3 class="blind">쉽고 빠르게 엘소드를 설치해 보세요.</h3>
+						<p class="des">게임 실행이나 설치가 제대로 되지 않은 분들은 아래 <strong>&lt;GAME DOWNLOAD&gt;</strong> 버튼을 클릭하여 <strong>수동설치</strong>를 해주세요.</p>
+						<a href="#" class="btn_gameDownload">GAME DOWNLOAD - 엘소드 설치하기</a>
+					</div>
+					<!-- //.headings END -->
+					<div class="down_pcChk inner">
+						<h4 class="tit_sub">시스템 사양 <span class="help">엘소드를 쾌적한 환경에서 즐기기 위한 환경으로 회선상태나 OS/PC 관리 여부에 따라 오차가 있을 수 있습니다.</span></h4>
+						<div class="down_pcChk_tbl">
+							<!-- [S] TODO, DEV: 최소 사양, 권장 사양 표 시작 -->
+							<table id="pcChk_tbl" class="pcChk_tbl">
+								<caption>PC 회소사양 및 권장사양 안내 표입니다. PC 검사하기 버튼을 눌러 내 PC 사양과 권장사양을 비교할 수 있습니다.</caption>
+								<colgroup>
+									<col class="tbl_type">
+									<col class="tbl_min">
+									<col class="tbl_max">
+									<col class="tbl_mine">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>구분</th>
+										<th>최소 사양</th>
+										<th>권장 사양</th>
+										<th>내 컴퓨터 사양</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>운영체제</th>
+										<td>WINDOWS 7 32비트</td>
+										<td>WINDOWS 7 64비트 이상</td>
+										<td id="myOs" class="mine">내 운영체제 사양</td>
+									</tr>
+									<tr>
+										<th>CPU</th>
+										<td>Intel/AMD 2기가(Ghz)</td>
+										<td>Intel Core i3 이상</td>
+										<td id="myCpu" class="mine">내 CPU 사양</td>
+									</tr>
+									<tr>
+										<th>메모리</th>
+										<td>2GB 이상</td>
+										<td>4GB 이상</td>
+										<td id="myMemory" class="mine">내 메모리 사양</td>
+									</tr>
+									<tr>
+										<th>그래픽 카드</th>
+										<td>Nvidia GeForce 8600 GT 이상</td>
+										<td>Nvidia GeForce GT 240 이상</td>
+										<td id="myVga" class="mine">내 그래픽 카드 사양</td>
+									</tr>
+									<tr>
+										<th>DirectX 버전</th>
+										<td>DirectX 9.0C 이상</td>
+										<td>DirectX 9.0C 이상</td>
+										<td id="myDirect" class="mine">내 DirectX 버전</td>
+									</tr>
+									<tr>
+										<th>하드디스크 용량</th>
+										<td>여유공간 10GB 이상</td>
+										<td>여유공간 15GB 이상</td>
+										<td id="myHdd" class="mine">내 하드디스크 사양</td>
+									</tr>
+								</tbody>
+							</table>
+							<!-- // #pcChk_tbl END -->
+							<div class="down_pcChk_help">
+								<a href="#" class="btn_chkSpecStart">PC 검사하기</a>
+								<ul>
+									<li>1. [PC 검사하기] 버튼 클릭</li>
+									<li>2. 브라우저 하단의 경고 메시지에서 .exe 파일 실행</li>
+									<li>3. 윈도우 메시지 출력 후 허용을 선택하면 PC 사양 노출</li>
+								</ul>
+							</div>
+							<!-- [E] TODO, DEV: 내 PC 사양 확인 버튼 누르고 사양 끝나면 테이블에 내 PC 사양 정보가 기록되어야 합니다. -->
+						</div>
+						<!-- //.down_pcChk_tbl END -->
+					</div>
+					<!-- //.down_pcChk END -->
+
+					<div class="down_driver inner">
+						<h4 class="tit_sub">최신 드라이버 다운로드</h4>
+						<ul class="down_driver_list">
+							<li class="directX"><a href="#">다운로드 +</a></li>
+							<li class="amd"><a href="#">다운로드 +</a></li>
+							<li class="nvidia"><a href="#">다운로드 +</a></li>
+							<li class="intel"><a href="#">다운로드 +</a></li>
+						</ul>
+						<p class="help">- 최신 버전의 그래픽 드라이버를 설치하시면 보다 나은 환경에서 게임을 즐길 수 있습니다.<br>
+							- 드라이버 다운로드는 각 비디오카드 제조회사의 링크를 참조하시고 해당목록에 없을 경우 판매처나 제조회사에 문의하여 주시기 바랍니다.</p>
+					</div>
+					<!-- // .down_driver END -->
+				</div>
+				<!-- //.inner -->
+			</div>
+			<!-- //.cont_body -->
+			<div class="cont_footer">
+
+			</div>
+			<!-- //.cont_footer -->
+		</div>
+		<!-- //.wrap_cont -->
+	</section>
+	<!-- //===========================================================
+			#contents END
+	=========================================================== // -->
+</main>
+<!-- //===========================================================
+		#main END
+=========================================================== // -->
+@@@include('../footer.html')
