@@ -95,7 +95,7 @@ html, body {width:100%;min-width:1200px;background:#fff}
 .ipt_select, .ipt_keyword {height:38px;padding:0 0 0 10px;font-size:15px;line-height:38px;color:#8d8d8d;background:#fff;border:1px solid #d8d0c6;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
 .ipt_select.open, .ipt_select:active, .ipt_select:focus, .ipt_keyword:focus {border-color:#d0b6a9}
 .btn_titMore {display:inline-block}
-.btn_titMore > span {background:url('../img/spr_global.png') no-repeat 0 0}
+.btn_titMore > span {background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat 0 0}
 .btn_titMore .txt {float:left}
 .btn_titMore .more {width:13px;height:14px;background-position:-89px -632px}
 
@@ -105,9 +105,9 @@ html, body {width:100%;min-width:1200px;background:#fff}
 
 /* Character Badge */
 /* TODO: 대표 캐릭터 이미지 최종 수정할 것 */
-.characterBadge {position:relative;width:130px;height:130px;background:url('../img/img_cha.png') no-repeat 0 0}
-.characterBadge .medal {position:absolute;bottom:3px;left:6px;width:41px;height:41px;background:url('../img/img_medal.png') no-repeat 0 0}
-.characterBadge .btn_editCharacter {position:absolute;top:14px;right:6px;width:23px;height:23px;background:url('../img/btn_editCharacter.png') no-repeat 0 0}
+.characterBadge {position:relative;width:130px;height:130px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/img_cha.png') no-repeat 0 0}
+.characterBadge .medal {position:absolute;bottom:3px;left:6px;width:41px;height:41px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/img_medal.png') no-repeat 0 0}
+.characterBadge .btn_editCharacter {position:absolute;top:14px;right:6px;width:23px;height:23px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/btn_editCharacter.png') no-repeat 0 0}
 
 /* Text Hidden */
 .btn_login,

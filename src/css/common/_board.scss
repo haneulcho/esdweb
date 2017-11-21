@@ -29,12 +29,12 @@
 .board_list .b_subject .subject > span {float:left;margin:0 0 0 3px;line-height:21px}
 .board_list .b_subject .subject .cmt {margin:0 3px 0 6px;color:#e65700}
 /* 새 글이면, new / 모바일이면 mobile / 그림있으면 pic */
-.board_list .b_subject .subject .ico {width:19px;height:19px;background:url('../img/spr_asset.png') no-repeat 0 0}
+.board_list .b_subject .subject .ico {width:19px;height:19px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat 0 0}
 .board_list .b_subject .subject .ico.new {background-position:-326px -85px}
 .board_list .b_subject .subject .ico.mobile {background-position:-350px -85px}
 .board_list .b_subject .subject .ico.pic {background-position:-374px -85px}
 .board_list .b_author {position:relative;padding:0 20px 0 50px}
-.board_list .b_author .medal {position:absolute;top:50%;left:20px;width:24px;height:34px;margin:-16px 0 0 0;background:url('../img/spr_global.png') no-repeat 0 0}
+.board_list .b_author .medal {position:absolute;top:50%;left:20px;width:24px;height:34px;margin:-16px 0 0 0;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat 0 0}
 .board_list .b_author .medal.gold {background-position:-434px 0}
 .board_list .b_author .medal.silver {background-position:-434px -38px}
 .board_list .b_author .medal.bronze {background-position:-434px -76px}
@@ -57,7 +57,7 @@
 .board_list > li.hot .b_thumb:before,
 .board_list > li.official .b_thumb:before,
 .board_list > li.best .b_thumb:before,
-.board_list.top .b_thumb:before {position:absolute;display:block;top:-3px;left:0;content:'';width:75px;height:72px;background:url('../img/spr_asset.png') no-repeat -352px -142px}
+.board_list.top .b_thumb:before {position:absolute;display:block;top:-3px;left:0;content:'';width:75px;height:72px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -352px -142px}
 .board_list > li.hot .b_thumb:before {background-position:-352px -142px}
 .board_list > li.official .b_thumb:before {background-position:-352px -219px}
 .board_list > li.best .b_thumb:before,
@@ -87,7 +87,7 @@
 .b_paging .paging > li.num.current {font-weight:bold;color:#e16418}
 .b_paging .paging > li.num > a {color:inherit}
 .b_paging .paging > li.btn,
-.b_paging .paging > li.btn > a {width:50px;height:50px;background:url('../img/spr_asset.png') no-repeat 0 0}
+.b_paging .paging > li.btn > a {width:50px;height:50px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat 0 0}
 .b_paging .paging > li.first {margin-right:5px;background-position:0 -58px}
 .b_paging .paging > li.first > a {background-position:0 0}
 .b_paging .paging > li.prev {background-position:-55px -58px}
