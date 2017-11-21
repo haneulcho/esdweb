@@ -26,6 +26,7 @@ Thumbs.db
 
 # Output html files #
 /*.html
+html
 
 # Output css files #
 /assets/css/*.css
