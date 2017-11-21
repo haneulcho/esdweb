@@ -1,4 +1,4 @@
-@@@include('./header_sub.html')
+@@@include('../header_sub.html')
 	<main id="main" class="sub" role="main">
 		<div class="wrap_information row">
 			<div class="inner">
@@ -13,26 +13,21 @@
 		</div>
 		<!-- //.wrap_information -->
 
-		<section id="contents" class="strategy" role="main">
+		<section id="contents" class="trade" role="main">
 			<div class="wrap_cont row">
 				<div class="cont_header inner">
 					<div class="titles">
-						<h2 class="tit">공략게시판</h2>
+						<h2 class="tit">거래게시판</h2>
 						<ul class="category" role="tablist">
 							<!-- TODO, DEV: 탭메뉴 활성화 시 on 클래스 추가 -->
-							<li class="on"><a href="/community/strategy/list.aspx" role="tab">전체</a></li>
-							<li><a href="/community/strategy/list.aspx?n4ArticleCategorySN=-1&n4ArticleCategory2SN=1" role="tab">베스트</a></li>
-							<li><a href="/community/strategy/list.aspx?n4ArticleCategorySN=1" role="tab">던전</a></li>
-							<li><a href="/community/strategy/list.aspx?n4ArticleCategorySN=2" role="tab">대전</a></li>
-							<li><a href="/community/strategy/list.aspx?n4ArticleCategorySN=3" role="tab">캐릭터</a></li>
-							<li><a href="/community/strategy/list.aspx?n4ArticleCategorySN=5" role="tab">아이템</a></li>
-							<li><a href="/community/strategy/list.aspx?n4ArticleCategorySN=6" role="tab">퀘스트</a></li>
-							<li><a href="/community/strategy/list.aspx?n4ArticleCategorySN=8" role="tab">펫</a></li>
-							<li><a href="/community/strategy/list.aspx?n4ArticleCategorySN=7" role="tab">기타</a></li>
+							<li class="on"><a href="/community/trade/list.aspx" role="tab">전체</a></li>
+							<li><a href="/community/trade/list.aspx?n4ArticleCategorySN=1" role="tab">판매</a></li>
+							<li><a href="/community/trade/list.aspx?n4ArticleCategorySN=2" role="tab">구매</a></li>
+							<li><a href="/community/trade/list.aspx?n4ArticleCategorySN=3" role="tab">교환</a></li>
 						</ul>
 					</div>
 					<div class="des">
-						<p>엘소드 공략을 자유롭게 공유해주세요.</p>
+						<p>다른 모험가님들과 아이템 거래를 할 수 있는 공간입니다.</p>
 					</div>
 				</div>
 				<!-- //.cont_header -->
@@ -42,9 +37,9 @@
 						<ul class="board_list default">
 							<!-- TODO: <li class="label">은 Table thead 역할입니다! -->
 							<li class="label">
+								<div class="b_server"><strong>서버</strong></div>
 								<div class="b_subject"><strong>제목</strong></div>
 								<div class="b_author"><strong>작성자</strong></div>
-								<div class="b_like"><strong>추천수</strong></div>
 								<div class="b_date"><strong>작성일</strong></div>
 								<div class="b_hit"><strong>조회수</strong></div>
 							</li>
@@ -53,9 +48,11 @@
 
 							<!-- TODO: <li>는 Table tbody 역할입니다! -->
 							<li>
+								<div class="b_server"><span class="server">가이아</span></div>
+								<!-- //b_server -->
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">캐릭터</span>
+										<span class="category">구매</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -83,8 +80,6 @@
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
 								<!-- //.b_author -->
-								<div class="b_like"><span class="like">9999</span></div>
-								<!-- //b_like -->
 								<div class="b_date"><span class="date">2017.12.30</span></div>
 								<!-- //b_date -->
 								<div class="b_hit"><span class="hit">213001</span></div>
@@ -93,9 +88,11 @@
 							<!-- //li -->
 
 							<li>
+								<div class="b_server"><span class="server">솔레스</span></div>
+								<!-- //b_server -->
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">캐릭터</span>
+										<span class="category">구매</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -118,8 +115,6 @@
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
 								<!-- //.b_author -->
-								<div class="b_like"><span class="like">9999</span></div>
-								<!-- //b_like -->
 								<div class="b_date"><span class="date">2017.12.30</span></div>
 								<!-- //b_date -->
 								<div class="b_hit"><span class="hit">213001</span></div>
@@ -128,9 +123,11 @@
 							<!-- //li -->
 
 							<li>
+								<div class="b_server"><span class="server">솔레스</span></div>
+								<!-- //b_server -->
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">던전</span>
+										<span class="category">판매</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -150,8 +147,6 @@
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
 								<!-- //.b_author -->
-								<div class="b_like"><span class="like">9999</span></div>
-								<!-- //b_like -->
 								<div class="b_date"><span class="date">2017.12.30</span></div>
 								<!-- //b_date -->
 								<div class="b_hit"><span class="hit">213001</span></div>
@@ -160,9 +155,11 @@
 							<!-- //li -->
 
 							<li>
+								<div class="b_server"><span class="server">솔레스</span></div>
+								<!-- //b_server -->
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">캐릭터</span>
+										<span class="category">구매</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -185,8 +182,6 @@
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
 								<!-- //.b_author -->
-								<div class="b_like"><span class="like">9999</span></div>
-								<!-- //b_like -->
 								<div class="b_date"><span class="date">2017.12.30</span></div>
 								<!-- //b_date -->
 								<div class="b_hit"><span class="hit">213001</span></div>
@@ -195,9 +190,11 @@
 							<!-- //li -->
 
 							<li>
+								<div class="b_server"><span class="server">솔레스</span></div>
+								<!-- //b_server -->
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">대전</span>
+										<span class="category">교환</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -217,8 +214,6 @@
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
 								<!-- //.b_author -->
-								<div class="b_like"><span class="like">9999</span></div>
-								<!-- //b_like -->
 								<div class="b_date"><span class="date">2017.12.30</span></div>
 								<!-- //b_date -->
 								<div class="b_hit"><span class="hit">213001</span></div>
@@ -227,9 +222,11 @@
 							<!-- //li -->
 
 							<li>
+								<div class="b_server"><span class="server">솔레스</span></div>
+								<!-- //b_server -->
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">캐릭터</span>
+										<span class="category">구매</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -252,8 +249,6 @@
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
 								<!-- //.b_author -->
-								<div class="b_like"><span class="like">9999</span></div>
-								<!-- //b_like -->
 								<div class="b_date"><span class="date">2017.12.30</span></div>
 								<!-- //b_date -->
 								<div class="b_hit"><span class="hit">213001</span></div>
@@ -262,9 +257,11 @@
 							<!-- //li -->
 
 							<li>
+								<div class="b_server"><span class="server">솔레스</span></div>
+								<!-- //b_server -->
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">캐릭터</span>
+										<span class="category">구매</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -284,8 +281,6 @@
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
 								<!-- //.b_author -->
-								<div class="b_like"><span class="like">9999</span></div>
-								<!-- //b_like -->
 								<div class="b_date"><span class="date">2017.12.30</span></div>
 								<!-- //b_date -->
 								<div class="b_hit"><span class="hit">213001</span></div>
@@ -294,9 +289,11 @@
 							<!-- //li -->
 
 							<li>
+								<div class="b_server"><span class="server">솔레스</span></div>
+								<!-- //b_server -->
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">아이템</span>
+										<span class="category">판매</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -316,8 +313,6 @@
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
 								<!-- //.b_author -->
-								<div class="b_like"><span class="like">9999</span></div>
-								<!-- //b_like -->
 								<div class="b_date"><span class="date">2017.12.30</span></div>
 								<!-- //b_date -->
 								<div class="b_hit"><span class="hit">213001</span></div>
@@ -326,9 +321,11 @@
 							<!-- //li -->
 
 							<li>
+								<div class="b_server"><span class="server">가이아</span></div>
+								<!-- //b_server -->
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">캐릭터</span>
+										<span class="category">구매</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -348,8 +345,6 @@
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
 								<!-- //.b_author -->
-								<div class="b_like"><span class="like">9999</span></div>
-								<!-- //b_like -->
 								<div class="b_date"><span class="date">2017.12.30</span></div>
 								<!-- //b_date -->
 								<div class="b_hit"><span class="hit">213001</span></div>
@@ -358,9 +353,11 @@
 							<!-- //li -->
 
 							<li>
+								<div class="b_server"><span class="server">가이아</span></div>
+								<!-- //b_server -->
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">기타</span>
+										<span class="category">교환</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -380,8 +377,6 @@
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
 								<!-- //.b_author -->
-								<div class="b_like"><span class="like">9999</span></div>
-								<!-- //b_like -->
 								<div class="b_date"><span class="date">2017.12.30</span></div>
 								<!-- //b_date -->
 								<div class="b_hit"><span class="hit">213001</span></div>
@@ -390,9 +385,11 @@
 							<!-- //li -->
 
 							<li>
+								<div class="b_server"><span class="server">가이아</span></div>
+								<!-- //b_server -->
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">대전</span>
+										<span class="category">교환</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -412,8 +409,6 @@
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
 								<!-- //.b_author -->
-								<div class="b_like"><span class="like">9999</span></div>
-								<!-- //b_like -->
 								<div class="b_date"><span class="date">2017.12.30</span></div>
 								<!-- //b_date -->
 								<div class="b_hit"><span class="hit">213001</span></div>
@@ -422,9 +417,11 @@
 							<!-- //li -->
 
 							<li>
+								<div class="b_server"><span class="server">솔레스</span></div>
+								<!-- //b_server -->
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">캐릭터</span>
+										<span class="category">구매</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -444,8 +441,6 @@
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
 								<!-- //.b_author -->
-								<div class="b_like"><span class="like">9999</span></div>
-								<!-- //b_like -->
 								<div class="b_date"><span class="date">2017.12.30</span></div>
 								<!-- //b_date -->
 								<div class="b_hit"><span class="hit">213001</span></div>
@@ -524,4 +519,4 @@
 	<!-- //===========================================================
 			#main END
 	=========================================================== // -->
-@@@include('./footer.html')
+@@@include('../footer.html')

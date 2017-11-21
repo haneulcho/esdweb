@@ -1,4 +1,4 @@
-@@@include('./header_sub.html')
+@@@include('../header_sub.html')
 <main id="main" class="sub" role="main">
 	<div class="wrap_information row">
 		<div class="inner">
@@ -17,16 +17,22 @@
 		<div class="wrap_cont row">
 			<div class="cont_header inner">
 				<div class="titles">
-					<h2 class="tit">업데이트</h2>
+					<h2 class="tit">이벤트</h2>
+					<ul class="category" role="tablist">
+						<!-- TODO, DEV: 탭메뉴 활성화 시 on 클래스 추가 -->
+						<li><a href="/news/events/list.aspx?n4ArticleCategorySN=2" role="tab">진행중인 이벤트</a></li>
+						<li><a href="/news/events/list.aspx?n4ArticleCategorySN=3" role="tab">종료된 이벤트</a></li>
+						<li class="on"><a href="/news/prize/list.aspx" role="tab">당첨자 확인</a></li>
+					</ul>
 				</div>
 				<div class="des">
-					<p>새로운 업데이트 내용을 확인하세요!</p>
+					<p>엘소드에서만 즐길 수 있는 다양한 이벤트, 놓치지 마세요!</p>
 				</div>
 			</div>
 			<!-- //.cont_header -->
 			<div class="cont_body">
 				<div id="boardList" class="inner">
-					<h2 class="blind">공지사항 게시판 목록입니다.</h2>
+					<h2 class="blind">이벤트 당첨자 발표 게시판 목록입니다.</h2>
 					<ul class="board_list default">
 						<!-- TODO: <li class="label">은 Table thead 역할입니다! -->
 						<li class="label">
@@ -194,4 +200,4 @@
 <!-- //===========================================================
 		#main END
 =========================================================== // -->
-@@@include('./footer.html')
+@@@include('../footer.html')
