@@ -106,6 +106,8 @@ transition: opacity 350ms ease;}
 .ucc_item .lists li .des .subject {margin:0 0 26px 0;font-size:16px;font-weight:normal;line-height:21px;color:#fff}
 .ucc_item .lists li .des .author {position:relative;display:inline-block;font-size:14px;color:#fff}
 .ucc_item .lists li .des .author:before {position:absolute;content:'';top:-12px;left:50%;width:32px;height:4px;margin-left:-16px;background:#fff}
+.ucc_item .lists li .thumb {overflow:hidden;width:285px;height:310px}
+.ucc_item .lists li .thumb img {width:100%;height:100%}
 .ucc_item .lists li.screenshot .category > a {background-position:-562px 0}
 .ucc_item .lists li.video .category > a {background-position:-562px -82px}
 .ucc_item .lists li.fanart .category > a {background-position:-562px -164px}
@@ -142,6 +144,8 @@ transition: opacity 350ms ease;}
 .wrap_side .side_officialCartoon .lists li > a .des {position:absolute;bottom:1px;left:1px;width:190px;height:28px;text-align:center;background:rgba(0, 0, 0, 0.8)}
 .wrap_side .side_officialCartoon .lists li > a .des .author {font-size:12px;line-height:28px;color:#ededed}
 .wrap_side .side_officialCartoon .lists li > a .des .author > strong {font-weight:bold;color:#a5a5a5;margin:0 5px 0 0}
+.wrap_side .side_officialCartoon .lists li .thumb {overflow:hidden;width:190px;height:160px}
+.wrap_side .side_officialCartoon .lists li .thumb img {width:100%;height:100%}
 
 /* Survey */
 .wrap_side .side_survey {float:left}
