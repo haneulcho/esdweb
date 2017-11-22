@@ -1,0 +1,272 @@
+@@@include('../header_sub.html')
+	<main id="main" class="sub" role="main">
+		<div class="wrap_information row">
+			<div class="inner">
+				<!-- TODO, DEV: [S] 게임 스타트 버튼 시작!! -->
+				<div id="gameStart" class="gameStart">
+					<a href="#" class="btn_gameStart" onclick="GnxGameStartOnClick();return false;">GAME START</a>
+				</div>
+				<!-- //#gameStart -->
+				<!-- TODO, DEV: [E] 게임 스타트 버튼 끝!! -->
+			</div>
+			<!-- //.inner -->
+		</div>
+		<!-- //.wrap_information -->
+
+		<section id="contents" class="ranking henir" role="main">
+			<div class="wrap_cont row">
+				<div class="cont_header inner">
+					<div class="titles">
+						<h2 class="tit">헤니르의시공</h2>
+						<ul class="category" role="tablist">
+							<!-- TODO, DEV: 탭메뉴 활성화 시 on 클래스 추가 -->
+							<!-- TODO, DEV: 헤니르의 시공 랭킹 파티, 솔로 생성 필요 -->
+							<li class="on"><a href="/ranking/henir.aspx" role="tab">파티</a></li>
+							<li><a href="/ranking/henir.aspx" role="tab">솔로</a></li>
+						</ul>
+					</div>
+					<div class="des">
+						<p>헤니르의 시공-도전 클리어 타임에 따른 순위를 확인할 수 있어요.</p>
+					</div>
+				</div>
+				<!-- //.cont_header -->
+				<div class="cont_body">
+					<div class="inner">
+						<div id="rankingHeader">
+	
+							<div class="rk_search inner">
+								<h3 class="rk_tit">시공랭킹 검색</h3>
+								<!-- [S] DEV: 랭킹 검색 FORM (rk_search_form) START!! -->
+								<div class="rk_search_form">
+									<form id="" action="" method="post" autocomplete="off">
+										<div class="rk_search_box">
+											<fieldset>
+												<legend class="blind">캐릭터로 검색</legend>
+												<h4 class="rk_select_tit">캐릭터 선택</h4>
+												<div class="iptBox">
+													<select id="" class="ipt_select" title="검색 조건 선택">
+														<option selected="selected" value="ALL">전체</option>
+														<option value="Elsword">엘소드</option>
+														<option value="Aisha">아이샤</option>
+														<option value="Rena">레나</option>
+														<option value="Laven">레이븐</option>
+														<option value="Eve">이브</option>
+														<option value="Chung">청</option>
+														<option value="Ara">아라</option>
+														<option value="Elesis">엘리시스</option>
+														<option value="Add">애드</option>
+														<option value="Ru">루시엘</option>
+														<option value="Rose">로제</option>
+														<option value="Ain">아인</option>
+													</select>
+													<a href="#" onclick="" class="ipt_submit btn rkSearch">검색</a>
+												</div>
+											</fieldset>
+										</div>
+										<!-- //.rk_search_box -->
+										<div class="rk_search_box">
+											<fieldset>
+												<legend class="blind">캐릭터명으로 검색</legend>
+												<h4 class="rk_search_tit">캐릭터명 검색</h4>
+												<div class="iptBox">
+													<input type="text" id="" class="ipt_keyword" maxlength="8" placeholder="캐릭터명을 입력하세요">
+													<a href="#" onclick="" class="ipt_submit btn rkSearch">검색</a>
+												</div>
+											</fieldset>
+										</div>
+										<!-- //.rk_search_box -->
+									</form>
+								</div>
+								<!-- //.b_search_form END -->
+								<!-- [E] DEV: 게시물 검색 FORM (rk_search_form) END!! -->
+							</div>
+							<!-- //.rk_search -->
+						</div>
+						<!-- //#rankingHeader -->
+	
+						<div id="rankingList" class="inner">
+							<h2 class="blind">시공랭킹 목록입니다.</h2>
+							<div class="rk_info">
+								<p class="lastUpdate">최종 업데이트 <strong>2017.12.30 12:59</strong></p>
+								<p class="help">- 랭킹 정보는 <strong>상위 2,000명</strong> 기준으로 노출됩니다.</p>
+							</div>
+	
+							<table class="rk_tbl" summary="랭킹 목록이며 상단 검색을 통해 원하는 랭킹 정보를 얻을 수 있습니다.">
+								<caption class="blind"><h3>게시물 목록보기</h3></caption>
+								<colgroup>
+									<col class="col_rank">
+									<col class="col_character">
+									<col class="col_class">
+									<col class="col_level">
+									<col class="col_cleartime">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>순위</th>
+										<th>캐릭터명</th>
+										<th>클래스</th>
+										<th>레벨</th>
+										<th>클리어 타임</th>
+									</tr>
+								</thead>
+								<tbody>
+								<!-- DEV: 랭킹 목록 반복 START!! -->
+									<!--
+										1위부터 3위까지는 <tr class="top"> class top 삽입 부탁드립니다.
+									-->
+									<tr class="top">
+										<td class="rank">1</td>
+										<td class="character">
+											<img class="ico_rk_character" src="http://s.nx.com/s2/game/Elsword/Elsword_OB/image/icon/character_136.gif" alt="ESTi">
+											ESTi
+										</td>
+										<td class="class">아포스타시아</td>
+										<td class="level">Lv.<strong>99</strong></td>
+										<td class="cleartime">00:00:00</td>
+									</tr>
+	
+									<tr class="top">
+										<td class="rank">2</td>
+										<td class="character">
+											<img class="ico_rk_character" src="http://s.nx.com/s2/game/Elsword/Elsword_OB/image/icon/character_101.gif" alt="하액파티">
+											하액파티
+										</td>
+										<td class="class">룬슬레이어</td>
+										<td class="level">Lv.<strong>99</strong></td>
+										<td class="cleartime">00:00:00</td>
+									</tr>
+									
+									<tr class="top">
+										<td class="rank">3</td>
+										<td class="character">
+											<img class="ico_rk_character" src="http://s.nx.com/s2/game/Elsword/Elsword_OB/image/icon/character_104.gif" alt="Hoody">
+											Hoody
+										</td>
+										<td class="class">엘리멘탈마스터</td>
+										<td class="level">Lv.<strong>99</strong></td>
+										<td class="cleartime">00:00:00</td>
+									</tr>
+	
+									<tr>
+										<td class="rank">4</td>
+										<td class="character">
+											<img class="ico_rk_character" src="http://s.nx.com/s2/game/Elsword/Elsword_OB/image/icon/character_135.gif" alt="홀리생츄어리">
+											홀리생츄어리
+										</td>
+										<td class="class">에브루헨아모치온</td>
+										<td class="level">Lv.<strong>99</strong></td>
+										<td class="cleartime">00:00:00</td>
+									</tr>
+	
+									<tr>
+										<td class="rank">5</td>
+										<td class="character">
+											<img class="ico_rk_character" src="http://s.nx.com/s2/game/Elsword/Elsword_OB/image/icon/character_135.gif" alt="랜매너무좋아">
+											랜매너무좋아
+										</td>
+										<td class="class">에브루헨아모치온</td>
+										<td class="level">Lv.<strong>99</strong></td>
+										<td class="cleartime">00:00:00</td>
+									</tr>
+	
+									<tr>
+										<td class="rank">6</td>
+										<td class="character">
+											<img class="ico_rk_character" src="http://s.nx.com/s2/game/Elsword/Elsword_OB/image/icon/character_121.gif" alt="초급화염마법">
+											초급화염마법
+										</td>
+										<td class="class">블레이징하트</td>
+										<td class="level">Lv.<strong>99</strong></td>
+										<td class="cleartime">00:00:00</td>
+									</tr>
+	
+									<tr>
+										<td class="rank">7</td>
+										<td class="character">
+											<img class="ico_rk_character" src="http://s.nx.com/s2/game/Elsword/Elsword_OB/image/icon/character_129.gif" alt="납비">
+											납비
+										</td>
+										<td class="class">데모니오</td>
+										<td class="level">Lv.<strong>99</strong></td>
+										<td class="cleartime">00:00:00</td>
+									</tr>
+	
+									<tr>
+										<td class="rank">8</td>
+										<td class="character">
+											<img class="ico_rk_character" src="http://s.nx.com/s2/game/Elsword/Elsword_OB/image/icon/character_121.gif" alt="약해오">
+											약해오
+										</td>
+										<td class="class">블레이징하트</td>
+										<td class="level">Lv.<strong>99</strong></td>
+										<td class="cleartime">00:00:00</td>
+									</tr>
+	
+									<tr>
+										<td class="rank">9</td>
+										<td class="character">
+											<img class="ico_rk_character" src="http://s.nx.com/s2/game/Elsword/Elsword_OB/image/icon/character_125.gif" alt="NakatoRei">
+											NakatoRei
+										</td>
+										<td class="class">크림슨어벤저</td>
+										<td class="level">Lv.<strong>99</strong></td>
+										<td class="cleartime">00:00:00</td>
+									</tr>
+	
+									<tr>
+										<td class="rank">10</td>
+										<td class="character">
+											<img class="ico_rk_character" src="http://s.nx.com/s2/game/Elsword/Elsword_OB/image/icon/character_116.gif" alt="스위프트롤링">
+											스위프트롤링
+										</td>
+										<td class="class">코드배틀세라프</td>
+										<td class="level">Lv.<strong>99</strong></td>
+										<td class="cleartime">00:00:00</td>
+									</tr>
+								<!-- DEV: 랭킹 목록 반복 END!! -->
+								</tbody>
+							</table>
+							<!-- //.rk_tbl -->
+						</div>
+						<!-- //#rankingList -->
+					</div>
+					<!-- //.inner -->
+				</div>
+				<!-- //.cont_body -->
+				<div class="cont_footer">
+					<div id="rankingFooter">
+						<!-- [S] DEV: 게시판 페이지네이션 START!! -->
+						<div class="b_paging inner">
+							<!--
+								현재 페이지일 경우 <li class="num current">1</li>
+							-->
+							<ul class="paging">
+								<li class="btn first">첫 페이지</li>
+								<li class="btn prev"><a href="#">이전 페이지</a></li>
+								<li class="num current">1</li>
+								<li class="num"><a href="#">2</a></li>
+								<li class="num"><a href="#">3</a></li>
+								<li class="num"><a href="#">4</a></li>
+								<li class="num"><a href="#">5</a></li>
+								<li class="btn next"><a href="#">다음 페이지</a></li>
+								<li class="btn last">마지막 페이지</li>
+							</ul>
+							<!-- //.paging -->
+						</div>
+						<!-- //.b_paging -->
+						<!-- [E] DEV: 게시판 페이지네이션 END!! -->
+					</div>
+					<!-- //#rankingFooter -->
+				</div>
+				<!-- //.cont_footer -->
+			</div>
+			<!-- //.wrap_cont -->
+		</section>
+		<!-- //===========================================================
+				#contents END
+		=========================================================== // -->
+	</main>
+	<!-- //===========================================================
+			#main END
+	=========================================================== // -->
+@@@include('../footer.html')
