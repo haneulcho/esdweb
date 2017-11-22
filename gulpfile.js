@@ -7,6 +7,7 @@ var gulp = require('gulp'),
     header  = require('gulp-header'),
     rename = require('gulp-rename'),
     cssnano = require('gulp-cssnano'),
+    clean = require('gulp-clean'),
     package = require('./package.json');
 
 var cssWatchPath = ['./src/css/*.scss', './src/css/**/*.scss'],
@@ -31,7 +32,13 @@ var banner = [
   '\n'
 ].join('');
 
-gulp.task('html', function() {
+gulp.task('clean', function () {
+    return gulp.src(htmlOuputPath, {read: false})
+
+    .pipe(clean());
+});
+
+gulp.task('html', ['clean'], function () {
     gulp.src(htmlInputPath, {base: './src/html'})
     .pipe(include({
       prefix: '@@@',
@@ -57,7 +64,7 @@ gulp.task('css', function () {
     .pipe(browserSync.stream());
 });
 
-// gulp.task('js',function(){
+// gulp.task('js',function (){
 //   gulp.src(jsInputPath)
 //
 //     .pipe(jshint('.jshintrc'))
