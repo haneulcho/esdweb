@@ -1,0 +1,48 @@
+/* Ranking Page */
+.ranking .cont_body > .inner {padding:21px 0 0;border-top:2px solid #acacac}
+.rk_search {height:101px;margin:0 0 30px 0;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/bg_ranking_search.jpg') no-repeat #d0beb7 0 0}
+.rk_search .rk_tit {float:left;width:185px;height:40px;margin:30px 0 0 18px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat 0 -116px}
+.ranking.global .rk_search .rk_tit {background-position:0 -116px}
+.ranking.war .rk_search .rk_tit {background-position:0 -161px}
+.ranking.pve .rk_search .rk_tit {background-position:0 -206px}
+.ranking.henir .rk_search .rk_tit {background-position:0 -251px}
+.rk_search .rk_search_form {float:right;margin:32px 31px 0 0}
+.rk_search .rk_search_box {float:left;height:37px;margin:0 0 0 25px}
+.rk_search .rk_search_box .rk_select_tit,
+.rk_search .rk_search_box .rk_search_tit {float:left;margin:0 13px 0 0;font-size:16px;line-height:37px;color:#ae694e}
+.rk_search .rk_search_box .iptBox,
+.rk_search .rk_search_box .iptBox .ipt_select,
+.rk_search .rk_search_box .iptBox .ipt_keyword,
+.rk_search .rk_search_box .iptBox .ipt_submit {float:left;height:37px;font-size:16px;font-weight:bold;line-height:35px}
+.rk_search .rk_search_box .iptBox .ipt_select {width:140px}
+.rk_search .rk_search_box .iptBox .ipt_keyword {width:200px}
+.rk_search .rk_search_box .iptBox .ipt_select .current,
+.rk_search .rk_search_box .iptBox .ipt_keyword {color:#444}
+.rk_search .rk_search_box .iptBox .btn.rkSearch {display:block;width:66px;height:37px;margin:0 0 0 5px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -225px -43px}
+
+.rk_info {overflow:hidden;margin:0 0 9px 0}
+.rk_info p {font-size:12px;line-height:16px;color:#666}
+.rk_info strong {font-weight:normal;color:#e65700}
+.rk_info .lastUpdate {float:left}
+.rk_info .lastUpdate strong {margin:0 0 0 3px}
+.rk_info .help {float:right}
+
+.rk_tbl {table-layout:fixed;width:100%;border-top:2px solid #acacac}
+.rk_tbl th, .rk_tbl td {text-align:center;font-size:16px;letter-spacing:-0.5px;line-height:18px;border-bottom:1px solid #ccc}
+.rk_tbl th {padding:21px 0;color:#030303;border-bottom:2px solid #acacac;background-color:#fff !important}
+.rk_tbl td {height:82px;color:#444}
+.rk_tbl tr.top .rank {color:#e65700}
+.rk_tbl td > img {display:inline-block;vertical-align:middle}
+.rk_tbl .rank {font-size:20px;font-weight:bold;color:#888}
+.rk_tbl .character {padding:0 30px;font-weight:bold;color:#444;text-align:left}
+.rk_tbl .character .ico_rk_character {margin:0 5px 0 0}
+.rk_tbl .level, .rk_tbl .win {color:#e65700}
+.rk_tbl .level strong {font-weight:normal}
+.rk_tbl .exp, .rk_tbl .point, .rk_tbl .server, .rk_tbl .cleartime {color:#888}
+.rk_tbl .col_class {width:224px}
+.rk_tbl .col_level {width:110px}
+.rk_tbl .col_win {width:100px}
+.rk_tbl .col_character {width:580px}
+.rk_tbl .col_rank, .rk_tbl .col_grade, .rk_tbl .col_point, .rk_tbl .col_server {width:120px}
+.ranking.war .rk_tbl .col_character,
+.ranking.pve .rk_tbl .col_character {width:406px}
