@@ -1,0 +1,41 @@
+/* Declare Page */
+.declare .cont_body > .inner {padding:48px 0 0;border-top:2px solid #acacac}
+.declare .tit,
+.declare .tit_sub {overflow:hidden;margin:0 0 13px 0;color:#3a312a;letter-spacing:-0.7px}
+.declare .tit {font-size:20px}
+.declare .tit_sub {font-size:16px}
+.declare .dc_note {font-size:12px;line-height:20px;color:#888}
+.declare .dc_box {margin:0 0 41px 0;padding:0 0 48px 0;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/bg_line_diagonal.png') repeat-x left bottom}
+.declare .dc_box:after {clear:both;display:table;content:''}
+.declare .dc_box .dc_notice,
+.declare .dc_box .dc_counts,
+.declare .dc_box .dc_counts .dc_count {float:left}
+.declare .dc_box .dc_rules,
+.declare .dc_box .dc_btns {float:right}
+.declare .dc_box .dc_notice {width:685px}
+.declare .dc_box .dc_notice .tit {margin:0 0 19px 0}
+.declare .dc_box .dc_rules {width:515px;height:108px;padding:0 0 0 18px;border-left:1px solid #acacac}
+.declare .dc_box .dc_rules .tit_sub {float:left}
+.declare .dc_box .dc_rules .tit_sub .ico {font-family:'arial', 'tahoma', sans-serif}
+.declare .dc_box .dc_rules .dc_note {padding:0 0 0 100px}
+.declare .dc_box .dc_counts {padding:20px 0 0 0}
+.declare .dc_box .dc_counts .dc_count {width:315px;font-weight:bold;text-align:center}
+.declare .dc_box .dc_counts .dc_count .count_tit {display:inline-block;margin:0 0 28px 0;font-size:14px;font-weight:bold;color:#666}
+.declare .dc_box .dc_counts .dc_count .count_num {font-size:30px;line-height:50px;color:#db6006}
+.declare .dc_box .dc_counts .dc_count.myPoint .count_num {font-size:35px}
+.declare .dc_box .dc_counts .dc_count .count_num .num {margin:0 6px 0;font-size:50px;color:#444;letter-spacing:-1.7px}
+.declare .dc_box .dc_btns {width:180px;}
+.declare .dc_box .dc_btns .btn.write {display:block;width:169px;height:128px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -438px -88px}
+
+/* Declare List - Table */
+.declare_list .dc_tbl {table-layout:fixed;width:100%;border-top:2px solid #acacac}
+.declare_list .dc_tbl th, .declare_list .dc_tbl td {padding:21px 15px;text-align:center;font-size:16px;letter-spacing:-0.5px;line-height:18px;border-bottom:1px solid #ccc}
+.declare_list .dc_tbl thead th {color:#030303;border-bottom:2px solid #acacac;background-color:#fff !important}
+.declare_list .dc_tbl tbody th {color:#383838;background-color:#f2f2f2}
+.declare_list .dc_tbl td {color:#444}
+.declare_list .dc_tbl td.subject {padding-left:30px;text-align:left}
+.declare_list .dc_tbl td.status {font-weight:bold}
+.declare_list .dc_tbl .col_category {width:200px}
+.declare_list .dc_tbl .col_subject {width:570px}
+.declare_list .dc_tbl .col_date {width:170px}
+.declare_list .dc_tbl .col_status {width:260px;background-color:#f2f2f2}

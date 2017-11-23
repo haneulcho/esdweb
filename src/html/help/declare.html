@@ -1,0 +1,188 @@
+@@@include('../header_sub.html')
+	<main id="main" class="sub" role="main">
+		<div class="wrap_information row">
+			<div class="inner">
+				<!-- TODO, DEV: [S] 게임 스타트 버튼 시작!! -->
+				<div id="gameStart" class="gameStart">
+					<a href="#" class="btn_gameStart" onclick="GnxGameStartOnClick();return false;">GAME START</a>
+				</div>
+				<!-- //#gameStart -->
+				<!-- TODO, DEV: [E] 게임 스타트 버튼 끝!! -->
+			</div>
+			<!-- //.inner -->
+		</div>
+		<!-- //.wrap_information -->
+
+		<!-- TODO, DEV: 작가연재만화 -->
+		<section id="contents" class="declare" role="main">
+			<div class="wrap_cont row">
+				<div class="cont_header inner">
+					<div class="titles">
+						<h2 class="tit">비매너/버그 신고</h2>
+					</div>
+					<div class="des">
+						<p>클린 엘소드를 위해 많은 제보 부탁 드려요!</p>
+					</div>
+				</div>
+				<!-- //.cont_header -->
+				<div class="cont_body">
+					<div class="inner">
+						<div id="declareHeader">
+							<div class="dc_box">
+								<div class="dc_notice">
+									<h3 class="tit">비매너/버그 신고 게시판 안내</h3>
+									<p class="dc_note">
+										- 아이디 도용 피해, 아이템 분실 등 복구가 필요한 문의, 혹은 답변이 반드시 필요한 경우에는 고객센터를 통해 문의 부탁 드립니다.<br>
+										- 신고 내용 확인 후 해당 유저에 대한 신고 횟수가 누적될 시 처벌이 진행됩니다. 답변을 드리지 않는 점 양해 부탁 드립니다.<br>
+										- 작성해주신 내용은 등록 후 수정 및 삭제할 수 없습니다.
+									</p>
+								</div>
+								<!-- //.dc_notice -->
+								<div class="dc_rules">
+									<h4 class="tit_sub">포인트 규정 <span class="ico">&gt;</span></h4>
+									<p class="dc_note">
+										- 신고 횟수 당 포인트 1점 지급<br>
+										- 허위 신고 확인 시 포인트 10점 차감<br>
+										- 버그 신고 확인 결과 수정 완료 시 포인트 10~50점 지급<br>
+										- 비매너 신고 확인 결과 해당 유저 제재 완료 시 10~50점 지급<br>
+										- 포인트 100점 획득 시 매달 30일에 넥슨캐시 10,000원으로 교환됩니다.
+									</p>
+								</div>
+								<!-- //.dc_notice -->
+							</div>
+							<!-- //.dc_box -->
+
+							<div class="dc_box">
+								<!-- [S] TODO, DEV: 비매너/버그 신고 포인트, 신고 횟수, 진행중 신고건 집계 박스 -->
+								<div class="dc_counts">
+									<div class="dc_count myPoint">
+										<h4 class="count_tit">나의 신고 포인트</h4>
+										<p class="count_num"><span class="num">9999</span>P</p>
+									</div>
+									<!-- //.dc_count.mypoint -->
+									<div class="dc_count myTotalCount">
+										<h4 class="count_tit">누적 신고 횟수</h4>
+										<p class="count_num"><span class="num">9999</span>건</p>
+									</div>
+									<!-- //.dc_count.myTotalCount -->
+									<div class="dc_count myIngCount">
+										<h4 class="count_tit">진행중인 신고</h4>
+										<p class="count_num"><span class="num">20</span>건</p>
+									</div>
+									<!-- //.dc_count.myIngCount -->
+								</div>
+								<!-- //.dc_counts -->
+								<!-- [E] //TODO, DEV: 비매너/버그 신고 포인트, 신고 횟수, 진행중 신고건 집계 박스 -->
+
+								<div class="dc_btns">
+									<!-- TODO: 글쓰기 경로 수정할 것 -->
+									<a href="../common/write_declare.html" class="btn write">비매너/버그 신고 글쓰기</a>
+								</div>
+								<!-- //.dc_btns -->
+							</div>
+							<!-- //.dc_box -->
+						</div>
+						<!-- //#declareHeader -->
+
+						<div id="declareList">
+							<h3 class="tit">나의 신고 사항</h3>
+							<div class="declare_list">
+								<!-- [S] TODO, DEV: 나의 신고 사항 표 시작 -->
+								<table id="dc_tbl" class="dc_tbl">
+									<caption>나의 신고 사항 내역입니다. 비매너, 버그 분류별 신고 및 진행상황을 확인할 수 있습니다.</caption>
+									<colgroup>
+										<col class="col_category">
+										<col class="col_subject">
+										<col class="col_date">
+										<col class="col_status">
+									</colgroup>
+									<thead>
+										<tr>
+											<th>분류</th>
+											<th>제목</th>
+											<th>작성일자</th>
+											<th>진행상황</th>
+										</tr>
+									</thead>
+									<tbody>
+										<!-- [S] TODO, DEV: 비매너/버그 신고 리스트 <tr> 반복 부탁드립니다. -->
+										<tr>
+											<th class="category">비매너</th>
+											<td class="subject">갱콩이 자꾸 괴롭혀요.</td>
+											<td class="date">2017.12.30</td>
+											<td class="status">접수완료</td>
+										</tr>
+										<tr>
+											<th class="category">버그</th>
+											<td class="subject">게임실행이 되지않습니다.</td>
+											<td class="date">2017.12.30</td>
+											<td class="status">확인완료</td>
+										</tr>
+										<tr>
+											<th class="category">비매너</th>
+											<td class="subject">스카이조가 따라다니면서 몹스틸해서 랩업을 할 수가 없어요....</td>
+											<td class="date">2017.12.30</td>
+											<td class="status">확인완료</td>
+										</tr>
+										<tr>
+											<th class="category">비매너</th>
+											<td class="subject">솔레스 4시25분 아이디를 사용하는 또라이신고합니다.</td>
+											<td class="date">2017.12.30</td>
+											<td class="status">접수완료</td>
+										</tr>
+										<tr>
+											<th class="category">버그</th>
+											<td class="subject">끄고 싶은데 게임 종료가 되지 않아요.</td>
+											<td class="date">2017.12.30</td>
+											<td class="status">확인완료</td>
+										</tr>
+										<!-- [E] //TODO, DEV: 비매너/버그 신고 리스트 <tr> 반복 부탁드립니다. -->
+									</tbody>
+								</table>
+								<!-- // #dc_tbl.dc_tbl -->
+							</div>
+							<!-- //.declare_list -->
+						</div>
+						<!-- //#declareList -->
+
+					</div>
+					<!-- //.inner -->
+				</div>
+				<!-- //.cont_body -->
+				<div class="cont_footer">
+					<div id="declareFooter">
+						<!-- [S] DEV: 게시판 페이지네이션 START!! -->
+						<div class="b_paging inner">
+							<!--
+								현재 페이지일 경우 <li class="num current">1</li>
+							-->
+							<ul class="paging">
+								<li class="btn first">첫 페이지</li>
+								<li class="btn prev"><a href="#">이전 페이지</a></li>
+								<li class="num current">1</li>
+								<li class="num"><a href="#">2</a></li>
+								<li class="num"><a href="#">3</a></li>
+								<li class="num"><a href="#">4</a></li>
+								<li class="num"><a href="#">5</a></li>
+								<li class="btn next"><a href="#">다음 페이지</a></li>
+								<li class="btn last">마지막 페이지</li>
+							</ul>
+							<!-- //.paging -->
+						</div>
+						<!-- //.b_paging -->
+						<!-- [E] DEV: 게시판 페이지네이션 END!! -->
+					</div>
+					<!-- //#declareFooter -->
+				</div>
+				<!-- //.cont_footer -->
+			</div>
+			<!-- //.wrap_cont -->
+		</section>
+		<!-- //===========================================================
+				#contents END
+		=========================================================== // -->
+	</main>
+	<!-- //===========================================================
+			#main END
+	=========================================================== // -->
+@@@include('../footer.html')
