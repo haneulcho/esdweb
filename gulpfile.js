@@ -33,12 +33,12 @@ var banner = [
 ].join('');
 
 gulp.task('clean', function () {
-    return gulp.src(htmlOuputPath, {read: false})
+    return gulp.src(['./html/*.html', './html/**/*.html', './assets/css/*.css'], {read: false})
 
     .pipe(clean());
 });
 
-gulp.task('html', ['clean'], function () {
+gulp.task('html', function () {
     gulp.src(htmlInputPath, {base: './src/html'})
     .pipe(include({
       prefix: '@@@',
