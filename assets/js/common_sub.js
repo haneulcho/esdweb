@@ -85,6 +85,12 @@
         });
     }
 
+    // 비매너/버그 신고 게시판 파일명 표시
+    if ($('body').find('.bw_file').length) {
+      $(document).on('change', '.ipt_file', function () {
+        $(this).next('.ipt_fileName').val($(this).val().replace(/C:\\fakepath\\/i, ''));
+      });
+    }
   });
 
 })(jQuery, window, document);

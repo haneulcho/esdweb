@@ -1,0 +1,104 @@
+@@@include('../header_sub.html')
+	<main id="main" class="sub" role="main">
+		<div class="wrap_information row">
+			<div class="inner">
+				<!-- TODO, DEV: [S] 게임 스타트 버튼 시작!! -->
+				<div id="gameStart" class="gameStart">
+					<a href="#" class="btn_gameStart" onclick="GnxGameStartOnClick();return false;">GAME START</a>
+				</div>
+				<!-- //#gameStart -->
+				<!-- TODO, DEV: [E] 게임 스타트 버튼 끝!! -->
+			</div>
+			<!-- //.inner -->
+		</div>
+		<!-- //.wrap_information -->
+
+		<section id="contents" class="write ucc movie" role="main">
+			<div class="wrap_cont row">
+				<div class="cont_header inner">
+					<div class="titles">
+						<h2 class="tit">동영상</h2>
+						<ul class="category" role="tablist">
+							<li><a href="/community/screenshot/list.aspx" role="tab">스크린샷</a></li>
+							<li><a href="/community/movie/list.aspx" role="tab">동영상</a></li>
+							<li><a href="/community/fanart/list.aspx" role="tab">팬아트</a></li>
+							<li><a href="/community/cartoon/list.aspx" role="tab">팬카툰</a></li>
+						</ul>
+					</div>
+					<div class="des">
+						<p>엘소드를 소재로 한 다양한 동영상 작품을 공유해주세요!</p>
+					</div>
+				</div>
+				<!-- //.cont_header -->
+				<div class="cont_body">
+					<div id="boardWrite" class="inner">
+						<div class="board_write">
+							<h3 class="blind">글쓰기</h3>
+							<div class="bw_header">
+								<fieldset>
+									<legend class="blind"><h4>유튜브 URL 기재, 동영상 내용 및 글제목 작성</h4></legend>
+									<div class="iptBox bw_subject">
+										<input name="ctl00$Contents$m_txtTitle" type="text" id="Contents_m_txtTitle" class="ipt_keyword" maxlength="40" placeholder="제목을 입력하세요. (40자까지 입력 가능)">
+									</div>
+									<div class="bw_youtube">
+										<div class="iptBox bw_youtubeSrc">
+											<input name="ctl00$Contents$m_txtYoutubeLink" type="text" id="Contents_m_txtYoutubeLink" class="ipt_youtubeSrc" n4maxlength="100" placeholder="유튜브 동영상 URL을 입력해 주세요.">
+											<p class="help">
+												업로드된 유튜브 동영상 URL을 입력해 주세요.(미인증계정 동영상은 섬네일이 노출되지 않을 수 있습니다.)<br>
+												예시) https://www.youtube.com/watch?v=UJ_xxzzzxxxxxz
+											</p>
+										</div>
+										<div class="iptBox bw_youtubeMsg">
+											<textarea name="ctl00$Contents$m_MovieCaption" rows="2" cols="20" id="Contents_m_MovieCaption" class="ipt_youtubeMsg" placeholder="유튜브 동영상에 대한 내용을 작성해 주세요."></textarea>
+											<p class="help">
+												[동영상 내용 작성 시 유의사항]<br>
+												- 동영상 내용 작성 영역은 재생 내용의 대본 및 관련 내용만 작성 가능 합니다.<br>
+												- 동영상 내용은 최소 6글자 이상 입력하셔야 합니다.<br>
+												- HTML관련 태그는 입력하실 수 없습니다.
+											</p>
+										</div>
+									</div>
+									<!-- //.bw_youtube -->
+								</fieldset>
+							</div>
+							<!-- //.bw_header -->
+							<div class="bw_editor">
+								<fieldset>
+									<legend class="blind"><h4>글내용 작성</h4></legend>
+									<!-- DEV: 글쓰기 에디터 START!! -->
+									<!--
+										..........................................................
+										..........................................................
+										..........................................................
+										....................... 에디터 공간 .......................
+										..........................................................
+										..........................................................
+										..........................................................
+									-->
+									<!-- DEV: 글쓰기 에디터 END!! -->
+								</fieldset>
+							</div>
+							<!-- //.bw_editor -->
+							<div class="bw_footer">
+								<div class="b_btns inner">
+									<a href="#" onclick="history.back(-1);return false;" class="btn list"><span class="ir">목록으로</span></a><input type="image" name="ctl00$Contents$btnWrite" id="Contents_btnWrite" class="btn submit" alt="등록하기" src="http://s.nx.com/S2/Game/Elsword/site/2018/renewal/img_input.png">
+								</div>
+							</div>
+							<!-- //.bw_footer -->
+						</div>
+						<!-- //.board_write -->
+					</div>
+					<!-- //#boardWrite -->
+				</div>
+				<!-- //.cont_body -->
+			</div>
+			<!-- //.wrap_cont -->
+		</section>
+		<!-- //===========================================================
+				#contents END
+		=========================================================== // -->
+	</main>
+	<!-- //===========================================================
+			#main END
+	=========================================================== // -->
+@@@include('../footer.html')

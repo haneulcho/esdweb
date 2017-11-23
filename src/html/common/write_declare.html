@@ -1,0 +1,140 @@
+@@@include('../header_sub.html')
+<main id="main" class="sub" role="main">
+	<div class="wrap_information row">
+		<div class="inner">
+			<!-- TODO, DEV: [S] 게임 스타트 버튼 시작!! -->
+			<div id="gameStart" class="gameStart">
+				<a href="#" class="btn_gameStart" onclick="GnxGameStartOnClick();return false;">GAME START</a>
+			</div>
+			<!-- //#gameStart -->
+			<!-- TODO, DEV: [E] 게임 스타트 버튼 끝!! -->
+		</div>
+		<!-- //.inner -->
+	</div>
+	<!-- //.wrap_information -->
+
+	<section id="contents" class="write declare" role="main">
+		<div class="wrap_cont row">
+			<div class="cont_header inner">
+				<div class="titles">
+					<h2 class="tit">비매너/버그 신고</h2>
+				</div>
+				<div class="des">
+					<p>클린 엘소드를 위해 많은 제보 부탁 드려요!</p>
+				</div>
+			</div>
+			<!-- //.cont_header -->
+			<div class="cont_body">
+				<div id="boardWrite" class="inner">
+					<div class="board_write">
+						<h3 class="blind">글쓰기</h3>
+						<div class="bw_header">
+							<fieldset>
+								<legend class="blind"><h4>분류 선택 및 글제목 작성</h4></legend>
+
+								<div class="iptBox bw_category">
+									<select name="ctl00$Contents$m_CategorySelectBox" id="Contents_m_CategorySelectBox" class="ipt_select">
+										<option data-display="분류를 선택해 주세요">분류를 선택해 주세요</option>
+										<option value="1">비매너</option>
+										<option value="2">버그</option>
+									</select>
+								</div>
+
+								<div class="iptBox bw_subject">
+									<input name="ctl00$Contents$m_txtTitle" type="text" id="Contents_m_txtTitle" class="ipt_keyword" maxlength="40" placeholder="제목을 입력하세요. (40자까지 입력 가능)">
+								</div>
+							</fieldset>
+						</div>
+						<!-- //.bw_header -->
+						<div class="bw_editor">
+							<fieldset>
+								<legend class="blind"><h4>글내용 작성</h4></legend>
+								<!-- DEV: 글쓰기 에디터 START!! -->
+								<!--
+									..........................................................
+									..........................................................
+									..........................................................
+									....................... 에디터 공간 .......................
+									..........................................................
+									..........................................................
+									..........................................................
+								-->
+								<!-- DEV: 글쓰기 에디터 END!! -->
+							</fieldset>
+						</div>
+						<!-- //.bw_editor -->
+						<div class="bw_uploader">
+							<div class="bw_note">
+								<p class="help">
+									파일을 선택 후 업로드 버튼을 클릭하셔야 업로드 됩니다.<br>
+									용량 제한은 파일당 3MB, 합계 15MB 입니다.
+								</p>
+							</div>
+							<!-- DEV: 파일첨부 START!! -->
+							<div class="bw_upload">
+								<div class="bw_upload_files">
+									<!--
+										휘승 과장님, 아래 li 반복으로 파일 첨부 목록 만들어두었습니다.
+										최종 업로드 버튼(주황색 업로드 버튼)이 필요치 않으시면 제거 부탁 드립니다.
+									-->
+									<form id="upForm" name="form" action="" method="POST" enctype="multipart/form-data">
+										<ul class="bw_file">
+											<li class="file">
+												<input id="" type="file" name="Filedata" class="ipt_file" />
+												<input type="text" class="ipt_fileName" disabled="disabled" placeholder="찾아보기를 눌러 이미지를 업로드 하세요.">
+												<button class="ipt_browse" type="button">찾아보기...</button>
+											</li>
+											<li class="file">
+												<input id="" type="file" name="Filedata" class="ipt_file" />
+												<input type="text" class="ipt_fileName" disabled="disabled" placeholder="찾아보기를 눌러 이미지를 업로드 하세요.">
+												<button class="ipt_browse" type="button">찾아보기...</button>
+											</li>
+											<li class="file">
+												<input id="" type="file" name="Filedata" class="ipt_file" />
+												<input type="text" class="ipt_fileName" disabled="disabled" placeholder="찾아보기를 눌러 이미지를 업로드 하세요.">
+												<button class="ipt_browse" type="button">찾아보기...</button>
+											</li>
+											<li class="file">
+												<input id="" type="file" name="Filedata" class="ipt_file" />
+												<input type="text" class="ipt_fileName" disabled="disabled" placeholder="찾아보기를 눌러 이미지를 업로드 하세요.">
+												<button class="ipt_browse" type="button">찾아보기...</button>
+											</li>
+										</ul>
+										<!-- //.bw_file -->
+									</form>
+								</div>
+								<!-- //.bw_upload_files -->
+								<!-- [S] DEV: 최종 업로드 버튼 -->
+								<div class="bw_upload_submit">
+									<input type="image" name="" id="" class="btn upload_submit" alt="업로드" src="http://s.nx.com/S2/Game/Elsword/site/2018/renewal/img_input.png">
+								</div>
+								<!-- //.bw_upload_submit -->
+								<!-- [E] //DEV: 최종 업로드 버튼 -->
+							</div>
+							<!-- //.bw_upload -->
+							<!-- DEV: 파일첨부 END!! -->
+						</div>
+						<!-- //.bw_uploader -->
+						<div class="bw_footer">
+							<div class="b_btns inner">
+								<a href="#" onclick="history.back(-1);return false;" class="btn list"><span class="ir">목록으로</span></a><input type="image" name="ctl00$Contents$btnWrite" id="Contents_btnWrite" class="btn submit" alt="등록하기" src="http://s.nx.com/S2/Game/Elsword/site/2018/renewal/img_input.png">
+							</div>
+						</div>
+						<!-- //.bw_footer -->
+					</div>
+					<!-- //.board_write -->
+				</div>
+				<!-- //#boardWrite -->
+			</div>
+			<!-- //.cont_body -->
+		</div>
+		<!-- //.wrap_cont -->
+	</section>
+	<!-- //===========================================================
+			#contents END
+	=========================================================== // -->
+</main>
+<!-- //===========================================================
+		#main END
+=========================================================== // -->
+@@@include('../footer.html')

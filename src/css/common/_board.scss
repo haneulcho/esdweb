@@ -96,3 +96,60 @@
 .b_paging .paging > li.next > a {background-position:-110px 0}
 .b_paging .paging > li.last {background-position:-165px -58px}
 .b_paging .paging > li.last > a {background-position:-165px 0}
+
+/* Board Write */
+.write .cont_body > .inner {padding:20px 0 0 !important;border-top:2px solid #acacac}
+.bw_header {margin:0 0 20px 0;padding:0 0 20px 0;border-bottom:2px solid #acacac}
+.bw_header:after {clear:both;display:table;content:'';*zoom:1}
+.bw_header .iptBox .ipt_select,
+.bw_header .iptBox .ipt_keyword {height:48px;line-height:48px}
+.bw_header .iptBox .ipt_select {border-color:#acacac}
+.bw_header .iptBox .ipt_select .option.selected {color:#e77a3d}
+.bw_header .iptBox.bw_category {float:left;width:190px;margin:0 19px 0 0}
+.bw_header .iptBox.bw_subject {margin:0 19px 0 209px}
+.bw_header .iptBox.bw_subject .ipt_keyword {width:100%;color:#444;border-top:none;border-left:none;border-right:none;border-bottom:3px solid #e77a3d}
+.bw_header .iptBox.bw_subject .ipt_keyword:active, .bw_header .iptBox.bw_subject .ipt_keyword:focus {border-bottom-color:#d16b31}
+.bw_header .bw_youtube {position:relative;clear:both;margin:20px 0 0 0;padding:20px 0 0 167px;border-top:1px solid #acacac}
+.bw_header .bw_youtube:before {position:absolute;top:25px;left:18px;display:block;width:120px;height:38px;content:'';background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -336px -28px}
+.bw_header .bw_youtube .help {margin:12px 0 0 0;font-size:12px;line-height:16px;color:#888}
+.bw_header .bw_youtube .iptBox {margin:0 19px 0 0}
+.bw_header .bw_youtube .iptBox.bw_youtubeMsg {margin-top:20px;padding:20px 0 0 0;border-top:1px solid #ddd}
+.bw_header .bw_youtube .iptBox.bw_youtubeMsg .ipt_youtubeMsg {display:block;padding:10px;height:120px;outline:0}
+.bw_header .bw_youtube .iptBox.bw_youtubeSrc .ipt_youtubeSrc {height:48px;padding:0 10px 0;line-height:48px}
+.bw_header .bw_youtube .iptBox.bw_youtubeSrc .ipt_youtubeSrc,
+.bw_header .bw_youtube .iptBox.bw_youtubeMsg .ipt_youtubeMsg {width:100%;font-size:15px;color:#444;background:#fff;border:1px solid #d8d0c6;transition:all .2s ease-in-out}
+.bw_header .bw_youtube .iptBox.bw_youtubeSrc .ipt_youtubeSrc:active,
+.bw_header .bw_youtube .iptBox.bw_youtubeSrc .ipt_youtubeSrc:focus,
+.bw_header .bw_youtube .iptBox.bw_youtubeMsg .ipt_youtubeMsg:active,
+.bw_header .bw_youtube .iptBox.bw_youtubeMsg .ipt_youtubeMsg:focus {border-color:#d0b6a9}
+.bw_editor {clear:both;display:block;height:540px;min-height:540px;margin:0 0 35px 0;border:1px solid #d7d7d7}
+.bw_footer .b_btns {margin:0 0 70px 0;text-align:center}
+.bw_footer .b_btns .btn {display:inline-block;*display:inline;zoom:1;margin:0 0 0 12px;vertical-align:top;border:none;outline:0;background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png');background-repeat:no-repeat}
+.bw_footer .b_btns .btn:first-child {margin-left:0}
+.trade .bw_header .iptBox.bw_category {width:215px}
+.trade .bw_header .iptBox.bw_subject {margin-left:468px}
+.ucc .bw_header .iptBox.bw_subject {margin-left:15px}
+.declare .bw_editor {margin-bottom:21px}
+
+/* Declare File Upload Form */
+.declare .bw_uploader {margin:0 0 35px 0;border:1px solid #d7d7d7;border-top-width:2px}
+.declare .bw_uploader .bw_note {padding:28px 25px;background:#f5f5f5}
+.declare .bw_uploader .bw_note .help {font-size:12px;line-height:20px;color:#888}
+.declare .bw_uploader .bw_upload {padding:25px}
+.declare .bw_uploader .bw_upload_files,
+.declare .bw_uploader .bw_upload_submit {width:440px;margin:0 auto}
+.declare .bw_uploader .bw_upload_files {margin-bottom:16px}
+.declare .bw_uploader .bw_upload_files .bw_file {margin:0 auto}
+.declare .bw_uploader .bw_upload_files .bw_file .file {position:relative;margin:11px 0 0 0}
+.declare .bw_uploader .bw_upload_files .bw_file .file .ipt_file {position:absolute;top:0;right:0;text-indent:-9999px;-moz-opacity:0;filter:alpha(opacity=0);opacity:0;z-index:2;cursor:pointer}
+.declare .bw_uploader .bw_upload_files .bw_file .file .ipt_fileName {display:block;float:left;width:325px;height:31px;padding:0 10px;background:#e6e6e6;border:1px solid #b1b1b1}
+.declare .bw_uploader .bw_upload_files .bw_file .file .ipt_file,
+.declare .bw_uploader .bw_upload_files .bw_file .file .ipt_browse {display:block;width:110px;height:31px}
+.declare .bw_uploader .bw_upload_files .bw_file .file .ipt_browse {float:right;text-align:center;color:#444;background:#ccc;outline:0}
+.declare .bw_uploader .bw_upload_files .bw_file li {clear:both;height:31px}
+.declare .bw_uploader .bw_upload_files .bw_file li:first-child {margin-top:0}
+.declare .bw_uploader .bw_upload_submit {position:relative;height:50px;text-align:center}
+.declare .bw_uploader .bw_upload_submit:before {content:'업로드';font-weight:bold;line-height:50px;color:#fff;background:#e96d21;z-index:1}
+.declare .bw_uploader .bw_upload_submit .btn.upload_submit {z-index:2}
+.declare .bw_uploader .bw_upload_submit:before,
+.declare .bw_uploader .bw_upload_submit .btn.upload_submit {position:absolute;display:block;top:0;left:0;width:100%;height:100%;outline:0}
