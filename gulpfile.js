@@ -33,12 +33,12 @@ var banner = [
 ].join('');
 
 gulp.task('clean', function () {
-    return gulp.src(htmlOuputPath, {read: false})
+    return gulp.src(htmlOuputPath)
 
     .pipe(clean());
 });
 
-gulp.task('html', ['clean'], function () {
+gulp.task('html', function () {
     gulp.src(htmlInputPath, {base: './src/html'})
     .pipe(include({
       prefix: '@@@',
@@ -90,7 +90,7 @@ gulp.task('css-watch', ['css'], function (done) {
 });
 // gulp.task('js-watch', ['js'], reload);
 
-gulp.task('default', ['css', 'html'], function () {
+gulp.task('default', ['clean', 'css', 'html'], function () {
     browserSync.init({
         server: {
             baseDir: ["./html", "./"]
