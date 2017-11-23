@@ -60,12 +60,10 @@
 .wrap_issue .issue_notice .tit .txt {width:114px;height:23px;background-position:-1px -564px}
 .wrap_issue .issue_notice .tit .more {margin:4px 0 0 129px}
 .wrap_issue .issue_notice .lists li {overflow:hidden}
-.wrap_issue .issue_notice .lists li > a {float:left;overflow:hidden;display:block;max-width:475px;height:36px}
-.wrap_issue .issue_notice .lists li .subject {font-size:17px;font-weight:normal;line-height:36px;color:#414141}
-
-/* TODO: NEW, HOT 아이콘 삽입할 것 */
-.wrap_issue .issue_notice .lists li .subject .ico {}
-.wrap_issue .issue_notice .lists li .subject .ico.new {}
+.wrap_issue .issue_notice .lists li > a {float:left;overflow:hidden;display:block;max-width:475px;height:36px;color:#414141}
+.wrap_issue .issue_notice .lists li .subject {font-size:17px;font-weight:normal;line-height:36px}
+.wrap_issue .issue_notice .lists li .subject .ico {display:inline-block;width:19px;height:19px;margin:-3px 0 0 6px;vertical-align:middle;background:url('../img/spr_asset.png') no-repeat 0 0}
+.wrap_issue .issue_notice .lists li .subject .ico.new {background-position:-326px -85px}
 .wrap_issue .issue_notice .lists li .date {float:right;font-size:13px;line-height:36px;color:#888}
 .wrap_issue .issue_megaphone .owl-carousel.megaphone {overflow:hidden;width:288px;height:288px}
 .issue_megaphone, .issue_banner {position:relative;float:left;width:288px;height:288px}
