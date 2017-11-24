@@ -110,7 +110,7 @@
 .bw_header .iptBox.bw_subject .ipt_keyword {width:100%;color:#444;border-top:none;border-left:none;border-right:none;border-bottom:3px solid #e77a3d}
 .bw_header .iptBox.bw_subject .ipt_keyword:active, .bw_header .iptBox.bw_subject .ipt_keyword:focus {border-bottom-color:#d16b31}
 .bw_header .bw_youtube {position:relative;clear:both;margin:20px 0 0 0;padding:20px 0 0 167px;border-top:1px solid #acacac}
-.bw_header .bw_youtube:before {position:absolute;top:25px;left:18px;display:block;width:120px;height:38px;content:'';background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -336px -28px}
+.bw_header .bw_youtube:before {position:absolute;top:25px;left:18px;display:block;width:120px;height:38px;content:'';background:url('../img/spr_asset.png') no-repeat -336px -28px}
 .bw_header .bw_youtube .help {margin:12px 0 0 0;font-size:12px;line-height:16px;color:#888}
 .bw_header .bw_youtube .iptBox {margin:0 19px 0 0}
 .bw_header .bw_youtube .iptBox.bw_youtubeMsg {margin-top:20px;padding:20px 0 0 0;border-top:1px solid #ddd}
@@ -124,7 +124,7 @@
 .bw_header .bw_youtube .iptBox.bw_youtubeMsg .ipt_youtubeMsg:focus {border-color:#d0b6a9}
 .bw_editor {clear:both;display:block;height:540px;min-height:540px;margin:0 0 35px 0;border:1px solid #d7d7d7}
 .bw_footer .b_btns {margin:0 0 70px 0;text-align:center}
-.bw_footer .b_btns .btn {display:inline-block;*display:inline;zoom:1;margin:0 0 0 12px;vertical-align:top;border:none;outline:0;background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png');background-repeat:no-repeat}
+.bw_footer .b_btns .btn {display:inline-block;*display:inline;zoom:1;margin:0 0 0 12px;vertical-align:top;border:none;outline:0;background-image:url('../img/spr_asset.png');background-repeat:no-repeat}
 .bw_footer .b_btns .btn:first-child {margin-left:0}
 .trade .bw_header .iptBox.bw_category {width:215px}
 .trade .bw_header .iptBox.bw_subject {margin-left:468px}

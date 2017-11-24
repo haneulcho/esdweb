@@ -33,7 +33,7 @@ var banner = [
 ].join('');
 
 gulp.task('clean', function () {
-    return gulp.src(htmlOuputPath)
+    return gulp.src(['./html/*.html', './html/**/*.html', './assets/css/*.css'], {read: false})
 
     .pipe(clean());
 });
