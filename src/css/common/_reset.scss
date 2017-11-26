@@ -111,6 +111,13 @@ html, body {width:100%;min-width:1200px;background:#fff}
 
 
 
+
+
+
+
+
+
+
 /* 캐릭터 딱지 기본 */
 // #character .character_navi{position: absolute;bottom: 0;width: 100%;height: 116px;}
 // #character .character_navi:after{position: absolute;bottom: 0;width: 100%;height: 100%;background-color: #000;opacity: .7;content: " ";z-index: 10;}
@@ -123,31 +130,368 @@ html, body {width:100%;min-width:1200px;background:#fff}
 
 
 
+.characterBadge.elsword,
+.characterBadge.aisha,
+.characterBadge.rena,
+.characterBadge.raven {background:url('../img/spr_character1.png') no-repeat 0 0}
+
+.characterBadge.eve,
+.characterBadge.chung,
+.characterBadge.ara,
+.characterBadge.elesis {background:url('../img/spr_character2.png') no-repeat 0 0}
+
+.characterBadge.add,
+.characterBadge.luciel,
+.characterBadge.rose,
+.characterBadge.ain {background:url('../img/spr_character3.png') no-repeat 0 0}
+
 /* 엘소드 딱지 */
+/* 기본: 1 */
+.characterBadge.c1 {background-position:-9px 0}
+
+/* 1_1 소드 나이트: 10 */
+.characterBadge.c10 {background-position:-150px 0}
+
+/* 1_2 매직 나이트: 11 */
+.characterBadge.c11 {background-position:-150px -137px}
+
+/* 1_3 시스 나이트: 22 */
+.characterBadge.c22 {background-position:-150px -277px}
+
+/* 2_1 로드 나이트: 100 */
+.characterBadge.c100 {background-position:-292px 0}
+
+/* 2_2 룬 슬레이어: 101 */
+.characterBadge.c101 {background-position:-292px -137px}
+
+/* 2_3 인피니티 소드: 112 */
+.characterBadge.c112 {background-position:-292px -277px}
+
+/* 3_1 나이트 엠퍼러: 150 */
+// .characterBadge.c150 {background-position:}
+
 
 
 /* 아이샤 딱지 */
+/* 기본: 2 */
+.characterBadge.c2 {background-position:-600px 0}
+
+/* 1_1 하이 매지션: 14 */
+.characterBadge.c14 {background-position:-739px 0}
+
+/* 1_2 다크 매지션: 15 */
+.characterBadge.c15 {background-position:-739px -137px}
+
+/* 1_3 배틀 매지션: 23 */
+.characterBadge.c23 {background-position:-739px -277px}
+
+/* 2_1 엘레멘탈 마스터: 104 */
+.characterBadge.c104 {background-position:-880px 0}
+
+/* 2_2 보이드 프린세스: 105 */
+/* TODO: Sprite Images 교체 필요 */
+.characterBadge.c105 {background-position:-880px -137px}
+
+/* 2_3 디멘션 위치: 113 */
+.characterBadge.c113 {background-position:-880px -277px}
+
+/* 3_1 에테르 세이지: 153 */
+// .characterBadge.c153 {background-position:}
+
+
+
+
 
 /* 레나 딱지 */
+/* 기본: 3 */
+.characterBadge.c3 {background-position:-9px -424px}
+
+/* 1_1 컴벳 레인저: 12 */
+.characterBadge.c12 {background-position:-150px -424px}
+
+/* 1_2 스나이핑 레인저: 13 */
+.characterBadge.c13 {background-position:-150px -563px}
+
+/* 1_3 트래핑 레인저: 24 */
+.characterBadge.c24 {background-position:-150px -702px}
+
+/* 2_1 윈드 스니커: 102 */
+/* TODO: Sprite Images 교체 필요 */
+.characterBadge.c102 {background-position:-292px -424px}
+
+/* 2_2 그랜드 아처: 103 */
+.characterBadge.c103 {background-position:-292px -563px}
+
+/* 2_3 나이트 와처: 114 */
+/* TODO: Sprite Images 교체 필요 */
+.characterBadge.c114 {background-position:-292px -702px}
+
+/* 3_1 아네모스: 156 */
+// .characterBadge.c156 {background-position:}
+
+
+
 
 /* 레이븐 딱지 */
+/* 기본: 4 */
+.characterBadge.c4 {background-position:-600px -424px}
+
+/* 1_1 소드 테이커: 16 */
+.characterBadge.c16 {background-position:-738px -424px}
+
+/* 1_2 오버 테이커: 17 */
+.characterBadge.c17 {background-position:-738px -562px}
+
+/* 1_3 웨폰 테이커: 25 */
+.characterBadge.c25 {background-position:-738px -700px}
+
+/* 2_1 블레이드 마스터: 106 */
+.characterBadge.c106 {background-position:-880px -424px}
+
+/* 2_2 레크리스 피스트: 107 */
+.characterBadge.c107 {background-position:-880px -562px}
+
+/* 2_3 베테랑 커맨더: 115 */
+.characterBadge.c115 {background-position:-880px -700px}
+
+/* 3_1 퓨리어스 블레이드: 159 */
+.characterBadge.c159 {background-position:-1021px -424px}
+
+
+
 
 /* 이브 딱지 */
+/* 기본: 5 */
+.characterBadge.c5 {background-position:-9px -11px}
+
+/* 1_1 코드:액조틱: 18 */
+.characterBadge.c18 {background-position:-151px -11px}
+
+/* 1_2 코드:아키텍처: 19 */
+.characterBadge.c19 {background-position:-151px -147px}
+
+/* 1_3 코드:일렉트라: 26 */
+.characterBadge.c26 {background-position:-151px -280px}
+
+/* 2_1 코드:네메시스: 108 */
+.characterBadge.c108 {background-position:-293px -11px}
+
+/* 2_2 코드:엠프레스: 109 */
+.characterBadge.c109 {background-position:-293px -147px}
+
+/* 2_3 코드:배틀 세라프: 116 */
+.characterBadge.c116 {background-position:-293px -280px}
+
+/* 3_1 코드: 얼티메이트: 162 */
+// .characterBadge.c162 {background-position:}
+
+
 
 /* 청 딱지 */
+/* 기본: 6 */
+.characterBadge.c6 {background-position:-600px -11px}
+
+/* 1_1 퓨리 가디언: 20 */
+.characterBadge.c20 {background-position:-739px -11px}
+
+/* 1_2 슈팅 가디언: 21 */
+.characterBadge.c21 {background-position:-739px -148px}
+
+/* 1_3 쉘링 가디언: 27 */
+.characterBadge.c27 {background-position:-739px -281px}
+
+/* 2_1 아이언 팔라딘: 110 */
+.characterBadge.c110 {background-position:-880px -11px}
+
+/* 2_2 데들리 체이서: 111 */
+.characterBadge.c111 {background-position:-880px -148px}
+
+/* 2_3 택티컬 트루퍼: 117 */
+.characterBadge.c117 {background-position:-880px -281px}
+
+/* 3_1 코멧 크루세이더: 165 */
+// .characterBadge.c165 {background-position:}
+
+
 
 /* 아라 딱지 */
+/* 기본: 7 */
+.characterBadge.c7 {background-position:-9px -424px}
+
+/* 1_1 소선: 29 */
+.characterBadge.c29 {background-position:-150px -424px}
+
+/* 1_2 소마: 120 */
+.characterBadge.c120 {background-position:-150px -566px}
+
+/* 1_3 소요: 35 */
+.characterBadge.c35 {background-position:-150px -703px}
+
+/* 2_1 제천: 30 */
+.characterBadge.c30 {background-position:-292px -424px}
+
+/* 2_2 명왕: 121 */
+.characterBadge.c121 {background-position:-292px -566px}
+
+/* 2_3 수라: 125 */
+.characterBadge.c125 {background-position:-292px -703px}
+
+/* 3_1 비천: 168 */
+// .characterBadge.c168 {background-position:}
+
+
+
 
 /* 엘리시스 딱지 */
+/* 기본: 8 */
+.characterBadge.c8 {background-position:-600px -424px}
+
+/* 1_1 세이버 나이트: 32 */
+.characterBadge.c32 {background-position:-739px -424px}
+
+/* 1_2 파이로 나이트: 122 */
+.characterBadge.c122 {background-position:-739px -557px}
+
+/* 1_3 다크 나이트: 36 */
+.characterBadge.c36 {background-position:-739px -693px}
+
+/* 2_1 그랜드 마스터: 33 */
+.characterBadge.c33 {background-position:-880px -424px}
+
+/* 2_2 블레이징 하트: 123 */
+.characterBadge.c123 {background-position:-880px -557px}
+
+/* 2_3 크림슨 어벤저: 126 */
+.characterBadge.c126 {background-position:-880px -693px}
+
+/* 3_1 엠파이어 소드: 171 */
+// .characterBadge.c171 {background-position:}
+
+
+
+
 
 /* 애드 딱지 */
+/* 기본: 9 */
+.characterBadge.c9 {background-position:-9px -3px}
+
+/* 1_1 사이킥 트레이서: 32 */
+.characterBadge.c32 {background-position:-150px -3px}
+
+/* 1_2 아크 트레이서: 33 */
+.characterBadge.c33 {background-position:-150px -138px}
+
+/* 1_3 타임 트레이서: 36 */
+.characterBadge.c36 {background-position:-150px -272px}
+
+/* 2_1 루나틱 사이커: 122 */
+.characterBadge.c122 {background-position:-292px -3px}
+
+/* 2_2 마스터마인드: 123 */
+.characterBadge.c123 {background-position:-292px -138px}
+
+/* 2_3 디아볼릭 에스퍼: 126 */
+.characterBadge.c126 {background-position:-292px -272px}
+
+/* 3_1 둠 브링어: 174 */
+// .characterBadge.c174 {background-position:}
+
+
+
+
 
 /* 루시엘 딱지 */
+/* 기본: 200 */
+.characterBadge.c200 {background-position:-600px -3px}
+
+/* 1_1 킬리아크: 37 */
+.characterBadge.c37 {background-position:-739px -3px}
+
+/* 1_2 로열 가드: 38 */
+.characterBadge.c38 {background-position:-739px -138px}
+
+/* 1_3 디아블라: 39 */
+.characterBadge.c39 {background-position:-739px -271px}
+
+/* 2_1 드레드로드: 127 */
+.characterBadge.c127 {background-position:-880px -3px}
+
+/* 2_2 노블레스: 128 */
+.characterBadge.c128 {background-position:-880px -138px}
+
+/* 2_3 데모니오: 129 */
+.characterBadge.c129 {background-position:-880px -271px}
+
+/* 3_1 카타스트로피: 177 */
+// .characterBadge.c177 {background-position:}
+
+
+
+
 
 /* 로제 딱지 */
+/* 기본: 201 */
+.characterBadge.c201 {background-position:-9px -414px}
+
+/* 1_1 헤비 배럴: 41 */
+.characterBadge.c41 {background-position:-150px -414px}
+
+/* 1_2 블러디아: 40 */
+.characterBadge.c40 {background-position:-150px -547px}
+
+/* 1_3 발키리: 43 */
+.characterBadge.c43 {background-position:-150px -683px}
+
+/* 1_4 메탈 하트: 42 */
+.characterBadge.c42 {background-position:-150px -821px}
+
+
+/* 2_1 스톰 트루퍼: 131 */
+.characterBadge.c131 {background-position:-292px -414px}
+
+/* 2_2 크림슨 로제: 130 */
+.characterBadge.c130 {background-position:-292px -547px}
+
+/* 2_3 프레이야: 133 */
+.characterBadge.c133 {background-position:-292px -683px}
+
+/* 2_4 옵티머스: 132 */
+.characterBadge.c132 {background-position:-292px -821px}
+
+
+/* 3_1 템페스트 버스터: 180 */
+// .characterBadge.c180 {background-position:}
+
+
+
+
 
 /* 아인 딱지 */
+/* 기본: 202 */
+.characterBadge.c202 {background-position:-600px -414px}
 
+
+/* 1_1 롭티:익스큐터: 44 */
+.characterBadge.c44 {background-position:-739px -414px}
+
+/* 1_2 롭티:엔파서: 45 */
+.characterBadge.c45 {background-position:-739px -549px}
+
+/* 1_3 롭티:원더러: 46 */
+.characterBadge.c46 {background-position:-739px -682px}
+
+/* 2_1 아메 서머터지: 134 */
+.characterBadge.c134 {background-position:-880px -414px}
+
+/* 2_2 에브루헨 아모치온: 135 */
+/* TODO: Sprite Images 교체 필요 */
+.characterBadge.c135 {background-position:-880px -549px}
+
+/* 2_3 아포스타시아: 136 */
+.characterBadge.c136 {background-position:-880px -682px}
+
+/* 3_1 리히터: 184 */
+// .characterBadge.c184 {background-position:}
 
 
 
