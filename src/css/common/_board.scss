@@ -73,6 +73,9 @@
 .b_btns .btn.like {width:421px;height:69px;background-position:-423px -376px}
 .b_btns .btn.list {width:420px;height:69px;background-position:0 -453px}
 .b_btns .btn.modify {width:421px;height:69px;background-position:-423px -453px}
+.b_btns .btn.delete {width:339px;height:69px;background-position:-439px -224px}
+.bc_btns .btn.cdelete {width:64px;height:21px;background-position:-548px 0}
+.bc_write .btn.cwrite {width:139px;height:105px;background-position:-615px -88px}
 .b_search_form .btn.search {width:105px;height:38px;background-position:-225px 0}
 
 /* Board Paging */
@@ -96,6 +99,103 @@
 .b_paging .paging > li.next > a {background-position:-110px 0}
 .b_paging .paging > li.last {background-position:-165px -58px}
 .b_paging .paging > li.last > a {background-position:-165px 0}
+
+/* Board View - Header */
+.view .wrap_cont .cont_body {margin-bottom:0}
+.view .board_view.inner {border-top:2px solid #acacac}
+.bv_header {min-height:136px;background:#f5f5f5;border-bottom:2px solid #acacac}
+.bv_header:after {clear:both;display:table;content:'';*zoom:1}
+.bv_header .bv_info {float:left;width:820px;padding:39px 27px 35px;background:#fff}
+.bv_header .bv_info .bv_subject {margin:0 0 17px 0;line-height:27px}
+.bv_header .bv_info .bv_subject:after {clear:both;display:table;content:'';*zoom:1}
+.bv_header .bv_info .bv_subject .subject_side {overflow:hidden;float:left;display:block}
+.bv_header .bv_info .bv_subject .subject_side > span {float:left;margin:0 8px 0 0;font-size:12px}
+.bv_header .bv_info .bv_subject .subject_side:after {float:right;content:'';width:1px;height:12px;margin:8px 9px 0 2px;background:#989898}
+.bv_header .bv_info .bv_subject .subject_side .category,
+.bv_header .bv_info .bv_subject .subject_side .server.s {color:#e65700}
+.bv_header .bv_info .bv_subject .subject_side .server:before {content:'/ ';margin:0 0 0 -5px}
+.bv_header .bv_info .bv_subject .subject_side .server.g {color:#06a545}
+.bv_header .bv_info .bv_subject .subject {float:left}
+.bv_header .bv_info .bv_subject .subject .tit {overflow:hidden;max-width:680px;font-size:16px;line-height:28px;color:#444}
+.bv_header .bv_info .bv_subject .subject .tit_sub {overflow:hidden;display:inline-block;vertical-align:-5px}
+.bv_header .bv_info .bv_subject .subject .tit_sub > span {float:left;margin:0 0 0 3px;line-height:21px}
+.bv_header .bv_info .bv_subject .subject .tit_sub > span.cmt {margin:0 2px 0 3px}
+.bv_header .bv_info .bv_subject .subject .cmt {color:#e65700}
+.bv_header .bv_info .bv_subject .subject .ico {width:19px;height:19px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat 0 0}
+.bv_header .bv_info .bv_subject .subject .ico.new {background-position:-326px -85px}
+.bv_header .bv_info .bv_subject .subject .ico.mobile {background-position:-350px -85px}
+.bv_header .bv_info .bv_subject .subject .ico.pic {background-position:-374px -85px}
+.bv_header .bv_info .bv_des {clear:both;overflow:hidden}
+.bv_header .bv_info .bv_des > div {float:left;margin:0 23px;font-size:14px;color:#adacac}
+.bv_header .bv_info .bv_des > div:after {float:right;content:'';width:1px;height:13px;margin:2px -23px 0 20px;background:#adacac}
+.bv_header .bv_info .bv_des > div:first-child {margin-left:0}
+.bv_header .bv_info .bv_des > div:last-child:after {display:none}
+.bv_header .bv_info .bv_des .bv_like {position:relative;padding:0 0 0 20px}
+.bv_header .bv_info .bv_des .bv_like:before {position:absolute;top:3px;left:0;display:block;content:'';width:13px;height:11px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -326px -108px}
+.bv_header .bv_userInfo {float:right;display:table;width:380px;padding:3px 30px 0 35px;background:#f5f5f5}
+.bv_header .bv_userInfo.none {height:68px;margin:34px 0 0 0;padding:0;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/logo.png') no-repeat 50% 0}
+.bv_header .bv_userInfo .bv_author {display:table-cell;width:160px;vertical-align:middle}
+.bv_header .bv_userInfo .bv_character {float:right}
+.bv_header .bv_userInfo .author_side {overflow:hidden;margin:0 0 5px 0}
+.bv_header .bv_userInfo .author_side > span {float:left;margin:0 8px 0 0;font-size:12px;line-height:14px}
+.bv_header .bv_userInfo .author_side .server.g {color:#06a545}
+.bv_header .bv_userInfo .author_side .server.s {color:#ee5f00}
+.bv_header .bv_userInfo .author_side .level {color:#888}
+.bv_header .bv_userInfo .author_side .level:before {float:left;content:'';width:1px;height:9px;margin:3px 7px 0 0;background:#989898}
+.bv_header .bv_userInfo .nickname {font-size:15px;font-weight:bold;line-height:19px;color:#adacac}
+
+/* Board View - Contents */
+.bv_contents {padding:60px 27px 10px;font-size:14px;line-height:24px}
+.bv_contents p {margin:0 0 23px 0}
+.bv_contents img {margin:10px auto 15px;max-width:100%}
+
+/* Board View - Footer */
+.bv_footer {margin:25px 0 70px}
+.bv_footer .bv_aside {height:45px;margin:0 0 30px 0;padding:10px 20px 0;background:#f7f7f7;border-top:1px solid #d6d6d6;border-bottom:2px solid #acacac}
+.bv_footer .bv_aside .btn {display:block}
+.bv_footer .bv_aside .bv_url {float:left;font-size:12px;color:#b39a8c}
+.bv_footer .bv_aside .bv_url .url {display:block;float:left;line-height:22px}
+.bv_footer .bv_aside .bv_url .btn.copyUrl {float:left;width:63px;height:22px;margin-left:13px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -336px 0}
+.bv_footer .bv_aside .bv_declare {float:right}
+.bv_footer .bv_aside .bv_declare .btn.vdeclare {width:63px;height:22px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -406px 0}
+.bv_footer .b_btns {margin-bottom:31px;text-align:center}
+.bv_footer .b_btns .btn {display:inline-block;margin:0 0 0 5px;*display:inline;zoom:1;background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png');background-repeat:no-repeat}
+.bv_footer .b_btns .btn:first-child {margin-left:0}
+
+/* Comment View - Header */
+.board_comment {padding:40px 0 55px;background:#efefef}
+.bc_write {margin-bottom:38px}
+.bc_write fieldset {position:relative;display:block;height:125px;padding:14px 165px 15px 18px;border:3px solid #cacaca;background-color:#fff}
+.bc_write textarea {display:block;width:100%;height:94px;padding:5px;overflow-x:hidden;overflow-y:auto;font-size:16px;line-height:1.4;color:#333;outline:0;resize:none;vertical-align:top;-webkit-appearance:none;border:0;word-break:break-all;background-color:#fff}
+.bc_write textarea:focus {border-color:#bebebe}
+.bc_write .btn.cwrite {position:absolute;display:block;top:7px;right:7px;background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png')}
+
+/* Comment View - Body */
+.comment_list {overflow:hidden;margin-bottom:29px;border-top:1px solid #ababab;border-bottom:1px solid #ababab}
+.comment_list li {clear:both;border-top:1px solid #cacaca}
+.comment_list li:first-child {border-top:none}
+.comment_list .bc_row {display:table;width:100%;min-height:85px}
+.comment_list .bc_row.none > p {display:table-cell;vertical-align:middle;text-align:center}
+.comment_list .bc_author,
+.comment_list .bc_contents,
+.comment_list .bc_aside {display:table-cell;vertical-align:middle}
+.comment_list .bc_author {position:relative;width:215px;padding:0 20px 0 50px}
+.comment_list .bc_author .medal {position:absolute;top:50%;left:20px;width:24px;height:34px;margin:-16px 0 0 0;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat 0 0}
+.comment_list .bc_author .medal.gold {background-position:-434px 0}
+.comment_list .bc_author .medal.silver {background-position:-434px -38px}
+.comment_list .bc_author .medal.bronze {background-position:-434px -76px}
+.comment_list .bc_author .author_header {overflow:hidden;margin:0 0 3px 0}
+.comment_list .bc_author .author_header > span {float:left;margin:0 8px 0 0;font-size:12px;line-height:14px}
+.comment_list .bc_author .author_header .server.g {color:#06a545}
+.comment_list .bc_author .author_header .server.s {color:#ee5f00}
+.comment_list .bc_author .author_header .level {color:#888}
+.comment_list .bc_author .author_header .level:before {float:left;content:'';width:1px;height:9px;margin:3px 7px 0 0;background:#989898}
+.comment_list .bc_author .nickname {font-size:14px;line-height:19px;color:#444}
+.comment_list .bc_contents {position:relative;width:795px;padding:22px 40px 22px 20px;font-size:14px;line-height:18px;word-break:break-all}
+.comment_list .bc_aside {width:180px;padding:20px;text-align:center}
+.comment_list .bc_date {font-size:12px;color:#adacac}
+.comment_list .bc_btns {clear:both;margin:5px 0 0 0}
+.comment_list .bc_btns .btn.cdelete {display:block;width:64px;height:21px;margin:0 auto;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -548px 0}
 
 /* Board Write */
 .write .cont_body > .inner {padding:20px 0 0 !important;border-top:2px solid #acacac}
