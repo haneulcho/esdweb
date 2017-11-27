@@ -94,6 +94,15 @@ html, body {width:100%;min-width:1200px;background:#fff}
 
 .ipt_select, .ipt_keyword {height:38px;padding:0 0 0 10px;font-size:15px;line-height:38px;color:#8d8d8d;background:#fff;border:1px solid #d8d0c6;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
 .ipt_select.open, .ipt_select:active, .ipt_select:focus, .ipt_keyword:focus {border-color:#d0b6a9}
+.ipt_radio {position:absolute;display:block;top:-1px;left:-1px;width:1px;height:1px;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;-o-appearance:none;appearance:none}
+.ipt_radio + .ipt_label_radio {position:relative;overflow:hidden;display:block;cursor:pointer}
+.ipt_radio + .ipt_label_radio:before,
+.selected .ipt_radio + .ipt_label_radio:after {position:absolute;display:block;top:50%;content:'';border:1px solid #94a0a9;
+-webkit-border-radius:50%;
+-moz-border-radius:50%;
+-o-border-radius:50%}
+.ipt_radio + .ipt_label_radio:before {lefT:0;width:13px;height:13px;margin-top:-7px}
+.selected .ipt_radio + .ipt_label_radio:after {lefT:3px;width:7px;height:7px;margin-top:-4px;background:#db6006}
 .btn_titMore {display:inline-block}
 .btn_titMore > span {background:url('../img/spr_global.png') no-repeat 0 0}
 .btn_titMore .txt {float:left}
