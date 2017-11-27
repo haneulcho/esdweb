@@ -41,22 +41,35 @@
 									<!-- DEV: 글보기 상단 좌측 영역 -->
 									<div class="bv_info">
 										<div class="bv_subject">
+											<!-- 카테고리 표기 -->
 											<div class="subject_side">
 												<span class="category">자유</span>
+												<!--
+													아래 서버는 거래 게시판일 때만 보여줍니다.
+													가이아: <span class="server g">가이아</span>
+													솔레스: <span class="server s">솔레스</span>
+												-->
 												<span class="server g">가이아</span>
 											</div>
-											<h1 class="subject">
-												<span class="tit">일위아조씨가 도발해서</span>
-												<span class="cmt">[10000]</span>
-												<span class="ico new">New</span>
-												<span class="ico mobile">Mobile</span>
-												<span class="ico pic">Picture</span>
-											</h1>
+											<!-- 게시글 제목 표기 -->
+											<div class="subject">
+												<h1 class="tit">
+													엘소드 유저들 10년의 숙원(?)이 해결된다! 영웅대전 2017
+													<span class="tit_sub">
+														<span class="cmt">[10000]</span>
+														<span class="ico new">New</span>
+														<span class="ico mobile">Mobile</span>
+														<span class="ico pic">Picture</span>
+													</span>
+												</h1>
+											</div>
 										</div>
 										<!-- //.bv_subject -->
+										<!-- 게시글 등록일, 조회수 등 표기 -->
 										<div class="bv_des">
-											<div class="bv_date"><span class="date">2017.12.30</span></div>
-											<div class="bv_hit"><span class="hit">213001</span></div>
+											<div class="bv_date"><span class="date">2017-12-30 PM 7:52:00</span></div>
+											<div class="bv_hit"><span class="hit">조회수 : 213001</span></div>
+											<div class="bv_like"><span class="like"><span class="blind">추천수</span>213001</span></div>
 										</div>
 										<!-- //.bv_des -->
 									</div>
@@ -64,7 +77,17 @@
 									<!-- //DEV: 글보기 상단 좌측 영역 -->
 
 									<!-- DEV: 글보기 상단 우측 글쓴이 영역 -->
+									<!-- 글쓴이 정보 없을 때 -->
+									<!--
+
+									<div class="bv_userInfo none">
+										<p class="blind">엘소드 공식 홈페이지 게시글입니다.</p>
+									</div>
+
+									-->
+									<!-- //글쓴이 정보 없을 때 -->
 									<div class="bv_userInfo">
+										<!-- 글쓴이 정보(서버, 레벨, 닉네임) 표기 -->
 										<div class="bv_author">
 											<div class="author_side">
 												<span class="server s">솔레스</span>
@@ -73,13 +96,31 @@
 											<span class="nickname">한글이름여덟글자</span>
 										</div>
 										<!-- //.bv_author -->
+										<!-- //글쓴이 정보(대표 캐릭터 딱지, 메달) 표기 -->
+
 										<div class="bv_character">
+											<!-- [S] TODO, DEV: 대표 캐릭터 딱지, 메달 시작 -->
 											<div class="myCharacter">
+												<!--
+													대표 캐릭터 div 형식은 아래와 같습니다.
+													<div class="characterBadge 캐릭터명 c+개발사고유번호">
+
+													엘소드 기본: <div class="characterBadge elsword c1">
+													로제 헤비 베럴: <div class="characterBadge rose c41">
+													아인 아메 서머티지: <div class="characterBadge ain c134">
+												-->
 												<div class="characterBadge elsword c112">
-													<span class="medal" aria-hidden="true">나의 메달</span>
+													<!--
+														부여된 메달이 있을 경우
+														금메달: <span class="medal gold">금메달</span>
+														은메달: <span class="medal silver">은메달</span>
+														동메달: <span class="medal bronze">동메달</span>
+													-->
+													<span class="medal gold">금메달</span>
 												</div>
 											</div>
 											<!-- //.myCharacter -->
+											<!-- [E] TODO, DEV: 대표 캐릭터 딱지, 메달 끝 -->
 										</div>
 										<!-- //.bv_character -->
 									</div>
@@ -88,183 +129,255 @@
 								</div>
 								<!-- //.bv_header -->
 
-
-									<div class="row">
-										<span class="category">버그</span>
-										<h3 class="title">버그를 발견하였습니다. 이벤트 당첨... 되려나???<span class="comment">[155]</span><span class="new">NEW</span></h3>
-										<!-- DEV: 신고 버튼 -->
-										<div class="declare"><a id="btn_declare" href="sub_community_popup_declare.html"><img src="http://s.nx.com/s2/game/peria/lbt/public/0817_p3r1arunn1n8/board/btn_declare.jpg" alt="신고하기"></a></div>
-									</div>
-									<div class="info">
-										<div class="fl">
-											<span class="author">한글이름여덟글자</span>
-											<span class="date">2017-05-05 PM 7:52:00</span>
-										</div>
-										<div class="fr">
-											<span class="hit">조회 : 55</span>
-											<span class="hearts"><img src="http://s.nx.com/s2/game/peria/lbt/public/0817_p3r1arunn1n8/board/ico_heart.png" alt="추천">55</span>
-										</div>
-									</div>
-								</div>
-								<!-- .bv_header END -->
-
 								<!-- DEV: 에디터 본문 START!! -->
 								<div id="bv_contents" class="bv_contents">
-									<p>순위경기 대기 화면에서</p>
-									<p>챌린지 바로가기를 누르면 점수가 떨어지지 않고 메인으로 나올 수 있어요<br>극 중 ‘신영주’로 분해 열연한 이보영은 24일 소속사를 통해 “우선 2개월간 바쁘게 달려온 만큼 많은 분들이 관심을 가져주시고 사랑해주셔서 너무 감사드리고 함께 고생한 배우, 스태프분들에게도 감사하다는 말을 꼭 전하고 싶다”고 드라마 종영에 아쉬움을 드러냈다.</p>
-									<p>이동준을 제외하면 모두 법비. 역설적으로 법비들은 법정에서 하나 같이 자신의 죄를 서로에게 뒤집어씌웠다. 최수연은 아버지 최일환에게, 최일환은 송태곤에게. 하지만 통하지 않았다. 모두 짧지 않은 형량을 받은 것. 시간이 흘러 이동준은 출소했고, 신영주(이보영 분)는 변호사가 됐다. 법비들은 교도소에서 남은 죄값을 치렀다. “보이는 증거는 절대, 다시는 외면하지 않겠습니다”는 마지막 대사처럼 통쾌하고 묵직하기까지 한 결말이었다. 권선징악이었지만 결코 뻔하지 않았다.</p>
-									<p>입맛에 맞는 맵 나올때까지 계속 시도할 수 있어요!</p>
-									<p>따로 나가기가 없는 것 보니 의도한 사항은 아니라 버그일지도 모른다 생각했습니다~</p>
-									<img src="http://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5125192639049629785">
+									<p># 3차 전직부터 포스 스킬, 초월 진 스킬까지</p>
+
+									<p>KOG 이동신 디렉터는 이날 행사에서 다음주 예정된 3차 전직에 대한 정보를 공개했다. 3차 전직 캐릭터들은 모두 신규 패시브와 하이퍼 액티브 스킬이 추가될 예정이다. 3차 전직 유저들에겐 전직의 특권(?)인 '프로모션 아바타'이 기본적으로 주어지며, 3차 전직은 여기에 추가로 특별히 '전용 프로모션 액세서리'가 주어질 예정이다. 또한 3차 전직을 하면 스킬슬롯 B가 무료로 추가된다.</p>
+
+									<p>3차 전직이 추가됨에 따라 기존 스킬 체계도 바뀐다. 가장 큰 변화는 '포스 스킬'이라는 새로운 분류의 스킬 추가다. 이동신 디렉터 설명에 따르면, 포스 스킬은 전직이 늘어나고 스킬이 많아짐에 따라, 기존 스킬들의 활용도를 높이기 위해 고안된 시스템이다.</p>
+									
+									<img src="http://imgnews.naver.net/image/439/2017/11/27/0000013597_002_20171127003643187.jpg?type=w540">
+
+									<p>다가오는 업데이트에는 기존 스킬의 활용도를 높이기 위한 '체인지 포스' 스킬과 모든 캐릭터들이 모두 사용할 수 있는 '공용 포스' 스킬이 추가된다. 포스 스킬은 3차 전직이나 던전 드롭 등을 통해 얻을 수 있을 예정이다.</p>
 								</div>
 								<!-- DEV: 에디터 본문 END!! -->
-								<!-- #bv_contents.bv_contents END -->
+								<!-- //#bv_contents.bv_contents -->
 
 								<div class="bv_footer">
-									<div class="b_btns inner">
-										<a href="#" onclick="history.back(-1);return false;" class="btn list"><span class="ir">목록으로</span></a><input type="image" name="ctl00$Contents$btnWrite" id="Contents_btnWrite" class="btn submit" alt="등록하기" src="http://s.nx.com/S2/Game/Elsword/site/2018/renewal/img_input.png">
+									<div class="bv_aside">
+										<!-- 게시글 주소복사 표기 (a버튼 onclick 마크업 기존과 동일) -->
+										<div class="bv_url">
+											<span class="url">http://elsword.nexon.com/board/335544325/4810924/</span>
+											<a href="javascript:;" onclick="CopyUrl('http://elsword.nexon.com/board/335544325/4810924/'); return false;" class="btn copyUrl">주소복사</a>
+										</div>
+										<!-- //.bv_url -->
+										<!-- 게시글 신고하기 표기 (a버튼 onclick 마크업 기존과 동일) -->
+										<div class="bv_declare">
+											<a href="#" onclick="ArticleReport.Open( '335544325', '4810924', 'http://elsword.nexon.com/board/335544325/4810924/' ); return false;" class="btn vdeclare">신고하기</a>
+										</div>
+										<!-- //.bv_declare -->
 									</div>
+									<!-- //.bv_aside -->
+									<div class="b_btns inner">
+										<!-- 게시글 하단 공통 버튼 표기 -->
+										<!--
+											목록으로: 항상 표기
+											수정/삭제: 내 글 일 때 표기
+											추천하기: 필요한 경우 표기
+										-->
+										<a href="/community/free/list.aspx?n4ArticleSN=0" class="btn list"><span class="ir">목록으로</span></a>
+										<a href="#" id="btnRecommend" class="btn like">추천하기</a>
+										<a href="http://elsword.nexon.com/community/free/write.aspx?n4ArticleSN=4810924" id="btnArticleEdit" class="btn modify">글수정</a>
+										<a href="#" id="btnArticleRemove" class="btn delete">글삭제</a>										
+									</div>
+									<!-- // .b_btns -->
 								</div>
-								<!-- .bv_footer END -->
+								<!-- //.bv_footer -->
 							</article>
 						</section>
-						<!-- //.board_view -->
+						<!-- //section.board_view -->
 						<!-- TODO, DEV: [E] 글보기 화면 board_view -->
 
-
-
-
-
-						<section class="board_view_comment">
-
-						</section>
-						<!-- //.board_view_comment -->
-
-						<div class="board_view">
-
-	
-
-				
-							<section class="bv_comment">
-								<!-- DEV: 댓글쓰기 FORM (bv_formCommentWtire) START!! -->
-								<form id="bv_formCommentWrite" action="" method="post">    
-									<div class="bv_comment-write">
-										<fieldset>
-											<legend class="blind"><h4>댓글 작성</h4></legend>
-											<textarea rows="3" cols="110" id="commentArea" placeholder="여기에 댓글을 입력할 수 있습니다."></textarea>
-											<button type="button" onclick="javascript:;" class="btn-comment-write"><span class="ir">댓글등록</span></button>
-										</fieldset>
-									</div>
-								</form>
-								<!-- DEV: 댓글쓰기 FORM (bv_formCommentWtire) END!! -->
-								<div class="bv_comment-view">
-									<h4 class="blind">댓글 보기</h4>
+						<section class="board_comment">
+							<div class="bc_header inner">
+								<!-- [S] DEV: 댓글 작성, 등록 영역 -->
+								<!-- 댓글 작성 영역 -->
+								<div class="bc_write">
+									<fieldset>
+										<legend class="blind"><h4>댓글 작성</h4></legend>
+										<textarea id="txtComment" rows="3" maxlength="200" cols="110" title="덧글 입력" placeholder="여기에 댓글을 입력하세요. 욕설, 도배, 비방, 루머 게시물은 누군가에게 큰 상처로 남을 수 있습니다."></textarea>
+										<a href="#" id="btnCommentCreate" class="btn cwrite">댓글등록</a>
+									</fieldset>
+								</div>
+								<!-- //.bc_write -->
+								<!-- [E] DEV: 댓글 작성, 등록 영역 -->
+							</div>
+							<!-- //.bc_header -->
+							<div class="bc_body inner">
+								<div id="commentList">
+									<h4 class="blind">댓글 목록입니다.</h4>
+									<ul class="comment_list">
 									<!-- DEV: 작성된 댓글이 없을 경우 -->
-									<!--
+									
 										<li>
-											<div class="bv_comment-box none">
-												<p>작성된 댓글이 없습니다.</p>
+											<div class="bc_row none">
+												<p>작성된 댓글이 없습니다. 소중한 의견 남겨 주세요.</p>
 											</div>
 										</li>
-									-->
-									<ul id="commentList" class="bv_comment-list">
+									
+										<!-- [S] DEV: 댓글 목록 반복 START!! -->
 										<li>
-											<div class="bv_comment-box none">
-												<p>작성된 댓글이 없습니다. 지금 댓글을 작성해 주세요.</p>
-											</div>
-										</li>
-										<!-- DEV: 댓글 목록 반복 START!! -->
-										<li>
-											<div class="bv_comment-box">
-												<div class="info">
-													<span class="author">한글이름여덟글자</span>
-													<span class="date">2017-05-05 PM 7:52:00</span>
-												</div>
-												<div class="contents">
-													<p>내용 들어 가 쟈 ㄴ ㅏ 쟈나 쟈나~</p>
-													<div class="cbtns">
-														<a href="#" class="btn-comment-delete"><span class="ir">삭제</span></a>
+											<div class="bc_row">
+												<div class="bc_author">
+													<!-- TODO, DEV: [S] 댓글 개인화 영역 메달 시작!! -->
+													<!--
+														<span class="medal gold">금메달</span>
+														<span class="medal silver">은메달</span>
+														<span class="medal bronze">동메달</span>
+													-->
+													<span class="medal bronze">동메달</span>
+													<!-- TODO, DEV: [E] 댓글 개인화 영역 메달 끝!! -->
+													<div class="author_header">
+														<span class="server g">가이아</span>
+														<span class="level">Lv. 99</span>
 													</div>
+													<span class="nickname">한글이름여덟글자</span>
 												</div>
-											</div>
-										</li>
-										<li>
-											<div class="bv_comment-box">
-												<div class="info">
-													<span class="author">한글이름여덟글자</span>
-													<span class="date">2017-05-05 PM 7:52:00</span>
-												</div>
-												<div class="contents">
+												<!-- //.bc_author -->
+												<div class="bc_contents">
 													<p>내용 들어 가 쟈 ㄴ ㅏ 쟈나 쟈나~</p>
 												</div>
-											</div>
-										</li>
-										<li>
-											<div class="bv_comment-box">
-												<div class="info">
-													<span class="author">한글이름여덟글자</span>
-													<span class="date">2017-05-05 PM 7:52:00</span>
-												</div>
-												<div class="contents">
-													<p>프로듀스101의 최종 데뷔 그룹 "아이오아이"를 앞둔 파이널 데뷔 평가곡 Crush (크러쉬)는 레드벨벳의 'Dumb Dumb', 프로듀스101 'Fingertips' 등을 작곡한 라이언전이 프로듀스 101을 사랑해주시는 팬들을 위한 선물을 떠올리며 만든 곡으로, 가요계에 트렌드를 따라가지 않는 신선함을 추구하며 누구나 쉽게 따라부르고 빠져들 수 있는 Trapical Dutch Funk 장르의 음악이다.</p>
-													<div class="cbtns">
-														<a href="#" class="btn-comment-delete"><span class="ir">삭제</span></a>
+												<!-- //.bc_contents -->
+												<div class="bc_aside">
+													<!-- 댓글 등록일 표기 -->
+													<div class="bc_date"><span class="date">2017-12-30 PM 7:52:00</span></div>
+													<!-- //.bc_date -->
+													<!-- 내 댓글일 경우 댓글 삭제 표기 -->
+													<div class="bc_btns">
+														<a href="#" class="btn cdelete"><span class="ir">삭제</span></a>
 													</div>
+													<!-- //.bc_btns -->
 												</div>
+												<!-- //.bc_aside -->
 											</div>
+											<!-- //.bc_row -->
 										</li>
 										<li>
-											<div class="bv_comment-box">
-												<div class="info">
-													<span class="author">한글이름여덟글자</span>
-													<span class="date">2017-05-05 PM 7:52:00</span>
+											<div class="bc_row">
+												<div class="bc_author">
+													<!-- TODO, DEV: [S] 댓글 개인화 영역 메달 시작!! -->
+													<!--
+														<span class="medal gold">금메달</span>
+														<span class="medal silver">은메달</span>
+														<span class="medal bronze">동메달</span>
+													-->
+													<span class="medal bronze">동메달</span>
+													<!-- TODO, DEV: [E] 댓글 개인화 영역 메달 끝!! -->
+													<div class="author_header">
+														<span class="server g">가이아</span>
+														<span class="level">Lv. 99</span>
+													</div>
+													<span class="nickname">한글이름여덟글자</span>
 												</div>
-												<div class="contents">
+												<!-- //.bc_author -->
+												<div class="bc_contents">
 													<p>내용 들어 가 쟈 ㄴ ㅏ 쟈나 쟈나~</p>
 												</div>
+												<!-- //.bc_contents -->
+												<div class="bc_aside">
+													<!-- 댓글 등록일 표기 -->
+													<div class="bc_date"><span class="date">2017-12-30 PM 7:52:00</span></div>
+													<!-- //.bc_date -->
+													<!-- 내 댓글일 경우 댓글 삭제 표기 -->
+													<div class="bc_btns">
+														<a href="#" class="btn cdelete"><span class="ir">삭제</span></a>
+													</div>
+													<!-- //.bc_btns -->
+												</div>
+												<!-- //.bc_aside -->
 											</div>
+											<!-- //.bc_row -->
 										</li>
-										<!-- DEV: 댓글 목록 반복 START!! -->
+										<li>
+											<div class="bc_row">
+												<div class="bc_author">
+													<div class="author_header">
+														<span class="server g">가이아</span>
+														<span class="level">Lv. 99</span>
+													</div>
+													<span class="nickname">한글이름여덟글자</span>
+												</div>
+												<!-- //.bc_author -->
+												<div class="bc_contents">
+													<p>추천없고/글은 좌측정렬/ 한줄이면 높이값의 센터에 정렬해주시고/ 댓글 최소높이값 85px/ 댓글 페이지당 10개하죠? 보다 넘길면 5개! 라고 지혜 과장님께서 말씀하셨습니다.</p>
+												</div>
+												<!-- //.bc_contents -->
+												<div class="bc_aside">
+													<!-- 댓글 등록일 표기 -->
+													<div class="bc_date"><span class="date">2017-12-30 PM 7:52:00</span></div>
+													<!-- //.bc_date -->
+													<!-- 내 댓글일 경우 댓글 삭제 표기 -->
+													<div class="bc_btns">
+														<a href="#" class="btn cdelete"><span class="ir">삭제</span></a>
+													</div>
+													<!-- //.bc_btns -->
+												</div>
+												<!-- //.bc_aside -->
+											</div>
+											<!-- //.bc_row -->
+										</li>
+										<li>
+											<div class="bc_row">
+												<div class="bc_author">
+													<!-- TODO, DEV: [S] 댓글 개인화 영역 메달 시작!! -->
+													<!--
+														<span class="medal gold">금메달</span>
+														<span class="medal silver">은메달</span>
+														<span class="medal bronze">동메달</span>
+													-->
+													<span class="medal silver">은메달</span>
+													<!-- TODO, DEV: [E] 댓글 개인화 영역 메달 끝!! -->
+													<div class="author_header">
+														<span class="server s">솔레스</span>
+														<span class="level">Lv. 8</span>
+													</div>
+													<span class="nickname">한글이름여덟글자</span>
+												</div>
+												<!-- //.bc_author -->
+												<div class="bc_contents">
+													<p>네줄부터는 세로가길어지면 됩니당. 뭐 사실 꼭 그러지는 않아도 되요. 보기에이뻤다더라~~ 정도면 되겠쬬. 디자인이라는게 다 그런거 아니겟습니까라랄랄라라다 그런거 아니겟습니까라랄랄라라다 그런거 아니겟습니까라랄랄라라다 그런거 아니겟습니까라랄랄라라다 그런거 아니겟습니까라랄랄라라</p>
+												</div>
+												<!-- //.bc_contents -->
+												<div class="bc_aside">
+													<!-- 댓글 등록일 표기 -->
+													<div class="bc_date"><span class="date">2017-12-30 PM 7:52:00</span></div>
+													<!-- //.bc_date -->
+													<!-- 내 댓글일 경우 댓글 삭제 표기 -->
+													<div class="bc_btns">
+														<a href="#" class="btn cdelete"><span class="ir">삭제</span></a>
+													</div>
+													<!-- //.bc_btns -->
+												</div>
+												<!-- //.bc_aside -->
+											</div>
+											<!-- //.bc_row -->
+										</li>
+										<!-- [E] DEV: 댓글 목록 반복 끝!! -->
 									</ul>
+									<!-- //comment_liest -->
 								</div>
-								<!-- .bv_comment-view END -->
-								<div class="bv_comment-footer">
-									<!-- DEV: 댓글 페이지네이션 START!! -->
-									<div class="b_paging inner">
-										<!--
-											현재 페이지일 경우 <li class="num current">1</li>
-										-->
-										<ul class="paging">
-											<li class="btn first">첫 페이지</li>
-											<li class="btn prev"><a href="#">이전 페이지</a></li>
-											<li class="num current">1</li>
-											<li class="num"><a href="#">2</a></li>
-											<li class="num"><a href="#">3</a></li>
-											<li class="num"><a href="#">4</a></li>
-											<li class="num"><a href="#">5</a></li>
-											<li class="btn next"><a href="#">다음 페이지</a></li>
-											<li class="btn last">마지막 페이지</li>
-										</ul>
-										<!-- //.paging -->
-									</div>
-									<!-- //.b_paging -->
+								<!-- //#commentList.inner -->
+							</div>
+							<!-- //.bc_body -->
+							<div class="bc_footer">
+								<!-- DEV: 댓글 페이지네이션 START!! -->
+								<div class="b_paging inner">
+									<!--
+										현재 페이지일 경우 <li class="num current">1</li>
+									-->
+									<ul class="paging">
+										<li class="btn first">첫 페이지</li>
+										<li class="btn prev"><a href="#">이전 페이지</a></li>
+										<li class="num current">1</li>
+										<li class="num"><a href="#">2</a></li>
+										<li class="num"><a href="#">3</a></li>
+										<li class="num"><a href="#">4</a></li>
+										<li class="num"><a href="#">5</a></li>
+										<li class="btn next"><a href="#">다음 페이지</a></li>
+										<li class="btn last">마지막 페이지</li>
+									</ul>
+									<!-- //.paging -->
+								</div>
+								<!-- //.b_paging -->
+								<!-- DEV: 댓글 페이지네이션 END!! -->
+							</div>
+							<!-- //.bc_footer -->
+						</section>
+						<!-- //section.board_comment -->
 
-						<div class="b_btns inner">
-							<!-- TODO: 글쓰기 경로 수정할 것 -->
-							<a href="../common/write_issue.html" class="btn write">글쓰기</a>
-						</div>
-									<!-- DEV: 댓글 페이지네이션 END!! -->
-								</div>
-								<!-- .bv_comment-footer END -->
-							</section>
-							<!-- .bv_comment END -->
-						</div>
-						<!-- //.board_view -->
-			
 					</div>
 					<!-- //#boardView -->
-
-
 				</div>
 				<!-- //.cont_body -->
 			</div>

@@ -105,7 +105,7 @@ html, body {width:100%;min-width:1200px;background:#fff}
 
 /* Character Badge */
 /* TODO: 대표 캐릭터 이미지 최종 수정할 것 */
-.characterBadge {position:relative;width:130px;height:130px;background:url('../img/img_cha.png') no-repeat 0 0}
+.characterBadge {position:relative;width:130px;height:130px;background-repeat:no-repeat}
 .characterBadge .medal {position:absolute;bottom:3px;left:6px;width:41px;height:41px;background:url('../img/img_medal.png') no-repeat 0 0}
 .characterBadge .btn_editCharacter {position:absolute;top:14px;right:6px;width:23px;height:23px;background:url('../img/btn_editCharacter.png') no-repeat 0 0}
 
@@ -133,17 +133,17 @@ html, body {width:100%;min-width:1200px;background:#fff}
 .characterBadge.elsword,
 .characterBadge.aisha,
 .characterBadge.rena,
-.characterBadge.raven {background:url('../img/spr_character1.png') no-repeat 0 0}
+.characterBadge.raven {background-image:url('../img/spr_character1.png')}
 
 .characterBadge.eve,
 .characterBadge.chung,
 .characterBadge.ara,
-.characterBadge.elesis {background:url('../img/spr_character2.png') no-repeat 0 0}
+.characterBadge.elesis {background-image:url('../img/spr_character2.png')}
 
 .characterBadge.add,
 .characterBadge.luciel,
 .characterBadge.rose,
-.characterBadge.ain {background:url('../img/spr_character3.png') no-repeat 0 0}
+.characterBadge.ain {background-image:url('../img/spr_character3.png')}
 
 /* 엘소드 딱지 */
 /* 기본: 1 */
@@ -171,7 +171,6 @@ html, body {width:100%;min-width:1200px;background:#fff}
 // .characterBadge.c150 {background-position:}
 
 
-
 /* 아이샤 딱지 */
 /* 기본: 2 */
 .characterBadge.c2 {background-position:-600px 0}
@@ -197,8 +196,6 @@ html, body {width:100%;min-width:1200px;background:#fff}
 
 /* 3_1 에테르 세이지: 153 */
 // .characterBadge.c153 {background-position:}
-
-
 
 
 
@@ -230,8 +227,6 @@ html, body {width:100%;min-width:1200px;background:#fff}
 // .characterBadge.c156 {background-position:}
 
 
-
-
 /* 레이븐 딱지 */
 /* 기본: 4 */
 .characterBadge.c4 {background-position:-600px -424px}
@@ -256,7 +251,6 @@ html, body {width:100%;min-width:1200px;background:#fff}
 
 /* 3_1 퓨리어스 블레이드: 159 */
 .characterBadge.c159 {background-position:-1021px -424px}
-
 
 
 
@@ -286,7 +280,6 @@ html, body {width:100%;min-width:1200px;background:#fff}
 // .characterBadge.c162 {background-position:}
 
 
-
 /* 청 딱지 */
 /* 기본: 6 */
 .characterBadge.c6 {background-position:-600px -11px}
@@ -311,7 +304,6 @@ html, body {width:100%;min-width:1200px;background:#fff}
 
 /* 3_1 코멧 크루세이더: 165 */
 // .characterBadge.c165 {background-position:}
-
 
 
 /* 아라 딱지 */
@@ -340,8 +332,6 @@ html, body {width:100%;min-width:1200px;background:#fff}
 // .characterBadge.c168 {background-position:}
 
 
-
-
 /* 엘리시스 딱지 */
 /* 기본: 8 */
 .characterBadge.c8 {background-position:-600px -424px}
@@ -366,9 +356,6 @@ html, body {width:100%;min-width:1200px;background:#fff}
 
 /* 3_1 엠파이어 소드: 171 */
 // .characterBadge.c171 {background-position:}
-
-
-
 
 
 /* 애드 딱지 */
@@ -397,9 +384,6 @@ html, body {width:100%;min-width:1200px;background:#fff}
 // .characterBadge.c174 {background-position:}
 
 
-
-
-
 /* 루시엘 딱지 */
 /* 기본: 200 */
 .characterBadge.c200 {background-position:-600px -3px}
@@ -424,9 +408,6 @@ html, body {width:100%;min-width:1200px;background:#fff}
 
 /* 3_1 카타스트로피: 177 */
 // .characterBadge.c177 {background-position:}
-
-
-
 
 
 /* 로제 딱지 */
@@ -463,9 +444,6 @@ html, body {width:100%;min-width:1200px;background:#fff}
 // .characterBadge.c180 {background-position:}
 
 
-
-
-
 /* 아인 딱지 */
 /* 기본: 202 */
 .characterBadge.c202 {background-position:-600px -414px}
@@ -494,60 +472,6 @@ html, body {width:100%;min-width:1200px;background:#fff}
 // .characterBadge.c184 {background-position:}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Text Hidden */
 .btn_login,
 .btn_logout,
@@ -564,6 +488,7 @@ html, body {width:100%;min-width:1200px;background:#fff}
 .wrap_issue .subject .ico,
 .rk_search .rk_tit,
 .b_subject .subject .ico,
+.bv_subject .subject .ico,
 .b_info .ico,
 #header .logo a,
 #header .gnb > li > a,
