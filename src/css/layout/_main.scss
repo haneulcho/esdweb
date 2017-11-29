@@ -19,12 +19,12 @@
 .wrap_goods {position:absolute;top:-294px;right:50%;width:400px;height:470px;margin-right:-600px;z-index:2}
 
 /* Login */
-#login.box {width:364px;height:104px;margin:12px 0 0 0;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/bg_login.png') no-repeat 0 0}
+#login.box {width:364px;height:104px;margin:12px 0 0 0;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat -465px -635px}
 #logged.box {height:130px;margin:7px 0 0 0}
 .wrap_information {height:180px;padding:35px 0 0 0;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/bg_main_login.jpg') repeat-x 0 0}
 .wrap_information .inner {position:relative}
 .wrap_information .box {float:left}
-.wrap_information .box .btn_login {width:340px;height:55px;margin:9px auto 8px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/btn_login.jpg') no-repeat 0 0}
+.wrap_information .box .btn_login {width:340px;height:55px;margin:9px auto 8px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat -465px -572px}
 .wrap_information .box .login_menu {height:30px;text-align:center}
 .wrap_information .box .login_menu > li {display:inline-block;font-size:14px;line-height:30px;color:#9398ad}
 .wrap_information .box .login_menu > li:before {display:inline-block;content:'|';margin:0 8px 0 5px}
@@ -46,7 +46,7 @@
 .wrap_information .box .myInfo .logged_menu > li.logout {margin:0 0 0 12px}
 .wrap_information .box .myInfo .logged_menu > li.logout > a {margin:0 0 0 0}
 .wrap_information .box .myInfo .logged_menu > li.logout:before {display:none}
-.wrap_information .box .myInfo .logged_menu .btn_logout {width:69px;height:23px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/btn_logout.png') no-repeat 0 0}
+.wrap_information .box .myInfo .logged_menu .btn_logout {width:69px;height:23px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat -661px -541px}
 
 /* Game Start */
 .wrap_information .gameStart {position:absolute;top:-72px;left:397px;z-index:3}

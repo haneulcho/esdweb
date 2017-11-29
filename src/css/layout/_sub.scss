@@ -30,7 +30,8 @@
 .cont_header .titles .category > li.on {color:#e65700}
 .cont_header .titles .category > li > a {color:inherit}
 .cont_header .des {float:right;margin:6px 0 0 0}
-.cont_header .des > p {padding:0 0 0 22px;font-size:13px;color:#888;letter-spacing:-0.5px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/ico_leaf.png') no-repeat 0 0}
+.cont_header .des > p {position:relative;padding:0 0 0 22px;font-size:13px;color:#888;letter-spacing:-0.5px}
+.cont_header .des > p:before {position:absolute;display:block;content:'';top:0;left:1px;width:19px;height:17px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat -389px -120px}
 
 /* Contents Body */
 .wrap_cont .cont_body {margin:0 0 36px 0}
