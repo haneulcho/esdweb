@@ -90,7 +90,7 @@ gulp.task('css-watch', ['css'], function (done) {
 });
 // gulp.task('js-watch', ['js'], reload);
 
-gulp.task('default', ['clean', 'css', 'html'], function () {
+gulp.task('default', ['css', 'html'], function () {
     browserSync.init({
         server: {
             baseDir: ["./html", "./"]

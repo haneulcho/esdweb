@@ -113,7 +113,6 @@ html, body {width:100%;min-width:1200px;background:#fff}
 
 
 /* Character Badge */
-/* TODO: 대표 캐릭터 이미지 최종 수정할 것 */
 .characterBadge {position:relative;width:130px;height:130px;background-repeat:no-repeat}
 .characterBadge .medal {position:absolute;bottom:3px;left:6px;width:41px;height:41px;background:url('../img/spr_global.png') no-repeat -468px 0}
 .characterBadge .medal.gold {background-position:-468px 0}
