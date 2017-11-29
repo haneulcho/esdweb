@@ -1,23 +1,79 @@
 /* editor */
-.edSec  {width:698px;height:414px;margin-top:7px;border:0;background-color:#fffbf3}
-.edWSec {width:676px;margin-top:10px;padding:10px;border:1px solid #e1e0d7;background-color:#fff}
-.editWindow {width:676px;padding:0;border:0}
-#selectBar {background-color:#eae5da;border:none;border-bottom:none}
-.edFSec02 a {display:block;width:19px;height:20px}
-.edFSec02 a.fontWeight{width:20px;background:url('http://s.nx.com/S2/Game/Elsword/2012/icon/ico_ed01_out.gif') no-repeat 0 0}
-.edFSec02 a.fontItalic{background:url('http://s.nx.com/S2/Game/Elsword/2012/icon/ico_ed02_out.gif') no-repeat 0 0}
-.edFSec02 a.fontUnderline{background:url('http://s.nx.com/S2/Game/Elsword/2012/icon/ico_ed03_out.gif') no-repeat 0 0}
-.edFSec02 a.fontColor{background:url('http://s.nx.com/S2/Game/Elsword/2012/icon/ico_ed04_out.gif') no-repeat 0 0}
-.edFSec02 a.fontBgcolor{background:url('http://s.nx.com/S2/Game/Elsword/2012/icon/ico_ed05_out.gif') no-repeat 0 0}
-.edFSec02 a.arrayLeft{width:20px; background:url('http://s.nx.com/S2/Game/Elsword/2012/icon/ico_ed06_out.gif') no-repeat 0 0}
-.edFSec02 a.arrayCenter{width:18px; background:url('http://s.nx.com/S2/Game/Elsword/2012/icon/ico_ed07_out.gif') no-repeat 0 0}
-.edFSec02 a.arrayRight{width:19px; background:url('http://s.nx.com/S2/Game/Elsword/2012/icon/ico_ed08_out.gif') right top no-repeat}
-.edFSec02 a.etcLink{width:20px;background:url('http://s.nx.com/S2/Game/Elsword/2012/icon/ico_ed09_out.gif') no-repeat 0 0}
-.edFSec02 a.etcLine{background:url('http://s.nx.com/S2/Game/Elsword/2012/icon/ico_ed10_out2.gif') no-repeat 0 0}
-.edFSec02 a.etcEmoticon{background:url('http://s.nx.com/S2/Game/Elsword/2012/icon/ico_ed11_out.gif') no-repeat 0 0}
-.edSelectStyleBar .edFSec03 {float:left}
-.edSelectStyleBar .edFSec03 a{float:left}
-.edFSec03 a strong {display:none}
-.edFSec03 a {display:block;width:53px;height:20px}
-.edFSec03 a.uploadImage{background:url('http://s.nx.com/S2/Game/Elsword/2012/icon/ico_ed12_out.gif') no-repeat;margin-right:10px}
-.edFSec03 a.uploadMovie{background:url('http://s.nx.com/S2/Game/Elsword/2012/icon/ico_ed13_out.gif') no-repeat 0 0}
+#editorLayerSec {position:absolute;top:0;left:0}
+.selectColor {width:230px;height:106px;border:1px solid #808080;background-color:#FFFFFF}
+.editorColorSelectionTopSec {padding:10px;background-color:#F2F2F2}
+.editorColorSelectionTopSec ul {overflow:hidden;border-top:1px solid #333333;border-left:1px solid #333333;width:209px;height:33px}
+.editorColorSelectionTopSec ul li {float:left;width:10px;height:10px;border-right:1px solid #333333;border-bottom:1px solid #333333}
+.editorColorSelectionTopSec ul li a {display:block;width:10px;height:10px;font-size:0px}
+.editorColorSelectionBottomSec {padding:10px 10px 5px ;width:210px}
+.editorColorSelectionBottomSec * {vertical-align:top}
+.editorColorSelectionBottomSec .confirm {float:right}
+.editorColorSelectionBottomSec .close {float:right;display:inline-block;padding-top:5px;clear:both}
+#editorColorSelectionTempColor {float:left;margin:2px 5px 0 0;width:10px;height:10px;border:1px solid #333333;background-color:#FFFFFF}
+#editorColorSelectionTempColorText {float:left;height:16px;border:1px solid #D7D7D7;font-size:11px;width:55px}
+.selectLink {width:308px;height:122px;border:1px solid #808080;background-color:#FFFFFF}
+.selectLink p.cmnt {margin:0;padding:0;height:37px;line-height:37px;font-size:12px;padding-left:10px;color:#444444}
+.selectLink fieldset {margin:0;padding:0;padding:3px;background-color:#F5F5F5;border:1px solid #D7D7D7;border-width:1px 0}
+.selectLink fieldset .link {border:1px solid #D7D7D7;width:253px;height:13px;padding:2px;font-size:11px}
+.selectLink fieldset label {padding:0 5px;font-size:11px;font-weight:bold;color:#444444}
+.selectLink p.confirm {margin:5px 0 14px 0;padding:0;width:308px;text-align:center}
+.selectLink p.close {margin:0;padding:0 10px 0 0;text-align:right }
+
+.selectEmoticon {border:1px solid #808080;width:150px;background-color:#FFFFFF}
+.selectEmoticon p.emoCateList {padding:3px;text-align:center}
+.selectEmoticon p.emoCateList select {width:120px;font-size:12px}
+.selectEmoticon .emoList {background-color:#F5F5F5;border:1px solid #D7D7D7;border-width:1px 0;padding:5px 0}
+.selectEmoticon .emoList ul {margin:0 auto;overflow:hidden;width:124px;border:1px solid #DEDEDE;background-color:#FFFFFF}
+.selectEmoticon .emoList ul li {float:left;border:1px solid #DEDEDE}
+.selectEmoticon .emoList ul li img {display:block;margin:3px}
+.selectEmoticon #emoListPageNo {padding-top:5px;width:150px;text-align:center;font-size:12px}
+.selectEmoticon .confirm {margin:5px auto 0;padding-top:3px;width:130px;border-top:1px solid #D7D7D7;text-align:center}
+.selectEmoticon .close {width:150px;text-align:right }
+.selectEmoticon .close img {margin-right:5px}
+
+#editWindow {display:none}
+#textWindow {display:block}
+
+.edSec{position:relative;width:1198px;height:538px;margin:0 auto;background-color:#ffffff;font-size:12px;font-family:''}
+.edSelectStyleBar{width:100%;background-color:#F5F5F5;padding:8px 0;border-bottom:1px solid #D7D7D7;overflow:hidden}
+.edSelectStyleBar .edFSec01, .edSelectStyleBar .edFSec02, .edSelectStyleBar .edFSec03{float:left}
+.edSelectStyleBar .edFSec04 {float:right;display:inline;margin-right:10px}
+.edSelectStyleBar .edFSec02 a{float:left}
+.edFSec02 a strong, .edFSec03 a.uploadImage strong {display:none}
+.edSelectStyleBar .edFSec01{padding-left:10px}
+.edSelectStyleBar .edFSec02,.edSelectStyleBar .edFSec03{padding-left:10px}
+.edSelectStyleBar .edFSec01 select.fontFamily{width:82px;height:20px}
+.edSelectStyleBar .edFSec01 select.fontSize{width:52px;height:20px}
+.edFSec02 a	{display:block;width:20px;height:20px}
+.edFSec02 a.fontWeight{background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/editor/ico_ed01_out.gif') no-repeat 0 0}
+.edFSec02 a.fontItalic{background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/editor/ico_ed02_out.gif') no-repeat 0 0}
+.edFSec02 a.fontUnderline{background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/editor/ico_ed03_out.gif') no-repeat 0 0}
+.edFSec02 a.fontColor{background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/editor/ico_ed04_out.gif') no-repeat 0 0}
+.edFSec02 a.fontBgcolor{background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/editor/ico_ed05_out.gif') no-repeat 0 0}
+.edFSec02 a.arrayLeft{background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/editor/ico_ed06_out.gif') no-repeat 0 0}
+.edFSec02 a.arrayCenter{background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/editor/ico_ed07_out.gif') no-repeat 0 0}
+.edFSec02 a.arrayRight{background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/editor/ico_ed08_out.gif') no-repeat 0 0}
+.edFSec02 a.etcLink{background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/editor/ico_ed09_out.gif') no-repeat 0 0}
+.edFSec02 a.etcLine{background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/editor/ico_ed10_out.gif') no-repeat 0 0}
+.edFSec02 a.etcEmoticon{background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/editor/ico_ed11_out.gif') no-repeat 0 0}
+.edFSec03 a.uploadImage{float:left;display:block;width:53px;height:20px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/editor/ico_edimg_out.gif') no-repeat 0 0}
+
+.edSelectStyleBar {display:none}
+.edSelectStyleBar * {vertical-align:top}
+.edSelectStyleBar select {font-size:11px}
+.editWindow {clear:both;width:100%;height:501px;padding:20px;scrollbar-face-color:#EFEFEF;scrollbar-shadow-color:#C1C1C1;scrollbar-highlight-color:#C1C1C1;scrollbar-darkshadow-color:#FFFFFF;scrollbar-track-color:#FFFFFF;scrollbar-arrow-color:#979797;border:none}
+
+.editorImgResize {cursor:pointer}
+.editorMovieArea {width:380px;height:276px;background:url('http://s.nx.com/S2/Portal/Nexon/Nexon2007/image/gch/img_space_movie.gif') no-repeat 0 0}
+.editorMovieArea span {display:none}
+
+// .board-write .edFSec03 a.uploadImage{background: url(http://s.nx.com/s2/game/kart/kart2006/image/button/bt_heditor_image.gif) no-repeat !important; display: block !important; width: 66px !important; height: 20px !important; text-indent: -9999em; margin-left: 5px}
+
+// .board-write .editor_sec{font-size:12px;font-family:''}
+// .board-write .editor_sec .edSec{width:100%;height: 600px;box-sizing:border-box}
+// .board-write .editWindow{width:100%;height: 561px;border:none;box-sizing:border-box}
+// .board-write .edSelectStyleBar{display:block}
+// .board-write .edSelectStyleBar select{padding:0}
+// .board-write .edFSec03{float:right !important;margin-right:10px}
+// .selectEmoticon p.emoCateList select{height:auto;line-height:1;padding:0}
+// #editorLayerSec .selectLink fieldset .link{height:17px;padding:0 2px;line-height:1}
