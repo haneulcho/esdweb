@@ -42,8 +42,11 @@
 .board_list .b_author .medal.bronze {background-position:-434px -76px}
 .board_list .b_author .author_header {overflow:hidden;margin:0 0 3px 0}
 .board_list .b_author .author_header > span {float:left;margin:0 8px 0 0;font-size:12px;line-height:14px}
-.board_list .b_author .author_header .server.g {color:#06a545}
-.board_list .b_author .author_header .server.s {color:#ee5f00}
+.board_list .b_author .author_header .server {color:#888}
+.board_list .b_author .author_header .server .g {color:#06a545}
+.board_list .b_author .author_header .server .s {color:#ee5f00}
+.board_list .b_author .author_header .server > span {float:right;position:relative;display:block;padding:0 0 0 10px}
+.board_list .b_author .author_header .server > span:before {position:absolute;display:block;top:3px;left:5px;content:'';width:1px;height:9px;background:#aaa}
 .board_list .b_author .author_header .level {color:#888}
 .board_list .b_author .author_header .level:before {float:left;content:'';width:1px;height:9px;margin:3px 7px 0 0;background:#989898}
 .board_list .b_author .nickname {font-size:14px;line-height:19px;color:#444}
@@ -67,6 +70,62 @@
 .movie .board_list.top > li.best .b_thumb:before {background-position:-192px -219px}
 .fanart .board_list.top > li.best .b_thumb:before {background-position:-272px -142px}
 .cartoon .board_list.top > li.best .b_thumb:before {background-position:-272px -219px}
+
+/* Board Category Color Set */
+.board_list .b_subject .subject_header .category.cr1,
+.bv_header .bv_info .bv_subject .subject_side .category.cr1 {color:#ff00d2}
+.board_list .b_subject .subject_header .category.cr2,
+.bv_header .bv_info .bv_subject .subject_side .category.cr2 {color:#c73737}
+.board_list .b_subject .subject_header .category.cr3,
+.bv_header .bv_info .bv_subject .subject_side .category.cr3 {color:#e65700}
+.board_list .b_subject .subject_header .category.cr4,
+.bv_header .bv_info .bv_subject .subject_side .category.cr4 {color:#118b4a}
+.board_list .b_subject .subject_header .category.cr5,
+.bv_header .bv_info .bv_subject .subject_side .category.cr5 {color:#0c918f}
+.board_list .b_subject .subject_header .category.cr6,
+.bv_header .bv_info .bv_subject .subject_side .category.cr6 {color:#005ce6}
+.board_list .b_subject .subject_header .category.cr7,
+.bv_header .bv_info .bv_subject .subject_side .category.cr7 {color:#5700e6}
+.board_list .b_subject .subject_header .category.cr8,
+.bv_header .bv_info .bv_subject .subject_side .category.cr8 {color:#888888}
+.board_list .b_subject .subject_header .category.cr9,
+.bv_header .bv_info .bv_subject .subject_side .category.cr9 {color:#fa0000}
+.cont_header .category .on.cr1,
+.cont_header .category .on.cr1 > a,
+.cont_header .category .cr1 > a:hover,
+.cont_header .category .cr1 > a:active {color:#ff00d2}
+.cont_header .category .on.cr2,
+.cont_header .category .on.cr2 > a,
+.cont_header .category .cr2 > a:hover,
+.cont_header .category .cr2 > a:active {color:#c73737}
+.cont_header .category .on.cr3,
+.cont_header .category .on.cr3 > a,
+.cont_header .category .cr3 > a:hover,
+.cont_header .category .cr3 > a:active {color:#e65700}
+.cont_header .category .on.cr4,
+.cont_header .category .on.cr4 > a,
+.cont_header .category .cr4 > a:hover,
+.cont_header .category .cr4 > a:active {color:#118b4a}
+.cont_header .category .on.cr5,
+.cont_header .category .on.cr5 > a,
+.cont_header .category .cr5 > a:hover,
+.cont_header .category .cr5 > a:active {color:#0c918f}
+.cont_header .category .on.cr6,
+.cont_header .category .on.cr6 > a,
+.cont_header .category .cr6 > a:hover,
+.cont_header .category .cr6 > a:active {color:#005ce6}
+.cont_header .category .on.cr7,
+.cont_header .category .on.cr7 > a,
+.cont_header .category .cr7 > a:hover,
+.cont_header .category .cr7 > a:active {color:#5700e6}
+.cont_header .category .on.cr8,
+.cont_header .category .on.cr8 > a,
+.cont_header .category .cr8 > a:hover,
+.cont_header .category .cr8 > a:active {color:#888888}
+.cont_header .category .on.cr9,
+.cont_header .category .on.cr9 > a,
+.cont_header .category .cr9 > a:hover,
+.cont_header .category .cr9 > a:active {color:#fa0000}
 
 /* Board Buttons */
 .b_btns .btn.write {width:420px;height:69px;background-position:0 -300px}
@@ -115,9 +174,9 @@
 .bv_header .bv_info .bv_subject .subject_side > span {float:left;margin:0 8px 0 0;font-size:12px}
 .bv_header .bv_info .bv_subject .subject_side:after {float:right;content:'';width:1px;height:12px;margin:8px 9px 0 2px;background:#989898}
 .bv_header .bv_info .bv_subject .subject_side .category,
-.bv_header .bv_info .bv_subject .subject_side .server.s {color:#e65700}
-.bv_header .bv_info .bv_subject .subject_side .server:before {content:'/ ';margin:0 0 0 -5px}
-.bv_header .bv_info .bv_subject .subject_side .server.g {color:#06a545}
+.bv_header .bv_info .bv_subject .subject_side .server .s {color:#e65700}
+.bv_header .bv_info .bv_subject .subject_side .server:before {content:'/ ';margin:0 0 0 -5px;color:#999}
+.bv_header .bv_info .bv_subject .subject_side .server .g {color:#06a545}
 .bv_header .bv_info .bv_subject .subject {float:left}
 .bv_header .bv_info .bv_subject .subject .tit {overflow:hidden;max-width:680px;font-size:16px;line-height:28px;color:#444}
 .bv_header .bv_info .bv_subject .subject .tit_sub {overflow:hidden;display:inline-block;vertical-align:-5px}
@@ -141,8 +200,8 @@
 .bv_header .bv_userInfo .bv_character {float:right}
 .bv_header .bv_userInfo .author_side {overflow:hidden;margin:0 0 5px 0}
 .bv_header .bv_userInfo .author_side > span {float:left;margin:0 8px 0 0;font-size:12px;line-height:14px}
-.bv_header .bv_userInfo .author_side .server.g {color:#06a545}
-.bv_header .bv_userInfo .author_side .server.s {color:#ee5f00}
+.bv_header .bv_userInfo .author_side .server .g {color:#06a545}
+.bv_header .bv_userInfo .author_side .server .s {color:#ee5f00}
 .bv_header .bv_userInfo .author_side .level {color:#888}
 .bv_header .bv_userInfo .author_side .level:before {float:left;content:'';width:1px;height:9px;margin:3px 7px 0 0;background:#989898}
 .bv_header .bv_userInfo .nickname {font-size:15px;font-weight:bold;line-height:19px;color:#adacac}
@@ -189,8 +248,11 @@
 .comment_list .bc_author .medal.bronze {background-position:-434px -76px}
 .comment_list .bc_author .author_header {overflow:hidden;margin:0 0 3px 0}
 .comment_list .bc_author .author_header > span {float:left;margin:0 8px 0 0;font-size:12px;line-height:14px}
-.comment_list .bc_author .author_header .server.g {color:#06a545}
-.comment_list .bc_author .author_header .server.s {color:#ee5f00}
+.comment_list .bc_author .author_header .server {color:#888}
+.comment_list .bc_author .author_header .server .g {color:#06a545}
+.comment_list .bc_author .author_header .server .s {color:#ee5f00}
+.comment_list .bc_author .author_header .server > span {float:right;position:relative;display:block;padding:0 0 0 10px}
+.comment_list .bc_author .author_header .server > span:before {position:absolute;display:block;top:3px;left:5px;content:'';width:1px;height:9px;background:#aaa}
 .comment_list .bc_author .author_header .level {color:#888}
 .comment_list .bc_author .author_header .level:before {float:left;content:'';width:1px;height:9px;margin:3px 7px 0 0;background:#989898}
 .comment_list .bc_author .nickname {font-size:14px;line-height:19px;color:#444}

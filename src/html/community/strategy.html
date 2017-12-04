@@ -20,15 +20,26 @@
 						<h2 class="tit">공략게시판</h2>
 						<ul class="category" role="tablist">
 							<!-- TODO, DEV: 탭메뉴 활성화 시 on 클래스 추가 -->
+							<!-- TODO, DEV: 공략게시판 카테고리 색상 class 구분입니다. -->
+							<!--
+								베스트: <li class="cr1">베스트</li>
+								던전:   <li class="cr2">던전</li>
+								대전:   <li class="cr3">대전</li>
+								캐릭터: <li class="cr4">캐릭터</li>
+								아이템: <li class="cr5">아이템</li>
+								퀘스트: <li class="cr6">퀘스트</li>
+								펫:    <li class="cr7">펫</li>
+								기타:  <li class="cr8">기타</li>
+							-->
 							<li class="on"><a href="/community/strategy/list.aspx" role="tab">전체</a></li>
-							<li><a href="/community/strategy/list.aspx?n4ArticleCategorySN=-1&n4ArticleCategory2SN=1" role="tab">베스트</a></li>
-							<li><a href="/community/strategy/list.aspx?n4ArticleCategorySN=1" role="tab">던전</a></li>
-							<li><a href="/community/strategy/list.aspx?n4ArticleCategorySN=2" role="tab">대전</a></li>
-							<li><a href="/community/strategy/list.aspx?n4ArticleCategorySN=3" role="tab">캐릭터</a></li>
-							<li><a href="/community/strategy/list.aspx?n4ArticleCategorySN=5" role="tab">아이템</a></li>
-							<li><a href="/community/strategy/list.aspx?n4ArticleCategorySN=6" role="tab">퀘스트</a></li>
-							<li><a href="/community/strategy/list.aspx?n4ArticleCategorySN=8" role="tab">펫</a></li>
-							<li><a href="/community/strategy/list.aspx?n4ArticleCategorySN=7" role="tab">기타</a></li>
+							<li class="cr1"><a href="/community/strategy/list.aspx?n4ArticleCategorySN=-1&n4ArticleCategory2SN=1" role="tab">베스트</a></li>
+							<li class="cr2"><a href="/community/strategy/list.aspx?n4ArticleCategorySN=1" role="tab">던전</a></li>
+							<li class="cr3"><a href="/community/strategy/list.aspx?n4ArticleCategorySN=2" role="tab">대전</a></li>
+							<li class="cr4"><a href="/community/strategy/list.aspx?n4ArticleCategorySN=3" role="tab">캐릭터</a></li>
+							<li class="cr5"><a href="/community/strategy/list.aspx?n4ArticleCategorySN=5" role="tab">아이템</a></li>
+							<li class="cr6"><a href="/community/strategy/list.aspx?n4ArticleCategorySN=6" role="tab">퀘스트</a></li>
+							<li class="cr7"><a href="/community/strategy/list.aspx?n4ArticleCategorySN=8" role="tab">펫</a></li>
+							<li class="cr8"><a href="/community/strategy/list.aspx?n4ArticleCategorySN=7" role="tab">기타</a></li>
 						</ul>
 					</div>
 					<div class="des">
@@ -103,10 +114,21 @@
 							<!-- //li.notice -->
 
 							<!-- TODO: <li>는 Table tbody 역할입니다! -->
-							<li>
-								<div class="b_subject">
-									<div class="subject_header">
-										<span class="category">캐릭터</span>
+								<li>
+									<div class="b_subject">
+										<div class="subject_header">
+										<!-- TODO, DEV: 공략게시판 카테고리 색상 class 구분입니다. -->
+										<!--
+											베스트: <span class="category cr1">베스트</span>
+											던전:   <span class="category cr2">던전</span>
+											대전:   <span class="category cr3">대전</span>
+											캐릭터: <span class="category cr4">캐릭터</span>
+											아이템: <span class="category cr5">아이템</span>
+											퀘스트: <span class="category cr6">퀘스트</span>
+											펫:     <span class="category cr7">펫</span>
+											기타:   <span class="category cr8">기타</span>
+										-->
+										<span class="category cr4">캐릭터</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -145,7 +167,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">캐릭터</span>
+										<span class="category cr4">캐릭터</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -179,7 +201,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">던전</span>
+										<span class="category cr2">던전</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -210,7 +232,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">캐릭터</span>
+										<span class="category cr4">캐릭터</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -244,7 +266,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">대전</span>
+										<span class="category cr3">대전</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -275,7 +297,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">캐릭터</span>
+										<span class="category cr4">캐릭터</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -309,7 +331,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">캐릭터</span>
+										<span class="category cr4">캐릭터</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -340,7 +362,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">아이템</span>
+										<span class="category cr5">아이템</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -371,7 +393,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">캐릭터</span>
+										<span class="category cr4">캐릭터</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -402,7 +424,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">기타</span>
+										<span class="category cr8">기타</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -433,7 +455,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">대전</span>
+										<span class="category cr3">대전</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -464,7 +486,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">캐릭터</span>
+										<span class="category cr4">캐릭터</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">

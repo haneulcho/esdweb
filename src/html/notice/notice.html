@@ -20,11 +20,18 @@
 						<h2 class="tit">공지사항</h2>
 						<ul class="category" role="tablist">
 							<!-- TODO, DEV: 탭메뉴 활성화 시 on 클래스 추가 -->
+							<!-- TODO, DEV: 공지사항게시판 카테고리 색상 class 구분입니다. -->
+							<!--
+								공지:   <li class="cr9">공지</li>
+								점검:   <li class="cr3">점검</li>
+								패치:   <li class="cr4">패치</li>
+								기타:   <li class="cr8">기타</li>
+							-->
 							<li class="on"><a href="/news/notice/list.aspx" role="tab">전체</a></li>
-							<li><a href="/news/notice/list.aspx?emNoticeCode=Notice" role="tab">공지</a></li>
-							<li><a href="/news/notice/list.aspx?emNoticeCode=Inspection" role="tab">점검</a></li>
-							<li><a href="/news/notice/list.aspx?emNoticeCode=Patch" role="tab">패치</a></li>
-							<li><a href="/news/notice/list.aspx?emNoticeCode=News" role="tab">기타</a></li>
+							<li class="cr9"><a href="/news/notice/list.aspx?emNoticeCode=Notice" role="tab">공지</a></li>
+							<li class="cr3"><a href="/news/notice/list.aspx?emNoticeCode=Inspection" role="tab">점검</a></li>
+							<li class="cr4"><a href="/news/notice/list.aspx?emNoticeCode=Patch" role="tab">패치</a></li>
+							<li class="cr8"><a href="/news/notice/list.aspx?emNoticeCode=News" role="tab">기타</a></li>
 						</ul>
 					</div>
 					<div class="des">
@@ -49,7 +56,14 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">패치</span>
+									<!-- TODO, DEV: 건의게시판 카테고리 색상 class 구분입니다. -->
+									<!--
+										공지:   <span class="category cr9">공지</span>
+										점검:   <span class="category cr3">점검</span>
+										패치:   <span class="category cr4">패치</span>
+										기타:   <span class="category cr8">기타</span>
+									-->
+										<span class="category cr4">패치</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -68,7 +82,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">점검</span>
+										<span class="category cr9">공지</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -87,7 +101,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">기타</span>
+										<span class="category cr3">점검</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -106,7 +120,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">패치</span>
+										<span class="category cr8">기타</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -125,7 +139,26 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">패치</span>
+										<span class="category cr4">패치</span>
+										<span class="num">No. 12345678900</span>
+									</div>
+									<h3 class="subject">
+										<a href="../common/view_notice.html">일위아조씨가 도발해서</a>
+										<span class="ico new">New</span>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_date"><span class="date">2017.12.30</span></div>
+								<!-- //b_date -->
+								<div class="b_hit"><span class="hit">213001</span></div>
+								<!-- //b_hit -->
+							</li>
+							<!-- //li -->
+
+							<li>
+								<div class="b_subject">
+									<div class="subject_header">
+										<span class="category cr4">패치</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
