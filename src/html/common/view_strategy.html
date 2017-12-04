@@ -13,21 +13,20 @@
 		</div>
 		<!-- //.wrap_information -->
 
-		<section id="contents" class="view gmwebzine" role="main">
+		<section id="contents" class="view issue" role="main">
 			<div class="wrap_cont row">
 				<div class="cont_header inner">
 					<div class="titles">
-						<h2 class="tit">GM메가폰</h2>
+						<h2 class="tit">이슈게시판</h2>
 						<ul class="category" role="tablist">
 							<!-- TODO, DEV: 탭메뉴 활성화 시 on 클래스 추가 -->
-							<li class="on"><a href="/news/gmwebzine/list.aspx" role="tab">전체</a></li>
-							<li><a href="/news/gmwebzine/list.aspx?n4ArticleCategorySN=1" role="tab">정기</a></li>
-							<li><a href="/news/gmwebzine/list.aspx?n4ArticleCategorySN=3" role="tab">특별</a></li>
-							<li><a href="/news/gmwebzine/list.aspx?n4ArticleCategorySN=2" role="tab">GM백과</a></li>
+							<li class="on"><a href="/list.aspx?n4ArticleCategorySN=0" role="tab">전체</a></li>
+							<li><a href="/list.aspx?n4ArticleCategorySN=1" role="tab">자유</a></li>
+							<li><a href="/list.aspx?n4ArticleCategorySN=2" role="tab">질문</a></li>
 						</ul>
 					</div>
 					<div class="des">
-						<p>아. 아. 들리시나요? GM파이브 좋은 소식을 가져왔어요!</p>
+						<p>모험가님들을 위한 커뮤니티 공간입니다.</p>
 					</div>
 				</div>
 				<!-- //.cont_header -->
@@ -44,15 +43,23 @@
 										<div class="bv_subject">
 											<!-- 카테고리 표기 -->
 											<div class="subject_side">
-												<span class="category">GM백과</span>
+												<span class="category">자유</span>
+												<!--
+													아래 서버는 거래 게시판일 때만 보여줍니다.
+													가이아: <span class="server">서버 <span class="g">가이아</span></span>
+													솔레스: <span class="server">서버 <span class="s">솔레스</span></span>
+												-->
+												<span class="server">서버 <span class="g">가이아</span></span>
 											</div>
 											<!-- 게시글 제목 표기 -->
 											<div class="subject">
 												<h1 class="tit">
-													공략게시판 운영방식 변경 및 계획
+													엘소드 유저들 10년의 숙원(?)이 해결된다! 영웅대전 2017
 													<span class="tit_sub">
 														<span class="cmt">[10000]</span>
 														<span class="ico new">New</span>
+														<span class="ico mobile">Mobile</span>
+														<span class="ico pic">Picture</span>
 													</span>
 												</h1>
 											</div>
@@ -62,6 +69,7 @@
 										<div class="bv_des">
 											<div class="bv_date"><span class="date">2017-12-30 PM 7:52:00</span></div>
 											<div class="bv_hit"><span class="hit">조회수 : 213001</span></div>
+											<div class="bv_like"><span class="like"><span class="blind">추천수</span>213001</span></div>
 										</div>
 										<!-- //.bv_des -->
 									</div>
@@ -69,9 +77,54 @@
 									<!-- //DEV: 글보기 상단 좌측 영역 -->
 
 									<!-- DEV: 글보기 상단 우측 글쓴이 영역 -->
+									<!-- 글쓴이 정보 없을 때 -->
+									<!--
+
 									<div class="bv_userInfo none">
-										<p class="blind">엘소드 공식 홈페이지 GM메가폰 게시글입니다.</p>
+										<p class="blind">엘소드 공식 홈페이지 게시글입니다.</p>
 									</div>
+
+									-->
+									<!-- //글쓴이 정보 없을 때 -->
+									<div class="bv_userInfo">
+										<!-- 글쓴이 정보(서버, 레벨, 닉네임) 표기 -->
+										<div class="bv_author">
+											<div class="author_side">
+												<span class="server"><span class="s">솔레스</span></span>
+												<span class="level">Lv. 99</span>
+											</div>
+											<span class="nickname">한글이름여덟글자</span>
+										</div>
+										<!-- //.bv_author -->
+										<!-- //글쓴이 정보(대표 캐릭터 딱지, 메달) 표기 -->
+
+										<div class="bv_character">
+											<!-- [S] TODO, DEV: 대표 캐릭터 딱지, 메달 시작 -->
+											<div class="myCharacter">
+												<!--
+													대표 캐릭터 div 형식은 아래와 같습니다.
+													<div class="characterBadge 캐릭터명 c+개발사고유번호">
+
+													엘소드 기본: <div class="characterBadge elsword c1">
+													로제 헤비 베럴: <div class="characterBadge rose c41">
+													아인 아메 서머티지: <div class="characterBadge ain c134">
+												-->
+												<div class="characterBadge elsword c112">
+													<!--
+														부여된 메달이 있을 경우
+														금메달: <span class="medal gold">금메달</span>
+														은메달: <span class="medal silver">은메달</span>
+														동메달: <span class="medal bronze">동메달</span>
+													-->
+													<span class="medal gold">금메달</span>
+												</div>
+											</div>
+											<!-- //.myCharacter -->
+											<!-- [E] TODO, DEV: 대표 캐릭터 딱지, 메달 끝 -->
+										</div>
+										<!-- //.bv_character -->
+									</div>
+									<!-- //.bv_userInfo -->
 									<!-- //DEV: 글보기 상단 우측 글쓴이 영역 -->
 								</div>
 								<!-- //.bv_header -->
@@ -99,14 +152,24 @@
 											<a href="javascript:;" onclick="CopyUrl('http://elsword.nexon.com/board/335544325/4810924/'); return false;" class="btn copyUrl">주소복사</a>
 										</div>
 										<!-- //.bv_url -->
+										<!-- 게시글 신고하기 표기 (a버튼 onclick 마크업 기존과 동일) -->
+										<div class="bv_declare">
+											<a href="#" onclick="ArticleReport.Open( '335544325', '4810924', 'http://elsword.nexon.com/board/335544325/4810924/' ); return false;" class="btn vdeclare">신고하기</a>
+										</div>
+										<!-- //.bv_declare -->
 									</div>
 									<!-- //.bv_aside -->
 									<div class="b_btns inner">
 										<!-- 게시글 하단 공통 버튼 표기 -->
 										<!--
 											목록으로: 항상 표기
+											수정/삭제: 내 글 일 때 표기
+											추천하기: 필요한 경우 표기
 										-->
-										<a href="/news/gmwebzine/list.aspx?n4ArticleSN=0" class="btn list"><span class="ir">목록으로</span></a>
+										<a href="/community/free/list.aspx?n4ArticleSN=0" class="btn list"><span class="ir">목록으로</span></a>
+										<a href="#" id="btnRecommend" class="btn like">추천하기</a>
+										<a href="http://elsword.nexon.com/community/free/write.aspx?n4ArticleSN=4810924" id="btnArticleEdit" class="btn modify">글수정</a>
+										<a href="#" id="btnArticleRemove" class="btn delete">글삭제</a>										
 									</div>
 									<!-- // .b_btns -->
 								</div>
@@ -254,6 +317,7 @@
 													<!-- TODO, DEV: [E] 댓글 개인화 영역 메달 끝!! -->
 													<div class="author_header">
 														<span class="server">서버 <span class="s">솔레스</span></span>
+														<span class="level">Lv. 8</span>
 													</div>
 													<span class="nickname">한글이름여덟글자</span>
 												</div>
