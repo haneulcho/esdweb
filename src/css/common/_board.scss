@@ -13,11 +13,13 @@
 .board_list > li:first-child {border-width:2px}
 .board_list > li.notice {background:#f2f2f2}
 .board_list > li.notice:first-child {border-top:2px solid #acacac}
-.board_list > li.notice .b_subject {width:940px}
 .board_list > li.notice .b_subject .subject_header .category:after {display:none}
+.board_list > li.notice .b_author .author {width:80px;height:27px;margin:0 auto;background:url('../img/spr_global.png') no-repeat -3px -686px}
 .board_list > li.label {height:64px;border-top:2px solid #acacac;border-bottom:1px solid #acacac}
 .board_list > li > div {display:table-cell;padding:0 20px;vertical-align:middle}
 .board_list > li.label > div {text-align:center;font-size:16px;color:#444}
+.board_list > li.notice .b_author,
+.board_list > li.label .b_author {padding:0 20px}
 .board_list .b_subject .subject_header {overflow:hidden;margin:0 0 3px 0}
 .board_list .b_subject .subject_header > span {float:left;margin:0 8px 0 0;font-size:12px;line-height:14px}
 .board_list .b_subject .subject_header .category {color:#e65700}
