@@ -57,8 +57,21 @@
           $gnbWrapper.removeClass('on');
         }
       }
-    })
+    });
 
+    var $notice_tabLink = $('#main').find('.notice_tab_nav li > a');
+    var $notice_tabCont = $('#main').find('.notice_tab_cont');
+    $notice_tabLink.on('click', function (e) {
+      e.preventDefault();
+      var $this = $(this);
+      var $pLi = $this.parent('li');
+      if (!$pLi.hasClass('active')) {
+        $pLi.siblings().removeClass('active');
+        $pLi.addClass('active');
+        $notice_tabCont.removeClass('active');
+        $($this.attr('href')).addClass('active');
+      }
+    });
 
   });
 
