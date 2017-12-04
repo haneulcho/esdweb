@@ -20,10 +20,16 @@
 						<h2 class="tit">거래게시판</h2>
 						<ul class="category" role="tablist">
 							<!-- TODO, DEV: 탭메뉴 활성화 시 on 클래스 추가 -->
+							<!-- TODO, DEV: 건의게시판 카테고리 색상 class 구분입니다. -->
+							<!--
+								판매:   <li class="cr6">판매</li>
+								구매:   <li class="cr3">구매</li>
+								교환:   <li class="cr1">교환</li>
+							-->
 							<li class="on"><a href="/community/trade/list.aspx" role="tab">전체</a></li>
-							<li><a href="/community/trade/list.aspx?n4ArticleCategorySN=1" role="tab">판매</a></li>
-							<li><a href="/community/trade/list.aspx?n4ArticleCategorySN=2" role="tab">구매</a></li>
-							<li><a href="/community/trade/list.aspx?n4ArticleCategorySN=3" role="tab">교환</a></li>
+							<li class="cr6"><a href="/community/trade/list.aspx?n4ArticleCategorySN=1" role="tab">판매</a></li>
+							<li class="cr3"><a href="/community/trade/list.aspx?n4ArticleCategorySN=2" role="tab">구매</a></li>
+							<li class="cr1"><a href="/community/trade/list.aspx?n4ArticleCategorySN=3" role="tab">교환</a></li>
 						</ul>
 					</div>
 					<div class="des">
@@ -52,7 +58,13 @@
 								<!-- //b_server -->
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">구매</span>
+										<!-- TODO, DEV: 건의게시판 카테고리 색상 class 구분입니다. -->
+										<!--
+											판매:   <span class="category cr6">판매</span>
+											구매:   <span class="category cr3">구매</span>
+											교환:   <span class="category cr1">교환</span>
+										-->
+										<span class="category cr3">구매</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -74,8 +86,7 @@
 									<span class="medal gold">메달</span>
 									<!-- TODO, DEV: [E] 개인화 영역 메달 끝!! -->
 									<div class="author_header">
-										<span class="server g">가이아</span>
-										<span class="level">Lv. 99</span>
+										<span class="server">서버 <span class="g">가이아</span></span>
 									</div>
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
@@ -92,7 +103,7 @@
 								<!-- //b_server -->
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">구매</span>
+										<span class="category cr3">구매</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -109,8 +120,7 @@
 									<span class="medal silver">메달</span>
 									<!-- TODO, DEV: [E] 개인화 영역 메달 끝!! -->
 									<div class="author_header">
-										<span class="server g">가이아</span>
-										<span class="level">Lv. 99</span>
+										<span class="server">서버 <span class="g">가이아</span></span>
 									</div>
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
@@ -127,7 +137,7 @@
 								<!-- //b_server -->
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">판매</span>
+										<span class="category cr6">판매</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -141,8 +151,7 @@
 								<!-- //.b_subject -->
 								<div class="b_author">
 									<div class="author_header">
-										<span class="server g">가이아</span>
-										<span class="level">Lv. 99</span>
+										<span class="server">서버 <span class="g">가이아</span></span>
 									</div>
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
@@ -159,7 +168,7 @@
 								<!-- //b_server -->
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">구매</span>
+										<span class="category cr3">구매</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -176,8 +185,7 @@
 									<span class="medal bronze">메달</span>
 									<!-- TODO, DEV: [E] 개인화 영역 메달 끝!! -->
 									<div class="author_header">
-										<span class="server g">가이아</span>
-										<span class="level">Lv. 99</span>
+										<span class="server">서버 <span class="g">가이아</span></span>
 									</div>
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
@@ -194,7 +202,7 @@
 								<!-- //b_server -->
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">교환</span>
+										<span class="category cr1">교환</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -208,8 +216,7 @@
 								<!-- //.b_subject -->
 								<div class="b_author">
 									<div class="author_header">
-										<span class="server g">가이아</span>
-										<span class="level">Lv. 99</span>
+										<span class="server">서버 <span class="g">가이아</span></span>
 									</div>
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
@@ -226,7 +233,7 @@
 								<!-- //b_server -->
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">구매</span>
+										<span class="category cr3">구매</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -243,8 +250,7 @@
 									<span class="medal gold">메달</span>
 									<!-- TODO, DEV: [E] 개인화 영역 메달 끝!! -->
 									<div class="author_header">
-										<span class="server g">가이아</span>
-										<span class="level">Lv. 99</span>
+										<span class="server">서버 <span class="g">가이아</span></span>
 									</div>
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
@@ -261,7 +267,7 @@
 								<!-- //b_server -->
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">구매</span>
+										<span class="category cr3">구매</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -275,8 +281,7 @@
 								<!-- //.b_subject -->
 								<div class="b_author">
 									<div class="author_header">
-										<span class="server g">가이아</span>
-										<span class="level">Lv. 99</span>
+										<span class="server">서버 <span class="g">가이아</span></span>
 									</div>
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
@@ -293,7 +298,7 @@
 								<!-- //b_server -->
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">판매</span>
+										<span class="category cr6">판매</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -307,8 +312,7 @@
 								<!-- //.b_subject -->
 								<div class="b_author">
 									<div class="author_header">
-										<span class="server g">가이아</span>
-										<span class="level">Lv. 99</span>
+										<span class="server">서버 <span class="g">가이아</span></span>
 									</div>
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
@@ -325,7 +329,7 @@
 								<!-- //b_server -->
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">구매</span>
+										<span class="category cr3">구매</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -339,8 +343,7 @@
 								<!-- //.b_subject -->
 								<div class="b_author">
 									<div class="author_header">
-										<span class="server g">가이아</span>
-										<span class="level">Lv. 99</span>
+										<span class="server">서버 <span class="g">가이아</span></span>
 									</div>
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
@@ -357,7 +360,7 @@
 								<!-- //b_server -->
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">교환</span>
+										<span class="category cr1">교환</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -371,8 +374,7 @@
 								<!-- //.b_subject -->
 								<div class="b_author">
 									<div class="author_header">
-										<span class="server g">가이아</span>
-										<span class="level">Lv. 99</span>
+										<span class="server">서버 <span class="g">가이아</span></span>
 									</div>
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
@@ -389,7 +391,7 @@
 								<!-- //b_server -->
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">교환</span>
+										<span class="category cr1">교환</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -403,8 +405,7 @@
 								<!-- //.b_subject -->
 								<div class="b_author">
 									<div class="author_header">
-										<span class="server g">가이아</span>
-										<span class="level">Lv. 99</span>
+										<span class="server">서버 <span class="g">가이아</span></span>
 									</div>
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
@@ -421,7 +422,7 @@
 								<!-- //b_server -->
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">구매</span>
+										<span class="category cr3">구매</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -435,8 +436,7 @@
 								<!-- //.b_subject -->
 								<div class="b_author">
 									<div class="author_header">
-										<span class="server g">가이아</span>
-										<span class="level">Lv. 99</span>
+										<span class="server">서버 <span class="g">가이아</span></span>
 									</div>
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
@@ -497,6 +497,7 @@
 										<div class="iptBox_search">
 											<input type="text" id="" class="ipt_keyword" maxlength="20" placeholder="검색어를 입력하세요">
 											<a href="#" onclick="" class="btn search">SEARCH</a>
+											<input type="image" name="ctl00$Contents$btnListAll" id="Contents_btnListAll" class="btn listAll" src="http://s.nx.com/S2/Game/Elsword/site/2018/renewal/img_input.png" alt="전체목록">
 										</div>
 									</fieldset>
 								</form>

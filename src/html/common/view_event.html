@@ -13,20 +13,20 @@
 		</div>
 		<!-- //.wrap_information -->
 
-		<section id="contents" class="view issue" role="main">
+		<section id="contents" class="view event" role="main">
 			<div class="wrap_cont row">
 				<div class="cont_header inner">
 					<div class="titles">
-						<h2 class="tit">이슈게시판</h2>
+						<h2 class="tit">이벤트</h2>
 						<ul class="category" role="tablist">
 							<!-- TODO, DEV: 탭메뉴 활성화 시 on 클래스 추가 -->
-							<li class="on"><a href="/list.aspx?n4ArticleCategorySN=0" role="tab">전체</a></li>
-							<li><a href="/list.aspx?n4ArticleCategorySN=1" role="tab">자유</a></li>
-							<li><a href="/list.aspx?n4ArticleCategorySN=2" role="tab">질문</a></li>
+							<li class="on"><a href="/news/events/list.aspx?n4ArticleCategorySN=2" role="tab">진행중인 이벤트</a></li>
+							<li><a href="/news/events/list.aspx?n4ArticleCategorySN=3" role="tab">종료된 이벤트</a></li>
+							<li><a href="/news/prize/list.aspx" role="tab">당첨자 확인</a></li>
 						</ul>
 					</div>
 					<div class="des">
-						<p>모험가님들을 위한 커뮤니티 공간입니다.</p>
+						<p>엘소드에서만 즐길 수 있는 다양한 이벤트, 놓치지 마세요!</p>
 					</div>
 				</div>
 				<!-- //.cont_header -->
@@ -43,17 +43,15 @@
 										<div class="bv_subject">
 											<!-- 카테고리 표기 -->
 											<div class="subject_side">
-												<span class="category">자유</span>
+												<span class="category">진행중인 이벤트</span>
 											</div>
 											<!-- 게시글 제목 표기 -->
 											<div class="subject">
 												<h1 class="tit">
-													엘소드 유저들 10년의 숙원(?)이 해결된다! 영웅대전 2017
+													공략게시판 운영방식 변경 및 계획
 													<span class="tit_sub">
 														<span class="cmt">[10000]</span>
 														<span class="ico new">New</span>
-														<span class="ico mobile">Mobile</span>
-														<span class="ico pic">Picture</span>
 													</span>
 												</h1>
 											</div>
@@ -70,60 +68,41 @@
 									<!-- //DEV: 글보기 상단 좌측 영역 -->
 
 									<!-- DEV: 글보기 상단 우측 글쓴이 영역 -->
-									<div class="bv_userInfo">
-										<!-- 글쓴이 정보(서버, 레벨, 닉네임) 표기 -->
-										<div class="bv_author">
-											<div class="author_side">
-												<span class="server"><span class="s">솔레스</span></span>
-												<span class="level">Lv. 99</span>
-											</div>
-											<span class="nickname">한글이름여덟글자</span>
-										</div>
-										<!-- //.bv_author -->
-										<!-- //글쓴이 정보(대표 캐릭터 딱지, 메달) 표기 -->
-
-										<div class="bv_character">
-											<!-- [S] TODO, DEV: 대표 캐릭터 딱지, 메달 시작 -->
-											<div class="myCharacter">
-												<!--
-													대표 캐릭터 div 형식은 아래와 같습니다.
-													<div class="characterBadge 캐릭터명 c+개발사고유번호">
-
-													엘소드 기본: <div class="characterBadge elsword c1">
-													로제 헤비 베럴: <div class="characterBadge rose c41">
-													아인 아메 서머티지: <div class="characterBadge ain c134">
-												-->
-												<div class="characterBadge elsword c112">
-													<!--
-														부여된 메달이 있을 경우
-														금메달: <span class="medal gold">금메달</span>
-														은메달: <span class="medal silver">은메달</span>
-														동메달: <span class="medal bronze">동메달</span>
-													-->
-													<span class="medal gold">금메달</span>
-												</div>
-											</div>
-											<!-- //.myCharacter -->
-											<!-- [E] TODO, DEV: 대표 캐릭터 딱지, 메달 끝 -->
-										</div>
-										<!-- //.bv_character -->
+									<div class="bv_userInfo none">
+										<p class="blind">엘소드 공식 홈페이지 이벤트 게시글입니다.</p>
 									</div>
-									<!-- //.bv_userInfo -->
 									<!-- //DEV: 글보기 상단 우측 글쓴이 영역 -->
 								</div>
 								<!-- //.bv_header -->
 
 								<!-- DEV: 에디터 본문 START!! -->
 								<div id="bv_contents" class="bv_contents">
-									<p># 3차 전직부터 포스 스킬, 초월 진 스킬까지</p>
-
-									<p>KOG 이동신 디렉터는 이날 행사에서 다음주 예정된 3차 전직에 대한 정보를 공개했다. 3차 전직 캐릭터들은 모두 신규 패시브와 하이퍼 액티브 스킬이 추가될 예정이다. 3차 전직 유저들에겐 전직의 특권(?)인 '프로모션 아바타'이 기본적으로 주어지며, 3차 전직은 여기에 추가로 특별히 '전용 프로모션 액세서리'가 주어질 예정이다. 또한 3차 전직을 하면 스킬슬롯 B가 무료로 추가된다.</p>
-
-									<p>3차 전직이 추가됨에 따라 기존 스킬 체계도 바뀐다. 가장 큰 변화는 '포스 스킬'이라는 새로운 분류의 스킬 추가다. 이동신 디렉터 설명에 따르면, 포스 스킬은 전직이 늘어나고 스킬이 많아짐에 따라, 기존 스킬들의 활용도를 높이기 위해 고안된 시스템이다.</p>
-									
-									<img src="http://imgnews.naver.net/image/439/2017/11/27/0000013597_002_20171127003643187.jpg?type=w540">
-
-									<p>다가오는 업데이트에는 기존 스킬의 활용도를 높이기 위한 '체인지 포스' 스킬과 모든 캐릭터들이 모두 사용할 수 있는 '공용 포스' 스킬이 추가된다. 포스 스킬은 3차 전직이나 던전 드롭 등을 통해 얻을 수 있을 예정이다.</p>
+									<div class="b_event">
+										<div class="s01">
+											<h2>엘소드 제 4차 리그 종료!</h2>
+											<h1>대전 프리 시즌 이벤트</h1>
+											<p>이벤트 기간: 2017년 11월 30일(목) 점검 후 ~</p>
+											<p>더 나은 대전을 준비하기 위한 프리시즌이 시작됩니다. 프리시즌 이벤트를 즐기며, 다음 리그를 기대해주세요!</p>
+										</div>
+										<div class="s02">
+											<h3>EVENT 01. 대전 칭호 프리패스 체험!</h3>
+											<p>10분 접속 시 100% 지급! 10가지 대전 칭호를 모두 체험해보세요!</p>
+										</div>
+										<div class="s03">
+											<h3>EVENT 02. 에픽 NPC 등장 확률 UP!</h3>
+											<p>이벤트 기간동안 공식대전에서 에픽 NPC를 만날 확률이 대폭 상승! 두근두근 에픽 NPC와의 대결을 기대해보세요!</p>
+											<h3>EVENT 03. 공식 대전 보상 200% 지급!</h3>
+											<p>공식대전 승리 시 경험치와 AP 보상이 두배! 달콤한 승리의 맛을 즐겨보세요!</p>
+											<p>TIP. 접속 이벤트로 지급되는 칭호는 캐릭터 당 1회 획득 가능하며, 15일 뒤 자동삭제됩니다.</p>
+										</div>
+									</div>
+									<style type="text/css">
+									.b_event {display:block;position:relative;overflow:hidden;width:700px;margin:0 auto;padding:0;text-indent:-9999px !important;font-size:0 !important}
+									.b_event .s01, .b_event .s02, .b_event .s03, .b_event .s04, .b_event .s05, .b_event .s06 {position:relative;width:700px;margin:0;padding:0;text-indent:-9999px !important;font-size:0 !important}
+									.b_event .s01 {height:811px;background:url('http://s.nx.com/s2/game/elsword/2017/event/1130_vss3as0n/b_img_sec01.jpg') no-repeat 0 0}
+									.b_event .s02 {height:618px;background:url('http://s.nx.com/s2/game/elsword/2017/event/1130_vss3as0n/b_img_sec02.jpg') no-repeat 0 0}
+									.b_event .s03 {height:871px;background:url('http://s.nx.com/s2/game/elsword/2017/event/1130_vss3as0n/b_img_sec03.jpg') no-repeat 0 0}
+									</style>
 								</div>
 								<!-- DEV: 에디터 본문 END!! -->
 								<!-- //#bv_contents.bv_contents -->
@@ -136,24 +115,14 @@
 											<a href="javascript:;" onclick="CopyUrl('http://elsword.nexon.com/board/335544325/4810924/'); return false;" class="btn copyUrl">주소복사</a>
 										</div>
 										<!-- //.bv_url -->
-										<!-- 게시글 신고하기 표기 (a버튼 onclick 마크업 기존과 동일) -->
-										<div class="bv_declare">
-											<a href="#" onclick="ArticleReport.Open( '335544325', '4810924', 'http://elsword.nexon.com/board/335544325/4810924/' ); return false;" class="btn vdeclare">신고하기</a>
-										</div>
-										<!-- //.bv_declare -->
 									</div>
 									<!-- //.bv_aside -->
 									<div class="b_btns inner">
 										<!-- 게시글 하단 공통 버튼 표기 -->
 										<!--
 											목록으로: 항상 표기
-											수정/삭제: 내 글 일 때 표기
-											추천하기: 필요한 경우 표기
 										-->
-										<a href="/community/free/list.aspx?n4ArticleSN=0" class="btn list"><span class="ir">목록으로</span></a>
-										<a href="#" id="btnRecommend" class="btn like">추천하기</a>
-										<a href="http://elsword.nexon.com/community/free/write.aspx?n4ArticleSN=4810924" id="btnArticleEdit" class="btn modify">글수정</a>
-										<a href="#" id="btnArticleRemove" class="btn delete">글삭제</a>										
+										<a href="/news/events/list.aspx?n4ArticleSN=0&n4ArticleCategorySN=2" class="btn list"><span class="ir">목록으로</span></a>
 									</div>
 									<!-- // .b_btns -->
 								</div>

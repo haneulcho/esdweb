@@ -20,10 +20,16 @@
 						<h2 class="tit">GM메가폰</h2>
 						<ul class="category" role="tablist">
 							<!-- TODO, DEV: 탭메뉴 활성화 시 on 클래스 추가 -->
+							<!-- TODO, DEV: 건의게시판 카테고리 색상 class 구분입니다. -->
+							<!--
+								정기:     <li class="cr3">정기</li>
+								특별:     <li class="cr4">특별</li>
+								GM백과:   <li class="cr7">GM백과</li>
+							-->
 							<li class="on"><a href="/news/gmwebzine/list.aspx" role="tab">전체</a></li>
-							<li><a href="/news/gmwebzine/list.aspx?n4ArticleCategorySN=1" role="tab">정기</a></li>
-							<li><a href="/news/gmwebzine/list.aspx?n4ArticleCategorySN=3" role="tab">특별</a></li>
-							<li><a href="/news/gmwebzine/list.aspx?n4ArticleCategorySN=2" role="tab">GM백과</a></li>
+							<li class="cr3"><a href="/news/gmwebzine/list.aspx?n4ArticleCategorySN=1" role="tab">정기</a></li>
+							<li class="cr4"><a href="/news/gmwebzine/list.aspx?n4ArticleCategorySN=3" role="tab">특별</a></li>
+							<li class="cr7"><a href="/news/gmwebzine/list.aspx?n4ArticleCategorySN=2" role="tab">GM백과</a></li>
 						</ul>
 					</div>
 					<div class="des">
@@ -48,11 +54,17 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">특별</span>
+										<!-- TODO, DEV: 건의게시판 카테고리 색상 class 구분입니다. -->
+										<!--
+											정기:     <span class="category cr3">정기</span>
+											특별:     <span class="category cr4">특별</span>
+											GM백과:   <span class="category cr7">GM백과</span>
+										-->
+										<span class="category cr4">특별</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
-										<a href="http://elsword.nexon.com/community/free/view.aspx?n4ArticleSN=4806286">일위아조씨가 도발해서</a>
+										<a href="../common/view_gmwebzine.html">일위아조씨가 도발해서</a>
 										<span class="ico new">New</span>
 									</h3>
 								</div>
@@ -67,11 +79,11 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">GM백과</span>
+										<span class="category cr7">GM백과</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
-										<a href="http://elsword.nexon.com/community/free/view.aspx?n4ArticleSN=4806286">일위아조씨가 도발해서</a>
+										<a href="../common/view_gmwebzine.html">일위아조씨가 도발해서</a>
 										<span class="ico new">New</span>
 									</h3>
 								</div>
@@ -86,11 +98,11 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">정기</span>
+										<span class="category cr3">정기</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
-										<a href="http://elsword.nexon.com/community/free/view.aspx?n4ArticleSN=4806286">일위아조씨가 도발해서</a>
+										<a href="../common/view_gmwebzine.html">일위아조씨가 도발해서</a>
 										<span class="ico new">New</span>
 									</h3>
 								</div>
@@ -105,11 +117,11 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">특별</span>
+										<span class="category cr4">특별</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
-										<a href="http://elsword.nexon.com/community/free/view.aspx?n4ArticleSN=4806286">일위아조씨가 도발해서</a>
+										<a href="../common/view_gmwebzine.html">일위아조씨가 도발해서</a>
 										<span class="ico new">New</span>
 									</h3>
 								</div>
@@ -124,11 +136,11 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">특별</span>
+										<span class="category cr4">특별</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
-										<a href="http://elsword.nexon.com/community/free/view.aspx?n4ArticleSN=4806286">일위아조씨가 도발해서</a>
+										<a href="../common/view_gmwebzine.html">일위아조씨가 도발해서</a>
 										<span class="ico new">New</span>
 									</h3>
 								</div>
@@ -184,6 +196,7 @@
 										<div class="iptBox_search">
 											<input type="text" id="" class="ipt_keyword" maxlength="20" placeholder="검색어를 입력하세요">
 											<a href="#" onclick="" class="btn search">SEARCH</a>
+											<input type="image" name="ctl00$Contents$btnListAll" id="Contents_btnListAll" class="btn listAll" src="http://s.nx.com/S2/Game/Elsword/site/2018/renewal/img_input.png" alt="전체목록">
 										</div>
 									</fieldset>
 								</form>

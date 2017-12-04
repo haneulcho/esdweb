@@ -43,8 +43,9 @@
 .cont_footer .b_search_form .btn {display:inline-block;*display:inline;zoom:1;background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png');background-repeat:no-repeat}
 .cont_footer .b_paging {margin-bottom:42px}
 .cont_footer .b_search {height:100px;padding:33px 0 0 0;background:#f7f7f7;text-align:center}
-.cont_footer .b_search .b_search_form {width:735px;height:38px;margin:0 auto}
+.cont_footer .b_search .b_search_form {width:843px;height:38px;margin:0 auto}
 .cont_footer .b_search .b_search_form .iptBox_select {float:left;width:140px}
-.cont_footer .b_search .b_search_form .iptBox_search {float:right}
+.cont_footer .b_search .b_search_form .iptBox_search {float:left;margin-left:4px}
 .cont_footer .b_search .b_search_form .iptBox_search .ipt_keyword {float:left;width:482px;margin:0 4px 0 0}
-.cont_footer .b_search .b_search_form .iptBox_search .btn.search {float:right}
+.cont_footer .b_search .b_search_form .iptBox_search .btn.search {float:left}
+.cont_footer .b_search .b_search_form .iptBox_search .btn.listAll {float:right;margin:0 0 0 3px}

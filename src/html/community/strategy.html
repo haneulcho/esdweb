@@ -20,15 +20,26 @@
 						<h2 class="tit">공략게시판</h2>
 						<ul class="category" role="tablist">
 							<!-- TODO, DEV: 탭메뉴 활성화 시 on 클래스 추가 -->
+							<!-- TODO, DEV: 공략게시판 카테고리 색상 class 구분입니다. -->
+							<!--
+								베스트: <li class="cr1">베스트</li>
+								던전:   <li class="cr2">던전</li>
+								대전:   <li class="cr3">대전</li>
+								캐릭터: <li class="cr4">캐릭터</li>
+								아이템: <li class="cr5">아이템</li>
+								퀘스트: <li class="cr6">퀘스트</li>
+								펫:    <li class="cr7">펫</li>
+								기타:  <li class="cr8">기타</li>
+							-->
 							<li class="on"><a href="/community/strategy/list.aspx" role="tab">전체</a></li>
-							<li><a href="/community/strategy/list.aspx?n4ArticleCategorySN=-1&n4ArticleCategory2SN=1" role="tab">베스트</a></li>
-							<li><a href="/community/strategy/list.aspx?n4ArticleCategorySN=1" role="tab">던전</a></li>
-							<li><a href="/community/strategy/list.aspx?n4ArticleCategorySN=2" role="tab">대전</a></li>
-							<li><a href="/community/strategy/list.aspx?n4ArticleCategorySN=3" role="tab">캐릭터</a></li>
-							<li><a href="/community/strategy/list.aspx?n4ArticleCategorySN=5" role="tab">아이템</a></li>
-							<li><a href="/community/strategy/list.aspx?n4ArticleCategorySN=6" role="tab">퀘스트</a></li>
-							<li><a href="/community/strategy/list.aspx?n4ArticleCategorySN=8" role="tab">펫</a></li>
-							<li><a href="/community/strategy/list.aspx?n4ArticleCategorySN=7" role="tab">기타</a></li>
+							<li class="cr1"><a href="/community/strategy/list.aspx?n4ArticleCategorySN=-1&n4ArticleCategory2SN=1" role="tab">베스트</a></li>
+							<li class="cr2"><a href="/community/strategy/list.aspx?n4ArticleCategorySN=1" role="tab">던전</a></li>
+							<li class="cr3"><a href="/community/strategy/list.aspx?n4ArticleCategorySN=2" role="tab">대전</a></li>
+							<li class="cr4"><a href="/community/strategy/list.aspx?n4ArticleCategorySN=3" role="tab">캐릭터</a></li>
+							<li class="cr5"><a href="/community/strategy/list.aspx?n4ArticleCategorySN=5" role="tab">아이템</a></li>
+							<li class="cr6"><a href="/community/strategy/list.aspx?n4ArticleCategorySN=6" role="tab">퀘스트</a></li>
+							<li class="cr7"><a href="/community/strategy/list.aspx?n4ArticleCategorySN=8" role="tab">펫</a></li>
+							<li class="cr8"><a href="/community/strategy/list.aspx?n4ArticleCategorySN=7" role="tab">기타</a></li>
 						</ul>
 					</div>
 					<div class="des">
@@ -50,12 +61,74 @@
 							</li>
 							<!-- TODO: //<li class="label">은 Table thead 역할입니다! -->
 
-
-							<!-- TODO: <li>는 Table tbody 역할입니다! -->
-							<li>
+							<!--
+								공지사항: <li class="notice">
+							-->
+							<li class="notice">
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">캐릭터</span>
+										<span class="category">자유</span>
+									</div>
+									<h3 class="subject">
+										<a href="../common/view_issue.html">일위아조씨가 도발해서</a>
+										<span class="cmt">[10000]</span>
+										<span class="ico new">New</span>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<span class="author">엘소드</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_like"><span class="like">0</span></div>
+								<!-- //b_like -->
+								<div class="b_date"><span class="date">PM 04:23</span></div>
+								<!-- //b_date -->
+								<div class="b_hit"><span class="hit">213001</span></div>
+								<!-- //b_hit -->
+							</li>
+							<!-- //li.notice -->
+							<li class="notice">
+								<div class="b_subject">
+									<div class="subject_header">
+										<span class="category">자유</span>
+									</div>
+									<h3 class="subject">
+										<a href="../common/view_issue.html">일위아조씨가 도발해서</a>
+										<span class="cmt">[10000]</span>
+										<span class="ico new">New</span>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<span class="author">엘소드</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_like"><span class="like">9999</span></div>
+								<!-- //b_like -->
+								<div class="b_date"><span class="date">2017.12.30</span></div>
+								<!-- //b_date -->
+								<div class="b_hit"><span class="hit">213001</span></div>
+								<!-- //b_hit -->
+							</li>
+							<!-- //li.notice -->
+
+							<!-- TODO: <li>는 Table tbody 역할입니다! -->
+								<li>
+									<div class="b_subject">
+										<div class="subject_header">
+										<!-- TODO, DEV: 공략게시판 카테고리 색상 class 구분입니다. -->
+										<!--
+											베스트: <span class="category cr1">베스트</span>
+											던전:   <span class="category cr2">던전</span>
+											대전:   <span class="category cr3">대전</span>
+											캐릭터: <span class="category cr4">캐릭터</span>
+											아이템: <span class="category cr5">아이템</span>
+											퀘스트: <span class="category cr6">퀘스트</span>
+											펫:     <span class="category cr7">펫</span>
+											기타:   <span class="category cr8">기타</span>
+										-->
+										<span class="category cr4">캐릭터</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -77,8 +150,7 @@
 									<span class="medal gold">메달</span>
 									<!-- TODO, DEV: [E] 개인화 영역 메달 끝!! -->
 									<div class="author_header">
-										<span class="server g">가이아</span>
-										<span class="level">Lv. 99</span>
+										<span class="server">서버 <span class="g">가이아</span></span>
 									</div>
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
@@ -95,7 +167,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">캐릭터</span>
+										<span class="category cr4">캐릭터</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -112,8 +184,7 @@
 									<span class="medal silver">메달</span>
 									<!-- TODO, DEV: [E] 개인화 영역 메달 끝!! -->
 									<div class="author_header">
-										<span class="server g">가이아</span>
-										<span class="level">Lv. 99</span>
+										<span class="server">서버 <span class="g">가이아</span></span>
 									</div>
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
@@ -130,7 +201,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">던전</span>
+										<span class="category cr2">던전</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -144,8 +215,7 @@
 								<!-- //.b_subject -->
 								<div class="b_author">
 									<div class="author_header">
-										<span class="server g">가이아</span>
-										<span class="level">Lv. 99</span>
+										<span class="server">서버 <span class="g">가이아</span></span>
 									</div>
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
@@ -162,7 +232,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">캐릭터</span>
+										<span class="category cr4">캐릭터</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -179,8 +249,7 @@
 									<span class="medal bronze">메달</span>
 									<!-- TODO, DEV: [E] 개인화 영역 메달 끝!! -->
 									<div class="author_header">
-										<span class="server g">가이아</span>
-										<span class="level">Lv. 99</span>
+										<span class="server">서버 <span class="g">가이아</span></span>
 									</div>
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
@@ -197,7 +266,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">대전</span>
+										<span class="category cr3">대전</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -211,8 +280,7 @@
 								<!-- //.b_subject -->
 								<div class="b_author">
 									<div class="author_header">
-										<span class="server g">가이아</span>
-										<span class="level">Lv. 99</span>
+										<span class="server">서버 <span class="g">가이아</span></span>
 									</div>
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
@@ -229,7 +297,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">캐릭터</span>
+										<span class="category cr4">캐릭터</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -246,8 +314,7 @@
 									<span class="medal gold">메달</span>
 									<!-- TODO, DEV: [E] 개인화 영역 메달 끝!! -->
 									<div class="author_header">
-										<span class="server g">가이아</span>
-										<span class="level">Lv. 99</span>
+										<span class="server">서버 <span class="g">가이아</span></span>
 									</div>
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
@@ -264,7 +331,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">캐릭터</span>
+										<span class="category cr4">캐릭터</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -278,8 +345,7 @@
 								<!-- //.b_subject -->
 								<div class="b_author">
 									<div class="author_header">
-										<span class="server g">가이아</span>
-										<span class="level">Lv. 99</span>
+										<span class="server">서버 <span class="g">가이아</span></span>
 									</div>
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
@@ -296,7 +362,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">아이템</span>
+										<span class="category cr5">아이템</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -310,8 +376,7 @@
 								<!-- //.b_subject -->
 								<div class="b_author">
 									<div class="author_header">
-										<span class="server g">가이아</span>
-										<span class="level">Lv. 99</span>
+										<span class="server">서버 <span class="g">가이아</span></span>
 									</div>
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
@@ -328,7 +393,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">캐릭터</span>
+										<span class="category cr4">캐릭터</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -342,8 +407,7 @@
 								<!-- //.b_subject -->
 								<div class="b_author">
 									<div class="author_header">
-										<span class="server g">가이아</span>
-										<span class="level">Lv. 99</span>
+										<span class="server">서버 <span class="g">가이아</span></span>
 									</div>
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
@@ -360,7 +424,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">기타</span>
+										<span class="category cr8">기타</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -374,8 +438,7 @@
 								<!-- //.b_subject -->
 								<div class="b_author">
 									<div class="author_header">
-										<span class="server g">가이아</span>
-										<span class="level">Lv. 99</span>
+										<span class="server">서버 <span class="g">가이아</span></span>
 									</div>
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
@@ -392,7 +455,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">대전</span>
+										<span class="category cr3">대전</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -406,8 +469,7 @@
 								<!-- //.b_subject -->
 								<div class="b_author">
 									<div class="author_header">
-										<span class="server g">가이아</span>
-										<span class="level">Lv. 99</span>
+										<span class="server">서버 <span class="g">가이아</span></span>
 									</div>
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
@@ -424,7 +486,7 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category">캐릭터</span>
+										<span class="category cr4">캐릭터</span>
 										<span class="num">No. 12345678900</span>
 									</div>
 									<h3 class="subject">
@@ -438,8 +500,7 @@
 								<!-- //.b_subject -->
 								<div class="b_author">
 									<div class="author_header">
-										<span class="server g">가이아</span>
-										<span class="level">Lv. 99</span>
+										<span class="server">서버 <span class="g">가이아</span></span>
 									</div>
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
@@ -502,6 +563,7 @@
 										<div class="iptBox_search">
 											<input type="text" id="" class="ipt_keyword" maxlength="20" placeholder="검색어를 입력하세요">
 											<a href="#" onclick="" class="btn search">SEARCH</a>
+											<input type="image" name="ctl00$Contents$btnListAll" id="Contents_btnListAll" class="btn listAll" src="http://s.nx.com/S2/Game/Elsword/site/2018/renewal/img_input.png" alt="전체목록">
 										</div>
 									</fieldset>
 								</form>

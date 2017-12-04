@@ -13,26 +13,31 @@
 		</div>
 		<!-- //.wrap_information -->
 
-		<section id="contents" class="view issue" role="main">
+		<section id="contents" class="view idea" role="main">
 			<div class="wrap_cont row">
 				<div class="cont_header inner">
 					<div class="titles">
-						<h2 class="tit">이슈게시판</h2>
+						<h2 class="tit">건의게시판</h2>
 						<ul class="category" role="tablist">
 							<!-- TODO, DEV: 탭메뉴 활성화 시 on 클래스 추가 -->
-							<li class="on"><a href="/list.aspx?n4ArticleCategorySN=0" role="tab">전체</a></li>
-							<li><a href="/list.aspx?n4ArticleCategorySN=1" role="tab">자유</a></li>
-							<li><a href="/list.aspx?n4ArticleCategorySN=2" role="tab">질문</a></li>
+							<li class="on"><a href="/community/idea/list.aspx" role="tab">전체</a></li>
+							<li><a href="/community/idea/list.aspx?n4ArticleCategorySN=1" role="tab">던전</a></li>
+							<li><a href="/community/idea/list.aspx?n4ArticleCategorySN=2" role="tab">대전</a></li>
+							<li><a href="/community/idea/list.aspx?n4ArticleCategorySN=3" role="tab">캐릭터</a></li>
+							<li><a href="/community/idea/list.aspx?n4ArticleCategorySN=5" role="tab">아이템</a></li>
+							<li><a href="/community/idea/list.aspx?n4ArticleCategorySN=6" role="tab">퀘스트</a></li>
+							<li><a href="/community/idea/list.aspx?n4ArticleCategorySN=7" role="tab">펫</a></li>
+							<li><a href="/community/idea/list.aspx?n4ArticleCategorySN=8" role="tab">기타</a></li>
 						</ul>
 					</div>
 					<div class="des">
-						<p>모험가님들을 위한 커뮤니티 공간입니다.</p>
+						<p>더 신나는 엘소드를 위해 여러분의 의견을 들려주세요~</p>
 					</div>
 				</div>
 				<!-- //.cont_header -->
 				<div class="cont_body">
 					<div id="boardView">
-						<h2 class="blind">글보기 화면입니다.</h2>
+						<h2 class="blind">건의게시판 글보기 화면입니다.</h2>
 
 						<!-- TODO, DEV: [S] 글보기 화면 board_view -->
 						<section class="board_view inner">
@@ -43,7 +48,18 @@
 										<div class="bv_subject">
 											<!-- 카테고리 표기 -->
 											<div class="subject_side">
-												<span class="category">자유</span>
+												<!-- TODO, DEV: 공략게시판 카테고리 색상 class 구분입니다. -->
+												<!--
+													베스트: <span class="category cr1">베스트</span>
+													던전:   <span class="category cr2">던전</span>
+													대전:   <span class="category cr3">대전</span>
+													캐릭터: <span class="category cr4">캐릭터</span>
+													아이템: <span class="category cr5">아이템</span>
+													퀘스트: <span class="category cr6">퀘스트</span>
+													펫:     <span class="category cr7">펫</span>
+													기타:   <span class="category cr8">기타</span>
+												-->
+												<span class="category cr5">아이템</span>
 											</div>
 											<!-- 게시글 제목 표기 -->
 											<div class="subject">
@@ -63,6 +79,7 @@
 										<div class="bv_des">
 											<div class="bv_date"><span class="date">2017-12-30 PM 7:52:00</span></div>
 											<div class="bv_hit"><span class="hit">조회수 : 213001</span></div>
+											<div class="bv_like"><span class="like"><span class="blind">추천수</span>213001</span></div>
 										</div>
 										<!-- //.bv_des -->
 									</div>
@@ -153,7 +170,7 @@
 										<a href="/community/free/list.aspx?n4ArticleSN=0" class="btn list"><span class="ir">목록으로</span></a>
 										<a href="#" id="btnRecommend" class="btn like">추천하기</a>
 										<a href="http://elsword.nexon.com/community/free/write.aspx?n4ArticleSN=4810924" id="btnArticleEdit" class="btn modify">글수정</a>
-										<a href="#" id="btnArticleRemove" class="btn delete">글삭제</a>										
+										<a href="#" id="btnArticleRemove" class="btn delete">글삭제</a>
 									</div>
 									<!-- // .b_btns -->
 								</div>

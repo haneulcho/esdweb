@@ -55,10 +55,20 @@
 /* Notice, GM Megaphone, Animation Banner */
 .wrap_issue {height:400px;padding:56px 0 0 0;background:#fff}
 .wrap_issue .issue_notice {float:left;width:570px}
+.wrap_issue .issue_notice .notice_tab_nav {position:relative}
+.wrap_issue .issue_notice .notice_tab_nav > ul {position:absolute;bottom:3px;right:0;height:30px}
+.wrap_issue .issue_notice .notice_tab_nav > ul > li {position:relative;float:left;height:20px;padding:0 0 0 36px}
+.wrap_issue .issue_notice .notice_tab_nav > ul > li:before {position:absolute;display:block;top:4px;left:13px;content:'';width:1px;height:13px;margin: 0 8px 0 5px;background-color:#888}
+.wrap_issue .issue_notice .notice_tab_nav > ul > li:first-child {padding:0}
+.wrap_issue .issue_notice .notice_tab_nav > ul > li:first-child:before {display:none}
+.wrap_issue .issue_notice .notice_tab_nav > ul > li > a {font-size:14px;line-height:20px;color:#444}
+.wrap_issue .issue_notice .notice_tab_nav > ul > li > a:hover {text-decoration:none}
+.wrap_issue .issue_notice .notice_tab_nav > ul > li.active > a {font-weight:bold;color:#e65700}
+.wrap_issue .issue_notice .notice_tab_cont {display:none}
+.wrap_issue .issue_notice .notice_tab_cont.active {display:block}
 .wrap_issue .issue_notice .tit {position:relative;height:48px;margin:0 0 13px 0;padding:10px 0 0 0;border-bottom:1px solid #cdcdcd}
 .wrap_issue .issue_notice .tit:after {position:absolute;content:'';bottom:-1px;left:0;width:122px;height:1px;background:#b70000}
 .wrap_issue .issue_notice .tit .txt {width:114px;height:23px;background-position:-1px -564px}
-.wrap_issue .issue_notice .tit .more {margin:4px 0 0 129px}
 .wrap_issue .issue_notice .lists li {overflow:hidden}
 .wrap_issue .issue_notice .lists li > a {float:left;overflow:hidden;display:block;max-width:475px;height:36px;color:#414141}
 .wrap_issue .issue_notice .lists li .subject {font-size:17px;font-weight:normal;line-height:36px}

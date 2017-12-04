@@ -1,0 +1,140 @@
+@@@include('../header_sub.html')
+	<main id="main" class="sub" role="main">
+		<div class="wrap_information row">
+			<div class="inner">
+				<!-- TODO, DEV: [S] 게임 스타트 버튼 시작!! -->
+				<div id="gameStart" class="gameStart">
+					<a href="#" class="btn_gameStart" onclick="GnxGameStartOnClick();return false;">GAME START</a>
+				</div>
+				<!-- //#gameStart -->
+				<!-- TODO, DEV: [E] 게임 스타트 버튼 끝!! -->
+			</div>
+			<!-- //.inner -->
+		</div>
+		<!-- //.wrap_information -->
+
+		<section id="contents" class="view notice" role="main">
+			<div class="wrap_cont row">
+				<div class="cont_header inner">
+					<div class="titles">
+						<h2 class="tit">공지사항</h2>
+						<ul class="category" role="tablist">
+							<!-- TODO, DEV: 탭메뉴 활성화 시 on 클래스 추가 -->
+							<li class="on"><a href="/news/notice/list.aspx" role="tab">전체</a></li>
+							<li><a href="/news/notice/list.aspx?emNoticeCode=Notice" role="tab">공지</a></li>
+							<li><a href="/news/notice/list.aspx?emNoticeCode=Inspection" role="tab">점검</a></li>
+							<li><a href="/news/notice/list.aspx?emNoticeCode=Patch" role="tab">패치</a></li>
+							<li><a href="/news/notice/list.aspx?emNoticeCode=News" role="tab">기타</a></li>
+						</ul>
+					</div>
+					<div class="des">
+						<p>엘소드의 새로운 소식들을 알려드립니다.</p>
+					</div>
+				</div>
+				<!-- //.cont_header -->
+				<div class="cont_body">
+					<div id="boardView">
+						<h2 class="blind">글보기 화면입니다.</h2>
+
+						<!-- TODO, DEV: [S] 글보기 화면 board_view -->
+						<section class="board_view inner">
+							<article>
+								<div class="bv_header">
+									<!-- DEV: 글보기 상단 좌측 영역 -->
+									<div class="bv_info">
+										<div class="bv_subject">
+											<!-- 카테고리 표기 -->
+											<div class="subject_side">
+												<!-- TODO, DEV: 건의게시판 카테고리 색상 class 구분입니다. -->
+												<!--
+													공지:   <span class="category cr9">공지</span>
+													점검:   <span class="category cr3">점검</span>
+													패치:   <span class="category cr4">패치</span>
+													기타:   <span class="category cr8">기타</span>
+												-->
+												<span class="category cr4">패치</span>
+											</div>
+											<!-- 게시글 제목 표기 -->
+											<div class="subject">
+												<h1 class="tit">
+													엘소드 유저들 10년의 숙원(?)이 해결된다! 영웅대전 2017
+													<span class="tit_sub">
+														<span class="ico new">New</span>
+													</span>
+												</h1>
+											</div>
+										</div>
+										<!-- //.bv_subject -->
+										<!-- 게시글 등록일, 조회수 등 표기 -->
+										<div class="bv_des">
+											<div class="bv_date"><span class="date">2017-12-30 PM 7:52:00</span></div>
+											<div class="bv_hit"><span class="hit">조회수 : 213001</span></div>
+										</div>
+										<!-- //.bv_des -->
+									</div>
+									<!-- //.bv_info -->
+									<!-- //DEV: 글보기 상단 좌측 영역 -->
+
+									<!-- DEV: 글보기 상단 우측 글쓴이 영역 -->
+									<div class="bv_userInfo none">
+										<p class="blind">엘소드 공식 홈페이지 게시글입니다.</p>
+									</div>
+									<!-- //DEV: 글보기 상단 우측 글쓴이 영역 -->
+								</div>
+								<!-- //.bv_header -->
+
+								<!-- DEV: 에디터 본문 START!! -->
+								<div id="bv_contents" class="bv_contents">
+									<p># 3차 전직부터 포스 스킬, 초월 진 스킬까지</p>
+
+									<p>KOG 이동신 디렉터는 이날 행사에서 다음주 예정된 3차 전직에 대한 정보를 공개했다. 3차 전직 캐릭터들은 모두 신규 패시브와 하이퍼 액티브 스킬이 추가될 예정이다. 3차 전직 유저들에겐 전직의 특권(?)인 '프로모션 아바타'이 기본적으로 주어지며, 3차 전직은 여기에 추가로 특별히 '전용 프로모션 액세서리'가 주어질 예정이다. 또한 3차 전직을 하면 스킬슬롯 B가 무료로 추가된다.</p>
+
+									<p>3차 전직이 추가됨에 따라 기존 스킬 체계도 바뀐다. 가장 큰 변화는 '포스 스킬'이라는 새로운 분류의 스킬 추가다. 이동신 디렉터 설명에 따르면, 포스 스킬은 전직이 늘어나고 스킬이 많아짐에 따라, 기존 스킬들의 활용도를 높이기 위해 고안된 시스템이다.</p>
+									
+									<img src="http://imgnews.naver.net/image/439/2017/11/27/0000013597_002_20171127003643187.jpg?type=w540">
+
+									<p>다가오는 업데이트에는 기존 스킬의 활용도를 높이기 위한 '체인지 포스' 스킬과 모든 캐릭터들이 모두 사용할 수 있는 '공용 포스' 스킬이 추가된다. 포스 스킬은 3차 전직이나 던전 드롭 등을 통해 얻을 수 있을 예정이다.</p>
+								</div>
+								<!-- DEV: 에디터 본문 END!! -->
+								<!-- //#bv_contents.bv_contents -->
+
+								<div class="bv_footer">
+									<div class="bv_aside">
+										<!-- 게시글 주소복사 표기 (a버튼 onclick 마크업 기존과 동일) -->
+										<div class="bv_url">
+											<span class="url">http://elsword.nexon.com/board/335544325/4810924/</span>
+											<a href="javascript:;" onclick="CopyUrl('http://elsword.nexon.com/board/335544325/4810924/'); return false;" class="btn copyUrl">주소복사</a>
+										</div>
+										<!-- //.bv_url -->
+									</div>
+									<!-- //.bv_aside -->
+									<div class="b_btns inner">
+										<!-- 게시글 하단 공통 버튼 표기 -->
+										<!--
+											목록으로: 항상 표기
+										-->
+										<a href="/news/notice/list.aspx" class="btn list"><span class="ir">목록으로</span></a>
+									</div>
+									<!-- // .b_btns -->
+								</div>
+								<!-- //.bv_footer -->
+							</article>
+						</section>
+						<!-- //section.board_view -->
+						<!-- TODO, DEV: [E] 글보기 화면 board_view -->
+
+					</div>
+					<!-- //#boardView -->
+				</div>
+				<!-- //.cont_body -->
+			</div>
+			<!-- //.wrap_cont -->
+		</section>
+		<!-- //===========================================================
+				#contents END
+		=========================================================== // -->
+	</main>
+	<!-- //===========================================================
+			#main END
+	=========================================================== // -->
+@@@include('../footer.html')
