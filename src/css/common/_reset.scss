@@ -114,11 +114,19 @@ html, body {width:100%;min-width:1200px;background:#fff}
 
 /* Character Badge */
 .characterBadge {position:relative;width:130px;height:130px;background-repeat:no-repeat}
+<<<<<<< HEAD
 .characterBadge .medal {position:absolute;bottom:3px;left:6px;width:41px;height:41px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat -468px 0}
 .characterBadge .medal.gold {background-position:-468px 0}
 .characterBadge .medal.silver {background-position:-468px -45px}
 .characterBadge .medal.bronze {background-position:-468px -90px}
 .characterBadge .btn_editCharacter {position:absolute;top:14px;right:6px;width:23px;height:23px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat -435px -114px}
+=======
+.characterBadge .medal {position:absolute;bottom:3px;left:6px;width:41px;height:41px;background:url('../img/spr_global.png') no-repeat -468px 0}
+.characterBadge .medal.gold {background-position:-468px 0}
+.characterBadge .medal.silver {background-position:-468px -45px}
+.characterBadge .medal.bronze {background-position:-468px -90px}
+.characterBadge .btn_editCharacter {position:absolute;top:14px;right:6px;width:23px;height:23px;background:url('../img/spr_global.png') no-repeat -435px -114px}
+>>>>>>> d14bcd4cdc7efb4003d19a34f132dbafe99b7f0e
 
 
 
@@ -144,17 +152,17 @@ html, body {width:100%;min-width:1200px;background:#fff}
 .characterBadge.elsword,
 .characterBadge.aisha,
 .characterBadge.rena,
-.characterBadge.raven {background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_character1.png')}
+.characterBadge.raven {background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/spr_character1.png')}
 
 .characterBadge.eve,
 .characterBadge.chung,
 .characterBadge.ara,
-.characterBadge.elesis {background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_character2.png')}
+.characterBadge.elesis {background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/spr_character2.png')}
 
 .characterBadge.add,
 .characterBadge.luciel,
 .characterBadge.rose,
-.characterBadge.ain {background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_character3.png')}
+.characterBadge.ain {background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/spr_character3.png')}
 
 /* 엘소드 딱지 */
 /* 기본: 1 */
