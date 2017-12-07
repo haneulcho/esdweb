@@ -22,199 +22,422 @@
 <link rel="Shortcut Icon" href="http://s.nx.com/S2/Game/Elsword/2012/icon/favicon.ico" type="image/x-icon">
 <link rel="icon" href="http://s.nx.com/S2/Game/Elsword/2012/icon/favicon.ico" type="image/x-icon">
 
-<!-- TODO: CSS 경로 수정할 것 -->
-<link href="../assets/css/style.css" rel="stylesheet">
+<link href="http://js.nx.com/s3/elsword/site/2018/renewal/style.css" rel="stylesheet">
 
-<!-- TODO: JS 경로 수정할 것 -->
-<script src="../assets/components/jquery/jquery-1.12.4.min.js"></script>
-<script src="../assets/components/modernizr/modernizr.js"></script>
-
+<script type="text/javascript" src="http://js.nx.com/s1/elsword/OBT/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="http://js.nx.com/s1/elsword/OBT/modernizr.js"></script>
 <script type="text/javascript" src="http://js.nx.com/s1/elsword/OBT/jquery.easing.min.js"></script>
 <script type="text/javascript" src="http://js.nx.com/s1/elsword/OBT/jquery.owl.carousel.min.js"></script>
-<script src="../assets/js/common.js"></script>
 
-</head>
+<!-- TODO, DEV: mypage.aspx에만 mypage.js 삽입 부탁드립니다. -->
+<script src="http://js.nx.com/s1/elsword/site/2018/renewal/mypage.js"></script>
 <body>
-@@@include('../header_nav.html')
+	<section id="contents" class="mypage" role="main">
+		<div class="wrap_cont">
 
+			<h2 class="blind">대표 캐릭터 변경 화면입니다.</h2>
+			<!--
+				대표 캐릭터 선택 후, 배경 캐릭터 div 형식은 아래와 같습니다.
+				<div class="characterBadge 캐릭터명 c+개발사고유번호">
 
-
-
-
-		<section id="contents" class="mypage" role="main">
-			<div class="wrap_cont row">
-				<div class="cont_header inner">
-
-
-					<div class="myCharacter">
-						<!--
-							대표 캐릭터 div 형식은 아래와 같습니다.
-							<div class="characterBadge 캐릭터명 c+개발사고유번호">
-
-							엘소드 기본: <div class="characterBadge elsword c1">
-							로제 헤비 베럴: <div class="characterBadge rose c41">
-							아인 아메 서머티지: <div class="characterBadge ain c134">
-						-->
-						<div class="characterBadge ain c134">
-							<a href="/main/mypage.aspx" class="btn_editCharacter">대표 캐릭터 변경하러 가기</a>
+				캐릭터 없을 때: <div class="myCharacter_view">
+				엘소드 기본: <div class="myCharacter_view elsword c1">
+				로제 헤비 베럴: <div class="myCharacter_view rose c41">
+				아인 아메 서머티지: <div class="myCharacter_view ain c134">
+			-->
+			<section class="myCharacter_view add c126">
+				<div class="mcv_info">
+					<div class="mcv_info_main">
+						<h3 class="blind">대표 캐릭터 주요 정보</h3>
+						<div class="myCharacter">
 							<!--
-								부여된 메달이 있을 경우
-								금메달: <span class="medal gold">금메달</span>
-								은메달: <span class="medal silver">은메달</span>
-								동메달: <span class="medal bronze">동메달</span>
+								대표 캐릭터 div 형식은 아래와 같습니다.
+								<div class="characterBadge 캐릭터명 c+개발사고유번호">
+		
+								캐릭터 없을 때: <div class="characterBadge">
+								엘소드 기본: <div class="characterBadge elsword c1">
+								로제 헤비 베럴: <div class="characterBadge rose c41">
+								아인 아메 서머티지: <div class="characterBadge ain c134">
 							-->
-							<span class="medal silver" aria-hidden="true">나의 메달</span>
-						</div>
-					</div>
-					<!-- //.myCharacter -->
-					<div class="myInfo">
-						<div class="txts">
-							<p class="greeting"><strong>한글이름여덟글자</strong> 모험가님 안녕하세요!</p>
-							<p class="information">
-								<span class="serverName">가이아</span> |
-								<span class="level">Lv. 99</span> |
-								<span class="characterName">한글이름여덟글자</span>
-							</p>
-							<p class="information startDate">
-								캐릭터 생성일 | <span class="startDay">2017년 12월 31일</span>
-							</p>
-						</div>
-						<ul class="logged_menu">
-							<li class="couponBox"><a href="#" onclick="openCouponPop();">쿠폰함</a></li>
-							<li class="cashBox"><a href="#">캐시충전</a></li>
-							<li class="otp"><a href="#" class="ico_otp" onclick="window.open( 'http://security.nexon.com/otp/index.aspx');">보안센터</a></li>
-							<li class="logout"><a href="#" class="btn_logout" onclick="PS.nxlogin.showLoginLayer();return false;">LOGOUT</a></li>
-						</ul>
-					</div>
-					<!-- //.myInfo -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-					<div class="titles">
-						<h1 class="blind">나의 대표캐릭터</h1>
-					</div>
-					<div class="des">
-						<p>언론에 알려진 엘소드의 소식입니다.</p>
-					</div>
-				</div>
-				<!-- //.cont_header -->
-				<div class="cont_body">
-
-				</div>
-				<!-- //.cont_body -->
-			</div>
-			<!-- //.wrap_cont -->
-		</section>
-		<!-- //===========================================================
-				#contents END
-		=========================================================== // -->
-
-
-
-
-
-
-
-
-
-
-
-
-	<main id="main" class="mypage" role="main">
-		<div class="wrap_information row">
-			<div class="inner">
-				<div id="contents">
-					<!-- s:contents -->
-						<h2 class="c_tit"><img src="http://s.nx.com/S2/Game/Elsword/2012/etc/ctit_mainCharacter.gif" alt="나의 대표캐릭터"></h2>
-						<div id="mainCharacter">
-							<div class="avatar"><img src="http://s.nx.com/S2/Game/Elsword/2012/character/main_8.jpg" onerror="this.src='http://s.nx.com/S2/Game/Elsword/2012/character/main_no.jpg'" alt="문재인대통령"></div>			
-							<dl>
-								<dt class="nickname"><img src="http://s.nx.com/S2/Game/Elsword/2012/etc/txt_nickname.gif" alt="닉네임"></dt>
-								<dd class="nickname">문재인대통령<span class="level">(Lv.<em>20</em>)</span></dd>
-								<dt class="server"><img src="http://s.nx.com/S2/Game/Elsword/2012/etc/txt_server.gif" alt="서버"></dt>
-								<dd class="server">솔레스</dd>
-								<dt class="character"><img src="http://s.nx.com/S2/Game/Elsword/2012/etc/txt_character.gif" alt="캐릭터"></dt>
-								<dd class="character">엘리시스</dd>
-							</dl>
-						</div>
-
-
-
-
-
-
-
-
-
-
-						<h2 class="c_tit">
-							<img src="http://s.nx.com/S2/Game/Elsword/2012/etc/ctit_modifyCharacter.gif" alt="대표캐릭터 변경하기">
-						</h2>
-						<div id="modifyCharacter">
-							<div class="choiceServer">
-								<p class="info"><img src="http://s.nx.com/S2/Game/Elsword/2012/etc/txt_choiceServer.gif" alt="서버를 선택하시면 서버별로 생성하신 캐릭터를 볼 수 있습니다"></p>
-								<p class="choice">
-									<select name="ctl00$Contents$selServerCode" onchange="javascript:setTimeout('__doPostBack(\'ctl00$Contents$selServerCode\',\'\')', 0)" id="Contents_selServerCode">
-					<option selected="selected" value="0">솔레스</option>
-					<option value="1">가이아</option>
-				
-				</select>
-								</p>
+							<div class="characterBadge add c126">
+								<!--
+									부여된 메달이 있을 경우
+									금메달: <span class="medal gold">금메달</span>
+									은메달: <span class="medal silver">은메달</span>
+									동메달: <span class="medal bronze">동메달</span>
+								-->
+								<span class="medal silver">나의 메달</span>
 							</div>
-							<fieldset>
-								<legend>대표캐릭터 변경</legend>
-								<div class="characterList">
-									<ul>
-										
-										<li>
-											<div class="avatar"><img src="http://s.nx.com/S2/Game/Elsword/2012/character/sub_136.jpg" alt="아이니왔니"></div>
-											<p><label><input type="radio" name="charcater" value="26047872" class="radio"> 아이니왔니 <span class="character">(아포스타시아)</span></label></p>
-										</li>
-										
-										<li>
-											<div class="avatar"><img src="http://s.nx.com/S2/Game/Elsword/2012/character/sub_36.jpg" alt="솔레스잉여킹"></div>
-											<p><label><input type="radio" name="charcater" value="26115077" class="radio"> 솔레스잉여킹 <span class="character">(타임트레이서)</span></label></p>
-										</li>
-										
-										<li>
-											<div class="avatar"><img src="http://s.nx.com/S2/Game/Elsword/2012/character/sub_8.jpg" alt="문재인대통령"></div>
-											<p><label><input type="radio" name="charcater" value="26109403" class="radio"> 문재인대통령 <span class="character">(엘리시스)</span></label></p>
-										</li>
-										
-									</ul>
-								</div>
-								<p class="bt"><input type="image" name="ctl00$Contents$btnModify" id="Contents_btnModify" src="http://s.nx.com/S2/Game/Elsword/2012/button/bt_modifyCharacter.gif" alt="대표캐릭터 변경하기"></p>
-								<span style="display:none"><input name="ctl00$Contents$txtSelectedSN" type="text" id="Contents_txtSelectedSN"></span>
-							</fieldset>
 						</div>
-					<!--// e:contents -->
+						<!-- //.myCharacter -->
+						<p class="txts_main">
+							<span class="nickname">음과장님화이팅요</span>
+							<span class="charname">디아볼릭 에스퍼</span>
+							<span class="level">Lv. 99</span>
+						</p>
 					</div>
-			</div>
-			<!-- //.inner -->
+					<!-- //.mcv_info_main -->
+					<div class="mcv_info_sub">
+						<h3 class="blind">대표 캐릭터 상세 정보</h3>
+						<p class="txts_sub">
+							<span class="tit">상세 정보</span>
+							<span class="server">서버 | 가이아</span>
+							<span class="startDate">생성일자 | 2015.12.30 23:59</span>
+						</p>
+					</div>
+					<!-- //.mcv_info_sub -->
+				</div>
+				<!-- //.mcv_info -->
+			</section>
+			<!-- //.myCharacter_view -->
+
+			<section class="myCharacter_select">
+				<!-- [S] TODO, DEV: 서버 선택 영역 시작 -->
+				<div class="mcs_choiceServer">
+					<h3 class="tit">보유한 캐릭터 보기</h3>
+					<div class="choiceServer">
+						<fieldset>
+							<legend class="blind">서버 선택하기</legend>
+								<ol class="server_list">
+									<li>
+										<!-- 솔레스 라디오 버튼 -->
+										<input id="Contents_selServerCode_0" type="radio" name="ctl00$Contents$selServerCode" value="0" class="ipt_radio">
+										<label for="Contents_selServerCode_0" class="ipt_label_radio">솔레스</label>
+									</li>
+									<li>
+										<!-- 가이아 라디오 버튼 -->
+										<input id="Contents_selServerCode_1" type="radio" name="ctl00$Contents$selServerCode" value="1" class="ipt_radio">
+										<label for="Contents_selServerCode_1" class="ipt_label_radio">가이아</label>
+									</li>
+								</ol>
+						</fieldset>
+					</div>
+					<!-- //.choiceServer -->
+				</div>
+				<!-- //.mcs_choiceServer -->
+				<!-- [E] //TODO, DEV: 서버 선택 영역 끝 -->
+
+
+				<!-- [S] TODO, DEV: 캐릭터 선택 영역 시작 -->
+				<div class="mcs_choiceCharacter">
+					<h4 class="blind">캐릭터 선택하기</h4>
+					<span class="arrow left" aria-hidden="true"></span><span class="arrow right" aria-hidden="true"></span>
+					<!-- [S] TODO, DEV: 캐릭터 선택 owl-carousel 슬라이더 리스트 시작 -->
+					<div class="owl-carousel characterList">
+
+						<!-- 캐릭터 하나당 <div class="mcs_item"> 반복 시작! -->
+						<div class="mcs_item">
+							<div class="choiceCharacter">
+								<a href="#" onclick="" class="btn_choiceCharacter">
+									<div class="mcs_badge myCharacter">
+										<!--
+											내 보유 캐릭터 div 형식은 아래와 같습니다.
+											<div class="characterBadge 캐릭터명 c+개발사고유번호">
+				
+											캐릭터 없을 때: <div class="characterBadge">
+											엘소드 기본: <div class="characterBadge elsword c1">
+											로제 헤비 베럴: <div class="characterBadge rose c41">
+											아인 아메 서머티지: <div class="characterBadge ain c134">
+										-->
+										<div class="characterBadge elsword c1">
+											<span class="ico crown" aria-hidden="true">대표 캐릭터로 설정하기</span>
+										</div>
+									</div>
+									<!-- //.mcs_badge.myCharacter -->
+									<p class="mcs_info">
+										<span class="nickname">GemCHOKY</span>
+										<span class="charname">엘소드</span>
+										<span class="level">Lv. 19</span>
+									</p>
+									<!-- //.mcs_info -->
+								</a>
+								<!-- //.btn_choiceCharacter -->
+							</div>
+							<!-- //.choiceCharacter -->
+						</div>
+						<!-- //.mcs_item -->
+						<!-- 캐릭터 하나당 <div class="mcs_item"> 반복 끝! -->
+
+
+						<!-- 캐릭터 하나당 <div class="mcs_item"> 반복 시작! -->
+						<div class="mcs_item">
+							<div class="choiceCharacter">
+								<a href="#" onclick="" class="btn_choiceCharacter">
+									<div class="mcs_badge myCharacter">
+										<!--
+											내 보유 캐릭터 div 형식은 아래와 같습니다.
+											<div class="characterBadge 캐릭터명 c+개발사고유번호">
+				
+											캐릭터 없을 때: <div class="characterBadge">
+											엘소드 기본: <div class="characterBadge elsword c1">
+											로제 헤비 베럴: <div class="characterBadge rose c41">
+											아인 아메 서머티지: <div class="characterBadge ain c134">
+										-->
+										<div class="characterBadge chung c117">
+											<span class="ico crown" aria-hidden="true">대표 캐릭터로 설정하기</span>
+										</div>
+									</div>
+									<!-- //.mcs_badge.myCharacter -->
+									<p class="mcs_info">
+										<span class="nickname">흐흐흐흐</span>
+										<span class="charname">택티컬 트루퍼</span>
+										<span class="level">Lv. 99</span>
+									</p>
+									<!-- //.mcs_info -->
+								</a>
+								<!-- //.btn_choiceCharacter -->
+							</div>
+							<!-- //.choiceCharacter -->
+						</div>
+						<!-- //.mcs_item -->
+						<!-- 캐릭터 하나당 <div class="mcs_item"> 반복 끝! -->
+
+						<!-- 캐릭터 하나당 <div class="mcs_item"> 반복 시작! -->
+						<div class="mcs_item">
+							<div class="choiceCharacter">
+								<a href="#" onclick="" class="btn_choiceCharacter">
+									<div class="mcs_badge myCharacter">
+										<!--
+											내 보유 캐릭터 div 형식은 아래와 같습니다.
+											<div class="characterBadge 캐릭터명 c+개발사고유번호">
+				
+											캐릭터 없을 때: <div class="characterBadge">
+											엘소드 기본: <div class="characterBadge elsword c1">
+											로제 헤비 베럴: <div class="characterBadge rose c41">
+											아인 아메 서머티지: <div class="characterBadge ain c134">
+										-->
+										<div class="characterBadge add c122">
+											<span class="ico crown" aria-hidden="true">대표 캐릭터로 설정하기</span>
+										</div>
+									</div>
+									<!-- //.mcs_badge.myCharacter -->
+									<p class="mcs_info">
+										<span class="nickname">음과장님화이팅</span>
+										<span class="charname">루나틱 사이커</span>
+										<span class="level">Lv. 99</span>
+									</p>
+									<!-- //.mcs_info -->
+								</a>
+								<!-- //.btn_choiceCharacter -->
+							</div>
+							<!-- //.choiceCharacter -->
+						</div>
+						<!-- //.mcs_item -->
+						<!-- 캐릭터 하나당 <div class="mcs_item"> 반복 끝! -->
+
+						<!-- 캐릭터 하나당 <div class="mcs_item"> 반복 시작! -->
+						<div class="mcs_item">
+							<div class="choiceCharacter">
+								<a href="#" onclick="" class="btn_choiceCharacter">
+									<div class="mcs_badge myCharacter">
+										<!--
+											내 보유 캐릭터 div 형식은 아래와 같습니다.
+											<div class="characterBadge 캐릭터명 c+개발사고유번호">
+				
+											캐릭터 없을 때: <div class="characterBadge">
+											엘소드 기본: <div class="characterBadge elsword c1">
+											로제 헤비 베럴: <div class="characterBadge rose c41">
+											아인 아메 서머티지: <div class="characterBadge ain c134">
+										-->
+										<div class="characterBadge ain c134">
+											<span class="ico crown" aria-hidden="true">대표 캐릭터로 설정하기</span>
+										</div>
+									</div>
+									<!-- //.mcs_badge.myCharacter -->
+									<p class="mcs_info">
+										<span class="nickname">한글이름여덟글자</span>
+										<span class="charname">아메 서머티지</span>
+										<span class="level">Lv. 99</span>
+									</p>
+									<!-- //.mcs_info -->
+								</a>
+								<!-- //.btn_choiceCharacter -->
+							</div>
+							<!-- //.choiceCharacter -->
+						</div>
+						<!-- //.mcs_item -->
+						<!-- 캐릭터 하나당 <div class="mcs_item"> 반복 끝! -->
+
+						<!-- 캐릭터 하나당 <div class="mcs_item"> 반복 시작! -->
+						<div class="mcs_item">
+							<div class="choiceCharacter">
+								<a href="#" onclick="" class="btn_choiceCharacter">
+									<div class="mcs_badge myCharacter">
+										<!--
+											내 보유 캐릭터 div 형식은 아래와 같습니다.
+											<div class="characterBadge 캐릭터명 c+개발사고유번호">
+				
+											캐릭터 없을 때: <div class="characterBadge">
+											엘소드 기본: <div class="characterBadge elsword c1">
+											로제 헤비 베럴: <div class="characterBadge rose c41">
+											아인 아메 서머티지: <div class="characterBadge ain c134">
+										-->
+										<div class="characterBadge ain c134">
+											<span class="ico crown" aria-hidden="true">대표 캐릭터로 설정하기</span>
+										</div>
+									</div>
+									<!-- //.mcs_badge.myCharacter -->
+									<p class="mcs_info">
+										<span class="nickname">한글이름여덟글자</span>
+										<span class="charname">룬슬레이어</span>
+										<span class="level">Lv. 99</span>
+									</p>
+									<!-- //.mcs_info -->
+								</a>
+								<!-- //.btn_choiceCharacter -->
+							</div>
+							<!-- //.choiceCharacter -->
+						</div>
+						<!-- //.mcs_item -->
+						<!-- 캐릭터 하나당 <div class="mcs_item"> 반복 끝! -->
+
+						<!-- 캐릭터 하나당 <div class="mcs_item"> 반복 시작! -->
+						<div class="mcs_item">
+							<div class="choiceCharacter">
+								<a href="#" onclick="" class="btn_choiceCharacter">
+									<div class="mcs_badge myCharacter">
+										<!--
+											내 보유 캐릭터 div 형식은 아래와 같습니다.
+											<div class="characterBadge 캐릭터명 c+개발사고유번호">
+				
+											캐릭터 없을 때: <div class="characterBadge">
+											엘소드 기본: <div class="characterBadge elsword c1">
+											로제 헤비 베럴: <div class="characterBadge rose c41">
+											아인 아메 서머티지: <div class="characterBadge ain c134">
+										-->
+										<div class="characterBadge ain c134">
+											<span class="ico crown" aria-hidden="true">대표 캐릭터로 설정하기</span>
+										</div>
+									</div>
+									<!-- //.mcs_badge.myCharacter -->
+									<p class="mcs_info">
+										<span class="nickname">한글이름여덟글자</span>
+										<span class="charname">룬슬레이어</span>
+										<span class="level">Lv. 99</span>
+									</p>
+									<!-- //.mcs_info -->
+								</a>
+								<!-- //.btn_choiceCharacter -->
+							</div>
+							<!-- //.choiceCharacter -->
+						</div>
+						<!-- //.mcs_item -->
+						<!-- 캐릭터 하나당 <div class="mcs_item"> 반복 끝! -->
+
+						<!-- 캐릭터 하나당 <div class="mcs_item"> 반복 시작! -->
+						<div class="mcs_item">
+							<div class="choiceCharacter">
+								<a href="#" onclick="" class="btn_choiceCharacter">
+									<div class="mcs_badge myCharacter">
+										<!--
+											내 보유 캐릭터 div 형식은 아래와 같습니다.
+											<div class="characterBadge 캐릭터명 c+개발사고유번호">
+				
+											캐릭터 없을 때: <div class="characterBadge">
+											엘소드 기본: <div class="characterBadge elsword c1">
+											로제 헤비 베럴: <div class="characterBadge rose c41">
+											아인 아메 서머티지: <div class="characterBadge ain c134">
+										-->
+										<div class="characterBadge ain c134">
+											<span class="ico crown" aria-hidden="true">대표 캐릭터로 설정하기</span>
+										</div>
+									</div>
+									<!-- //.mcs_badge.myCharacter -->
+									<p class="mcs_info">
+										<span class="nickname">한글이름여덟글자</span>
+										<span class="charname">룬슬레이어</span>
+										<span class="level">Lv. 99</span>
+									</p>
+									<!-- //.mcs_info -->
+								</a>
+								<!-- //.btn_choiceCharacter -->
+							</div>
+							<!-- //.choiceCharacter -->
+						</div>
+						<!-- //.mcs_item -->
+						<!-- 캐릭터 하나당 <div class="mcs_item"> 반복 끝! -->
+
+						<!-- 캐릭터 하나당 <div class="mcs_item"> 반복 시작! -->
+						<div class="mcs_item">
+							<div class="choiceCharacter">
+								<a href="#" onclick="" class="btn_choiceCharacter">
+									<div class="mcs_badge myCharacter">
+										<!--
+											내 보유 캐릭터 div 형식은 아래와 같습니다.
+											<div class="characterBadge 캐릭터명 c+개발사고유번호">
+				
+											캐릭터 없을 때: <div class="characterBadge">
+											엘소드 기본: <div class="characterBadge elsword c1">
+											로제 헤비 베럴: <div class="characterBadge rose c41">
+											아인 아메 서머티지: <div class="characterBadge ain c134">
+										-->
+										<div class="characterBadge ain c134">
+											<span class="ico crown" aria-hidden="true">대표 캐릭터로 설정하기</span>
+										</div>
+									</div>
+									<!-- //.mcs_badge.myCharacter -->
+									<p class="mcs_info">
+										<span class="nickname">한글이름여덟글자</span>
+										<span class="charname">룬슬레이어</span>
+										<span class="level">Lv. 99</span>
+									</p>
+									<!-- //.mcs_info -->
+								</a>
+								<!-- //.btn_choiceCharacter -->
+							</div>
+							<!-- //.choiceCharacter -->
+						</div>
+						<!-- //.mcs_item -->
+						<!-- 캐릭터 하나당 <div class="mcs_item"> 반복 끝! -->
+
+						<!-- 캐릭터 하나당 <div class="mcs_item"> 반복 시작! -->
+						<div class="mcs_item">
+							<div class="choiceCharacter">
+								<a href="#" onclick="" class="btn_choiceCharacter">
+									<div class="mcs_badge myCharacter">
+										<!--
+											내 보유 캐릭터 div 형식은 아래와 같습니다.
+											<div class="characterBadge 캐릭터명 c+개발사고유번호">
+				
+											캐릭터 없을 때: <div class="characterBadge">
+											엘소드 기본: <div class="characterBadge elsword c1">
+											로제 헤비 베럴: <div class="characterBadge rose c41">
+											아인 아메 서머티지: <div class="characterBadge ain c134">
+										-->
+										<div class="characterBadge ain c134">
+											<span class="ico crown" aria-hidden="true">대표 캐릭터로 설정하기</span>
+										</div>
+									</div>
+									<!-- //.mcs_badge.myCharacter -->
+									<p class="mcs_info">
+										<span class="nickname">한글이름여덟글자</span>
+										<span class="charname">룬슬레이어</span>
+										<span class="level">Lv. 99</span>
+									</p>
+									<!-- //.mcs_info -->
+								</a>
+								<!-- //.btn_choiceCharacter -->
+							</div>
+							<!-- //.choiceCharacter -->
+						</div>
+						<!-- //.mcs_item -->
+						<!-- 캐릭터 하나당 <div class="mcs_item"> 반복 끝! -->
+
+					</div>
+					<!-- //.owl-carousel.characterList -->
+					<!-- [E] //TODO, DEV: 캐릭터 선택 owl-carousel 슬라이더 리스트 끝 -->
+
+				</div>
+				<!-- //.mcs_choiceCharacter -->
+				<!-- [S] TODO, DEV: 캐릭터 선택 영역 끝 -->
+
+			</section>
+			<!-- //.myCharacter_select -->
 		</div>
-		<!-- //. -->
-
-	</main>
+		<!-- //.wrap_cont -->
+	</section>
 	<!-- //===========================================================
-			#main END
+			#contents END
 	=========================================================== // -->
-
 </body>
 </html>

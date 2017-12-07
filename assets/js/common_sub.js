@@ -21,6 +21,7 @@
       // onTranslate: onTranslate
     });
 
+    // 상단 네비게이션
     var $gnbWrapper = $('#header .nav'),
         $gnb = $gnbWrapper.find('.gnb'),
         $gnbLi = $gnb.children('li');
@@ -83,6 +84,28 @@
 
                 $this.addClass('on').siblings().removeClass('on'); // tab_lst li :: on
         });
+    }
+
+    // 설문조사 라디오 버튼 클릭 시 selected 클래스 추가
+    if ($('#pollView').length) {
+      var $pollView = $('#pollView'),
+          $voteList = $pollView.find('.vote_list'),
+          $voteLabel = $voteList.find('label'),
+          $voteInput = $voteList.find('input');
+
+      $voteLabel.on('click', function () {
+        if ($(this).attr('for') != "") {
+          var input = $(this).siblings('input');
+          if (!input.prop('checked')) {
+            input.prop('checked', true).trigger('change');
+          }
+        }
+      });
+
+      $voteInput.on('change', function () {
+        $('.vote_list input[name="' + this.name + '"]').parent('li').removeClass('selected');
+        $('.vote_list input[name="' + this.name + '"]:checked').parent('li').addClass('selected');
+      }); 
     }
 
     // 비매너/버그 신고 게시판 파일명 표시

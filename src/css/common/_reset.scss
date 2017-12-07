@@ -98,6 +98,7 @@ html, body {width:100%;min-width:1200px;background:#fff}
 .ipt_radio + .ipt_label_radio {position:relative;overflow:hidden;display:block;cursor:pointer}
 .ipt_radio + .ipt_label_radio:before,
 .selected .ipt_radio + .ipt_label_radio:after {position:absolute;display:block;top:50%;content:'';border:1px solid #94a0a9;
+background-color:#fff;
 -webkit-border-radius:50%;
 -moz-border-radius:50%;
 -o-border-radius:50%}
@@ -118,6 +119,7 @@ html, body {width:100%;min-width:1200px;background:#fff}
 .characterBadge .medal.gold {background-position:-468px 0}
 .characterBadge .medal.silver {background-position:-468px -45px}
 .characterBadge .medal.bronze {background-position:-468px -90px}
+.characterBadge .crown {position:absolute;top:6px;right:3px;width:30px;height:30px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat -516px -2px}
 .characterBadge .btn_editCharacter {position:absolute;top:14px;right:6px;width:23px;height:23px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat -435px -114px}
 
 
@@ -133,7 +135,7 @@ html, body {width:100%;min-width:1200px;background:#fff}
 // #character .character_navi{position: absolute;bottom: 0;width: 100%;height: 116px;}
 // #character .character_navi:after{position: absolute;bottom: 0;width: 100%;height: 100%;background-color: #000;opacity: .7;content: " ";z-index: 10;}
 // #character .character_navi ul{position: absolute;top: 10px;left: 50%;width: 1200px;margin-left: -600px;z-index: 100;}
-// #character .character_navi ul li{float: left;width: 92px;height: 92px;margin-left: 9px;background: url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/etc_character_thumb_2.png') no-repeat 0 0;-webkit-filter: grayscale(100%) brightness(60%) contrast(70%);filter: grayscale(100%) brightness(60%) contrast(70%);}
+// #character .character_navi ul li{float: left;width: 92px;height: 92px;margin-left: 9px;background: url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/etc_character_thumb_2.png') no-repeat 0 0;-webkit-filter: grayscale(100%) brightness(60%) contrast(70%);filter: grayscale(100%) brightness(60%) contrast(70%);}
 // #character .character_navi ul li.on{filter: none;}
 // #character .character_navi ul li:nth-child(-2n+6){margin-left: 8px;}
 // #character .character_navi ul li:first-child{margin-left: 0;}
@@ -490,12 +492,14 @@ html, body {width:100%;min-width:1200px;background:#fff}
 .btn_editCharacter,
 .btn_gameDownload,
 .medal,
+.crown,
 .btn_titMore > span,
 .wrap_ucc .ucc .tit,
 .ucc_item .lists li .category > a,
 .wrap_side .side_survey .survey .status,
 .wrap_side .socialMedia_links .lists > li > a,
 .wrap_banner .owl-nav > div,
+.mcs_choiceCharacter .owl-nav > div,
 .wrap_issue .subject .ico,
 .rk_search .rk_tit,
 .b_subject .subject .ico,

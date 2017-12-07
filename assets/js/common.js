@@ -43,6 +43,7 @@
       autoplayHoverPause: true
     });
 
+    // 상단 네비게이션
     var $gnbWrapper = $('#header .nav'),
         $gnb = $gnbWrapper.find('.gnb'),
         $gnbLi = $gnb.children('li');
@@ -59,6 +60,7 @@
       }
     });
 
+    // 메인 공지사항 탭
     var $notice_tabLink = $('#main').find('.notice_tab_nav li > a');
     var $notice_tabCont = $('#main').find('.notice_tab_cont');
     $notice_tabLink.on('click', function (e) {
