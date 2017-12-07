@@ -114,7 +114,7 @@ background-color:#fff;
 
 
 /* Character Badge */
-.characterBadge {position:relative;width:130px;height:130px;background-repeat:no-repeat}
+.characterBadge {position:relative;width:130px;height:130px;background-repeat:no-repeat;background-position:-9px -137px}
 .characterBadge .medal {position:absolute;bottom:3px;left:6px;width:41px;height:41px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat -468px 0}
 .characterBadge .medal.gold {background-position:-468px 0}
 .characterBadge .medal.silver {background-position:-468px -45px}
@@ -142,7 +142,7 @@ background-color:#fff;
 // #character .character_navi ul li a{display: block;position: absolute;width: 100%;height: 100%;text-indent: -9999px;}
 
 
-
+.characterBadge,
 .characterBadge.elsword,
 .characterBadge.aisha,
 .characterBadge.rena,
