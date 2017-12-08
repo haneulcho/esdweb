@@ -31,3 +31,6 @@ Thumbs.db
 # Output css files #
 /assets/css/*.css
 /assets/css/*.scss
+
+# Output Source Map files #
+/assets/maps/*.map
