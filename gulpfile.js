@@ -8,6 +8,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     cssnano = require('gulp-cssnano'),
     clean = require('gulp-clean'),
+    sourcemaps = require('gulp-sourcemaps'),
     package = require('./package.json');
 
 var cssWatchPath = ['./src/css/*.scss', './src/css/**/*.scss'],
@@ -16,8 +17,9 @@ var cssWatchPath = ['./src/css/*.scss', './src/css/**/*.scss'],
 //     jsWatchPath = 'src/js/*.js',
 //     jsInputPath = 'src/js/scripts.js',
 //     jsOutputPath = 'app/assets/js',
-    htmlWatchPath = ['./src/html/*.html', './src/html/**/*.html'],
-    htmlInputPath = ['./src/html/*.html', './src/html/**/*.html'],
+    htmlWatchPath = ['./src/html/*.html', './src/html/guide/character/*.html', './src/html/**/*.html'],
+    htmlInputPath = ['./src/html/*.html', './src/html/guide/character/*.html', './src/html/**/*.html'],
+
     htmlOuputPath = './html';
 
 var banner = [
@@ -33,7 +35,7 @@ var banner = [
 ].join('');
 
 gulp.task('clean', function () {
-    return gulp.src(['./html/*.html', './html/**/*.html', './assets/css/*.css'], {read: false})
+    return gulp.src(['./html/*.html', './html/guide/character/*.html', './html/**/*.html', './assets/css/*.css', './assets/maps/*.map'], { read: false })
 
     .pipe(clean());
 });
@@ -52,13 +54,26 @@ gulp.task('html', function () {
 gulp.task('css', function () {
     return gulp.src(cssInputPath)
 
-    .pipe(sass({errLogToConsole: true}))
+    .pipe(sourcemaps.init({largeFile: true}))    
+    .pipe(sass({outputStyle: 'compact', errLogToConsole: true}))
     .pipe(autoprefixer('last 4 version'))
     // .pipe(header(banner, { package : package })) // package.json에 있는 프로젝트 정보를 .min 파일 상단에 주석으로 넣어줌
+    .pipe(sourcemaps.write('../maps'))
     .pipe(gulp.dest(cssOutputPath))
 
+    .pipe(browserSync.stream());
+});
+
+gulp.task('cssnano', function () {
+    return gulp.src(cssInputPath)
+
+    .pipe(sourcemaps.init({largeFile: true}))
+    .pipe(sass({errLogToConsole: true}))
+    .pipe(autoprefixer('last 4 version'))
+    
     .pipe(cssnano()) // 압축해
     .pipe(rename({ suffix: '.min' })) // 뒤에 .min 이름 붙여
+    .pipe(sourcemaps.write('../maps'))
     .pipe(gulp.dest(cssOutputPath))
 
     .pipe(browserSync.stream());
@@ -84,13 +99,13 @@ gulp.task('html-watch', ['html'], function (done) {
     browserSync.reload();
     done();
 });
-gulp.task('css-watch', ['css'], function (done) {
+gulp.task('css-watch', ['css', 'cssnano'], function (done) {
     browserSync.reload();
     done();
 });
 // gulp.task('js-watch', ['js'], reload);
 
-gulp.task('default', ['css', 'html'], function () {
+gulp.task('default', ['css', 'cssnano', 'html'], function () {
     browserSync.init({
         server: {
             baseDir: ["./html", "./"]
