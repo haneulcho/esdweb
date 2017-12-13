@@ -1,301 +1,417 @@
-/* character main visual */
-#character{position: relative;}
-#character.wrap_banner{height: 750px;background: url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/BG_CHARACTER_ main.png') repeat 50% 0;}
-.character .wrap_banner.sub .banner,
-.character .wrap_banner.sub .banner_item{height: 750px;}
+.character_view {padding:127px 0 0 0}
 
-#characterwrap{position: relative;border-top: 2px solid #cccccc;}
-#characterwrap:before{position: absolute;top: -2px;left: 0;width: 270px;height: 2px;content: " ";}
-.character.elsword #characterwrap:before{background-color: #c71c00;}
-.character.aisha #characterwrap:before{background-color: #853ec8;}
-.character.rena #characterwrap:before{background-color: #75ce18;}
-.character.raven #characterwrap:before{background-color: #282828;}
-.character.eve #characterwrap:before{background-color: #ef97bd;}
-.character.chung #characterwrap:before{background-color: #00a8e6;}
-.character.ara #characterwrap:before{background-color: #fe9f01;}
-.character.elesis #characterwrap:before{background-color: #d00040;}
-.character.add #characterwrap:before{background-color: #a79fdf;}
-.character.ru #characterwrap:before{background-color: #202cf5;}
-.character.rose #characterwrap:before{background-color: #fff653;}
-.character.ain #characterwrap:before{background-color: #19d2a8;}
+/* Character View Slider */
+.cv_header {position:relative;overflow:hidden;height:750px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_character_top.jpg') repeat 50% 0}
+.cv_header .visualList {position:absolute;top:0;left:50%;overflow:hidden;width:2560px;height:750px;margin-left:-1280px;z-index:1}
+.cv_header .visualList .cv_item {position:absolute;overflow:hidden;top:0;left:50%;width:1300px;height:750px;margin-left:-650px}
+.cv_header .visualList .cv_item .cv_img {display:inline-block}
+.cv_header .owl-nav {position:relative;width:1200px;margin:241px auto 0}
+.cv_header .owl-nav > div {position:absolute;top:0;width:145px;height:263px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat 0 0;z-index:5}
+.cv_header .owl-nav .owl-prev {left:-170px;background-position:-135px -485px}
+.cv_header .owl-nav .owl-next {right:-170px;background-position:-314px -485px}
+.elsword .cv_header .owl-nav .owl-prev.disabled,
+.ain .cv_header .owl-nav .owl-next.disabled {cursor:default}
+.cv_header .owl-dots {position:relative;width:1200px;height:0;margin:680px auto 0;padding:0 0 0 8px;z-index:3}
+.cv_header .owl-dots .owl-dot {float:left;margin:0 0 0 12px}
+.cv_header .owl-dots .owl-dot > span {display:block;width:19px;height:19px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat -386px -95px}
+.cv_header .owl-dots .owl-dot.active > span {background-position:-409px -95px}
 
-.character .cont_header .titles{margin-top: 42px;}
-.character .cont_header .titles .tit{margin: 0;}
-.character .cont_header .character_txt{display: inline-block;min-width: 148px;margin: 2px 0 0 12px;padding: 9px 14px;text-align: center;vertical-align: middle;color: #fff;}
-.character.elsword .cont_header .character_txt{background-color: #c71c00;}
-.character.aisha .cont_header .character_txt{background-color: #853ec8;}
-.character.rena .cont_header .character_txt{background-color: #75ce18;}
-.character.raven .cont_header .character_txt{background-color: #282828;}
-.character.eve .cont_header .character_txt{background-color: #ef97bd;}
-.character.chung .cont_header .character_txt{background-color: #00a8e6;}
-.character.ara .cont_header .character_txt{background-color: #fe9f01;}
-.character.elesis .cont_header .character_txt{background-color: #d00040;}
-.character.add .cont_header .character_txt{background-color: #a79fdf;}
-.character.ru .cont_header .character_txt{background-color: #202cf5;}
-.character.rose .cont_header .character_txt{color: #000;background-color: #fff653;}
-.character.ain .cont_header .character_txt{background-color: #19d2a8;}
+/* 타이틀, 시스템 */
+.cv_cont .cv_title {position:relative;height:58px;margin-top:43px;border-bottom:2px solid #ccc}
+.cv_cont .cv_title:after{position:absolute;bottom:-2px;left:0;display:block;width:270px;height:2px;content:""}
+.cv_cont .cv_title .tit {float:left;margin:0 15px 0 0;font-size:38px;line-height:40px;color:#3a312a;letter-spacing:-1px}
+.cv_cont .cv_title .system {float:left;margin:1px 0 0 0}
+.cv_cont .cv_title .system .gf_btn_system {display:block;min-width:148px;height:35px;padding:0 30px;line-height:35px;text-align:center;color:#fff}
+
+/* 시놉시스 */
+.cv_cont .cv_synopsis{position:relative;float:left;width:600px;padding:35px 65px 68px 8px}
+.cv_cont .cv_synopsis p{line-height:28.5px;font-size:14px;color:#555}
+.cv_cont .cv_synopsis:after{position:absolute;right:0;top:50%;width:2px;height:84px;margin-top:-42px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_line_dotted.png') no-repeat 0 0;content:''}
+
+/* 전직 라인 테이블 */
+.cv_cont .cv_line {position:relative;float:right;margin:0 43px 0 0}
+.cv_cont .cv_line.line4 {margin:0 43px 0 0}
+.cv_cont .cv_line:before {position:absolute;top:92px;left:50%;display:block;width:353px;height:26px;margin-left:-176px;content:'';background-repeat:no-repeat;background-position:0 0;background-image:url('../img/common/bg_character_line3.png')}
+.cv_cont .cv_line.line4:before {width:445px;height:23px;margin-left:-223px;background-image:url('../img/common/bg_character_line4.png')}
+
+.cv_cont .cv_line .cvl_name {display:block;width:144px;margin:41px auto 34px;padding:15px 0;text-align:center;font-size:14px;color:#fff}
+.cv_cont .cv_line .cvl_list {float:left;width:143px;margin:0 0 0 27px;padding:1px;border:1px solid #bebebe}
+.cv_cont .cv_line .cvl_list.first {margin-left:0}
+.cv_cont .cv_line .cvl_list li {position:relative}
+.cv_cont .cv_line .cvl_list li.tit {padding:5px 0;text-align:center;color:#fff;background-color:#bebebe;border-bottom:1px solid #e5e5e5}
+.cv_cont .cv_line .cvl_list li.tit:after {position:absolute;left:50%;top:21px;margin-left:-12px;border-top:11px solid #bebebe;border-right:11px solid transparent;border-bottom:11px solid transparent;border-left:11px solid transparent;content:''}
+.cv_cont .cv_line .cvl_list li.des:before {position:absolute;top:-2px;width:100%;height:8px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_character_arrow.png') no-repeat 0 0;content:''}
+.cv_cont .cv_line .cvl_list li.des .btn_job {display:block;padding:18px 0 13px;line-height:22px;text-align:center;font-size:14px;color:#666}
+.cv_cont .cv_line .cvl_list li.des .btn_job > span {display:block}
+.cv_cont .cv_line .cvl_list li.des.active .btn_job > span {font-weight:bold}
+.cv_cont .cv_line .cvl_list li.des .btn_job .order {font-size:12px;line-height:13px}
+.cv_cont .cv_line .cvl_list li.des .btn_job .name {line-height:23px}
+.cv_cont .cv_line .cvl_list li.tit + .des:before {content:none}
+
+.elsword .cv_cont .cv_line .cvl_list.active li.tit {background-color:#c71c00;border-bottom-color:#e9a499}
+.elsword .cv_cont .cv_line .cvl_list.active li.tit:after{border-top:11px solid #c71c00}
+.aisha .cv_cont .cv_line .cvl_list.active li.tit {background-color:#853ec8;border-bottom-color:#ceb2e9}
+.aisha .cv_cont .cv_line .cvl_list.active li.tit:after{border-top:12px solid #853ec8}
+.rena .cv_cont .cv_line .cvl_list.active li.tit {background-color:#75ce18;border-bottom-color:#c8eba3}
+.rena .cv_cont .cv_line .cvl_list.active li.tit:after{border-top:12px solid #75ce18}
+.raven .cv_cont .cv_line .cvl_list.active li.tit {background-color:#282828;border-bottom-color:#a9a9a9}
+.raven .cv_cont .cv_line .cvl_list.active li.tit:after{border-top:12px solid #282828}
+.eve .cv_cont .cv_line .cvl_list.active li.tit {background-color:#ef97bd;border-bottom-color:#f9d5e5}
+.eve .cv_cont .cv_line .cvl_list.active li.tit:after{border-top:12px solid #ef97bd}
+.chung .cv_cont .cv_line .cvl_list.active li.tit {background-color:#00a8e6;border-bottom-color:#99dcf5}
+.chung .cv_cont .cv_line .cvl_list.active li.tit:after{border-top:12px solid #00a8e6}
+.ara .cv_cont .cv_line .cvl_list.active li.tit {background-color:#fe9f01;border-bottom-color:#ffd999}
+.ara .cv_cont .cv_line .cvl_list.active li.tit:after{border-top:12px solid #fe9f01}
+.elesis .cv_cont .cv_line .cvl_list.active li.tit {background-color:#d00040;border-bottom-color:#ec99b3}
+.elesis .cv_cont .cv_line .cvl_list.active li.tit:after{border-top:12px solid #d00040}
+.add .cv_cont .cv_line .cvl_list.active li.tit {background-color:#a79fdf;border-bottom-color:#dcd9f2}
+.add .cv_cont .cv_line .cvl_list.active li.tit:after{border-top:12px solid #a79fdf}
+.luciel .cv_cont .cv_line .cvl_list.active li.tit {background-color:#202cf5;border-bottom-color:#dcd9f2}
+.luciel .cv_cont .cv_line .cvl_list.active li.tit:after{border-top:12px solid #202cf5}
+.rose .cv_cont .cv_line .cvl_list.active li.tit {color:#000;background-color:#fff653;border-bottom-color:#fffbba}
+.rose .cv_cont .cv_line .cvl_list.active li.tit:after{border-top:12px solid #fff653}
+.ain .cv_cont .cv_line .cvl_list.active li.tit {background-color:#19d2a8;border-bottom-color:#a3eddc}
+.ain .cv_cont .cv_line .cvl_list.active li.tit:after{border-top:12px solid #19d2a8}
+
+.elsword .cv_cont .cv_line .cvl_list li.des.active .btn_job {color:#c71c00}
+.aisha .cv_cont .cv_line .cvl_list li.des.active .btn_job {color:#853ec8}
+.rena .cv_cont .cv_line .cvl_list li.des.active .btn_job {color:#75ce18}
+.raven .cv_cont .cv_line .cvl_list li.des.active .btn_job {color:#282828}
+.eve .cv_cont .cv_line .cvl_list li.des.active .btn_job {color:#ef97bd}
+.chung .cv_cont .cv_line .cvl_list li.des.active .btn_job {color:#00a8e6}
+.ara .cv_cont .cv_line .cvl_list li.des.active .btn_job {color:#fe9f01}
+.elesis .cv_cont .cv_line .cvl_list li.des.active .btn_job {color:#d00040}
+.add .cv_cont .cv_line .cvl_list li.des.active .btn_job {color:#a79fdf}
+.luciel .cv_cont .cv_line .cvl_list li.des.active .btn_job {color:#202cf5}
+.rose .cv_cont .cv_line .cvl_list li.des.active .btn_job {color:#000}
+.ain .cv_cont .cv_line .cvl_list li.des.active .btn_job {color:#19d2a8}
+
+.elsword .cv_cont .cv_title:after,
+.elsword .cv_cont .cv_title .system,
+.elsword .cv_cont .cv_line .cvl_name {background-color:#c71c00}
+.aisha .cv_cont .cv_title:after,
+.aisha .cv_cont .cv_title .system,
+.aisha .cv_cont .cv_line .cvl_name {background-color:#853ec8}
+.rena .cv_cont .cv_title:after,
+.rena .cv_cont .cv_title .system ,
+.rena .cv_cont .cv_line .cvl_name{background-color:#75ce18}
+.raven .cv_cont .cv_title:after,
+.raven .cv_cont .cv_title .system,
+.raven .cv_cont .cv_line .cvl_name {background-color:#282828}
+.eve .cv_cont .cv_title:after,
+.eve .cv_cont .cv_title .system,
+.eve .cv_cont .cv_line .cvl_name {background-color:#ef97bd}
+.chung .cv_cont .cv_title:after,
+.chung .cv_cont .cv_title .system,
+.chung .cv_cont .cv_line .cvl_name {background-color:#00a8e6}
+.ara .cv_cont .cv_title:after,
+.ara .cv_cont .cv_title .system,
+.ara .cv_cont .cv_line .cvl_name {background-color:#fe9f01}
+.elesis .cv_cont .cv_title:after,
+.elesis .cv_cont .cv_title .system,
+.elesis .cv_cont .cv_line .cvl_name {background-color:#d00040}
+.add .cv_cont .cv_title:after,
+.add .cv_cont .cv_title .system,
+.add .cv_cont .cv_line .cvl_name {background-color:#a79fdf}
+.luciel .cv_cont .cv_title:after,
+.luciel .cv_cont .cv_title .system,
+.luciel .cv_cont .cv_line .cvl_name {background-color:#202cf5}
+.rose .cv_cont .cv_title:after,
+.rose .cv_cont .cv_title .system,
+.rose .cv_cont .cv_line .cvl_name {color:#000;background-color:#fff653}
+.ain .cv_cont .cv_title:after,
+.ain .cv_cont .cv_title .system,
+.ain .cv_cont .cv_line .cvl_name {background-color:#19d2a8}
+
+/* 주요 스킬 */
+.cv_cont .cv_skill {clear:both}
+.cv_cont .cv_skill .tit {margin:0 0 43px 0;padding:0 0 14px 0;font-size:20px;letter-spacing:-1px;color:#3a312a;border-bottom:2px solid #ccc}
+.cv_cont .cv_skill .skill_list {overflow:hidden;margin:0 0 57px 0}
+.cv_cont .cv_skill .skill_list li {float:left;margin:0 0 0 49px}
+.cv_cont .cv_skill .skill_list li:first-child {margin-left:0}
+.cv_cont .cv_skill .skill_list li .thumb {display:block;overflow:hidden;width:263px;height:162px}
+.cv_cont .cv_skill .skill_list li .name {margin:14px 0 0 0;font-size:14px;text-align:center;color:#666}
 
 /* 캐릭터 딱지 기본 */
-#character .character_navi{position: absolute;bottom: 0;width: 100%;height: 116px;}
-#character .character_navi:after{position: absolute;bottom: 0;width: 100%;height: 100%;background-color: #000;opacity: .7;content: " ";z-index: 10;}
-#character .character_navi ul{position: absolute;top: 10px;left: 50%;width: 1200px;margin-left: -600px;z-index: 100;}
+.cv_nav {position:absolute;bottom:0;width:100%;height:116px;z-index:2}
+.cv_nav:after {position:absolute;display:block;bottom:0;width:100%;height:100%;background-color:#000;opacity:.7;content:'';z-index:2;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";filter:alpha(opacity=70)}
+.cv_nav .nav_list {position:absolute;top:13px;left:50%;width:1200px;margin-left:-600px;z-index:3}
+.cv_nav .nav_list li {float:left;margin-left:9px}
+.cv_nav .nav_list li.aisha,
+.cv_nav .nav_list li.rena,
+.cv_nav .nav_list li.raven,
+.cv_nav .nav_list li.eve,
+.cv_nav .nav_list li.chung {margin-left:8px}
+.cv_nav .nav_list li:first-child {margin-left:0}
+.cv_nav .nav_list li a,
+.cv_nav .nav_list li a > span {display:block;text-align:left;text-indent:-9999px;line-height:0;font-size:0}
+.cv_nav .nav_list li a {position:relative;width:92px;height:92px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/spr_character_sub_off.png') no-repeat 0 0}
+.cv_nav .nav_list li a > span {opacity:0;position:absolute;top:0;left:0;width:100%;height:100%;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/spr_character_sub.png') no-repeat 0 0;
+-webkit-transition: opacity .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+-moz-transition: opacity .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+transition: opacity .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+filter:alpha(opacity=0);}
+.cv_nav .nav_list li.active a > span,
+.cv_nav .nav_list li a:hover > span,
+.cv_nav .nav_list li a:active > span {opacity:1;
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+filter:alpha(opacity=100);}
 
-#character .character_navi ul li{float: left;width: 92px;height: 92px;margin-left: 9px;background: url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/spr_character_sub.png') no-repeat 0 0;-webkit-filter: grayscale(100%) brightness(60%) contrast(70%);filter: grayscale(100%) brightness(60%) contrast(70%);}
-#character .character_navi ul li.on{filter: none;}
-#character .character_navi ul li:nth-child(-2n+6){margin-left: 8px;}
-#character .character_navi ul li:first-child{margin-left: 0;}
-#character .character_navi ul li a{display: block;position: absolute;width: 100%;height: 100%;text-indent: -9999px;}
 /* 엘소드 딱지 */
-#character .character_navi ul li.elsword{background-position: -46px -76px;}
-#character .character_navi ul li.elsword_01{background-position: -170px -76px;}
-#character .character_navi ul li.elsword_02{background-position: -294px -76px;}
-#character .character_navi ul li.elsword_03{background-position: -417px -76px;}
-#character .character_navi ul li.elsword_04{background-position: -170px -187px;}
-#character .character_navi ul li.elsword_05{background-position: -294px -187px;}
-#character .character_navi ul li.elsword_06{background-position: -417px -187px;}
-#character .character_navi ul li.elsword_07{background-position: -170px -303px;}
-#character .character_navi ul li.elsword_08{background-position: -294px -303px;}
-#character .character_navi ul li.elsword_09{background-position: -417px -303px;}
+.cv_nav .nav_list li.elsword a,
+.cv_nav .nav_list li.elsword a > span,
+.cv_nav .nav_list li.elsword.c1 a,
+.cv_nav .nav_list li.elsword.c1 a > span {background-position:-46px -76px}
+.cv_nav .nav_list li.elsword.c10 a,
+.cv_nav .nav_list li.elsword.c10 a > span {background-position:-170px -76px}
+.cv_nav .nav_list li.elsword.c11 a,
+.cv_nav .nav_list li.elsword.c11 a > span {background-position:-170px -187px}
+.cv_nav .nav_list li.elsword.c22 a,
+.cv_nav .nav_list li.elsword.c22 a > span {background-position:-170px -303px}
+.cv_nav .nav_list li.elsword.c100 a,
+.cv_nav .nav_list li.elsword.c100 a > span {background-position:-294px -76px}
+.cv_nav .nav_list li.elsword.c101 a,
+.cv_nav .nav_list li.elsword.c101 a > span {background-position:-294px -187px}
+.cv_nav .nav_list li.elsword.c112 a,
+.cv_nav .nav_list li.elsword.c112 a > span {background-position:-294px -303px}
+
+.cv_nav .nav_list li.elsword.c150 a,
+.cv_nav .nav_list li.elsword.c150 a > span {background-position:-417px -76px}
+
 /* 아이샤 딱지 */
-#character .character_navi ul li.aisha{background-position: -582px -76px;}
-#character .character_navi ul li.aisha_01{background-position: -706px -76px;}
-#character .character_navi ul li.aisha_02{background-position: -829px -76px}
-#character .character_navi ul li.aisha_03{background-position: -953px -76px}
-#character .character_navi ul li.aisha_04{background-position: -706px -187px}
-#character .character_navi ul li.aisha_05{background-position: -829px -187px}
-#character .character_navi ul li.aisha_06{background-position: -953px -187px}
-#character .character_navi ul li.aisha_07{background-position: -706px -303px}
-#character .character_navi ul li.aisha_08{background-position: -829px -303px}
-#character .character_navi ul li.aisha_09{background-position: -953px -303px}
+.cv_nav .nav_list li.aisha a,
+.cv_nav .nav_list li.aisha a > span,
+.cv_nav .nav_list li.aisha.c2 a,
+.cv_nav .nav_list li.aisha.c2 a > span {background-position:-582px -76px}
+.cv_nav .nav_list li.aisha.c14 a,
+.cv_nav .nav_list li.aisha.c14 a > span {background-position:-706px -76px}
+.cv_nav .nav_list li.aisha.c15 a,
+.cv_nav .nav_list li.aisha.c15 a > span {background-position:-706px -187px}
+.cv_nav .nav_list li.aisha.c23 a,
+.cv_nav .nav_list li.aisha.c23 a > span {background-position:-706px -303px}
+.cv_nav .nav_list li.aisha.c104 a,
+.cv_nav .nav_list li.aisha.c104 a > span {background-position:-829px -76px}
+.cv_nav .nav_list li.aisha.c105 a,
+.cv_nav .nav_list li.aisha.c105 a > span {background-position:-829px -187px}
+.cv_nav .nav_list li.aisha.c113 a,
+.cv_nav .nav_list li.aisha.c113 a > span {background-position:-829px -303px}
+
+.cv_nav .nav_list li.aisha.c153 a,
+.cv_nav .nav_list li.aisha.c153 a > span {background-position:-953px -76px}
+
 /* 레나 딱지 */
-#character .character_navi ul li.rena{background-position: -46px -455px;}
-#character .character_navi ul li.rena_01{background-position: -170px -455px;}
-#character .character_navi ul li.rena_02{background-position: -294px -455px;}
-#character .character_navi ul li.rena_03{background-position: -417px -455px;}
-#character .character_navi ul li.rena_04{background-position: -170px -567px;}
-#character .character_navi ul li.rena_05{background-position: -294px -567px;}
-#character .character_navi ul li.rena_06{background-position: -417px -567px;}
-#character .character_navi ul li.rena_07{background-position: -170px -683px;}
-#character .character_navi ul li.rena_08{background-position: -294px -683px;}
-#character .character_navi ul li.rena_09{background-position: -417px -683px;}
+.cv_nav .nav_list li.rena a,
+.cv_nav .nav_list li.rena a > span,
+.cv_nav .nav_list li.rena.c3 a,
+.cv_nav .nav_list li.rena.c3 a > span {background-position:-46px -455px}
+.cv_nav .nav_list li.rena.c12 a,
+.cv_nav .nav_list li.rena.c12 a > span {background-position:-170px -455px}
+.cv_nav .nav_list li.rena.c13 a,
+.cv_nav .nav_list li.rena.c13 a > span {background-position:-170px -567px}
+.cv_nav .nav_list li.rena.c24 a,
+.cv_nav .nav_list li.rena.c24 a > span {background-position:-170px -683px}
+.cv_nav .nav_list li.rena.c102 a,
+.cv_nav .nav_list li.rena.c102 a > span {background-position:-294px -455px}
+.cv_nav .nav_list li.rena.c103 a,
+.cv_nav .nav_list li.rena.c103 a > span {background-position:-294px -567px}
+.cv_nav .nav_list li.rena.c114 a,
+.cv_nav .nav_list li.rena.c114 a > span {background-position:-294px -683px}
+
+.cv_nav .nav_list li.rena.c156 a,
+.cv_nav .nav_list li.rena.c156 a > span {background-position:-417px -455px}
+
 /* 레이븐 딱지 */
-#character .character_navi ul li.raven{background-position: -582px -455px;}
-#character .character_navi ul li.raven_01{background-position: -705px -455px;}
-#character .character_navi ul li.raven_02{background-position: -829px -455px;}
-#character .character_navi ul li.raven_03{background-position: -952px -455px;}
-#character .character_navi ul li.raven_04{background-position: -705px -566px;}
-#character .character_navi ul li.raven_05{background-position: -829px -566px;}
-#character .character_navi ul li.raven_06{background-position: -952px -566px;}
-#character .character_navi ul li.raven_07{background-position: -705px -681px;}
-#character .character_navi ul li.raven_08{background-position: -829px -681px;}
-#character .character_navi ul li.raven_09{background-position: -952px -681px;}
+.cv_nav .nav_list li.raven a,
+.cv_nav .nav_list li.raven a > span,
+.cv_nav .nav_list li.raven.c4 a,
+.cv_nav .nav_list li.raven.c4 a > span {background-position:-582px -455px}
+.cv_nav .nav_list li.raven.c16 a,
+.cv_nav .nav_list li.raven.c16 a > span {background-position:-705px -455px}
+.cv_nav .nav_list li.raven.c17 a,
+.cv_nav .nav_list li.raven.c17 a > span {background-position:-705px -566px}
+.cv_nav .nav_list li.raven.c25 a,
+.cv_nav .nav_list li.raven.c25 a > span {background-position:-705px -681px}
+.cv_nav .nav_list li.raven.c106 a,
+.cv_nav .nav_list li.raven.c106 a > span {background-position:-829px -455px}
+.cv_nav .nav_list li.raven.c107 a,
+.cv_nav .nav_list li.raven.c107 a > span {background-position:-829px -566px}
+.cv_nav .nav_list li.raven.c115 a,
+.cv_nav .nav_list li.raven.c115 a > span {background-position:-829px -681px}
+
+.cv_nav .nav_list li.raven.c159 a,
+.cv_nav .nav_list li.raven.c159 a > span {background-position:-952px -455px}
+
 /* 이브 딱지 */
-#character .character_navi ul li.eve{background-position: -46px -839px;}
-#character .character_navi ul li.eve_01{background-position: -170px -839px;}
-#character .character_navi ul li.eve_02{background-position: -294px -839px;}
-#character .character_navi ul li.eve_03{background-position: -418px -839px;}
-#character .character_navi ul li.eve_04{background-position: -170px -950px;}
-#character .character_navi ul li.eve_05{background-position: -294px -950px;}
-#character .character_navi ul li.eve_06{background-position: -418px -950px;}
-#character .character_navi ul li.eve_07{background-position: -170px -1066px;}
-#character .character_navi ul li.eve_08{background-position: -294px -1066px;}
-#character .character_navi ul li.eve_09{background-position: -418px -1066px;}
+.cv_nav .nav_list li.eve a,
+.cv_nav .nav_list li.eve a > span,
+.cv_nav .nav_list li.eve.c5 a,
+.cv_nav .nav_list li.eve.c5 a > span {background-position:-46px -839px}
+.cv_nav .nav_list li.eve.c18 a,
+.cv_nav .nav_list li.eve.c18 a > span {background-position:-170px -839px}
+.cv_nav .nav_list li.eve.c19 a,
+.cv_nav .nav_list li.eve.c19 a > span {background-position:-170px -950px}
+.cv_nav .nav_list li.eve.c26 a,
+.cv_nav .nav_list li.eve.c26 a > span {background-position:-170px -1066px}
+.cv_nav .nav_list li.eve.c108 a,
+.cv_nav .nav_list li.eve.c108 a > span {background-position:-294px -839px}
+.cv_nav .nav_list li.eve.c109 a,
+.cv_nav .nav_list li.eve.c109 a > span {background-position:-294px -950px}
+.cv_nav .nav_list li.eve.c116 a,
+.cv_nav .nav_list li.eve.c116 a > span {background-position:-294px -1066px}
+
+.cv_nav .nav_list li.eve.c162 a,
+.cv_nav .nav_list li.eve.c162 a > span {background-position:-418px -839px}
+
 /* 청 딱지 */
-#character .character_navi ul li.chung{background-position: -582px -839px;}
-#character .character_navi ul li.chung_01{background-position: -706px -839px;}
-#character .character_navi ul li.chung_02{background-position: -829px -839px;}
-#character .character_navi ul li.chung_03{background-position: -953px -839px;}
-#character .character_navi ul li.chung_04{background-position: -706px -951px;}
-#character .character_navi ul li.chung_05{background-position: -829px -951px;}
-#character .character_navi ul li.chung_06{background-position: -953px -951px;}
-#character .character_navi ul li.chung_07{background-position: -706px -1067px;}
-#character .character_navi ul li.chung_08{background-position: -829px -1067px;}
-#character .character_navi ul li.chung_09{background-position: -953px -1067px;}
+.cv_nav .nav_list li.chung a,
+.cv_nav .nav_list li.chung a > span,
+.cv_nav .nav_list li.chung.c6 a,
+.cv_nav .nav_list li.chung.c6 a > span {background-position:-582px -839px}
+.cv_nav .nav_list li.chung.c20 a,
+.cv_nav .nav_list li.chung.c20 a > span {background-position:-706px -839px}
+.cv_nav .nav_list li.chung.c21 a,
+.cv_nav .nav_list li.chung.c21 a > span {background-position:-706px -951px}
+.cv_nav .nav_list li.chung.c27 a,
+.cv_nav .nav_list li.chung.c27 a > span {background-position:-706px -1067px}
+.cv_nav .nav_list li.chung.c110 a,
+.cv_nav .nav_list li.chung.c110 a > span {background-position:-829px -839px}
+.cv_nav .nav_list li.chung.c111 a,
+.cv_nav .nav_list li.chung.c111 > span {background-position:-829px -951px}
+.cv_nav .nav_list li.chung.c117 a,
+.cv_nav .nav_list li.chung.c117 a > span {background-position:-829px -1067px}
+
+.cv_nav .nav_list li.chung.c165 a,
+.cv_nav .nav_list li.chung.c165 a > span {background-position:-953px -839px}
+
 /* 아라 딱지 */
-#character .character_navi ul li.ara{background-position: -46px -1251px;}
-#character .character_navi ul li.ara_01{background-position: -170px -1251px;}
-#character .character_navi ul li.ara_02{background-position: -294px -1251px;}
-#character .character_navi ul li.ara_03{background-position: -417px -1251px;}
-#character .character_navi ul li.ara_04{background-position: -170px -1366px;}
-#character .character_navi ul li.ara_05{background-position: -294px -1366px;}
-#character .character_navi ul li.ara_06{background-position: -417px -1366px;}
-#character .character_navi ul li.ara_07{background-position: -170px -1477px;}
-#character .character_navi ul li.ara_08{background-position: -294px -1477px;}
-#character .character_navi ul li.ara_09{background-position: -417px -1477px;}
+.cv_nav .nav_list li.ara a,
+.cv_nav .nav_list li.ara a > span,
+.cv_nav .nav_list li.ara.c7 a,
+.cv_nav .nav_list li.ara.c7 a > span {background-position:-46px -1251px}
+.cv_nav .nav_list li.ara.c28 a,
+.cv_nav .nav_list li.ara.c28 a > span {background-position:-170px -1251px}
+.cv_nav .nav_list li.ara.c31 a,
+.cv_nav .nav_list li.ara.c31 a > span {background-position:-170px -1366px}
+.cv_nav .nav_list li.ara.c34 a,
+.cv_nav .nav_list li.ara.c34 a > span {background-position:-170px -1477px}
+.cv_nav .nav_list li.ara.c118 a,
+.cv_nav .nav_list li.ara.c118 a > span {background-position:-294px -1251px}
+.cv_nav .nav_list li.ara.c119 a,
+.cv_nav .nav_list li.ara.c119 a > span {background-position:-294px -1366px}
+.cv_nav .nav_list li.ara.c124 a,
+.cv_nav .nav_list li.ara.c124 a > span {background-position:-294px -1477px}
+
+.cv_nav .nav_list li.ara.c168 a,
+.cv_nav .nav_list li.ara.c168 a > span {background-position:-417px -1251px}
+
 /* 엘리시스 딱지 */
-#character .character_navi ul li.elesis{background-position: -582px -1251px;}
-#character .character_navi ul li.elesis_01{background-position: -706px -1251px;}
-#character .character_navi ul li.elesis_02{background-position: -829px -1251px;}
-#character .character_navi ul li.elesis_03{background-position: -951px -1251px;}
-#character .character_navi ul li.elesis_04{background-position: -706px -1359px;}
-#character .character_navi ul li.elesis_05{background-position: -829px -1359px;}
-#character .character_navi ul li.elesis_06{background-position: -951px -1359px;}
-#character .character_navi ul li.elesis_07{background-position: -706px -1470px;}
-#character .character_navi ul li.elesis_08{background-position: -829px -1470px;}
-#character .character_navi ul li.elesis_09{background-position: -951px -1470px;}
+.cv_nav .nav_list li.elesis a,
+.cv_nav .nav_list li.elesis a > span,
+.cv_nav .nav_list li.elesis.c8 a,
+.cv_nav .nav_list li.elesis.c8 a > span {background-position:-582px -1251px}
+.cv_nav .nav_list li.elesis.c29 a,
+.cv_nav .nav_list li.elesis.c29 a > span {background-position:-706px -1251px}
+.cv_nav .nav_list li.elesis.c30 a,
+.cv_nav .nav_list li.elesis.c30 a > span {background-position:-706px -1359px}
+.cv_nav .nav_list li.elesis.c35 a,
+.cv_nav .nav_list li.elesis.c35 a > span {background-position:-706px -1470px}
+.cv_nav .nav_list li.elesis.c120 a,
+.cv_nav .nav_list li.elesis.c120 a > span {background-position:-829px -1251px}
+.cv_nav .nav_list li.elesis.c121 a,
+.cv_nav .nav_list li.elesis.c121 a > span {background-position:-829px -1359px}
+.cv_nav .nav_list li.elesis.c125 a,
+.cv_nav .nav_list li.elesis.c125 a > span {background-position:-829px -1470px}
+
+.cv_nav .nav_list li.elesis.c171 a,
+.cv_nav .nav_list li.elesis.c171 a > span {background-position:-951px -1251px}
+
 /* 애드 딱지 */
-#character .character_navi ul li.add{background-position: -46px -1632px;}
-#character .character_navi ul li.add_01{background-position: -170px -1632px;}
-#character .character_navi ul li.add_02{background-position: -294px -1632px;}
-#character .character_navi ul li.add_03{background-position: -417px -1632px;}
-#character .character_navi ul li.add_04{background-position: -170px -1742px;}
-#character .character_navi ul li.add_05{background-position: -294px -1742px;}
-#character .character_navi ul li.add_06{background-position: -417px -1742px;}
-#character .character_navi ul li.add_07{background-position: -170px -1859px;}
-#character .character_navi ul li.add_08{background-position: -294px -1859px;}
-#character .character_navi ul li.add_09{background-position: -417px -1859px;}
+.cv_nav .nav_list li.add a,
+.cv_nav .nav_list li.add a > span,
+.cv_nav .nav_list li.add.c9 a,
+.cv_nav .nav_list li.add.c9 a > span {background-position:-46px -1632px}
+.cv_nav .nav_list li.add.c32 a,
+.cv_nav .nav_list li.add.c32 a > span {background-position:-170px -1632px}
+.cv_nav .nav_list li.add.c33 a,
+.cv_nav .nav_list li.add.c33 a > span {background-position:-170px -1742px}
+.cv_nav .nav_list li.add.c36 a,
+.cv_nav .nav_list li.add.c36 a > span {background-position:-170px -1859px}
+.cv_nav .nav_list li.add.c122 a,
+.cv_nav .nav_list li.add.c122 a > span {background-position:-294px -1632px}
+.cv_nav .nav_list li.add.c123 a,
+.cv_nav .nav_list li.add.c123 a > span {background-position:-294px -1742px}
+.cv_nav .nav_list li.add.c126 a,
+.cv_nav .nav_list li.add.c126 a > span {background-position:-294px -1859px}
+.cv_nav .nav_list li.add.c174 a,
+.cv_nav .nav_list li.add.c174 a > span {background-position:-417px -1632px}
+
 /* 루시엘 딱지 */
-#character .character_navi ul li.ru{background-position: -582px -1632px;}
-#character .character_navi ul li.ru_01{background-position: -706px -1632px;}
-#character .character_navi ul li.ru_02{background-position: -829px -1632px;}
-#character .character_navi ul li.ru_03{background-position: -953px -1632px;}
-#character .character_navi ul li.ru_04{background-position: -706px -1742px;}
-#character .character_navi ul li.ru_05{background-position: -829px -1742px;}
-#character .character_navi ul li.ru_06{background-position: -953px -1742px;}
-#character .character_navi ul li.ru_07{background-position: -706px -1858px;}
-#character .character_navi ul li.ru_08{background-position: -829px -1858px;}
-#character .character_navi ul li.ru_09{background-position: -953px -1858px;}
+.cv_nav .nav_list li.luciel a,
+.cv_nav .nav_list li.luciel a > span,
+.cv_nav .nav_list li.luciel.c200 a,
+.cv_nav .nav_list li.luciel.c200 a > span {background-position:-582px -1632px}
+.cv_nav .nav_list li.luciel.c37 a,
+.cv_nav .nav_list li.luciel.c37 a > span {background-position:-706px -1632px}
+.cv_nav .nav_list li.luciel.c38 a,
+.cv_nav .nav_list li.luciel.c38 a > span {background-position:-706px -1742px}
+.cv_nav .nav_list li.luciel.c39 a,
+.cv_nav .nav_list li.luciel.c39 a > span {background-position:-706px -1858px}
+.cv_nav .nav_list li.luciel.c127 a,
+.cv_nav .nav_list li.luciel.c127 a > span {background-position:-829px -1632px}
+.cv_nav .nav_list li.luciel.c128 a,
+.cv_nav .nav_list li.luciel.c128 a > span {background-position:-829px -1742px}
+.cv_nav .nav_list li.luciel.c129 a,
+.cv_nav .nav_list li.luciel.c129 a > span {background-position:-829px -1858px}
+
+.cv_nav .nav_list li.luciel.c177 a,
+.cv_nav .nav_list li.luciel.c177 a > span {background-position:-953px -1632px}
+
 /* 로제 딱지 */
-#character .character_navi ul li.rose{background-position: -46px -2015px;}
-#character .character_navi ul li.rose_01{background-position: -169px -2015px;}
-#character .character_navi ul li.rose_02{background-position: -294px -2015px;}
-#character .character_navi ul li.rose_03{background-position: -417px -2015px;}
-#character .character_navi ul li.rose_04{background-position: -170px -2125px;}
-#character .character_navi ul li.rose_05{background-position: -294px -2125px;}
-#character .character_navi ul li.rose_06{background-position: -417px -2125px;}
-#character .character_navi ul li.rose_07{background-position: -170px -2243px;}
-#character .character_navi ul li.rose_08{background-position: -294px -2243px;}
-#character .character_navi ul li.rose_09{background-position: -417px -2243px;}
-#character .character_navi ul li.rose_10{background-position: -170px -2359px;}
-#character .character_navi ul li.rose_11{background-position: -294px -2359px;}
-#character .character_navi ul li.rose_12{background-position: -417px -2359px;}
+.cv_nav .nav_list li.rose a,
+.cv_nav .nav_list li.rose a > span,
+.cv_nav .nav_list li.rose.c201 a,
+.cv_nav .nav_list li.rose.c201 a > span {background-position:-46px -2015px}
+.cv_nav .nav_list li.rose.c40 a,
+.cv_nav .nav_list li.rose.c40 a > span {background-position:-169px -2015px}
+.cv_nav .nav_list li.rose.c41 a,
+.cv_nav .nav_list li.rose.c41 a > span {background-position:-170px -2125px}
+.cv_nav .nav_list li.rose.c42 a,
+.cv_nav .nav_list li.rose.c42 a > span {background-position:-170px -2243px}
+.cv_nav .nav_list li.rose.c43 a,
+.cv_nav .nav_list li.rose.c43 a > span {background-position:-170px -2359px}
+.cv_nav .nav_list li.rose.c130 a,
+.cv_nav .nav_list li.rose.c130 a > span {background-position:-294px -2015px}
+.cv_nav .nav_list li.rose.c131 a,
+.cv_nav .nav_list li.rose.c131 a > span {background-position:-294px -2125px}
+.cv_nav .nav_list li.rose.c132 a,
+.cv_nav .nav_list li.rose.c132 a > span {background-position:-294px -2243px}
+.cv_nav .nav_list li.rose.c133 a,
+.cv_nav .nav_list li.rose.c133 a > span {background-position:-294px -2359px}
+
+.cv_nav .nav_list li.rose.c180 a,
+.cv_nav .nav_list li.rose.c180 a > span {background-position:-417px -2015px}
+
 /* 아인 딱지 */
-#character .character_navi ul li.ain{background-position: -582px -2015px;}
-#character .character_navi ul li.ain_01{background-position: -705px -2015px;}
-#character .character_navi ul li.ain_02{background-position: -829px -2015px;}
-#character .character_navi ul li.ain_03{background-position: -953px -2015px;}
-#character .character_navi ul li.ain_04{background-position: -705px -2126px;}
-#character .character_navi ul li.ain_05{background-position: -829px -2126px;}
-#character .character_navi ul li.ain_06{background-position: -953px -2126px;}
-#character .character_navi ul li.ain_07{background-position: -705px -2243px;}
-#character .character_navi ul li.ain_08{background-position: -829px -2243px;}
-#character .character_navi ul li.ain_09{background-position: -953px -2243px;}
+.cv_nav .nav_list li.ain a,
+.cv_nav .nav_list li.ain a > span,
+.cv_nav .nav_list li.ain.c202 a,
+.cv_nav .nav_list li.ain.c202 a > span {background-position:-582px -2015px}
+.cv_nav .nav_list li.ain.c44 a,
+.cv_nav .nav_list li.ain.c44 a > span {background-position:-705px -2015px}
+.cv_nav .nav_list li.ain.c45 a,
+.cv_nav .nav_list li.ain.c45 a > span {background-position:-705px -2126px}
+.cv_nav .nav_list li.ain.c46 a,
+.cv_nav .nav_list li.ain.c46 a > span {background-position:-705px -2243px}
+.cv_nav .nav_list li.ain.c134 a,
+.cv_nav .nav_list li.ain.c134 a > span {background-position:-829px -2015px}
+.cv_nav .nav_list li.ain.c135 a,
+.cv_nav .nav_list li.ain.c135 a > span {background-position:-829px -2126px}
+.cv_nav .nav_list li.ain.c136 a,
+.cv_nav .nav_list li.ain.c136 a > span {background-position:-829px -2243px}
 
-/* 주요스킬 */
-#characterwrap .board_list{border-bottom: 0;}
-#characterwrap .board_list .b_subject .subject > a{font-size: 14px;color: #666;}
-#characterwrap .board_list.thumbnail > li{width: 263px;margin-left: 49px;margin-bottom: 0;}
-#characterwrap .board_list.thumbnail .b_thumb .thumb{width: 263px;height: 162px;}
-.cont_sub_cont .titles{margin-bottom: 43px;padding-bottom: 14px;border-bottom: 2px solid #ccc;}
-.cont_sub_cont .titles h3{font-size: 20px;color: #3a312a;}
-/**/
-.about_character section{position: relative;float: left;width: 600px;padding: 40px 0 68px;}
-.about_character .about p{line-height: 28.5px;font-size: 14px;color: #666666;}
-.about_character .about:after{position: absolute;right: 0;top: 50%;width: 2px;height: 84px;margin-top: -42px;background: url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/bg_dotted.png') no-repeat 0 0;content: " ";}
+.cv_nav .nav_list li.ain.c184 a,
+.cv_nav .nav_list li.ain.c184 a > span {background-position:-953px -2015px}
 
-
-
-
-
-/* 전직 캐릭터 타이틀*/
-.character_name{display: block;width: 144px;margin: 0 auto 34px;padding: 15px 0;text-align: center;font-size: 14px;color: #fff;}
-.character.elsword .character_name{background-color: #c71c00;}
-.character.aisha .character_name{background-color: #853ec8;}
-.character.rena .character_name{background-color: #75ce18;}
-.character.raven .character_name{background-color: #282828;}
-.character.eve .character_name{background-color: #ef97bd;}
-.character.chung .character_name{background-color: #00a8e6;}
-.character.ara .character_name{background-color: #fe9f01;}
-.character.elesis .character_name{background-color: #d00040;}
-.character.add .character_name{background-color: #a79fdf;}
-.character.ru .character_name{background-color: #202cf5;}
-.character.rose .character_name{color: #000;background-color: #fff653;}
-.character.ain .character_name{background-color: #19d2a8;}
-
-
-.character_line {position: relative;}
-.character_line .line4:before{position: absolute;top: 92px;left: 50%;width: 445px;height: 23px;margin-left: -223px;background: url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_character_line4.png');content: " ";}
-.character_line .line3 ul{margin-left: 27px;}
-.character_line .line3:before{position: absolute;top: 92px;left: 50%;width: 353px;height: 26px;margin-left: -173px;background: url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_character_line3.png');content: " ";}
-.character_line ul{display: inline-block;width: 143px;padding: 1px;border: 1px solid #bebebe;}
-.character_line ul li{position: relative;width: 100%;padding: 10px 0;}
-.character_line ul li a{line-height: 22px;text-align: center;font-size: 14px;color: #666;}
-.character.elsword .character_line ul li.on a{color: #c71c00;}
-.character.aisha .character_line ul li.on a{color: #853ec8;}
-.character.rena .character_line ul li.on a{color: #75ce18;}
-.character.raven .character_line ul li.on a{color: #282828;}
-.character.eve .character_line ul li.on a{color: #ef97bd;}
-.character.chung .character_line ul li.on a{color: #00a8e6;}
-.character.ara .character_line ul li.on a{color: #fe9f01;}
-.character.elesis .character_line ul li.on a{color: #d00040;}
-.character.add .character_line ul li.on a{color: #a79fdf;}
-.character.ru .character_line ul li.on a{color: #202cf5;}
-.character.rose .character_line ul li.on a{color: #000;}
-.character.ain .character_line ul li.on a{color: #19d2a8;}
-.character_line ul li:first-child a{color: #fff;}
-.character_line ul li a span{display: block;}
-
-/* 전직트리 공통 */
-.character_line .line4{width: 584px;margin: 0 auto;}
-.character_line .line3{width: 518px;margin: 0 auto;}
-.character_line .line_title{position: relative;width: 100%;padding: 5px 0;text-align: center;border-bottom: 1px solid #e5e5e5;}
-.character_line ul li:before{position: absolute;bottom: -6px;width: 100%;height: 8px;background: url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_character_arrow.png')no-repeat 0 0;content: " ";}
-.character_line ul li.line_title:before,
-.character_line ul li:last-child:before{content: none;}
-
-
-/* elsword 전직트리 */
-.character.elsword .line_title{background-color: #c71c00;border-bottom-color: #e9a499;}
-.character.elsword .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #c71c00;border-right: 12px solid transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
-
-/* aisha 전직트리 */
-.character.aisha .line_title{background-color: #853ec8;border-bottom-color: #ceb2e9;}
-character.aisha .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #853ec8;border-right: 12px solid transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
-
-
-/* rena 전직트리 */
-.character.rena .line_title{background-color: #75ce18;border-bottom-color: #c8eba3;}
-.character.rena .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #75ce18;border-right: 12px solid transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
-
-/* raven 전직트리 */
-.character.raven .line_title{background-color: #282828;border-bottom-color: #a9a9a9;}
-.character.raven .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #282828;border-right: 12px solid transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
-
-/* eve 전직트리 */
-.character.eve .line_title{background-color: #ef97bd;border-bottom-color: #f9d5e5;}
-.character.eve .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #ef97bd;border-right: 12px transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
-
-/* chung 전직트리 */
-.character.chung .line_title{background-color: #00a8e6;border-bottom-color: #99dcf5;}
-.character.chung .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #00a8e6;border-right: 12px transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
-
-
-/* ara 전직트리 */
-.character.ara .line_title{background-color: #fe9f01;border-bottom-color: #ffd999;}
-.character.ara .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #fe9f01;border-right: 12px transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
-
-
-/* elesis 전직트리 */
-.character.elesis .line_title{background-color: #d00040;border-bottom-color: #ec99b3;}
-.character.elesis .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #d00040;border-right: 12px transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
-
-
-/* add 전직트리 */
-.character.add .line_title{background-color: #a79fdf;border-bottom-color: #dcd9f2;}
-.character.add .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #a79fdf;border-right: 12px transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
-
-
-/* ru 전직트리 */
-.character.ru .line_title{background-color: #202cf5;border-bottom-color: #dcd9f2;}
-.character.ru .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #202cf5;border-right: 12px solid transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
-
-
-/* rose 전직트리 */
-.character.rose .line_title{background-color: #fff653;border-bottom-color: #fffbba;}
-.character.rose .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #fff653;border-right: 12px solid transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
-.character.rose .line_title a{color: #000;}
-.character.rose .character_line ul li:first-child a{color: #000;}
-
-/* ain 전직트리 */
-.character.ain .line_title{background-color: #19d2a8;border-bottom-color: #a3eddc;}
-.character.ain .line_title:after{position: absolute;left: 50%;top: 26px;margin-left: -12px;border-top: 12px solid #19d2a8;border-right: 12px solid transparent;border-bottom: 12px solid transparent;border-left: 12px solid transparent;content: " ";}
+/* 시스템 팝업 */
+.cv_system {display:none}

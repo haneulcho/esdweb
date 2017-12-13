@@ -17,9 +17,30 @@ var cssWatchPath = ['./src/css/*.scss', './src/css/**/*.scss'],
 //     jsWatchPath = 'src/js/*.js',
 //     jsInputPath = 'src/js/scripts.js',
 //     jsOutputPath = 'app/assets/js',
-    htmlWatchPath = ['./src/html/*.html', './src/html/guide/character/*.html', './src/html/**/*.html'],
-    htmlInputPath = ['./src/html/*.html', './src/html/guide/character/*.html', './src/html/**/*.html'],
-
+    htmlWatchPath = [
+        './src/html/index.html',
+        './src/html/common/*.html',
+        './src/html/community/*.html',
+        './src/html/event/*.html',
+        './src/html/guide/*/*.html',
+        './src/html/help/*.html',
+        './src/html/notice/*.html',
+        './src/html/pds/*.html',
+        './src/html/ranking/*.html',
+        './src/html/ucc/*.html'
+    ],
+    htmlInputPath = [
+        './src/html/index.html',
+        './src/html/common/*.html',
+        './src/html/community/*.html',
+        './src/html/event/*.html',
+        './src/html/guide/*/*.html',
+        './src/html/help/*.html',
+        './src/html/notice/*.html',
+        './src/html/pds/*.html',
+        './src/html/ranking/*.html',
+        './src/html/ucc/*.html'
+    ],
     htmlOuputPath = './html';
 
 var banner = [
