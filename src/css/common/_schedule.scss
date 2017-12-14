@@ -1,0 +1,33 @@
+#blackbox {position:fixed;top:0;left:0;width:100%;height:100%;min-width:1200px;z-index:1000;display:none;background-color:#000}
+.popup_calendar {position:absolute;top:15%;left:50%;padding:12px;background-color:#fff;z-index:1001;display:none}
+.popup_calendar .calendar_title {width:976px;height:53px;background:url('http://s.nx.com/S2/Game/Elsword/renewal/layout/calendar/title_bg.gif') no-repeat #373737}
+.popup_calendar .calendar_title img {margin:2px;vertical-align:top}
+.popup_calendar .close {position:absolute;top:14px;right:14px;z-index:1}
+.popup_calendar .schedule {position:relative;padding-top:10px}
+.popup_calendar .schedule .period {position:absolute;top:-44px;left:367px;width:243px;height:33px;font-weight:bold;font-size:16px;line-height:33px;color:#fefefe;text-align:center;background-color:#373737}
+.popup_calendar .prev,
+.popup_calendar .next {position:absolute;top:29px;display:block;z-index:1}
+.popup_calendar .prev {left:369px}
+.popup_calendar .next {right:369px}
+.schedule_table {width:974px;border:1px solid #d9d9d9;border-top:4px solid #afafaf}
+.schedule_table table {width:100%}
+.schedule_table th,
+.schedule_table td {text-align:center;font-size:12px}
+.schedule_table th {height:39px;color:#3b3b3b;background:#f4f4f4 url('http://s.nx.com/S2/Game/Elsword/renewal/layout/calendar/td_0.gif') left center no-repeat}
+.schedule_table td {height:32px;border-top:1px solid #d9d9d9;background:url('http://s.nx.com/S2/Game/Elsword/renewal/layout/calendar/td_0.gif') left center repeat-y}
+.schedule_table td.bar {background:url('http://s.nx.com/S2/Game/Elsword/renewal/layout/calendar/td_2.gif') left center no-repeat}
+.schedule_table tr.new td.bar {background:url('http://s.nx.com/S2/Game/Elsword/renewal/layout/calendar/td_1.gif') left center no-repeat}
+.schedule_table tr.new td.e_name {color:#ff4300}
+.schedule_table tr.hot td {padding:10px;line-height:16px;color:#ff4300}
+.schedule_table th.e_kind {width:36px}
+.schedule_table th.e_kind {background:#f4f4f4}
+.schedule_table td.e_kind {background:none}
+.schedule_table th.e_0,
+.schedule_table th.e_1,
+.schedule_table th.e_2,
+.schedule_table th.e_3,
+.schedule_table th.e_4,
+.schedule_table th.e_5,
+.schedule_table th.e_6 {width:102px}
+.schedule_table th.e_5 {color:#007fe0}
+.schedule_table th.e_6 {color:#ea0505}
