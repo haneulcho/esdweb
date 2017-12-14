@@ -30,12 +30,13 @@
 
 /* 전직 라인 테이블 */
 .cv_cont .cv_line {position:relative;float:right;margin:0 43px 0 0}
-.cv_cont .cv_line.line4 {margin:0 43px 0 0}
+.cv_cont .cv_line.line4 {margin:0}
 .cv_cont .cv_line:before {position:absolute;top:92px;left:50%;display:block;width:353px;height:26px;margin-left:-176px;content:'';background-repeat:no-repeat;background-position:0 0;background-image:url('../img/common/bg_character_line3.png')}
 .cv_cont .cv_line.line4:before {width:445px;height:23px;margin-left:-223px;background-image:url('../img/common/bg_character_line4.png')}
 
 .cv_cont .cv_line .cvl_name {display:block;width:144px;margin:41px auto 34px;padding:15px 0;text-align:center;font-size:14px;color:#fff}
 .cv_cont .cv_line .cvl_list {float:left;width:143px;margin:0 0 0 27px;padding:1px;border:1px solid #bebebe}
+.cv_cont .cv_line.line4 .cvl_list {margin:0 0 0 5px}
 .cv_cont .cv_line .cvl_list.first {margin-left:0}
 .cv_cont .cv_line .cvl_list li {position:relative}
 .cv_cont .cv_line .cvl_list li.tit {padding:5px 0;text-align:center;color:#fff;background-color:#bebebe;border-bottom:1px solid #e5e5e5}
@@ -118,6 +119,7 @@
 .luciel .cv_cont .cv_line .cvl_name {background-color:#202cf5}
 .rose .cv_cont .cv_title:after,
 .rose .cv_cont .cv_title .system,
+.rose .cv_cont .cv_title .system .gf_btn_system,
 .rose .cv_cont .cv_line .cvl_name {color:#000;background-color:#fff653}
 .ain .cv_cont .cv_title:after,
 .ain .cv_cont .cv_title .system,
