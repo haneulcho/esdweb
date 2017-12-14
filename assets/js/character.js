@@ -1472,6 +1472,7 @@
     }
 
     var prevNum = cArr[0].num;
+    var owl_characterList = $('.owl-carousel.visualList');
     var $cv_cont = $('#cv_cont');
     var $cv_title = $cv_cont.find('.cv_title').children('.tit');
     var $cv_synopsis = $cv_cont.find('.cv_synopsis').children('p');
@@ -1496,6 +1497,9 @@
         }
         $cvl_list.find('.des').removeClass('active');
         $cv_list.children('li').eq(cArr[idx].order).addClass('active');
+      } else {
+        $cvl_list.removeClass('active');
+        $cvl_list.find('.des').removeClass('active');
       }
       
       // 주요 스킬 리스트 html 생성
@@ -1518,22 +1522,40 @@
       prevNum = currentNum;
     }
 
-    // 캐릭터 소개 슬라이더 부르기
-    var owl_characterList = $('.owl-carousel.visualList');
-    owl_characterList.owlCarousel({
-      items: 1,
-      nav: true,
-      dots: false,
-      autoplay: false,
-      dragEndSpeed: 350,
-      smartSpeed: 700,
-      onInitialized: function (event) {
-        changeContents(event.item.index);
-      },
-      onTranslate: function (event) {
-        changeContents(event.item.index);
+    // Owl Carousel 캐릭터 슬라이더 리스트 동적 생성
+    function initContents() {
+      var cv_slider_str = '';
+      var cv_slider_baseUrl = 'http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/introduce/img_c';
+
+      // 캐릭터 슬라이더 리스트 html 생성
+      for (var i = 0; i < cArr.length; i++) {
+        var characterArr = cArr[i];
+        cv_slider_str += '<div class="cv_item">';
+        cv_slider_str += '<img class="cv_img" src="' + cv_slider_baseUrl + characterArr.num + '.png" alt="' + characterArr.title + '">';
+        cv_slider_str += '</div>';
       }
-    });
+
+      // 캐릭터 슬라이더 html 내용 변경
+      owl_characterList.html(cv_slider_str);
+
+      // 캐릭터 소개 슬라이더 부르기
+      owl_characterList.owlCarousel({
+        items: 1,
+        nav: true,
+        dots: false,
+        autoplay: false,
+        dragEndSpeed: 350,
+        smartSpeed: 700,
+        onInitialized: function (event) {
+          changeContents(event.item.index);
+        },
+        onTranslate: function (event) {
+          changeContents(event.item.index);
+        }
+      });
+    }
+
+    initContents();
 
     // 이전, 다음 화살표 클릭 시 이전, 다음 캐릭터 페이지 이동
     var cnt = 0;
@@ -1578,4 +1600,3 @@
 
   });
 })(jQuery, window, document);
-  
