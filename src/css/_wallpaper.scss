@@ -9,8 +9,9 @@
 .wallpaper .board_list .b_author {margin:0 0 12px 0}
 .wallpaper .board_list .b_author .nickname {font-size:16px}
 .wallpaper .board_list .b_thumb {margin:0}
-.wallpaper .board_list .b_thumb:after {position:absolute;display:block;bottom:0;left:0;content:'';width:285px;height:115px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_uccItem.png') no-repeat 0 0}
 .wallpaper .board_list .b_thumb .thumb {width:285px;height:310px}
+.wallpaper .board_list .b_thumb .thumb > a {position:relative}
+.wallpaper .board_list .b_thumb .thumb > a:after {position:absolute;display:block;bottom:0;left:0;content:'';width:285px;height:115px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_uccItem.png') no-repeat 0 0}
 .wallpaper .board_list .b_download {text-align:center}
 .wallpaper .board_list .b_download .btn_download {display:block;height:41px;font-size:16px;font-weight:bold;line-height:41px;color:#414141;background:#ccc;text-decoration:none}
 .wallpaper .board_list .b_download .btn_download:hover,

@@ -62,7 +62,7 @@
 .board_list > li.hot .b_thumb:before,
 .board_list > li.official .b_thumb:before,
 .board_list > li.best .b_thumb:before,
-.board_list.top .b_thumb:before {position:absolute;display:block;top:-3px;left:0;content:'';width:75px;height:72px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -352px -142px}
+.board_list.top .b_thumb:before {position:absolute;display:block;top:-3px;left:0;content:'';width:75px;height:72px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -352px -142px;z-index:1}
 .board_list > li.hot .b_thumb:before {background-position:-352px -142px}
 .board_list > li.official .b_thumb:before {background-position:-352px -219px}
 .board_list > li.best .b_thumb:before,
