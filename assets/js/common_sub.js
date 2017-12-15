@@ -185,9 +185,15 @@
 				animateOut: 'fadeOut'	
 			});
 
+			// 게시판 제목, 검색, 랭킹 등 Nice Select
+			Elsword.inputControl.setNiceSelect($('.ipt_select'));
+			Elsword.inputControl.setNiceSelect($('#writeCategory'));
+
+			// 설문조사 Radio 버튼
+			Elsword.inputControl.setRadio($('#pollView .vote_list'));
+
 			// 레이어 팝업 열기
-			$('body').on('click', '.gf_btn_popup, .gf_btn_system', function (e) {
-				alert('test');
+			$('body').on('click', '.gf_btn_popup', function (e) {
 				e.preventDefault();
 				if (!isModalOpen) {
 					var $this = $(this), target;
