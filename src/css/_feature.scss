@@ -1,125 +1,127 @@
-#gameinfo { width:100%; background-color:#000000; }
-#gameinfo .wrapper { overflow:hidden; position:relative; max-width:1920px; min-width:1200px; min-height:880px; margin:0 auto; }
-#gameinfo .wrapper .loader { z-index:8; position:absolute; left:0; top:0; width:100%; height:100%; min-height:880px; background-color:#000000; }
-#gameinfo .wrapper .navigation { z-index:6; position:absolute; left:0; top:94px; width:100%; text-align:center; }
-#gameinfo .wrapper .navigation ul { display:inline-block; }
-#gameinfo .wrapper .navigation ul li { position:relative; float:left; }
-#gameinfo .wrapper .navigation ul li .arrow { z-index:8; position:absolute; left:0; top:-64px; display:block; width:100%; height:34px; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/ico_arr.png") center top no-repeat; opacity:0; filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0); }
-#gameinfo .wrapper .navigation ul li a { overflow:hidden; display:block; height:64px; }
-#gameinfo .wrapper .navigation ul li a .l { display:inline-block; float:left; width:40px; height:64px; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/btn_nav_off_l.png") left 2px no-repeat; }
-#gameinfo .wrapper .navigation ul li a .c { display:inline-block; float:left; width:160px; height:22px; padding:22px 0 20px 0; text-align:center; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/btn_nav_off_c.png") left 2px repeat-x; }
-#gameinfo .wrapper .navigation ul li a .r { display:inline-block; float:left; width:40px; height:64px; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/btn_nav_off_r.png") left 2px no-repeat; }
-#gameinfo .wrapper .navigation ul li.on a .l { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/btn_nav_on_l.png") left top no-repeat; }
-#gameinfo .wrapper .navigation ul li.on a .c { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/btn_nav_on_c.png") left top repeat-x; }
-#gameinfo .wrapper .navigation ul li.on a .r { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/btn_nav_on_r.png") left top no-repeat; }
-#gameinfo .wrapper .navigation ul li a .c dl { display:inline-block; height:22px; }
-#gameinfo .wrapper .navigation ul li a .c dl dt { display:inline-block; height:22px; font-size:0; vertical-align:top; }
-#gameinfo .wrapper .navigation ul li a .c dl dd { display:block; font-size:0; vertical-align:top; opacity:0; filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0); }
-#gameinfo .wrapper .navigation ul li._01 a .c dl dt { width:82px; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/txt_nav_01_off.png") left top no-repeat; }
-#gameinfo .wrapper .navigation ul li._02 a .c dl dt { width:64px; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/txt_nav_02_off.png") left top no-repeat; }
-#gameinfo .wrapper .navigation ul li._03 a .c dl dt { width:42px; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/txt_nav_03_off.png") left top no-repeat; }
-#gameinfo .wrapper .navigation ul li._04 a .c dl dt { width:84px; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/txt_nav_04_off.png") left top no-repeat; }
-#gameinfo .wrapper .navigation ul li._01.on a .c dl dt { margin:0 8px 0 0; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/txt_nav_01_on.png") left top no-repeat; }
-#gameinfo .wrapper .navigation ul li._02.on a .c dl dt { margin:0 8px 0 0; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/txt_nav_02_on.png") left top no-repeat; }
-#gameinfo .wrapper .navigation ul li._03.on a .c dl dt { margin:0 8px 0 0; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/txt_nav_03_on.png") left top no-repeat; }
-#gameinfo .wrapper .navigation ul li._04.on a .c dl dt { margin:0 8px 0 0; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/txt_nav_04_on.png") left top no-repeat; }
-#gameinfo .wrapper .navigation ul li.on a .c dl dd { display:inline-block; width:14px; height:22px; margin:16px 2px 0 2px; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/icon_nav_off.png") left 50% no-repeat; }
-#gameinfo .wrapper .navigation ul li.on a .c dl dd.on { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/icon_nav_on.png") left 50% no-repeat; }
+.feature_view {overflow:hidden;max-height:1243px;padding:127px 0 0 0}
 
-#gameinfo .wrapper .paging { z-index:6; position:absolute; left:0; top:400px; width:100%; }
-#gameinfo .wrapper .paging .inner { position:relative; }
-#gameinfo .wrapper .paging .inner a { z-index:10; position:absolute; top:0; padding:16px; font-weight:bold; font-size:20px; text-align:center; background-color:#ffffff; }
-#gameinfo .wrapper .paging .inner .prev { left:40px; }
-#gameinfo .wrapper .paging .inner .next { right:40px; }
+#gameinfo {width:100%;background-color:#081426}
+#gameinfo .wrapper {overflow:hidden;position:relative;max-width:2560px;min-width:1200px;min-height:880px;margin:0 auto}
+#gameinfo .wrapper .loader {z-index:8;position:absolute;left:0;top:0;width:100%;height:100%;min-height:880px;background-color:#000000}
+#gameinfo .wrapper .navigation {z-index:6;position:absolute;left:0;top:135px;width:100%;text-align:center}
+#gameinfo .wrapper .navigation ul {display:inline-block}
+#gameinfo .wrapper .navigation ul li {position:relative;float:left}
+#gameinfo .wrapper .navigation ul li .arrow {z-index:8;position:absolute;left:0;top:-64px;display:block;width:100%;height:34px;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/ico_arr.png') center top no-repeat;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0)}
+#gameinfo .wrapper .navigation ul li a {overflow:hidden;display:block;height:64px}
+#gameinfo .wrapper .navigation ul li a .l {display:inline-block;float:left;width:40px;height:64px;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/btn_nav_off_l.png') left 2px no-repeat}
+#gameinfo .wrapper .navigation ul li a .c {display:inline-block;float:left;width:160px;height:62px;padding:22px 0 20px 0;text-align:center;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/btn_nav_off_c.png') left 2px repeat-x}
+#gameinfo .wrapper .navigation ul li a .r {display:inline-block;float:left;width:40px;height:64px;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/btn_nav_off_r.png') left 2px no-repeat}
+#gameinfo .wrapper .navigation ul li.on a .l {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/btn_nav_on_l.png') left top no-repeat}
+#gameinfo .wrapper .navigation ul li.on a .c {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/btn_nav_on_c.png') left top repeat-x}
+#gameinfo .wrapper .navigation ul li.on a .r {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/btn_nav_on_r.png') left top no-repeat}
+#gameinfo .wrapper .navigation ul li a .c dl {display:inline-block;height:22px}
+#gameinfo .wrapper .navigation ul li a .c dl dt {display:inline-block;height:22px;font-size:0;vertical-align:top}
+#gameinfo .wrapper .navigation ul li a .c dl dd {display:block;font-size:0;vertical-align:top;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0)}
+#gameinfo .wrapper .navigation ul li._01 a .c dl dt {width:82px;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/txt_nav_01_off.png') left top no-repeat}
+#gameinfo .wrapper .navigation ul li._02 a .c dl dt {width:64px;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/txt_nav_02_off.png') left top no-repeat}
+#gameinfo .wrapper .navigation ul li._03 a .c dl dt {width:42px;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/txt_nav_03_off.png') left top no-repeat}
+#gameinfo .wrapper .navigation ul li._04 a .c dl dt {width:84px;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/txt_nav_04_off.png') left top no-repeat}
+#gameinfo .wrapper .navigation ul li._01.on a .c dl dt {margin:0 8px 0 0;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/txt_nav_01_on.png') left top no-repeat}
+#gameinfo .wrapper .navigation ul li._02.on a .c dl dt {margin:0 8px 0 0;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/txt_nav_02_on.png') left top no-repeat}
+#gameinfo .wrapper .navigation ul li._03.on a .c dl dt {margin:0 8px 0 0;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/txt_nav_03_on.png') left top no-repeat}
+#gameinfo .wrapper .navigation ul li._04.on a .c dl dt {margin:0 8px 0 0;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/txt_nav_04_on.png') left top no-repeat}
+#gameinfo .wrapper .navigation ul li.on a .c dl dd {display:inline-block;width:14px;height:22px;margin:16px 2px 0 2px;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/icon_nav_off.png') left 50% no-repeat}
+#gameinfo .wrapper .navigation ul li.on a .c dl dd.on {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/icon_nav_on.png') left 50% no-repeat}
 
-#gameinfo .wrapper .content { z-index:4; position:absolute; left:0; top:0; overflow:hidden; display:none; width:100%; min-height:880px; }
-#gameinfo .wrapper .content .inner { position:relative; width:1000px; margin:0 auto; height:1280px; }
-#gameinfo .wrapper .content .inner .texture { z-index:2; position:absolute; left:-460px; top:0; width:1920px; height:1280px; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/bg_texture_content.png") left top repeat; }
-#gameinfo .wrapper .content .inner .l { z-index:1; position:absolute; left:-460px; top:0; width:460px; height:1280px; }
-#gameinfo .wrapper .content .inner .c { z-index:1; position:absolute; left:0; top:0; width:1000px; height:1280px; }
-#gameinfo .wrapper .content .inner .r { z-index:1; position:absolute; right:-460px; top:0; width:460px; height:1280px; }
+#gameinfo .wrapper .paging {z-index:6;position:absolute;left:0;top:400px;width:100%}
+#gameinfo .wrapper .paging .inner {position:relative}
+#gameinfo .wrapper .paging .inner a {z-index:10;position:absolute;top:0;padding:16px;font-weight:bold;font-size:20px;text-align:center;background-color:#ffffff}
+#gameinfo .wrapper .paging .inner .prev {left:40px}
+#gameinfo .wrapper .paging .inner .next {right:40px}
 
-#gameinfo .wrapper .feature .inner .text { z-index:4; position:absolute; left:0; top:220px; display:none; width:100%; }
-#gameinfo .wrapper .feature .inner .text dt { display:block; text-align:center; }
-#gameinfo .wrapper .feature .inner .text dt img { margin-top:40px; opacity:0; filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0); }
-#gameinfo .wrapper .feature .inner .text dd { display:block; padding:8px 0 0 0; text-align:center; }
-#gameinfo .wrapper .feature .inner .text dd img { margin-top:40px; opacity:0; filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0); }
-#gameinfo .wrapper .feature .inner .video { z-index:1; position:absolute; left:-460px; top:0; width:1920px; height:1280px; }
-#gameinfo .wrapper .feature .inner .video .texture { left:0; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/bg_texture_video.png") left top repeat; }
+#gameinfo .wrapper .content {z-index:4;position:absolute;left:0;top:0;overflow:hidden;display:none;width:100%;min-height:880px}
+#gameinfo .wrapper .content .inner {position:relative;width:1000px;margin:0 auto;height:1120px}
+#gameinfo .wrapper .content .inner .texture {z-index:2;position:absolute;left:50%;top:0;width:2560px;height:1440px;margin-left:-1280px;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/bg_texture_content.png') left top repeat}
+#gameinfo .wrapper .content .inner .l {z-index:1;position:absolute;left:-460px;top:0;width:460px;height:1115px}
+#gameinfo .wrapper .content .inner .c {z-index:1;position:absolute;left:0;top:0;width:1000px;height:1115px}
+#gameinfo .wrapper .content .inner .r {z-index:1;position:absolute;right:-460px;top:0;width:460px;height:1115px}
 
-#gameinfo .wrapper .worldview .story { z-index:4; position:absolute; left:0; top:0; display:none; width:100%; height:1280px; }
-#gameinfo .wrapper .worldview .story._01 { z-index:8; display:block; }
-#gameinfo .wrapper .worldview .story._01 .inner .l { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_01_l.png") left top repeat; }
-#gameinfo .wrapper .worldview .story._01 .inner .c { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_01_c.png") left top repeat; }
-#gameinfo .wrapper .worldview .story._01 .inner .r { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_01_r.png") left top repeat; }
-#gameinfo .wrapper .worldview .story._02 .inner .l { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_02_l.png") left top repeat; }
-#gameinfo .wrapper .worldview .story._02 .inner .c { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_02_c.png") left top repeat; }
-#gameinfo .wrapper .worldview .story._02 .inner .r { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_02_r.png") left top repeat; }
-#gameinfo .wrapper .worldview .story._03 .inner .l { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_03_l.png") left top repeat; }
-#gameinfo .wrapper .worldview .story._03 .inner .c { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_03_c.png") left top repeat; }
-#gameinfo .wrapper .worldview .story._03 .inner .r { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_03_r.png") left top repeat; }
-#gameinfo .wrapper .worldview .story._04 .inner .l { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_04_l.png") left top repeat; }
-#gameinfo .wrapper .worldview .story._04 .inner .c { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_04_c.png") left top repeat; }
-#gameinfo .wrapper .worldview .story._04 .inner .r { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_04_r.png") left top repeat; }
-#gameinfo .wrapper .worldview .story._05 .inner .l { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_05_l.png") left top repeat; }
-#gameinfo .wrapper .worldview .story._05 .inner .c { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_05_c.png") left top repeat; }
-#gameinfo .wrapper .worldview .story._05 .inner .r { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_05_r.png") left top repeat; }
-#gameinfo .wrapper .worldview .story._06 .inner .l { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_06_l.png") left top repeat; }
-#gameinfo .wrapper .worldview .story._06 .inner .c { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_06_c.png") left top repeat; }
-#gameinfo .wrapper .worldview .story._06 .inner .r { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_06_r.png") left top repeat; }
-#gameinfo .wrapper .worldview .story .inner .text { z-index:10; position:absolute; left:0; top:220px; display:none; width:100%; }
-#gameinfo .wrapper .worldview .story .inner .text dt { display:block; text-align:center; }
-#gameinfo .wrapper .worldview .story .inner .text dt img { margin-top:40px; opacity:0; filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0); }
-#gameinfo .wrapper .worldview .story .inner .text dd { display:block; padding:8px 0 0 0; text-align:center; }
-#gameinfo .wrapper .worldview .story .inner .text dd img { margin-top:40px; opacity:0; filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0); }
-#gameinfo .wrapper .worldview .story .inner .elios { z-index:4; position:absolute; left:50%; top:380px; display:none; width:1000px; height:816px; margin:0 0 0 -500px; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_elios.png") left top repeat; }
-#gameinfo .wrapper .worldview .story .inner .elios .flash { z-index:6; position:absolute; display:inline-block; opacity:0; filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0); }
-#gameinfo .wrapper .worldview .story .inner .elios .flash._01 { width:154px; height:154px; left:380px; top:240px; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_flash_01.png") left top no-repeat; }
-#gameinfo .wrapper .worldview .story .inner .elios .flash._02 { width:154px; height:154px; left:490px; top:260px; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_flash_01.png") left top no-repeat; }
-#gameinfo .wrapper .worldview .story .inner .elios .flash._03 { width:60px; height:72px; left:480px; top:320px; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_flash_02.png") left top no-repeat; }
-#gameinfo .wrapper .worldview .story .inner .elios .flash._04 { width:60px; height:72px; left:430px; top:560px; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_flash_02.png") left top no-repeat; }
-#gameinfo .wrapper .worldview .story .inner .moon { z-index:9; position:absolute; left:-460px; top:-80px; width:1920px; height:766px; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_moon.png") left top repeat; opacity:0; filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0); }
-#gameinfo .wrapper .worldview .story .inner .layer { z-index:9; position:absolute; left:-460px; top:0; }
-#gameinfo .wrapper .worldview .story .inner .canvas { z-index:1; position:absolute; left:-460px; top:0; display:none; width:1920px; height:1280px; }
-#gameinfo .wrapper .worldview .story .inner .canvas canvas {  width:1920px !important; height:1280px !important; }
-#rainbowCanvas { opacity:0.4; filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40); }
-#fireCanvas { opacity:0.4; filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40); }
-#smokeCanvas { opacity:0.2; filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=20); }
-#fountain { opacity:0.1; filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=10); }
-#meteor { opacity:0.6; filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=60); }
-#starCanvas { opacity:0.4; filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40); }
+#gameinfo .wrapper .feature .inner .text {z-index:4;position:absolute;left:0;top:255px;display:none;width:100%}
+#gameinfo .wrapper .feature .inner .text dt {display:block;text-align:center}
+#gameinfo .wrapper .feature .inner .text dt img {margin-top:40px;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0)}
+#gameinfo .wrapper .feature .inner .text dd {display:block;padding:8px 0 0 0;text-align:center}
+#gameinfo .wrapper .feature .inner .text dd img {margin-top:40px;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0)}
+#gameinfo .wrapper .feature .inner .video {z-index:1;position:absolute;left:50%;top:0;width:2560px;height:1440px;margin-left:-1280px}
+#gameinfo .wrapper .feature .inner .video .texture {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/bg_texture_video.png') left top repeat}
 
-#gameinfo .wrapper .continent .inner .l { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_continent_l.png") left top repeat; }
-#gameinfo .wrapper .continent .inner .c { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_continent_c.png") left top repeat; }
-#gameinfo .wrapper .continent .inner .r { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_continent_r.png") left top repeat; }
-#gameinfo .wrapper .continent .inner .background { z-index:4; position:absolute; left:-80px; top:160px; display:none; width:1160px; height:734px; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/bg_continent.png") left top repeat; }
-#gameinfo .wrapper .continent .inner .text { z-index:4; position:absolute; left:0; top:160px; display:none; width:100%; }
-#gameinfo .wrapper .continent .inner .text dt { display:block; }
-#gameinfo .wrapper .continent .inner .text._01 dt { z-index:2; position:absolute; left:-79px; top:0; }
-#gameinfo .wrapper .continent .inner .text._02 dt { z-index:2; position:absolute; right:-80px; top:9px; }
-#gameinfo .wrapper .continent .inner .text dt img { opacity:0; filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0); }
-#gameinfo .wrapper .continent .inner .text._01 dd { display:block; }
-#gameinfo .wrapper .continent .inner .text._01 dd._01 { z-index:2; position:absolute; right:0; top:0; text-align:right; }
-#gameinfo .wrapper .continent .inner .text._01 dd._02 { z-index:2; position:absolute; right:0; top:80px; text-align:right; }
-#gameinfo .wrapper .continent .inner .text._02 dd._01 { z-index:2; position:absolute; left:0; top:0; }
-#gameinfo .wrapper .continent .inner .text._02 dd._02 { z-index:2; position:absolute; left:0; top:80px; }
-#gameinfo .wrapper .continent .inner .text dd img { opacity:0; filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0); }
-#gameinfo .wrapper .continent .inner .compass { z-index:6; position:absolute; left:50%; top:440px; margin:0 0 0 -92px; }
+#gameinfo .wrapper .worldview .story {z-index:4;position:absolute;left:0;top:0;display:none;width:100%;height:1115px}
+#gameinfo .wrapper .worldview .story._01 {z-index:8;display:block}
+#gameinfo .wrapper .worldview .story._01 .inner .l {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_01_l.png') left top repeat}
+#gameinfo .wrapper .worldview .story._01 .inner .c {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_01_c.png') left top repeat}
+#gameinfo .wrapper .worldview .story._01 .inner .r {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_01_r.png') left top repeat}
+#gameinfo .wrapper .worldview .story._02 .inner .l {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_02_l.png') left top repeat}
+#gameinfo .wrapper .worldview .story._02 .inner .c {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_02_c.png') left top repeat}
+#gameinfo .wrapper .worldview .story._02 .inner .r {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_02_r.png') left top repeat}
+#gameinfo .wrapper .worldview .story._03 .inner .l {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_03_l.png') left top repeat}
+#gameinfo .wrapper .worldview .story._03 .inner .c {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_03_c.png') left top repeat}
+#gameinfo .wrapper .worldview .story._03 .inner .r {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_03_r.png') left top repeat}
+#gameinfo .wrapper .worldview .story._04 .inner .l {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_04_l.png') left top repeat}
+#gameinfo .wrapper .worldview .story._04 .inner .c {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_04_c.png') left top repeat}
+#gameinfo .wrapper .worldview .story._04 .inner .r {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_04_r.png') left top repeat}
+#gameinfo .wrapper .worldview .story._05 .inner .l {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_05_l.png') left top repeat}
+#gameinfo .wrapper .worldview .story._05 .inner .c {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_05_c.png') left top repeat}
+#gameinfo .wrapper .worldview .story._05 .inner .r {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_05_r.png') left top repeat}
+#gameinfo .wrapper .worldview .story._06 .inner .l {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_06_l.png') left top repeat}
+#gameinfo .wrapper .worldview .story._06 .inner .c {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_06_c.png') left top repeat}
+#gameinfo .wrapper .worldview .story._06 .inner .r {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_worldview_06_r.png') left top repeat}
+#gameinfo .wrapper .worldview .story .inner .text {z-index:10;position:absolute;left:0;top:250px;display:none;width:100%}
+#gameinfo .wrapper .worldview .story .inner .text dt {display:block;text-align:center}
+#gameinfo .wrapper .worldview .story .inner .text dt img {margin-top:40px;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0)}
+#gameinfo .wrapper .worldview .story .inner .text dd {display:block;padding:8px 0 0 0;text-align:center}
+#gameinfo .wrapper .worldview .story .inner .text dd img {margin-top:40px;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0)}
+#gameinfo .wrapper .worldview .story .inner .elios {z-index:4;position:absolute;left:50%;top:410px;display:none;width:1000px;height:816px;margin:0 0 0 -500px;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_elios.png') left top repeat}
+#gameinfo .wrapper .worldview .story .inner .elios .flash {z-index:6;position:absolute;display:inline-block;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0)}
+#gameinfo .wrapper .worldview .story .inner .elios .flash._01 {width:154px;height:154px;left:380px;top:240px;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_flash_01.png') left top no-repeat}
+#gameinfo .wrapper .worldview .story .inner .elios .flash._02 {width:154px;height:154px;left:490px;top:260px;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_flash_01.png') left top no-repeat}
+#gameinfo .wrapper .worldview .story .inner .elios .flash._03 {width:60px;height:72px;left:480px;top:320px;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_flash_02.png') left top no-repeat}
+#gameinfo .wrapper .worldview .story .inner .elios .flash._04 {width:60px;height:72px;left:430px;top:560px;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_flash_02.png') left top no-repeat}
+#gameinfo .wrapper .worldview .story .inner .moon {z-index:9;position:absolute;left:-460px;top:-80px;width:1920px;height:766px;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_moon.png') left top repeat;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0)}
+#gameinfo .wrapper .worldview .story .inner .layer {z-index:9;position:absolute;left:-460px;top:0}
+#gameinfo .wrapper .worldview .story .inner .canvas {z-index:1;position:absolute;left:-460px;top:0;display:none;width:1920px;height:1115px}
+#gameinfo .wrapper .worldview .story .inner .canvas canvas { width:1920px !important;height:1115px !important}
+#rainbowCanvas {opacity:0.4;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40)}
+#fireCanvas {opacity:0.4;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40)}
+#smokeCanvas {opacity:0.2;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=20)}
+#fountain {opacity:0.1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=10)}
+#meteor {opacity:0.6;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=60)}
+#starCanvas {opacity:0.4;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40)}
 
-#gameinfo .wrapper .prolog .inner .l { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_prolog_l.png") left -165px repeat; }
-#gameinfo .wrapper .prolog .inner .c { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_prolog_c.png") left -165px repeat; }
-#gameinfo .wrapper .prolog .inner .r { background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_prolog_r.png") left -165px repeat; }
-#gameinfo .wrapper .prolog .inner .text { z-index:4; position:absolute; left:0; top:220px; display:none; width:100%; }
-#gameinfo .wrapper .prolog .inner .text dt { display:block; text-align:center; }
-#gameinfo .wrapper .prolog .inner .text dt img { margin-top:40px; opacity:0; filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0); }
-#gameinfo .wrapper .prolog .inner .text dd { display:block; text-align:center; }
-#gameinfo .wrapper .prolog .inner .text dd a { position:relative; display:inline-block; width:752px; }
-#gameinfo .wrapper .prolog .inner .text dd a img { margin-top:40px; opacity:0; filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0); }
-#gameinfo .wrapper .prolog .inner .text dd a .flash { z-index:8; position:absolute; display:inline-block; opacity:0; filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0); }
-#gameinfo .wrapper .prolog .inner .text dd a .flash._01 { left:-100px; top:16px; width:404px; height:48px; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_flash_03.png") left top repeat; }
-#gameinfo .wrapper .prolog .inner .text dd a .flash._02 { left:-100px; top:16px; width:404px; height:48px; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_flash_03.png") left top repeat; }
-#gameinfo .wrapper .prolog .inner .text dd a .flash._03 { right:-100px; top:144px; width:404px; height:48px; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_flash_03.png") left top repeat; }
-#gameinfo .wrapper .prolog .inner .text dd a .flash._04 { right:-100px; top:144px; width:404px; height:48px; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_flash_03.png") left top repeat; }
-#gameinfo .wrapper .prolog .inner .text dd a .flash._05 { left:90px; top:90px; width:404px; height:36px; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_flash_04.png") left top repeat; }
-#gameinfo .wrapper .prolog .inner .text dd a .flash._06 { right:20px; top:90px; width:404px; height:36px; background:url("http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_flash_04.png") left top repeat; }
-#gameinfo .wrapper .prolog #footer { z-index:8; position:absolute; left:0; bottom:0; background-color:#ffffff; }
+#gameinfo .wrapper .continent .inner .l {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_continent_l.png') left top repeat}
+#gameinfo .wrapper .continent .inner .c {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_continent_c.png') left top repeat}
+#gameinfo .wrapper .continent .inner .r {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_continent_r.png') left top repeat}
+#gameinfo .wrapper .continent .inner .background {z-index:4;position:absolute;left:-80px;top:160px;display:none;width:1160px;height:734px;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/bg_continent.png') left top repeat}
+#gameinfo .wrapper .continent .inner .text {z-index:4;position:absolute;left:0;top:160px;display:none;width:100%}
+#gameinfo .wrapper .continent .inner .text dt {display:block}
+#gameinfo .wrapper .continent .inner .text._01 dt {z-index:2;position:absolute;left:-79px;top:0}
+#gameinfo .wrapper .continent .inner .text._02 dt {z-index:2;position:absolute;right:-80px;top:9px}
+#gameinfo .wrapper .continent .inner .text dt img {opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0)}
+#gameinfo .wrapper .continent .inner .text._01 dd {display:block}
+#gameinfo .wrapper .continent .inner .text._01 dd._01 {z-index:2;position:absolute;right:0;top:35px;text-align:right}
+#gameinfo .wrapper .continent .inner .text._01 dd._02 {z-index:2;position:absolute;right:0;top:110px;text-align:right}
+#gameinfo .wrapper .continent .inner .text._02 dd._01 {z-index:2;position:absolute;left:0;top:35px}
+#gameinfo .wrapper .continent .inner .text._02 dd._02 {z-index:2;position:absolute;left:0;top:110px}
+#gameinfo .wrapper .continent .inner .text dd img {opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0)}
+#gameinfo .wrapper .continent .inner .compass {z-index:6;position:absolute;left:50%;top:440px;margin:0 0 0 -92px}
+
+#gameinfo .wrapper .prolog .inner .l {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_prolog_l.png') left -165px repeat}
+#gameinfo .wrapper .prolog .inner .c {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_prolog_c.png') left -165px repeat}
+#gameinfo .wrapper .prolog .inner .r {background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_prolog_r.png') left -165px repeat}
+#gameinfo .wrapper .prolog .inner .text {z-index:4;position:absolute;left:0;top:255px;display:none;width:100%}
+#gameinfo .wrapper .prolog .inner .text dt {display:block;text-align:center}
+#gameinfo .wrapper .prolog .inner .text dt img {margin-top:40px;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0)}
+#gameinfo .wrapper .prolog .inner .text dd {display:block;text-align:center}
+#gameinfo .wrapper .prolog .inner .text dd a {position:relative;display:inline-block;width:752px}
+#gameinfo .wrapper .prolog .inner .text dd a img {margin-top:40px;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0)}
+#gameinfo .wrapper .prolog .inner .text dd a .flash {z-index:8;position:absolute;display:inline-block;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0)}
+#gameinfo .wrapper .prolog .inner .text dd a .flash._01 {left:-100px;top:16px;width:404px;height:48px;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_flash_03.png') left top repeat}
+#gameinfo .wrapper .prolog .inner .text dd a .flash._02 {left:-100px;top:16px;width:404px;height:48px;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_flash_03.png') left top repeat}
+#gameinfo .wrapper .prolog .inner .text dd a .flash._03 {right:-100px;top:144px;width:404px;height:48px;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_flash_03.png') left top repeat}
+#gameinfo .wrapper .prolog .inner .text dd a .flash._04 {right:-100px;top:144px;width:404px;height:48px;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_flash_03.png') left top repeat}
+#gameinfo .wrapper .prolog .inner .text dd a .flash._05 {left:90px;top:90px;width:404px;height:36px;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_flash_04.png') left top repeat}
+#gameinfo .wrapper .prolog .inner .text dd a .flash._06 {right:20px;top:90px;width:404px;height:36px;background:url('http://s.nx.com/S2/Game/Elsword/2016/gameinfo/img_flash_04.png') left top repeat}
+#gameinfo .wrapper .prolog #footer {z-index:8;position:absolute;left:0;bottom:0;background-color:#ffffff}

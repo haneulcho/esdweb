@@ -39,17 +39,16 @@
 }
 @@@if (context.feature) {
 <!-- 엘소드 소개 페이지 전용 -->
-<link rel="stylesheet" type="text/css" href="http://js.nx.com/s3/elsword/renewal/gameinfo.css" media="all" />
 <script type="text/javascript" src="http://js.nx.com/s1/elsword/OBT/gameinfo.js"></script>
-<!-- //엘소드 소개 페이지 전용 -->
 <script>
-    function EventSendClickLog(clickName) {
-        $h.a2s.sendClickLog(clickName, '{"selID":"99","selName":"featureGamestart"}');
+	function EventSendClickLog(clickName) {
+		$h.a2s.sendClickLog(clickName, '{"selID":"99","selName":"featureGamestart"}');
         try {
-            ga('send', 'event', '게임시작', '버튼클릭', '인트로페이지 하단');
+			ga('send', 'event', '게임시작', '버튼클릭', '인트로페이지 하단');
         } catch (e) { }
     }
 </script>
+<!-- //엘소드 소개 페이지 전용 -->
 }
 </head>
 <body>

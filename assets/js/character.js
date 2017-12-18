@@ -42,7 +42,7 @@
 						}
 					});
 
-					if ($('#contents').hasClass('character')) {
+					if ($('#contents').hasClass('character') || $('#contents').hasClass('feature')) {
 						$gnbWrapper.addClass('white');
 					}
 				}
