@@ -90,7 +90,9 @@
 				closeLayer: function (target) {
 					if (isModalOpen && $(target).length) {
 						$(target + ', .modal_bg').fadeOut(200, function () {
-							$(this).remove();
+							if ($(target).attr('id') == 'pop_ytb') {
+								$(this).remove();
+							}
 							isModalOpen = false;
 						});
 					}
@@ -158,7 +160,7 @@
 					'title': '나이트 엠퍼러',
 					'synopsis': '누나의 그림자에서 벗어나, 모두의 기대를 안고 자신의 목표를 향해가는 엘리오스의 검. 시련을 딛고 성장해 어떤 위기에서도 꺾이지 않는 투지로 적을 쓰러뜨리는 전직.<br><br>누나에게 닿기 위해 밟게 된 왕국 기사의 길, 그 최강의 반열에 올라 로드나이트가 된 엘소드. 하지만 다시 만난 누나와의 압도적인 힘의 차이를 느끼고 주눅들게 된다.<br><br>그렇게 이어진 모험의 끝에 모두를 위한 희생을 택하지만, 자신을 위해 몸 사리지 않고 손을 뻗어준 동료들.<br>그들의 소중함을 깨닫고, 그들이 믿는 자신을 믿기로 한다.<br><br>이제는 누나를 쫓는 그림자가 아니라, 스스로 찾은 미래로 모두와 함께 나아가기 위해.<br>‘우리는 지지 않아, 몇 번이고 일어서겠어!’<br>그의 손에서, 이 세계의 새로운 역사가 시작될 것이다.',
 					'skill': [
-						{ 'name': '스킬명 주절주절1', 'ytb_src': 'BbwFOdyOwyA' },
+						{ 'name': '앱솔루트 저지먼트', 'ytb_src': 'QO7j5Vd1XrA' },
 						{ 'name': '스킬명 주절주절2', 'ytb_src': 'BbwFOdyOwyA' },
 						{ 'name': '스킬명 주절주절3', 'ytb_src': 'BbwFOdyOwyA' },
 						{ 'name': '스킬명 주절주절4', 'ytb_src': 'BbwFOdyOwyA' }
@@ -238,7 +240,7 @@
 					'title': '아이샤',
 					'synopsis': '15세, 여자, 지팡이<br>어린 나이에  맞지 않는 강렬한 마력의 소유자. 마력이 깃든 지팡이를 사용하여<br>강력한 마법을 구사한다.<br>세상 물정에 대해 잘 모르지만 그것이 자신의 귀여운 매력이라 자신하고 있다.<br>엘소드와는 겉으로 앙숙처럼 보이지만 실제로는 누나로써의 모습을 보일 뿐이라고 생각한다.<br><br>어린 나이에 대마법사의 칭호를 받을 정도로 강한 마력을 지니고 있던 아이샤.<br>현자인 할아버지와 함께 유랑생활을 하던 중 고대 마법 물품 발굴현장에서<br>반지의 저주에 걸리게 된다.<br>반지에 대부분의 마력을 빼앗긴 아이샤는 자신의 힘을 다시 되찾기 위하여<br>사라진 기운의 자취를 따라 긴 여정을 시작한다.',
 					'skill': [
-						{ 'name': '스킬명 주절주절1', 'ytb_src': 'BbwFOdyOwyA' },
+						{ 'name': '스킬명 주절주절1', 'ytb_src': 'fPPFo4pXdEo' },
 						{ 'name': '스킬명 주절주절2', 'ytb_src': 'BbwFOdyOwyA' },
 						{ 'name': '스킬명 주절주절3', 'ytb_src': 'BbwFOdyOwyA' },
 						{ 'name': '스킬명 주절주절4', 'ytb_src': 'BbwFOdyOwyA' }
@@ -351,7 +353,7 @@
 					'title': '레나',
 					'synopsis': '나이미상, 여자, 활<br>활과 다리를 이용한 체술을 구사하는 전천후 전략을 가진다.<br>공중에서 한번 더 점프를 할 수 있어 높은 곳에 오르거나 전략적인 움직임이 가능하다.<br>언제나 침착한 행동으로 동료들이 위기에 빠질 때마다 결단력을 발휘해 올바른 길로 인도하는<br>성격의 소유자. 엘프족 특유의 성숙함과 아름다움을 겸비하고 있다.<br><br>어느 날부터 주변 정령의 소리가 들리지 않게 된 것을 느낀 레나.<br>인간과 정령계의 연결이 약해져 가는 것을 알게 된 그녀는<br>사라져가는 엘의 기운을 되돌려야 한다는 것을 깨닫는다. 그리고 어느 날 루벤 마을에 있는<br>엘의 나무에서 엘의 공명을 느껴 달려가게 되는데...',
 					'skill': [
-						{ 'name': '스킬명 주절주절1', 'ytb_src': 'BbwFOdyOwyA' },
+						{ 'name': '스킬명 주절주절1', 'ytb_src': 'faoPUVaIj_U' },
 						{ 'name': '스킬명 주절주절2', 'ytb_src': 'BbwFOdyOwyA' },
 						{ 'name': '스킬명 주절주절3', 'ytb_src': 'BbwFOdyOwyA' },
 						{ 'name': '스킬명 주절주절4', 'ytb_src': 'BbwFOdyOwyA' }
@@ -464,7 +466,7 @@
 					'title': '레이븐',
 					'synopsis': '24세, 남자, 나소드 핸드, 장검<br>몸의 일부가 나소드로 개조되어 있으며 기계 팔을 이용한 강력한 공격과<br>장검을 이용한 빠른 검술을 구사한다.<br>말수가 별로 없고 냉정한 성격이며 인간에 대한 복수심이 크지만<br>내면에는 인간의 따뜻한 마음을 지니고 있다.<br><br>평민의 신분으로 이름난 용병기사단장까지 올라간 레이븐은 귀족들의 시샘으로<br>누명을 쓰고 모든 것을 잃게 된다. 그를 킹 나소드의 사자가 발견하여 킹 나소드에 의해<br>새 생명을 얻게 된 그는 벨더왕국에 대한 배신감으로 복수심에 불타오르게 된다.<br>이후 자신의 복수심이 빚어낸 세계의 혼란에 책임감을 느끼고<br>엘소드 일행에게 힘을 보태기로 한다.',
 					'skill': [
-						{ 'name': '스킬명 주절주절1', 'ytb_src': 'BbwFOdyOwyA' },
+						{ 'name': '스킬명 주절주절1', 'ytb_src': 'B9VKx4bv41I' },
 						{ 'name': '스킬명 주절주절2', 'ytb_src': 'BbwFOdyOwyA' },
 						{ 'name': '스킬명 주절주절3', 'ytb_src': 'BbwFOdyOwyA' },
 						{ 'name': '스킬명 주절주절4', 'ytb_src': 'BbwFOdyOwyA' }
@@ -577,7 +579,7 @@
 					'title': '이브',
 					'synopsis': '나이미상, 여자, 나소드 기어<br>나소드들을 마음대로 부리는 절대적인 나소드의 여왕이며 높은 지능과 자아를 가진 고대 나소드.<br>무표정하고 시니컬한 포커페이스로 스스로 감정이 없다고 하지만 실제로 그렇지 않으며<br>현 문명을 낮게 보는 경향이 있다.<br><br>인간과 나소드가 공존하던 시기에 ‘나소드의 여왕’으로 불리던 상위 나소드인 이브.<br>엘의 힘이 사라졌을 때 동면에 들어갔지만 우연히 스며들어온<br>엘의 기운에 의해 깨어나게 된다.<br>깨어난 후 자신의 에너지로 만든 코어가 엘소드 일행에게 부서진 것을 알고<br>상실감과 실망감을 안고 다시금 엘의 힘을 구하기 위해 엘소드 일행에 합류하게 된다.',
 					'skill': [
-						{ 'name': '스킬명 주절주절1', 'ytb_src': 'BbwFOdyOwyA' },
+						{ 'name': '스킬명 주절주절1', 'ytb_src': 'ZPyqX8S_ljA' },
 						{ 'name': '스킬명 주절주절2', 'ytb_src': 'BbwFOdyOwyA' },
 						{ 'name': '스킬명 주절주절3', 'ytb_src': 'BbwFOdyOwyA' },
 						{ 'name': '스킬명 주절주절4', 'ytb_src': 'BbwFOdyOwyA' }
@@ -690,7 +692,7 @@
 					'title': '청',
 					'synopsis': '13세, 남자, 철포(디스트로이어)<br>세이커 가문의 남자 아이들은 출생 시 가문의 제단에서 특수한 수호석을 받게 된다.<br>청의 수호석에서 생성된 무기는 포구가 양쪽으로 난 거대한 대포인 ‘디스트로이어’이며,<br>방어구는 전신 갑주인 ‘프라이터니어’이다. 곱상한 외모와는 달리 거대한 대포를 자유자재로 다루며<br>상대의 공격을 무시하고 자신의 공격을 넣는 꽤 터프한 전투 스타일을 보여준다. 어머니를 빨리 여의고<br>항상 나라일에 매달려 있는 아버지 밑에서 혼자 자라 또래에 비해 철이 빨리 들었고 매사에 야무지다.<br>얌전한 아이지만 전투 스타일이 아주 터프해서 평상시 모습도 그럴 것이라고 오해 받을 때가 많다.<br>본명은 프린스 세이커. 세나스 공국의 수도인 하멜을 대대로 수호해 온 세이커 가문에서 태어난 그는,<br>하멜을 수호하기 위한 전투교육만을 배우며 자랐다. 그의 아버지는 ‘하멜의 하얀 거신’이라 불리는 영웅이다.<br>마족이 세나스 공국에 침공해 왔을 때, 그의 아버지는 혼신을 다해 마족을 막아 내었으나<br>사악한 주술에 걸려 마족들의 조종을 받게 되어 하멜 참략에 앞장 서게 되었다.<br>그는 아버지와 마족들을 막아보려 했지만 역부족이었다. 결국 싸움 도중 큰 상처를 입고,<br>엘소드 일행의 도움을 받아 간신히 전장에서 탈출할 수 있었다. 부상에서 회복되는 동안<br>세나스 공국의 대부분의 지역이 마족에게 함락되고 하멜 안에서만 마족을 상대하는 것은<br>승산이 없다고 판단한 그는 하멜과 물의 엘 조각을 지키기 위해, 그리고 마족들에게서 아버지를 되찾기 위해<br>하멜의 안전은 붉은 기사단에게 잠시 맡기고, 더 강해지기 위해 엘소드 일행과 함께 여행을 떠난다.<br>그는 더 강해질 때까지 세이커 가문의 이름을 사용하지 않기로 하고, 스스로 ‘청’이라고 칭한다.',
 					'skill': [
-						{ 'name': '스킬명 주절주절1', 'ytb_src': 'BbwFOdyOwyA' },
+						{ 'name': '스킬명 주절주절1', 'ytb_src': 'B5q4GfApPCY' },
 						{ 'name': '스킬명 주절주절2', 'ytb_src': 'BbwFOdyOwyA' },
 						{ 'name': '스킬명 주절주절3', 'ytb_src': 'BbwFOdyOwyA' },
 						{ 'name': '스킬명 주절주절4', 'ytb_src': 'BbwFOdyOwyA' }
@@ -803,7 +805,7 @@
 					'title': '아라',
 					'synopsis': '17세, 여자, 창<br>창의 긴 사거리를 이용한 넓은 범위를 가진 근접 공격.<br>허공을 밟거나 기력을 이용하는 화려한 무술이  특징이다.<br>예의바르고 성실하다. 항상 옳은 길을 찾기 위해 무엇이든 열심히 하려 애쓴다.<br><br>플루오네 대륙 북부 제국의 무인집안인 ‘한’ 가문의 자제.<br>어느 날 본국의 수도 수비대장으로 있던 친오빠 ‘아렌’이 침략한 마족의 다크엘에 의해 마족화 되어버리고,<br>‘란’이라는 이름으로 마을로 돌아와 ‘달의 엘’을 거둬가며 마을과 가족을 해치게 된다.<br>마을의 몰락과 함께 ‘신수를 지키는 무인집안’이라는 가문의 실체를 알게 되고<br>우연히 신령스런 여우를 봉인해 둔 제단에서 봉인된 구미호 ‘은’을 만나 그녀의 혼을 일부 해방시키게 된다.<br>하지만 강한 주술이 담긴 비녀에 갇혀 육체를 현실화 하지 못하는 상황... 구미호는<br>자신의 봉인을 완전히 풀기 위한 강한 엘의 힘을 찾고자 소녀에게 힘을 빌려줄 것을 약속하고<br>아라 자신은 친 오빠를 원래의 모습으로 돌리고자 함께 여행을 시작한다.',
 					'skill': [
-						{ 'name': '스킬명 주절주절1', 'ytb_src': 'BbwFOdyOwyA' },
+						{ 'name': '스킬명 주절주절1', 'ytb_src': '_bEMPu7-Kgg' },
 						{ 'name': '스킬명 주절주절2', 'ytb_src': 'BbwFOdyOwyA' },
 						{ 'name': '스킬명 주절주절3', 'ytb_src': 'BbwFOdyOwyA' },
 						{ 'name': '스킬명 주절주절4', 'ytb_src': 'BbwFOdyOwyA' }
@@ -916,7 +918,7 @@
 					'title': '엘리시스',
 					'synopsis': '16세, 여자, 중검<br>묵직한 중검을 활용한 거칠고 화끈한 공격이 특징이며, 선천적으로 불의 기운을 다룰 수 있어<br>전투에 다양하게 활용한다.<br>자신과 엘소드를 위해서라면 무엇이든 할 수 있는 열혈 소녀로,<br>때로는 말 보다 행동이 앞서기도 하는 행동형 스타일이다.<br><br>벨더 왕국의 자유기사였던 아버지에게 검술을 전수받아 뛰어난 실력을 보유하고 있다.<br>갑작스런 마족의 습격으로 자신과 엘소드에게 위협이 다가올 것을 예측하고<br>마족의 음모를 저지하기 위해 벨더 왕국의 기사단에 들어가게 된다.<br>그리고 어느날 페이타와 벨더를 습격한 마족들과 다시 조우하게 된다.',
 					'skill': [
-						{ 'name': '스킬명 주절주절1', 'ytb_src': 'BbwFOdyOwyA' },
+						{ 'name': '스킬명 주절주절1', 'ytb_src': 'o7OCX_37HqM' },
 						{ 'name': '스킬명 주절주절2', 'ytb_src': 'BbwFOdyOwyA' },
 						{ 'name': '스킬명 주절주절3', 'ytb_src': 'BbwFOdyOwyA' },
 						{ 'name': '스킬명 주절주절4', 'ytb_src': 'BbwFOdyOwyA' }
@@ -1029,7 +1031,7 @@
 					'title': '애드',
 					'synopsis': '16세, 남자, 나소드 다이너모<br>‘애드’는 반항적인 천재 공학소년이자 ‘나소드’의 천적인 ‘나소드 룰러’로 등장한다.<br>자신이 만든 기계 병기 ‘나소드 다이너모’를 이용해 근거리와 원거리를 자유자재로 오가는<br>폭넓은 스킬을 갖추고, 다른 캐릭터보다 유연하고 강력한 공격력을 구사한다.<br><br>천재적인 두뇌의 소유자로, 나소드 연구에 관한 일이라면 물불을 가리지 않는 매드사이언티스트.<br><br>더 인간 같은 나소드를 만들기 위해 금기를 깨려했던 나소드 연구가문의 계승자로<br>이 일로 고난을 당하고 쫒기는 도중 시공간의 틈으로 떨어져 방대한 지식을 얻게 된다.<br>이후 맹목적 복수심으로 과거로 돌아갈 힘을 갈구하게 되고,<br>방대한 양의 고대 코드를 가진 이브를 발견하게 되는데…',
 					'skill': [
-						{ 'name': '스킬명 주절주절1', 'ytb_src': 'BbwFOdyOwyA' },
+						{ 'name': '스킬명 주절주절1', 'ytb_src': 'TNr4NjG24lw' },
 						{ 'name': '스킬명 주절주절2', 'ytb_src': 'BbwFOdyOwyA' },
 						{ 'name': '스킬명 주절주절3', 'ytb_src': 'BbwFOdyOwyA' },
 						{ 'name': '스킬명 주절주절4', 'ytb_src': 'BbwFOdyOwyA' }
@@ -1142,7 +1144,7 @@
 					'title': '루시엘',
 					'synopsis': '루 - 나이미상, 여자, 마력장갑<br>웃음이 잦고 감정표현에 솔직한 편. 권력자로서의 자존심이 높다.<br>“짐의 왕좌를 되찾을 것이다.”<br>마계를 지탱하던 여러 군주 중의 한명이었으나, 측근에게 배신당해<br>모든 힘을 잃고 오랜 시간 동안 봉인당했다.<br>마지막 마력을 소모해 봉인을 뚫고 도망쳤으나 엘리오스로 넘어오며<br>과도한 마력의 소모로 인해 어린아이의 모습으로 변해버렸다.<br>시엘과 계약을 맺고 난 후로 자신의 힘과 권력을 되찾기 위해 엘리오스를 침공한<br>마족들의 흔적을 추격하며 험난한 여정을  시작한다.<br><br>시엘 - 24세, 남자, 건블레이드<br>쿨하고 진지하지만, 자기 취향이 확고한 4차원의 성격.<br>“널 위해 내 영혼을 바치겠어...”<br>루의 보디가드 겸 집사. 암흑가를 주름잡던 암살자. 차원의 균열을 통해 마계에서 도망친<br>루를 구하고 그녀와 함께 지낸다. 어느 날 밤, 루를 노린 마족의 암살자로 인해<br>죽음을 맞이하게 되고, 루와의 계약으로 새로운 생명을 얻어 반 마족이 된다.<br>이후, 자신을 되살려 준 루를 위해 그녀의 목적이 이루어질 때까지 동행하게 된다.',
 					'skill': [
-						{ 'name': '스킬명 주절주절1', 'ytb_src': 'BbwFOdyOwyA' },
+						{ 'name': '스킬명 주절주절1', 'ytb_src': 'Z7r7JqMZwJo' },
 						{ 'name': '스킬명 주절주절2', 'ytb_src': 'BbwFOdyOwyA' },
 						{ 'name': '스킬명 주절주절3', 'ytb_src': 'BbwFOdyOwyA' },
 						{ 'name': '스킬명 주절주절4', 'ytb_src': 'BbwFOdyOwyA' }
@@ -1255,7 +1257,7 @@
 					'title': '로제',
 					'synopsis': '19세, 여자, 웨폰팩(리볼버,오토건,머스킷,핸드캐논)<br>각종 총기를 자유자재로 다루는, 천계 황도 수비군의 엘리트 전투원.<br>조신하고 단아한 여성으로 보이지만 내면은 당당하고 자기표현이 확실한<br>당찬 여성이다.<br><br>천계 황도 수비군의 엘리트 전투원으로 황녀를 지키는 <황녀의 정원> 멤버이다.<br>천계를 위협하는 대재앙의 근원을 조사하기 위해,<br>황녀의 비밀스러운 명에 따라<br>다른 차원의 세계인 엘리오스로 오게 된다.',
 					'skill': [
-						{ 'name': '스킬명 주절주절1', 'ytb_src': 'BbwFOdyOwyA' },
+						{ 'name': '스킬명 주절주절1', 'ytb_src': 'EP0yUfYpD8c' },
 						{ 'name': '스킬명 주절주절2', 'ytb_src': 'BbwFOdyOwyA' },
 						{ 'name': '스킬명 주절주절3', 'ytb_src': 'BbwFOdyOwyA' },
 						{ 'name': '스킬명 주절주절4', 'ytb_src': 'BbwFOdyOwyA' }
@@ -1390,7 +1392,7 @@
 					'title': '아인',
 					'synopsis': '외관나이 21세, 남자, 펜듈럼<br>신의 권능인 순환, 창조의 힘을 지니고 있는, 여신 이스마엘을 섬기는 신관<br>여유롭고 느긋한 성격으로 웬만한 일은 웃어넘긴다.<br>여간해서는 화를 내지 않는 보살타입으로 격한 감정표현이 적은 편.<br><br>엘의 조각을 쫓는 엘소드 일행 앞에 갑자기 나타난 의문의 청년.<br>여신을 섬기는 신관이라고 자신을 소개하고 <br>루벤의 엘의 조각을 찾는 일을 돕겠다고 하지만 <br>그의 많은 것이 베일에 싸여 있다.<br><br>펜듈럼을 매개체로 엘리오스의 마법보다 한층 고위의 마법을 사용하고 <br>신계의 무기를 직접 소환, 투영해 차원이 다른 전투가 가능하다.',
 					'skill': [
-						{ 'name': '스킬명 주절주절1', 'ytb_src': 'BbwFOdyOwyA' },
+						{ 'name': '스킬명 주절주절1', 'ytb_src': '2yIUIWKCQgU' },
 						{ 'name': '스킬명 주절주절2', 'ytb_src': 'BbwFOdyOwyA' },
 						{ 'name': '스킬명 주절주절3', 'ytb_src': 'BbwFOdyOwyA' },
 						{ 'name': '스킬명 주절주절4', 'ytb_src': 'BbwFOdyOwyA' }
@@ -1582,6 +1584,7 @@
 				var currentNum = cArr[idx].num;
 				var cv_skill_str = '';
 				var cv_skill_baseUrl = 'http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/skill/img_skill_c';
+				var cv_skill_baseYtbUrl = 'https://img.youtube.com/vi/';
 	
 				// 동그란 버튼 이미지 on/off 처리
 				$('#cnv').find('.active').removeClass('c' + prevNum).addClass('c' + currentNum);
@@ -1605,16 +1608,17 @@
 					var skillArr = cArr[idx].skill[i];
 					cv_skill_str += '<li>';
 					cv_skill_str += '<a class="thumb gf_btn_ytb" href="#" target="_blank" data-ytb-src="' + skillArr.ytb_src + '">';
-					cv_skill_str += '<img src="' + cv_skill_baseUrl + currentNum + '_' + parseInt(i + 1) + '.png" alt="' + skillArr.name + '">';
+					// cv_skill_str += '<img src="' + cv_skill_baseUrl + currentNum + '_' + parseInt(i + 1) + '.png" alt="' + skillArr.name + '">';
+					cv_skill_str += '<img src="' + cv_skill_baseYtbUrl + skillArr.ytb_src + '/maxresdefault.jpg" alt="' + skillArr.name + '">';
 					cv_skill_str += '</a>';
 					cv_skill_str += '<h5 class="name">' + skillArr.name + '</h5>';
 					cv_skill_str += '</li>';
 				}
 				
 				// 전직명, 캐릭터 설명, 전직 테이블 html 내용 변경
-				$cv_title.html(cArr[idx].title);
-				$cv_synopsis.html(cArr[idx].synopsis);
-				$cv_skill.html(cv_skill_str);
+				$cv_title.hide().html(cArr[idx].title).fadeIn();
+				$cv_synopsis.hide().html(cArr[idx].synopsis).fadeIn();
+				$cv_skill.hide().html(cv_skill_str).fadeIn();
 				
 				// 동그란 버튼 이미지 on/off 처리 위한 전역 변수
 				prevNum = currentNum;
@@ -1642,8 +1646,11 @@
 					nav: true,
 					dots: false,
 					autoplay: false,
-					dragEndSpeed: 350,
-					smartSpeed: 700,
+					mouseDrag: false,
+					fullDrag: false,
+					smartSpeed: 300,
+					animateIn: 'fadeIn',
+					animateOut: 'fadeOut',
 					onInitialized: function (event) {
 						changeContents(event.item.index);
 					},
@@ -1728,14 +1735,8 @@
 
 					// CASE: 캐릭터 시스템
 					} else {
-						isModalOpen = true;
 						target = $(this).attr('href');
-						$(target).fadeToggle(250, function () {
-							setTimeout(function () {
-								isModalOpen = false;
-							}, 300);
-						});
-						// console.log(isModalOpen);
+						Elsword.layerControl.openLayer(target);
 					}
 				}
 			});
@@ -1751,7 +1752,7 @@
 			$('body').on('click', '.cv_system .gf_btn_close', function (e) {
 				e.preventDefault();
 				var target = '#' + $(this).parents('.cv_system').attr('id');
-				$(target).fadeOut(250);
+				Elsword.layerControl.closeLayer(target);
 			});
 
 		}); // @ready function END

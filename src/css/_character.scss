@@ -39,7 +39,11 @@
 .cv_cont .cv_line.line4 .cvl_list {margin:0 0 0 5px}
 .cv_cont .cv_line .cvl_list.first {margin-left:0}
 .cv_cont .cv_line .cvl_list li {position:relative}
-.cv_cont .cv_line .cvl_list li.tit {padding:5px 0;text-align:center;color:#fff;background-color:#bebebe;border-bottom:1px solid #e5e5e5}
+.cv_cont .cv_line .cvl_list li.tit {padding:5px 0;text-align:center;color:#fff;background-color:#bebebe;border-bottom:1px solid #e5e5e5;
+transition:all ease .3s;
+-webkit-transition:all ease .3s;
+-moz-transition:all ease .3s;
+-o-transition:all ease .3s;}
 .cv_cont .cv_line .cvl_list li.tit:after {position:absolute;left:50%;top:21px;margin-left:-12px;border-top:11px solid #bebebe;border-right:11px solid transparent;border-bottom:11px solid transparent;border-left:11px solid transparent;content:''}
 .cv_cont .cv_line .cvl_list li.des:before {position:absolute;top:-2px;width:100%;height:8px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_character_arrow.png') no-repeat 0 0;content:''}
 .cv_cont .cv_line .cvl_list li.des .btn_job {display:block;padding:18px 0 13px;line-height:22px;text-align:center;font-size:14px;color:#666}
@@ -129,9 +133,10 @@
 .cv_cont .cv_skill {clear:both}
 .cv_cont .cv_skill .tit {margin:0 0 43px 0;padding:0 0 14px 0;font-size:20px;letter-spacing:-1px;color:#3a312a;border-bottom:2px solid #ccc}
 .cv_cont .cv_skill .skill_list {overflow:hidden;margin:0 0 57px 0}
-.cv_cont .cv_skill .skill_list li {float:left;margin:0 0 0 49px}
+.cv_cont .cv_skill .skill_list li {float:left;margin:0 0 0 16px}
 .cv_cont .cv_skill .skill_list li:first-child {margin-left:0}
-.cv_cont .cv_skill .skill_list li .thumb {display:block;overflow:hidden;width:263px;height:162px}
+.cv_cont .cv_skill .skill_list li .thumb {display:block;overflow:hidden;width:288px;height:162px}
+.cv_cont .cv_skill .skill_list li .thumb img {width:100%}
 .cv_cont .cv_skill .skill_list li .name {margin:14px 0 0 0;font-size:14px;text-align:center;color:#666}
 
 /* 캐릭터 딱지 기본 */
@@ -153,12 +158,12 @@
 -moz-transition: opacity .4s cubic-bezier(0.645, 0.045, 0.355, 1);
 transition: opacity .4s cubic-bezier(0.645, 0.045, 0.355, 1);
 -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-filter:alpha(opacity=0);}
+filter:alpha(opacity=0)}
 .cv_nav .nav_list li.active a > span,
 .cv_nav .nav_list li a:hover > span,
 .cv_nav .nav_list li a:active > span {opacity:1;
 -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-filter:alpha(opacity=100);}
+filter:alpha(opacity=100)}
 
 /* 엘소드 딱지 */
 .cv_nav .nav_list li.elsword a,
@@ -416,4 +421,34 @@ filter:alpha(opacity=100);}
 .cv_nav .nav_list li.ain.c184 a > span {background-position:-953px -2015px}
 
 /* 시스템 팝업 */
-.cv_system {display:none}
+.cv_system {display:none;position:absolute;top:0;left:50%;z-index:100}
+.cv_system .cvs_body {overflow:hidden;width:747px;height:500px;background-color:#121b29;border-width:2px;border-style:solid}
+.cv_system .cvs_body .cvs_side {float:left;width:175px;height:500px}
+.cv_system .cvs_body .cvs_side .tit {overflow:hidden}
+.cv_system .cvs_body .cvs_side .tit_sub {position:absolute;top:310px;left:0;width:175px;height:42px}
+.cv_system .cvs_body .cvs_side .gf_btn_close {position:absolute;display:block;top:444px;left:27px;width:109px;height:35px;text-indent:-1000em;overflow:hidden;background:url('http://s.nx.com/S2/Game/Elsword/2016/characterinfo/system/close.gif') no-repeat 0 0;z-index:1}
+.cv_system .cvs_body .cvs_cont {float:left;width:530px;height:477px;margin:11px 0 0 31px;overflow-x:hidden;overflow-y:scroll}
+#cvs_elsword .cvs_body {border-color:#d81010}
+#cvs_elsword .cvs_body .cvs_side {background:url('http://s.nx.com/S2/Game/Elsword/2016/characterinfo/system/bg_0.jpg') no-repeat 0 0}
+#cvs_aisha .cvs_body {border-color:#8f57a9}
+#cvs_aisha .cvs_body .cvs_side {background:url('http://s.nx.com/S2/Game/Elsword/2016/characterinfo/system/bg_1.jpg') no-repeat 0 0}
+#cvs_rena .cvs_body {border-color:#a1bc1f}
+#cvs_rena .cvs_body .cvs_side {background:url('http://s.nx.com/S2/Game/Elsword/2016/characterinfo/system/bg_2.jpg') no-repeat 0 0}
+#cvs_raven .cvs_body {border-color:#acacac}
+#cvs_raven .cvs_body .cvs_side {background:url('http://s.nx.com/S2/Game/Elsword/2016/characterinfo/system/bg_3.jpg') no-repeat 0 0}
+#cvs_eve .cvs_body {border-color:#e697b3}
+#cvs_eve .cvs_body .cvs_side {background:url('http://s.nx.com/S2/Game/Elsword/2016/characterinfo/system/bg_4.jpg') no-repeat 0 0}
+#cvs_chung .cvs_body {border-color:#00adbd}
+#cvs_chung .cvs_body .cvs_side {background:url('http://s.nx.com/S2/Game/Elsword/2016/characterinfo/system/bg_5.jpg') no-repeat 0 0}
+#cvs_ara .cvs_body {border-color:#ff7200}
+#cvs_ara .cvs_body .cvs_side {background:url('http://s.nx.com/S2/Game/Elsword/2016/characterinfo/system/bg_6.jpg') no-repeat 0 0}
+#cvs_elesis .cvs_body {border-color:#e1353b}
+#cvs_elesis .cvs_body .cvs_side {background:url('http://s.nx.com/S2/Game/Elsword/2016/characterinfo/system/bg_7.jpg') no-repeat 0 0}
+#cvs_add .cvs_body {border-color:#8565eb}
+#cvs_add .cvs_body .cvs_side {background:url('http://s.nx.com/S2/Game/Elsword/2016/characterinfo/system/bg_8.jpg') no-repeat 0 0}
+#cvs_luciel .cvs_body {border-color:#2a66f4}
+#cvs_luciel .cvs_body .cvs_side {background:url('http://s.nx.com/S2/Game/Elsword/2016/characterinfo/system/bg_9.jpg') no-repeat 0 0}
+#cvs_rose .cvs_body {border-color:#eed236}
+#cvs_rose .cvs_body .cvs_side {background:url('http://s.nx.com/S2/Game/Elsword/2016/characterinfo/system/bg_10.jpg') no-repeat 0 0}
+#cvs_ain .cvs_body {border-color:#19d2a8}
+#cvs_ain .cvs_body .cvs_side {background:url('http://s.nx.com/S2/Game/Elsword/2016/characterinfo/system/bg_11.jpg') no-repeat 0 0}
