@@ -108,18 +108,25 @@
 			UI.layerControl = {
 				setLayerSize: function (target) {
 					var $target = $(target), minHeight = 200;
-					var layerTop, scrollHeight;
+					var layerTop, layerLeft, scrollHeight;
 					layerTop = ($window.height() - $target.outerHeight()) / 2;
+					layerLeft = ($target.outerWidth() / 2) * -1;
 					scrollHeight = ($window.scrollTop() + layerTop);
 	  
 					if ($('#GNB_Wrapper').hasClass('gnbWrapperOpen')) {
 						scrollHeight = scrollHeight - $('#GNB_Wrapper').outerHeight();
 					}
-	
+
 					if (scrollHeight > minHeight) {
-						$target.css('top', scrollHeight);
+						$target.css({
+							'top': scrollHeight,
+							'margin-left': layerLeft
+						});
 					} else {
-						$target.css('top', minHeight);
+						$target.css({
+							'top': minHeight,
+							'margin-left': layerLeft
+						});
 					}
 				}, // layerControl.setLayerSize
 
@@ -132,14 +139,14 @@
 							if (!$('.modal_bg').length) {
 								$('body').append('<div class="modal_bg"></div>');
 							}
-							$(target + ', .modal_bg').fadeIn(250);
+							$(target + ', .modal_bg').fadeIn(200);
 						}
 					}
 				}, // layerControl.openLayer
 
 				closeLayer: function (target) {
 					if (isModalOpen && $(target).length) {
-						$(target + ', .modal_bg').fadeOut(250, function () {
+						$(target + ', .modal_bg').fadeOut(200, function () {
 							$(this).remove();
 							isModalOpen = false;
 						});
@@ -256,22 +263,27 @@
 			}
 
 			// 멀티미디어 탭 기능
-			$(document).on('click', '#tab_year .media_calendar .btn.all_year', function (e) {
-				e.preventDefault();
-				$('#mediaYearList').toggleClass('active');
-			});
-			$(document).on('click', '#mediaList .media_tab_nav li a', function (e) {
-				e.preventDefault();
-				var $this = $(this);
-				var $pLi = $this.parent('li');
-				var $target = $($this.attr('href'));
-				if (!$pLi.hasClass('active')) {
-					$('.media_tab_cont.active').hide();
-					$('.media_tab_nav li.active').removeClass('active');
-					$target.fadeIn();
-					$pLi.addClass('active');
-				}
-			});
+
+			if ($('body').find('.multimedia').length) {
+				$(document).on('click', '#tab_year .media_calendar .btn.all_year', function (e) {
+					e.preventDefault();
+					$('#mediaYearList').toggleClass('active');
+				});
+				$(document).on('click', '#mediaList .media_tab_nav li a', function (e) {
+					e.preventDefault();
+					var $this = $(this);
+					var $pLi = $this.parent('li');
+					var $target = $($this.attr('href'));
+					if (!$pLi.hasClass('active') && !$target.hasClass('active')) {
+						$('.media_tab_cont.active').hide().removeClass('active');
+						$('.media_tab_nav li.active').removeClass('active');
+						$target.fadeIn(250, function () {
+							$(this).addClass('active');
+						});
+						$pLi.addClass('active');
+					}
+				});
+			}
 
 		}); // @ready function END
 

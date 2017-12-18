@@ -122,10 +122,17 @@ background-color:#fff;
 .characterBadge .crown {position:absolute;top:6px;right:3px;width:30px;height:30px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat -516px -2px}
 .characterBadge .btn_editCharacter {position:absolute;top:14px;right:6px;width:23px;height:23px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat -435px -114px}
 
-
-
-
-
+/* Layer Popup */
+.popup {display:none;position:absolute;left:50%;z-index:999}
+.modal_bg {display:none;position:fixed;z-index:30;top:0;left:0;width:100%;height:100%;background-color:#000;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+filter:alpha(opacity=90);
+-moz-opacity:0.9;
+-khtml-opacity:0.9;
+opacity:0.9;}
+.gf_btn_popupClose {position:absolute;top:-128px;left:50%;margin-left:-53px}
+.gf_btn_popupClose > a,
+.gf_btn_popupClose > a .ir {width:107px;height:107px}
+.gf_btn_popupClose > a .ir {background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat -562px -334px}
 
 
 
@@ -507,6 +514,8 @@ background-color:#fff;
 .bv_subject .subject .ico,
 .b_info .ico,
 li.notice .b_author .author,
+.gf_btn_popupClose > a,
+.gf_btn_popupClose > a .ir,
 #header .logo a,
 #header .gnb > li > a,
 #header .gnb > li > a > .pointer,
