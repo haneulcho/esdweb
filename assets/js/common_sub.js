@@ -193,7 +193,7 @@
 			Elsword.inputControl.setRadio($('#pollView .vote_list'));
 
 			// 레이어 팝업 열기
-			$('body').on('click', '.gf_btn_popup', function (e) {
+			$('body').on('click', '.gf_btn_popup, .gf_btn_ytb', function (e) {
 				e.preventDefault();
 				if (!isModalOpen) {
 					var $this = $(this), target;
@@ -212,7 +212,7 @@
 						target = '#pop_img';
 
 					// CASE: 유튜브 동영상
-					} else if ($this.hasClass('pop_ytb')) {
+					} else if ($this.hasClass('pop_ytb') || $this.hasClass('gf_btn_ytb')) {
 						var youtubeSrc = $this.attr('data-ytb-src'),
 							youtubeWidth = 1100,
 							youtubeHeight = 620;
@@ -227,7 +227,6 @@
 						popup_str += '</div>';
 	
 						target = '#pop_ytb';
-
 					// CASE: 일반
 					} else {
 						target = $(this).attr('href');
@@ -256,45 +255,23 @@
 				});
 			}
 
-			// 멀티미디어
-			tabLoad();
-
-			$(".calendar_y li .y_lst_btn").on("click", function (e) {
-				$('#y_lst').toggleClass('on');
+			// 멀티미디어 탭 기능
+			$(document).on('click', '#tab_year .media_calendar .btn.all_year', function (e) {
 				e.preventDefault();
+				$('#mediaYearList').toggleClass('active');
 			});
-
-			function tabLoad () {
-				var idx = $('.tab_cont').index();
-				$('.tab_cont').not(':eq(' + idx + ')').hide(); // tab_cont :: all hide
-
-				$('.tab_lst').each(function () { // tab_lst li first :: on
-					var $this = $(this);
-					var $first_lst = $(this).children('li').eq(0);
-					$first_lst.addClass('on');
-				});
-
-				$('.tab_container').each(function () { // tab_cont first :: on
-					var $this = $(this);
-					var $first_tab = $(this).children('.tab_cont').eq(0);
-					$first_tab.show();
-				});
-
-				var $btn_tab = $('.tab_lst').find('li');
-				$btn_tab.on('click', function (e) {
-					e.preventDefault();
-
-					var $this = $(this),
-						$thisrel = $this.attr('rel'); // tab_lst li :: rel
-					$thisClass = $('.' + $thisrel); // tab_cont :: class
-					target = $thisClass.parent('.tab_container').attr('id'); // tab_container :: id
-
-					$('#' + target).find('.tab_cont').hide();
-					$('#' + target + ' .' + $thisrel).fadeIn();
-
-					$this.addClass('on').siblings().removeClass('on'); // tab_lst li :: on
-				});
-			}
+			$(document).on('click', '#mediaList .media_tab_nav li a', function (e) {
+				e.preventDefault();
+				var $this = $(this);
+				var $pLi = $this.parent('li');
+				var $target = $($this.attr('href'));
+				if (!$pLi.hasClass('active')) {
+					$('.media_tab_cont.active').hide();
+					$('.media_tab_nav li.active').removeClass('active');
+					$target.fadeIn();
+					$pLi.addClass('active');
+				}
+			});
 
 		}); // @ready function END
 
