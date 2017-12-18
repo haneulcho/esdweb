@@ -1549,7 +1549,7 @@
 				case 'add':
 					cArr = chaArr.add;
 					prevUrl = 'elesis.html';
-					nextUrl = 'luciel.html';
+					nextUrl = 'ru.html';
 					break;
 				case 'luciel':
 					cArr = chaArr.luciel;
@@ -1558,7 +1558,7 @@
 					break;
 				case 'rose':
 					cArr = chaArr.rose;
-					prevUrl = 'luciel.html';
+					prevUrl = 'ru.html';
 					nextUrl = 'ain.html';
 					break;
 				case 'ain':
