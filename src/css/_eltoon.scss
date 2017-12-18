@@ -10,7 +10,7 @@
 .eltoon_list .b_subject .subject:after {clear:both;display:table;content:'';*zoom:1}
 .eltoon_list .b_subject .subject > a {float:left;overflow:hidden;max-width:160px;word-break:break-all;white-space:nowrap;text-overflow:ellipsis;font-size:16px;line-height:21px;color:#444}
 .eltoon_list .b_subject .subject > span {float:left;margin:0 0 0 3px;line-height:21px}
-.eltoon_list .b_subject .subject .ico {width:19px;height:19px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat 0 0}
+.eltoon_list .b_subject .subject .ico {width:19px;height:19px;background:url('http://localhost:3000/assets/img/spr_asset.png') no-repeat 0 0}
 .eltoon_list .b_subject .subject .ico.new {background-position:-326px -85px}
 .eltoon_list .b_date .date {font-size:12px}
 .eltoon_list .b_author {font-size:12px;line-height:15px;color:#888}
@@ -40,12 +40,12 @@
 .eltoon .board_list .b_thumb {margin:0 0 22px 0}
 .eltoon .board_list .b_thumb .thumb {width:285px;height:310px}
 .eltoon .board_list .b_thumb .thumb > a {position:relative}
-.eltoon .board_list .b_thumb .thumb > a:after {position:absolute;display:block;bottom:0;left:0;content:'';width:285px;height:115px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_uccItem.png') no-repeat 0 0}
+.eltoon .board_list .b_thumb .thumb > a:after {position:absolute;display:block;bottom:0;left:0;content:'';width:285px;height:115px;background:url('http://localhost:3000/assets/img/common/bg_uccItem.png') no-repeat 0 0}
 .eltoon .board_list .b_info {font-size:12px;color:#888}
 .eltoon .board_list .b_info > span {position:relative;padding:0 0 0 20px}
 .eltoon .board_list .b_info > span:before {position:absolute;display:block;content:'';top:50%;left:8px;width:1px;height:9px;margin:-4px 0 0 0;background:#888}
 .eltoon .board_list .b_info > span:first-child {padding:-0}
 .eltoon .board_list .b_info > span:first-child:before {display:none}
 .eltoon .board_list .b_info .ico {display:inline-block;vertical-align:-2px}
-.eltoon .board_list .b_info .ico.like {width:13px;height:11px;margin:0 3px 0 0;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -326px -108px}
+.eltoon .board_list .b_info .ico.like {width:13px;height:11px;margin:0 3px 0 0;background:url('http://localhost:3000/assets/img/spr_asset.png') no-repeat -326px -108px}
 .eltoon .cont_body {margin:0 0 44px 0}

@@ -5,7 +5,7 @@
 .declare .tit {font-size:20px}
 .declare .tit_sub {font-size:16px}
 .declare .dc_note {font-size:12px;line-height:20px;color:#888}
-.declare .dc_box {margin:0 0 41px 0;padding:0 0 48px 0;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_line_diagonal.png') repeat-x left bottom}
+.declare .dc_box {margin:0 0 41px 0;padding:0 0 48px 0;background:url('http://localhost:3000/assets/img/common/bg_line_diagonal.png') repeat-x left bottom}
 .declare .dc_box:after {clear:both;display:table;content:''}
 .declare .dc_box .dc_notice,
 .declare .dc_box .dc_counts,
@@ -25,7 +25,7 @@
 .declare .dc_box .dc_counts .dc_count.myPoint .count_num {font-size:35px}
 .declare .dc_box .dc_counts .dc_count .count_num .num {margin:0 6px 0;font-size:50px;color:#444;letter-spacing:-1.7px}
 .declare .dc_box .dc_btns {width:180px;}
-.declare .dc_box .dc_btns .btn.write {display:block;width:169px;height:128px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -438px -88px}
+.declare .dc_box .dc_btns .btn.write {display:block;width:169px;height:128px;background:url('http://localhost:3000/assets/img/spr_asset.png') no-repeat -438px -88px}
 
 /* Declare List - Table */
 .declare_list .dc_tbl {table-layout:fixed;width:100%;border-top:2px solid #acacac}

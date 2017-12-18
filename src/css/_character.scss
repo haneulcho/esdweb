@@ -1,19 +1,19 @@
 .character_view {padding:127px 0 0 0}
 
 /* Character View Slider */
-.cv_header {position:relative;overflow:hidden;height:750px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_character_top.jpg') repeat 50% 0}
+.cv_header {position:relative;overflow:hidden;height:750px;background:url('http://localhost:3000/assets/img/common/bg_character_top.jpg') repeat 50% 0}
 .cv_header .visualList {position:absolute;top:0;left:50%;overflow:hidden;width:2560px;height:750px;margin-left:-1280px;z-index:1}
 .cv_header .visualList .cv_item {position:absolute;overflow:hidden;top:0;left:50%;width:1300px;height:750px;margin-left:-650px}
 .cv_header .visualList .cv_item .cv_img {display:inline-block}
 .cv_header .owl-nav {position:relative;width:1200px;margin:241px auto 0}
-.cv_header .owl-nav > div {position:absolute;top:0;width:145px;height:263px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat 0 0;z-index:5}
+.cv_header .owl-nav > div {position:absolute;top:0;width:145px;height:263px;background:url('http://localhost:3000/assets/img/spr_global.png') no-repeat 0 0;z-index:5}
 .cv_header .owl-nav .owl-prev {left:-170px;background-position:-135px -485px}
 .cv_header .owl-nav .owl-next {right:-170px;background-position:-314px -485px}
 .elsword .cv_header .owl-nav .owl-prev.disabled,
 .ain .cv_header .owl-nav .owl-next.disabled {cursor:default}
 .cv_header .owl-dots {position:relative;width:1200px;height:0;margin:680px auto 0;padding:0 0 0 8px;z-index:3}
 .cv_header .owl-dots .owl-dot {float:left;margin:0 0 0 12px}
-.cv_header .owl-dots .owl-dot > span {display:block;width:19px;height:19px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat -386px -95px}
+.cv_header .owl-dots .owl-dot > span {display:block;width:19px;height:19px;background:url('http://localhost:3000/assets/img/spr_global.png') no-repeat -386px -95px}
 .cv_header .owl-dots .owl-dot.active > span {background-position:-409px -95px}
 
 /* 타이틀, 시스템 */
@@ -26,7 +26,7 @@
 /* 시놉시스 */
 .cv_cont .cv_synopsis{position:relative;float:left;width:600px;padding:35px 65px 68px 8px}
 .cv_cont .cv_synopsis p{line-height:28.5px;font-size:14px;color:#555}
-.cv_cont .cv_synopsis:after{position:absolute;right:0;top:50%;width:2px;height:84px;margin-top:-42px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_line_dotted.png') no-repeat 0 0;content:''}
+.cv_cont .cv_synopsis:after{position:absolute;right:0;top:50%;width:2px;height:84px;margin-top:-42px;background:url('http://localhost:3000/assets/img/common/bg_line_dotted.png') no-repeat 0 0;content:''}
 
 /* 전직 라인 테이블 */
 .cv_cont .cv_line {position:relative;float:right;margin:0 43px 0 0}
@@ -45,7 +45,7 @@ transition:all ease .3s;
 -moz-transition:all ease .3s;
 -o-transition:all ease .3s;}
 .cv_cont .cv_line .cvl_list li.tit:after {position:absolute;left:50%;top:21px;margin-left:-12px;border-top:11px solid #bebebe;border-right:11px solid transparent;border-bottom:11px solid transparent;border-left:11px solid transparent;content:''}
-.cv_cont .cv_line .cvl_list li.des:before {position:absolute;top:-2px;width:100%;height:8px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_character_arrow.png') no-repeat 0 0;content:''}
+.cv_cont .cv_line .cvl_list li.des:before {position:absolute;top:-2px;width:100%;height:8px;background:url('http://localhost:3000/assets/img/common/bg_character_arrow.png') no-repeat 0 0;content:''}
 .cv_cont .cv_line .cvl_list li.des .btn_job {display:block;padding:18px 0 13px;line-height:22px;text-align:center;font-size:14px;color:#666}
 .cv_cont .cv_line .cvl_list li.des .btn_job > span {display:block}
 .cv_cont .cv_line .cvl_list li.des.active .btn_job > span {font-weight:bold}
@@ -152,8 +152,8 @@ transition:all ease .3s;
 .cv_nav .nav_list li:first-child {margin-left:0}
 .cv_nav .nav_list li a,
 .cv_nav .nav_list li a > span {display:block;text-align:left;text-indent:-9999px;line-height:0;font-size:0}
-.cv_nav .nav_list li a {position:relative;width:92px;height:92px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/spr_character_sub_off.png') no-repeat 0 0}
-.cv_nav .nav_list li a > span {opacity:0;position:absolute;top:0;left:0;width:100%;height:100%;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/spr_character_sub.png') no-repeat 0 0;
+.cv_nav .nav_list li a {position:relative;width:92px;height:92px;background:url('http://localhost:3000/assets/img/character/spr_character_sub_off.png') no-repeat 0 0}
+.cv_nav .nav_list li a > span {opacity:0;position:absolute;top:0;left:0;width:100%;height:100%;background:url('http://localhost:3000/assets/img/character/spr_character_sub.png') no-repeat 0 0;
 -webkit-transition: opacity .4s cubic-bezier(0.645, 0.045, 0.355, 1);
 -moz-transition: opacity .4s cubic-bezier(0.645, 0.045, 0.355, 1);
 transition: opacity .4s cubic-bezier(0.645, 0.045, 0.355, 1);

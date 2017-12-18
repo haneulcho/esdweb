@@ -1,10 +1,10 @@
 /* Game Download Page */
 .download .cont_body > .inner {padding:21px 0 0;border-top:2px solid #acacac}
 .download .help {font-size:12px;line-height:16px;color:#888}
-.download .headings {position:relative;width:1200px;height:410px;padding:146px 87px 0;margin:0 0 75px 0;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/download/bg_download.jpg') no-repeat 0 0}
+.download .headings {position:relative;width:1200px;height:410px;padding:146px 87px 0;margin:0 0 75px 0;background:url('http://localhost:3000/assets/img/download/bg_download.jpg') no-repeat 0 0}
 .download .headings .des {margin:0 0 12px 0;font-size:13px;color:#fff}
 .download .headings .des strong {color:#f17a3c}
-.download .headings .btn_gameDownload {width:623px;height:154px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/download/btn_gameDownload.jpg') no-repeat 0 0}
+.download .headings .btn_gameDownload {width:623px;height:154px;background:url('http://localhost:3000/assets/img/download/btn_gameDownload.jpg') no-repeat 0 0}
 .download .tit_sub {overflow:hidden;margin:0 0 13px 0;font-size:20px;color:#3a312a}
 .download .tit_sub > .help {margin:0 0 0 10px;font-weight:normal}
 .download .down_pcChk {margin-bottom:70px}
@@ -32,7 +32,7 @@
 .down_driver_list {overflow:hidden;margin:0 0 22px 0;border-top:2px solid #acacac;border-bottom:1px solid #ccc}
 .down_driver_list > li {display:block;position:relative;float:left;width:25%;padding:155px 0 32px;background-repeat:no-repeat;background-position:50% 25px}
 .down_driver_list > li > a {display:block;width:147px;height:33px;margin:0 auto;font-size:14px;font-weight:bold;line-height:33px;text-align:center;color:#fff;background:#878787}
-.down_driver_list .directX {background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/download/img_directx.jpg')}
-.down_driver_list .amd {background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/download/img_amd.jpg')}
-.down_driver_list .nvidia {background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/download/img_nvidia.jpg')}
-.down_driver_list .intel {background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/download/img_intel.jpg');background-position:50% 28px}
+.down_driver_list .directX {background-image:url('http://localhost:3000/assets/img/download/img_directx.jpg')}
+.down_driver_list .amd {background-image:url('http://localhost:3000/assets/img/download/img_amd.jpg')}
+.down_driver_list .nvidia {background-image:url('http://localhost:3000/assets/img/download/img_nvidia.jpg')}
+.down_driver_list .intel {background-image:url('http://localhost:3000/assets/img/download/img_intel.jpg');background-position:50% 28px}

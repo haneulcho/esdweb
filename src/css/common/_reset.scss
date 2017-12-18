@@ -105,7 +105,7 @@ background-color:#fff;
 .ipt_radio + .ipt_label_radio:before {lefT:0;width:13px;height:13px;margin-top:-7px}
 .selected .ipt_radio + .ipt_label_radio:after {lefT:3px;width:7px;height:7px;margin-top:-4px;background:#db6006}
 .btn_titMore {display:inline-block}
-.btn_titMore > span {background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat 0 0}
+.btn_titMore > span {background:url('http://localhost:3000/assets/img/spr_global.png') no-repeat 0 0}
 .btn_titMore .txt {float:left}
 .btn_titMore .more {width:13px;height:14px;background-position:-89px -632px}
 
@@ -115,12 +115,12 @@ background-color:#fff;
 
 /* Character Badge */
 .characterBadge {position:relative;width:130px;height:130px;background-repeat:no-repeat;background-position:-9px -137px}
-.characterBadge .medal {position:absolute;bottom:3px;left:6px;width:41px;height:41px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat -468px 0}
+.characterBadge .medal {position:absolute;bottom:3px;left:6px;width:41px;height:41px;background:url('http://localhost:3000/assets/img/spr_global.png') no-repeat -468px 0}
 .characterBadge .medal.gold {background-position:-468px 0}
 .characterBadge .medal.silver {background-position:-468px -45px}
 .characterBadge .medal.bronze {background-position:-468px -90px}
-.characterBadge .crown {position:absolute;top:6px;right:3px;width:30px;height:30px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat -516px -2px}
-.characterBadge .btn_editCharacter {position:absolute;top:14px;right:6px;width:23px;height:23px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat -435px -114px}
+.characterBadge .crown {position:absolute;top:6px;right:3px;width:30px;height:30px;background:url('http://localhost:3000/assets/img/spr_global.png') no-repeat -516px -2px}
+.characterBadge .btn_editCharacter {position:absolute;top:14px;right:6px;width:23px;height:23px;background:url('http://localhost:3000/assets/img/spr_global.png') no-repeat -435px -114px}
 
 /* Layer Popup */
 .popup {display:none;position:absolute;left:50%;z-index:999}
@@ -132,7 +132,7 @@ opacity:0.9;}
 .gf_btn_popupClose {position:absolute;top:-128px;left:50%;margin-left:-53px}
 .gf_btn_popupClose > a,
 .gf_btn_popupClose > a .ir {width:107px;height:107px}
-.gf_btn_popupClose > a .ir {background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat -562px -334px}
+.gf_btn_popupClose > a .ir {background:url('http://localhost:3000/assets/img/spr_global.png') no-repeat -562px -334px}
 
 
 
@@ -142,7 +142,7 @@ opacity:0.9;}
 // #character .character_navi{position: absolute;bottom: 0;width: 100%;height: 116px;}
 // #character .character_navi:after{position: absolute;bottom: 0;width: 100%;height: 100%;background-color: #000;opacity: .7;content: " ";z-index: 10;}
 // #character .character_navi ul{position: absolute;top: 10px;left: 50%;width: 1200px;margin-left: -600px;z-index: 100;}
-// #character .character_navi ul li{float: left;width: 92px;height: 92px;margin-left: 9px;background: url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/etc_character_thumb_2.png') no-repeat 0 0;-webkit-filter: grayscale(100%) brightness(60%) contrast(70%);filter: grayscale(100%) brightness(60%) contrast(70%);}
+// #character .character_navi ul li{float: left;width: 92px;height: 92px;margin-left: 9px;background: url('http://localhost:3000/assets/img/etc_character_thumb_2.png') no-repeat 0 0;-webkit-filter: grayscale(100%) brightness(60%) contrast(70%);filter: grayscale(100%) brightness(60%) contrast(70%);}
 // #character .character_navi ul li.on{filter: none;}
 // #character .character_navi ul li:nth-child(-2n+6){margin-left: 8px;}
 // #character .character_navi ul li:first-child{margin-left: 0;}
@@ -153,17 +153,17 @@ opacity:0.9;}
 .characterBadge.elsword,
 .characterBadge.aisha,
 .characterBadge.rena,
-.characterBadge.raven {background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/spr_character1.png')}
+.characterBadge.raven {background-image:url('http://localhost:3000/assets/img/character/spr_character1.png')}
 
 .characterBadge.eve,
 .characterBadge.chung,
 .characterBadge.ara,
-.characterBadge.elesis {background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/spr_character2.png')}
+.characterBadge.elesis {background-image:url('http://localhost:3000/assets/img/character/spr_character2.png')}
 
 .characterBadge.add,
 .characterBadge.luciel,
 .characterBadge.rose,
-.characterBadge.ain {background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/spr_character3.png')}
+.characterBadge.ain {background-image:url('http://localhost:3000/assets/img/character/spr_character3.png')}
 
 /* 엘소드 딱지 */
 /* 기본: 1 */

@@ -1,7 +1,7 @@
 /* Ranking Page */
 .ranking .cont_body > .inner {padding:21px 0 0;border-top:2px solid #acacac}
-.rk_search {height:101px;margin:0 0 30px 0;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_ranking_search.jpg') no-repeat #d0beb7 0 0}
-.rk_search .rk_tit {float:left;width:185px;height:40px;margin:30px 0 0 18px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat 0 -116px}
+.rk_search {height:101px;margin:0 0 30px 0;background:url('http://localhost:3000/assets/img/common/bg_ranking_search.jpg') no-repeat #d0beb7 0 0}
+.rk_search .rk_tit {float:left;width:185px;height:40px;margin:30px 0 0 18px;background:url('http://localhost:3000/assets/img/spr_asset.png') no-repeat 0 -116px}
 .ranking.global .rk_search .rk_tit {background-position:0 -116px}
 .ranking.war .rk_search .rk_tit {background-position:0 -161px}
 .ranking.pve .rk_search .rk_tit {background-position:0 -206px}
@@ -18,7 +18,7 @@
 .rk_search .rk_search_box .iptBox .ipt_keyword {width:200px}
 .rk_search .rk_search_box .iptBox .ipt_select .current,
 .rk_search .rk_search_box .iptBox .ipt_keyword {color:#444}
-.rk_search .rk_search_box .iptBox .btn.rkSearch {display:block;width:66px;height:37px;margin:0 0 0 5px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -225px -43px}
+.rk_search .rk_search_box .iptBox .btn.rkSearch {display:block;width:66px;height:37px;margin:0 0 0 5px;background:url('http://localhost:3000/assets/img/spr_asset.png') no-repeat -225px -43px}
 
 .rk_info {overflow:hidden;margin:0 0 9px 0}
 .rk_info p {font-size:12px;line-height:16px;color:#666}
