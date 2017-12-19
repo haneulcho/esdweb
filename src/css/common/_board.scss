@@ -55,6 +55,7 @@
 .board_list .b_hit .hit {color:#e65700}
 .board_list .b_thumb {position:relative}
 .board_list .b_thumb .thumb,
+.board_list .b_thumb .thumb > img,
 .board_list .b_thumb .thumb > a,
 .board_list .b_thumb .thumb > a > img {display:block;width:100%;height:100%}
 
