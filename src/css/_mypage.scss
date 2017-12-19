@@ -1,4 +1,5 @@
-.mypage {background:#282828;border-top:8px solid #e65700}
+.mypage {width:900px;min-width:900px}
+#contents.mypage {background:#282828;border-top:8px solid #e65700}
 .mypage .wrap_cont {overflow:hidden;border-top:2px solid #fff}
 .mypage .wrap_cont > section {width:900px;margin:0 auto}
 
@@ -354,13 +355,16 @@
 .mcs_choiceCharacter .mcs_item .choiceCharacter .btn_choiceCharacter {display:block}
 .mcs_choiceCharacter .mcs_item .choiceCharacter .btn_choiceCharacter:hover {text-decoration:none}
 .mcs_choiceCharacter .mcs_item .choiceCharacter .crown {opacity:0;
-transition:all ease .4s}
+transition:all ease .4s;background-position:-516px -38px}
+.mcs_choiceCharacter .mcs_item.current .choiceCharacter .crown {background-position:-516px -2px !important}
+.mcs_choiceCharacter .mcs_item.current .choiceCharacter .crown,
 .mcs_choiceCharacter .mcs_item .choiceCharacter .btn_choiceCharacter:hover .crown {opacity:1}
 .mcs_choiceCharacter .mcs_item .choiceCharacter .mcs_info {text-align:center}
 .mcs_choiceCharacter .mcs_item .choiceCharacter .mcs_info .nickname {display:block;font-size:13px;line-height:21px;color:#e7652d}
 .mcs_choiceCharacter .mcs_item .choiceCharacter .mcs_info .charname,
 .mcs_choiceCharacter .mcs_item .choiceCharacter .mcs_info .level{font-size:12px;color:#595959}
 .mcs_choiceCharacter .mcs_item .choiceCharacter .mcs_info .level {margin:0 0 0 4px}
+.mcs_choiceCharacter .owl-carousel .owl-stage {margin:0 auto}
 .mcs_choiceCharacter .owl-nav .owl-prev {left:-55px;background-position:-388px -140px}
 .mcs_choiceCharacter .owl-nav .owl-prev.disabled {background-position:-458px -140px}
 .mcs_choiceCharacter .owl-nav .owl-next {right:-55px;background-position:-427px -140px}
