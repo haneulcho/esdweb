@@ -312,7 +312,7 @@
 .declare .bw_uploader .bw_upload_submit {width:440px;margin:0 auto}
 .declare .bw_uploader .bw_upload_files {margin-bottom:16px}
 .declare .bw_uploader .bw_upload_files .bw_file {margin:0 auto}
-.declare .bw_uploader .bw_upload_files .bw_file .file {position:relative;margin:11px 0 0 0}
+.declare .bw_uploader .bw_upload_files .bw_file .file {position:relative;margin:11px 0 0 0;padding:0;border:none}
 .declare .bw_uploader .bw_upload_files .bw_file .file .ipt_file {position:absolute;top:0;right:0;text-indent:-9999px;-moz-opacity:0;filter:alpha(opacity=0);opacity:0;z-index:2;cursor:pointer}
 .declare .bw_uploader .bw_upload_files .bw_file .file .ipt_fileName {display:block;float:left;width:325px;height:31px;padding:0 10px;background:#e6e6e6;border:1px solid #b1b1b1}
 .declare .bw_uploader .bw_upload_files .bw_file .file .ipt_file,
