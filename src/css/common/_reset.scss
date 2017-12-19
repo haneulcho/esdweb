@@ -99,6 +99,7 @@ body {width:100%;min-width:1200px;background:#fff}
 .ipt_radio + .ipt_label_radio:before,
 .selected .ipt_radio + .ipt_label_radio:after {position:absolute;display:block;top:50%;content:'';border:1px solid #94a0a9;
 background-color:#fff;
+border-radius:50%;
 -webkit-border-radius:50%;
 -moz-border-radius:50%;
 -o-border-radius:50%}

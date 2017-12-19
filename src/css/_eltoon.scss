@@ -14,8 +14,8 @@
 .eltoon_list .b_subject .subject .ico.new {background-position:-326px -85px}
 .eltoon_list .b_date .date {font-size:12px}
 .eltoon_list .b_author {font-size:12px;line-height:15px;color:#888}
-.eltoon_list .b_author > a {color:#f0381f}
-.eltoon_list .b_author .nickname {margin-right:4px}
+.eltoon_list .b_author a {color:#f0381f}
+.eltoon_list .b_author .nickname {margin-right:1px}
 .eltoon_list .b_thumb {margin:0 0 7px 0;border:1px solid #dadada}
 .eltoon_list .b_thumb .thumb {width:190px;height:160px}
 .eltoon_list .b_thumb .thumb,
@@ -36,6 +36,7 @@
 .eltoon .board_list .b_subject .subject {display:inline-block}
 .eltoon .board_list .b_subject .subject > a {max-width:250px;color:#fff}
 .eltoon .board_list .b_author {margin:0 0 10px 0}
+.eltoon .board_list .b_author > a {font-size:16px;line-height:19px;font-weight:bold;color:#444}
 .eltoon .board_list .b_author .nickname {font-size:16px;font-weight:bold}
 .eltoon .board_list .b_thumb {margin:0 0 22px 0}
 .eltoon .board_list .b_thumb .thumb {width:285px;height:310px}
