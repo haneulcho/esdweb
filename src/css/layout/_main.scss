@@ -62,7 +62,7 @@
 
 /* Game Start */
 .wrap_information .gameStart {position:absolute;top:-72px;left:397px;z-index:3}
-.wrap_information .gameStart .btn_gameStart {width:400px;height:240px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/btn_gameStart.jpg') no-repeat 0 0}
+.wrap_information .gameStart .btn_gameStart {width:400px;height:240px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/btn_gameStart.png') no-repeat 0 0}
 
 /* Notice, GM Megaphone, Animation Banner */
 .wrap_issue {height:400px;padding:56px 0 0 0;background:#fff}
@@ -196,4 +196,11 @@ transition: opacity 350ms ease;}
 /* Social Media - Youtube */
 .wrap_side .side_socialMedia .socialMedia_youtube {width:287px;height:147px;background:#6f7981}
 .wrap_side .side_socialMedia .socialMedia_youtube .gf_btn_ytb {display:block;height:147px}
+.wrap_side .side_socialMedia .socialMedia_youtube .gf_btn_ytb .thumb {position:relative;display:block;width:100%;height:100%}
+.wrap_side .side_socialMedia .socialMedia_youtube .gf_btn_ytb .thumb:before {position:absolute;content:'';top:0;left:0;display:block;width:287px;height:147px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_ytbItem.png') no-repeat 0 0;z-index:2}
 .wrap_side .side_socialMedia .socialMedia_youtube img {width:100%;height:100%}
+
+/* Aside Floating Banner */
+.wrap_aside {position:absolute;top:815px;left:50%;overflow:hidden;max-width:170px;min-height:100px;margin-left:620px}
+.wrap_aside .aside_banner {display:block;max-width:100%;margin-bottom:10px}
+.wrap_aside .aside_banner img {max-width:100%}

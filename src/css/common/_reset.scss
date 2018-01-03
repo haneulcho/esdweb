@@ -73,7 +73,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,main {d
 blockquote,q {quotes:none}
 blockquote:before,blockquote:after,q:before,q:after {content:'';content:none}
 
-body {width:100%;min-width:1200px;background:#fff}
+body {width:100%;min-width:1240px;background:#fff}
 
 
 
@@ -136,7 +136,10 @@ opacity:0.9;}
 .gf_btn_popupClose > a .ir {width:107px;height:107px}
 .gf_btn_popupClose > a .ir {background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat -562px -334px}
 
-
+/* Aside Banner */
+@media (max-width:1599px) {
+    #aside {display:none}
+}
 
 
 

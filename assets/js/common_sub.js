@@ -283,6 +283,31 @@ $(document).ready(function () {
 		});
 	}
 
+	// 플로팅 배너
+	if ($('#aside .wrap_aside').length) {
+		var $snb = $('#aside .wrap_aside'),
+			snbPos = $snb.offset().top,
+			snbTop = $snb.css('top'),
+			footerPos = $('#footer').offset().top;
+		$(window).scroll(function() {
+			var top_value,
+				wPos = $(window).scrollTop(),
+				snbTopMargin = 60;
+			
+			// 플로팅 배너가 footer에 닿거나 footer를 넘어갈 때
+			if (wPos > (footerPos - $snb.height() - snbTopMargin)) {
+				top_value = footerPos - $snb.height() - snbTopMargin - 20;
+			
+			// 일반적인 상황
+			} else {
+				// 브라우저 스크롤이 플로팅 배너의 첫 위치(snbPos)를 스치면 스크롤 따라다님
+				// 아니면, 첫 위치(snbPos)로 되돌아감
+				top_value = (wPos > (snbPos - snbTopMargin)) ? wPos + snbTopMargin : snbTop;
+			}
+			$snb.stop().animate({ top: top_value }, 800);
+		});
+	}
+
 }); // @ready function END
 
 // 기본 페이지 로더 호출
