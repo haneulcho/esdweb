@@ -19,18 +19,30 @@
 .wrap_goods {position:absolute;top:-294px;right:50%;width:400px;height:470px;margin-right:-600px;z-index:2}
 
 /* Login */
-#login.box {width:364px;height:104px;margin:12px 0 0 0;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat -465px -635px}
-#logged.box {height:130px;margin:7px 0 0 0}
+.wrap_information .box,
+.wrap_information .box .btn_login,
+.wrap_information .box.nv .btn_login,
+.wrap_information .box.nv .btn_login_agree {background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat 0 0}
+#login.box {background-position:-465px -635px}
+#logged.box {width:auto;height:130px;margin:7px 0 0 0;background:none}
+#login.box.nv,
+.wrap_information .box.nv .btn_login {background-position:-842px -635px}
+#loggedAgree.box.nv,
+.wrap_information .box.nv .btn_login_agree {background-position:-842px -519px}
 .wrap_information {height:180px;padding:35px 0 0 0;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_main_login.jpg') repeat-x 0 0}
 .wrap_information .inner {position:relative}
-.wrap_information .box {float:left}
-.wrap_information .box .btn_login {width:340px;height:55px;margin:9px auto 8px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat -465px -572px}
+.wrap_information .inner:after {clear:both;display:table;content:'';*zoom:1}
+.wrap_information .box {float:left;width:364px;height:104px;margin:12px 0 0 0}
+.wrap_information .box .btn_login {width:340px;height:55px;margin:9px auto 8px;background-position:-465px -572px}
+.wrap_information .box.nv .btn_login,
+.wrap_information .box.nv .btn_login_agree {width:364px;height:72px;margin:0 auto;padding:0 0 17px 0}
 .wrap_information .box .login_menu {height:30px;text-align:center}
 .wrap_information .box .login_menu > li {display:inline-block;font-size:14px;line-height:30px;color:#9398ad}
 .wrap_information .box .login_menu > li:before {display:inline-block;content:'|';margin:0 8px 0 5px}
 .wrap_information .box .login_menu > li:first-child:before {display:none}
 .wrap_information .box .login_menu > li > a {color:inherit}
 .wrap_information .box .login_menu > li.join > a {color:#e37e58}
+.wrap_information .box .login_menu > li.logout > a {color:#21b000}
 .wrap_information .box .myCharacter {float:left;width:130px}
 .wrap_information .box .myInfo {width:440px;margin:16px 0 0 0;padding:0 0 0 138px}
 .wrap_information .box .myInfo .txts {height:76px;margin:0 0 6px 0;padding:0 0 5px 0;border-bottom:1px solid #ccc}
