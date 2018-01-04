@@ -80,36 +80,38 @@
 									<form id="upForm" name="form" action="" method="POST" enctype="multipart/form-data">
 										<ul class="bw_file">
 											<li class="file">
-												<input id="" type="file" name="Filedata" class="ipt_file" />
-												<input type="text" class="ipt_fileName" disabled="disabled" placeholder="찾아보기를 눌러 이미지를 업로드 하세요.">
-												<button class="ipt_browse" type="button">찾아보기...</button>
+												<input type="hidden" id="txtAttachFileSN1" name="txtAttachFileSN1">
+												<input type="hidden" id="txtAttachFileName1" name="txtAttachFileName1">
+												<input type="text" id="lblAttachFileName1" class="ipt_fileName" disabled="disabled" placeholder="찾아보기를 눌러 이미지를 업로드 하세요.">
+												<button class="ipt_browse" type="button" onclick="FileAttach.Open( '/popup/GwFile/fileupload.aspx?emFileGameCode=Elsword&amp;btnType=1', 460, 285 ); return false;">찾아보기...</button>
+												<span id="d_attach1" style="display:none" class="ipt_fileDelete"><a href="#" onclick="FileAttach.Delete(1); return false;">삭제</a></span>
 											</li>
 											<li class="file">
-												<input id="" type="file" name="Filedata" class="ipt_file" />
-												<input type="text" class="ipt_fileName" disabled="disabled" placeholder="찾아보기를 눌러 이미지를 업로드 하세요.">
-												<button class="ipt_browse" type="button">찾아보기...</button>
+												<input type="hidden" id="txtAttachFileSN2" name="txtAttachFileSN2">
+												<input type="hidden" id="txtAttachFileName2" name="txtAttachFileName2">
+												<input type="text" id="lblAttachFileName2" class="ipt_fileName" disabled="disabled" placeholder="찾아보기를 눌러 이미지를 업로드 하세요.">
+												<button class="ipt_browse" type="button" onclick="FileAttach.Open( '/popup/GwFile/fileupload.aspx?emFileGameCode=Elsword&amp;btnType=2', 460, 285 ); return false;">찾아보기...</button>
+												<span id="d_attach2" class="ipt_fileDelete"><a href="#" onclick="FileAttach.Delete(2); return false;">삭제</a></span>
 											</li>
 											<li class="file">
-												<input id="" type="file" name="Filedata" class="ipt_file" />
-												<input type="text" class="ipt_fileName" disabled="disabled" placeholder="찾아보기를 눌러 이미지를 업로드 하세요.">
-												<button class="ipt_browse" type="button">찾아보기...</button>
+												<input type="hidden" id="txtAttachFileSN3" name="txtAttachFileSN3">
+												<input type="hidden" id="txtAttachFileName3" name="txtAttachFileName3">
+												<input type="text" id="lblAttachFileName3" class="ipt_fileName" disabled="disabled" placeholder="찾아보기를 눌러 이미지를 업로드 하세요.">
+												<button class="ipt_browse" type="button" onclick="FileAttach.Open( '/popup/GwFile/fileupload.aspx?emFileGameCode=Elsword&amp;btnType=3', 460, 285 ); return false;">찾아보기...</button>
+												<span id="d_attach3" class="ipt_fileDelete"><a href="#" onclick="FileAttach.Delete(3); return false;">삭제</a></span>
 											</li>
 											<li class="file">
-												<input id="" type="file" name="Filedata" class="ipt_file" />
-												<input type="text" class="ipt_fileName" disabled="disabled" placeholder="찾아보기를 눌러 이미지를 업로드 하세요.">
-												<button class="ipt_browse" type="button">찾아보기...</button>
+												<input type="hidden" id="txtAttachFileSN4" name="txtAttachFileSN4">
+												<input type="hidden" id="txtAttachFileName4" name="txtAttachFileName4">
+												<input type="text" id="lblAttachFileName4" class="ipt_fileName" disabled="disabled" placeholder="찾아보기를 눌러 이미지를 업로드 하세요.">
+												<button class="ipt_browse" type="button" onclick="FileAttach.Open( '/popup/GwFile/fileupload.aspx?emFileGameCode=Elsword&amp;btnType=4', 460, 285 ); return false;">찾아보기...</button>
+												<span id="d_attach4" class="ipt_fileDelete"><a href="#" onclick="FileAttach.Delete(4); return false;">삭제</a></span>
 											</li>
 										</ul>
 										<!-- //.bw_file -->
 									</form>
 								</div>
 								<!-- //.bw_upload_files -->
-								<!-- [S] DEV: 최종 업로드 버튼 -->
-								<div class="bw_upload_submit">
-									<input type="image" name="" id="" class="btn upload_submit" alt="업로드" src="http://s.nx.com/S2/Game/Elsword/site/2018/renewal/img_input.png">
-								</div>
-								<!-- //.bw_upload_submit -->
-								<!-- [E] //DEV: 최종 업로드 버튼 -->
 							</div>
 							<!-- //.bw_upload -->
 							<!-- DEV: 파일첨부 END!! -->
