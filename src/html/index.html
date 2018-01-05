@@ -64,6 +64,32 @@
 				<!-- //#logged -->
 				<!-- TODO, DEV: [E] 로그인 후 영역 끝!! -->
 
+				<!-- TODO, DEV: [S] 로그인 후 보호모드 시작!! -->
+				<div id="modePopup" class="protected">
+					<div class="wrap_lpopup">
+						<div class="lpopup_header">
+							<div class="gf_btn_lpopupClose"><a href="javascript:;" onclick="document.getElementById('modePopup').style.display='none';return false;" class="btn lpopup_close">팝업 닫기</a></div>
+							<h3 class="tit">엘소드 보호모드 설정안내</h3>
+						</div>
+						<div class="lpopup_body">
+							<h4 class="tit_sub">모험가님의 아이디에 <strong>'엘소드 보호모드'</strong>가 적용되었습니다.</h4>
+							<p class="note">
+								본인명의 핸드폰 인증으로 해제가 가능하며,<br>
+								본인인증이 어려우신 경우<br>
+								<strong>엘소드 홈페이지 &gt; 고객지원 &gt; 문의하기</strong>로 문의 부탁드립니다.
+							</p>
+						</div>
+						<div class="lpopup_footer">
+							<div class="btns">
+								<a href="https://elsword.nexon.com/security/center/prot.aspx" onclick="ngwPopup(this.href, '800', '600', '0', 'popSecurity');return false;" class="btn protect_off">보호모드 해제</a>
+								<a href="http://cs.nexon.com/HelpBoard/Nexon?gamecode=114&category=52624" onclick="ngwPopup(this.href, '1024', '768', '1', 'popCustomer');return false;" class="btn helpdesk">고객센터 문의</a>
+							</div>
+						</div>
+					</div>
+					<!-- //.wrap_lpopup -->
+				</div>
+				<!-- //#modePopup.protected -->
+				<!-- TODO, DEV: [E] 로그인 후 보호모드 끝!! -->
 
 				<!-- TODO, DEV: [S] 게임 스타트 버튼 시작!! -->
 				<div id="gameStart" class="gameStart">
