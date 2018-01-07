@@ -62,7 +62,8 @@
 
 /* Game Start */
 .wrap_information .gameStart {position:absolute;top:-72px;left:397px;z-index:3}
-.wrap_information .gameStart .btn_gameStart {width:400px;height:240px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/btn_gameStart.png') no-repeat 0 0}
+.wrap_information .gameStart .btn_gameStart {width:400px;height:165px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/btn_gameStart.png') no-repeat 0 0}
+.wrap_information .gameStart .btn_gameStartDownload {width:400px;height:75px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/btn_gameStart.png') no-repeat 0 -165px}
 
 /* Notice, GM Megaphone, Animation Banner */
 .wrap_issue {height:400px;padding:56px 0 0 0;background:#fff}
