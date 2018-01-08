@@ -1,7 +1,7 @@
 /* ================================================================
 	* FILENAME: character.js
 	* PROJECT: 엘소드 2018 리뉴얼 캐릭터 소개 UI 공통 스크립트
-	* UPDATE: 17.12.15
+	* UPDATE: 18.01.08
 ================================================================ */
 
 (function ($, window, document, undefined) {
@@ -18,8 +18,8 @@
 			}; // init
 
 			UI.pageLoader = function () {
-				if ($('.loader').length) {
-					var $target = $('.loader'), targetSpeed = 700;
+				if ($('#pageLoader').length) {
+					var $target = $('#pageLoader'), targetSpeed = 700;
 					$target.stop(true, true).fadeOut(targetSpeed);
 				}
 			}; // pageLoader
@@ -1736,6 +1736,10 @@
 					// CASE: 캐릭터 시스템
 					} else {
 						target = $(this).attr('href');
+						// Custom Scrollbar
+						if ($('.scrollbar-macosx').length) {
+							$('.scrollbar-macosx').scrollbar();
+						}
 						Elsword.layerControl.openLayer(target);
 					}
 				}
