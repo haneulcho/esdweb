@@ -31,7 +31,8 @@
 <script type="text/javascript" src="http://js.nx.com/s1/elsword/OBT/jquery.owl.carousel.min.js"></script>
 
 @@@if (!context.removeBanner) {<script src="http://js.nx.com/s1/elsword/site/2018/renewal/common_sub.js"></script>}
-@@@if (context.removeBanner) {<!-- TODO, DEV: character.aspx에만 character.js 삽입 부탁드립니다. -->
+@@@if (context.removeBanner) {@@@if (!context.feature) {<!-- TODO, DEV: character.aspx에만 jQuery 스크롤바 플러그인 삽입 부탁드립니다. -->
+<script type="text/javascript" src="http://js.nx.com/s1/elsword/OBT/jquery.scrollbar.min.js"></script>}<!-- TODO, DEV: character.aspx에만 character.js 삽입 부탁드립니다. -->
 <script src="http://js.nx.com/s1/elsword/site/2018/renewal/character.js"></script>}
 @@@if (context.feature) {<!-- 엘소드 소개 페이지 전용 -->
 <script type="text/javascript" src="http://js.nx.com/s1/elsword/OBT/gameinfo.js"></script>
@@ -77,4 +78,4 @@
 }
 @@@if (context.removeBanner) {
 @@@include('./header_nav_character.html')
-}
+<div id="pageLoader"></div>}

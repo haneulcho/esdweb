@@ -1736,9 +1736,9 @@
 					// CASE: 캐릭터 시스템
 					} else {
 						target = $(this).attr('href');
-						// Custom Scrollbar
-						if ($('.scrollbar-macosx').length) {
-							$('.scrollbar-macosx').scrollbar();
+						// 캐릭터 시스템 팝업 컨텐츠 Custom Scrollbar
+						if ($('.cv_system').length) {
+							$('.cv_system .cvs_cont').addClass('scrollbar-macosx').scrollbar();
 						}
 						Elsword.layerControl.openLayer(target);
 					}
