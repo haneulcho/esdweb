@@ -285,8 +285,10 @@ $(document).ready(function () {
 
 	// 플로팅 배너
 	if ($('#aside .wrap_aside').length) {
-		var $snb = $('#aside .wrap_aside'),
-			snbPos = $snb.offset().top,
+		var $snb = $('#aside .wrap_aside');
+		$snb.addClass('sub');
+
+		var	snbPos = $snb.offset().top,
 			snbTop = $snb.css('top'),
 			footerPos = $('#footer').offset().top;
 		$(window).scroll(function() {
