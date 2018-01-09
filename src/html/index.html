@@ -18,6 +18,34 @@
 
 
 				<!-- TODO, DEV: [S] 로그인 후 영역 시작!! -->
+				<!-- [S] 1. 대표 캐릭터가 없을 경우 -->
+				<div id="logged" class="box">
+					<div class="myCharacter">
+						<div class="characterBadge"></div>
+					</div>
+					<!-- //.myCharacter -->
+					<div class="myInfo">
+						<div class="txts">
+							<p class="greeting"><strong>한글이름여덟글자</strong> 모험가님 안녕하세요!</p>
+							<p class="information">
+								대표 캐릭터가 존재하지 않습니다.<br>
+								캐릭터를 생성해 주세요.
+							</p>
+						</div>
+						<ul class="logged_menu">
+							<li class="couponBox"><a href="#" onclick="openCouponPop();">쿠폰함</a></li>
+							<li class="cashBox"><a href="#">캐시충전</a></li>
+							<li class="otp"><a href="#" class="ico_otp" onclick="window.open( 'http://security.nexon.com/otp/index.aspx');">보안센터</a></li>
+							<li class="logout"><a href="#" class="btn_logout" onclick="PS.nxlogin.showLoginLayer();return false;">LOGOUT</a></li>
+						</ul>
+					</div>
+					<!-- //.myInfo -->
+				</div>
+				<!-- //#logged -->
+				<!-- [E] 1. 대표 캐릭터가 없을 경우 -->
+
+
+				<!-- [S] 2. 대표 캐릭터가 있을 경우(일반) -->
 				<div id="logged" class="box">
 					<div class="myCharacter">
 						<!--
@@ -62,6 +90,7 @@
 					<!-- //.myInfo -->
 				</div>
 				<!-- //#logged -->
+				<!-- [E] 2. 대표 캐릭터가 있을 경우(일반) -->
 				<!-- TODO, DEV: [E] 로그인 후 영역 끝!! -->
 
 				<!-- TODO, DEV: [S] 로그인 후 보호모드 시작!! -->
