@@ -122,73 +122,73 @@
 		$(document).ready(function () {
 			var chaSkillArr = {};
 			chaSkillArr.elsword = [
-				{ 'name': '스킬명주절주절1', 'ytb_src': 'BbwFOdyOwyA' },
+				{ 'name': '트리플 게이저', 'ytb_src': 'AjLXcBUMNfE' },
 				{ 'name': '앱솔루트 저지먼트', 'ytb_src': 'QO7j5Vd1XrA' },
 				{ 'name': '이클립스', 'ytb_src': 'pIjEXgDlEv0' },
 				{ 'name': '스킬명주절주절4', 'ytb_src': 'BbwFOdyOwyA' }
 			];
 			chaSkillArr.aisha = [
-				{ 'name': '스킬명주절주절1', 'ytb_src': 'BbwFOdyOwyA' },
+				{ 'name': '메테오 콜', 'ytb_src': '38uxSYusz6w' },
 				{ 'name': '에테르 센세이션', 'ytb_src': 'fPPFo4pXdEo' },
 				{ 'name': '오즈 플라즈마', 'ytb_src': 'LE5mTphNNIE' },
 				{ 'name': '스킬명주절주절4', 'ytb_src': 'BbwFOdyOwyA' }
 			];
 			chaSkillArr.rena = [
-				{ 'name': '스킬명주절주절1', 'ytb_src': 'BbwFOdyOwyA' },
+				{ 'name': '피닉스 스트라이크', 'ytb_src': '-Uuyn_Z2m0A' },
 				{ 'name': '타이푼 스트라이크', 'ytb_src': 'faoPUVaIj_U' },
 				{ 'name': '윈드 레저넌스', 'ytb_src': 'EHTj4KDW2k8' },
 				{ 'name': '스킬명주절주절4', 'ytb_src': 'BbwFOdyOwyA' }
 			];
 			chaSkillArr.raven = [
-				{ 'name': '스킬명주절주절1', 'ytb_src': 'BbwFOdyOwyA' },
+				{ 'name': '세븐 버스트', 'ytb_src': 'NgI50rATfvo' },
 				{ 'name': '파이널 블레이드', 'ytb_src': 'B9VKx4bv41I' },
 				{ 'name': '페네트레이트 에너미', 'ytb_src': 'GLIORPZ9JDk' },
 				{ 'name': '스킬명주절주절4', 'ytb_src': 'BbwFOdyOwyA' }
 			];
 			chaSkillArr.eve = [
-				{ 'name': '스킬명주절주절1', 'ytb_src': 'BbwFOdyOwyA' },
+				{ 'name': '디멘션 링크', 'ytb_src': 'DmGZcqJ5s6U' },
 				{ 'name': '오딘 스피어', 'ytb_src': 'ZPyqX8S_ljA' },
 				{ 'name': '코드 소사이어티', 'ytb_src': 'm5xaKoYgWkE' },
 				{ 'name': '스킬명주절주절4', 'ytb_src': 'BbwFOdyOwyA' }
 			];
 			chaSkillArr.chung = [
-				{ 'name': '스킬명주절주절1', 'ytb_src': 'BbwFOdyOwyA' },
+				{ 'name': '아겔다마', 'ytb_src': 'd2Xj8whydbA' },
 				{ 'name': '티아매트', 'ytb_src': 'B5q4GfApPCY' },
 				{ 'name': '아주르 피날레', 'ytb_src': 'ngkUXQurwHA' },
 				{ 'name': '스킬명주절주절4', 'ytb_src': 'BbwFOdyOwyA' }
 			];
 			chaSkillArr.ara = [
-				{ 'name': '스킬명주절주절1', 'ytb_src': 'BbwFOdyOwyA' },
+				{ 'name': '선풍', 'ytb_src': '7s8pcYzH63I' },
 				{ 'name': '용의 진노', 'ytb_src': '_bEMPu7-Kgg' },
 				{ 'name': '무간지옥', 'ytb_src': '01OmsES6GT0' },
 				{ 'name': '스킬명주절주절4', 'ytb_src': 'BbwFOdyOwyA' }
 			];
 			chaSkillArr.elesis = [
-				{ 'name': '스킬명주절주절1', 'ytb_src': 'BbwFOdyOwyA' },
+				{ 'name': '메가 버스터', 'ytb_src': 'g6hdcugY--U' },
 				{ 'name': '윌 오브 나이트', 'ytb_src': 'o7OCX_37HqM' },
 				{ 'name': '이그나이트 밤', 'ytb_src': 'h15b1yFp8JI' },
 				{ 'name': '스킬명주절주절4', 'ytb_src': 'BbwFOdyOwyA' }
 			];
 			chaSkillArr.add = [
-				{ 'name': '스킬명주절주절1', 'ytb_src': 'BbwFOdyOwyA' },
+				{ 'name': '뉴트란 밤', 'ytb_src': '4woMmcfqXJA' },
 				{ 'name': '버스트 플라즈마', 'ytb_src': 'TNr4NjG24lw' },
 				{ 'name': '디스토션 존', 'ytb_src': '-ZvntOC_8gE' },
 				{ 'name': '스킬명주절주절4', 'ytb_src': 'BbwFOdyOwyA' }
 			];
 			chaSkillArr.luciel = [
-				{ 'name': '스킬명주절주절1', 'ytb_src': 'BbwFOdyOwyA' },
+				{ 'name': '네더 쉬레더', 'ytb_src': '6rLZdjdrDeI' },
 				{ 'name': '앙그라마이뉴', 'ytb_src': 'Z7r7JqMZwJo' },
 				{ 'name': '세피로스 판타즈마', 'ytb_src': '-jkRBY99r5w' },
 				{ 'name': '스킬명주절주절4', 'ytb_src': 'BbwFOdyOwyA' }
 			];
 			chaSkillArr.rose = [
-				{ 'name': '스킬명주절주절1', 'ytb_src': 'BbwFOdyOwyA' },
+				{ 'name': 'M-137 개틀링 건', 'ytb_src': '190bi-R2C54' },
 				{ 'name': '슈퍼소닉 버스터', 'ytb_src': 'EP0yUfYpD8c' },
 				{ 'name': '체인 디스트로이', 'ytb_src': 'J7V7_C0B-Ck' },
 				{ 'name': '스킬명주절주절4', 'ytb_src': 'BbwFOdyOwyA' }
 			];
 			chaSkillArr.ain = [
-				{ 'name': '스킬명주절주절1', 'ytb_src': 'BbwFOdyOwyA' },
+				{ 'name': '자코잔크트 젤투데이튼', 'ytb_src': 'mIoyWZmZtTE' },
 				{ 'name': '푼트 · 글렌슨 슈비어트', 'ytb_src': '2yIUIWKCQgU' },
 				{ 'name': '피날레', 'ytb_src': '_cpdSxkvwMY' },
 				{ 'name': '스킬명주절주절4', 'ytb_src': 'BbwFOdyOwyA' }
