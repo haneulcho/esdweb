@@ -209,8 +209,9 @@
 
 /* Board View - Contents */
 .bv_contents {padding:55px 27px 10px;font-size:14px;line-height:1.7}
-.bv_contents p {margin:0 0 23px 0}
-.bv_contents img {margin:10px auto 15px;max-width:100%}
+.bv_contents img {max-width:100%}
+.bv_contents > p {margin:0 0 23px 0}
+.bv_contents > img {margin:10px auto 15px}
 
 /* Board View - Footer */
 .bv_footer {margin:25px 0 70px}
