@@ -172,6 +172,22 @@ function preventDefault(e) {
 	e.returnValue = false;
 }
 
+// 네이버 ngwPopup function 호출
+if (typeof ngwPopup == 'undefined' || ngwPopup == undefined) {
+	function ngwPopup (url, w, h, s, name) {
+		if (w==null) w = '100%';
+		if (h==null) h = '100%';
+		var l,t = '0';
+		if (screen.width && screen.height)	{
+			l = (screen.width-w)/2;
+			t = (screen.height-h)/2;
+		}
+		if (s==null) s = '0';
+		if (name==null) name = '';
+		window.open(url, name, 'width='+w+',height='+h+',left='+l+',top='+t+',resizable=0,menubar=0,toolbar=0,scrollbars='+s+',status=0');
+	}
+}
+
 $(document).ready(function () {
 	isIE = Elsword.checkIE();
 
@@ -288,13 +304,13 @@ $(document).ready(function () {
 		var $snb = $('#aside .wrap_aside');
 		$snb.addClass('sub');
 
-		var	snbPos = $snb.offset().top,
-			snbTop = $snb.css('top'),
-			footerPos = $('#footer').offset().top;
-		$(window).scroll(function() {
+		var	footerPos, snbPos = 645, snbTopMargin = 60,
+			snbTop = $snb.css('top');
+		
+		$window.on('scroll resize', function () {
 			var top_value,
 				wPos = $(window).scrollTop(),
-				snbTopMargin = 60;
+				footerPos = $('#footer').offset().top;
 			
 			// 플로팅 배너가 footer에 닿거나 footer를 넘어갈 때
 			if (wPos > (footerPos - $snb.height() - snbTopMargin)) {
