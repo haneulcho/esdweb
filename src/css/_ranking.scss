@@ -19,8 +19,11 @@
 .rk_search .rk_search_box .iptBox .ipt_select .current,
 .rk_search .rk_search_box .iptBox .ipt_keyword {color:#444}
 .rk_search .rk_search_box .iptBox .btn {cursor:pointer}
-.rk_search .rk_search_box .iptBox .btn.rkSearch {display:block;width:66px;height:37px;margin:0 0 0 5px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -225px -43px}
-.rk_search .rk_search_box .iptBox #Contents_btnSearchAll {background-position:-571px -24px}
+.rk_search .rk_search_box .iptBox .btn.rkSearch,
+.rk_search .rk_search_box .iptBox .btn.rkSearch_all {display:block;width:66px;height:37px;margin:0 0 0 5px;background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png');background-repeat:no-repeat}
+.rk_search .rk_search_box .iptBox .btn.rkSearch {display:block;width:66px;height:37px;margin:0 0 0 5px;background-position:-225px -43px}
+.rk_search .rk_search_box .iptBox #Contents_btnSearchAll,
+.rk_search .rk_search_box .iptBox .btn.rkSearch_all {background-position:-571px -24px}
 
 .rk_info {overflow:hidden;margin:0 0 9px 0}
 .rk_info p {font-size:12px;line-height:16px;color:#666}
