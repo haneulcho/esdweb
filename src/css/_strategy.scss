@@ -1,3 +1,6 @@
 /* Board List: Type Strategy */
-.strategy .board_list .b_subject {width:635px}
+.strategy .board_list .b_subject {width:605px}
 .strategy .board_list .b_subject .subject > a {max-width:460px}
+.strategy .board_list.default .b_date {width:180px}
+.strategy .board_list.default .b_date .date {font-size:13px !important}
+.strategy .board_list.default .b_hit {width:110px}
