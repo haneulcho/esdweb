@@ -292,14 +292,16 @@ $(document).ready(function () {
 	var $notice_tabLink = $('#main').find('.notice_tab_nav li > a');
 	var $notice_tabCont = $('#main').find('.notice_tab_cont');
 	$notice_tabLink.on('click', function (e) {
-		e.preventDefault();
 		var $this = $(this);
-		var $pLi = $this.parent('li');
-		if (!$pLi.hasClass('active')) {
-			$pLi.siblings().removeClass('active');
-			$pLi.addClass('active');
-			$notice_tabCont.removeClass('active');
-			$($this.attr('href')).addClass('active');
+		if (!$this.hasClass('btn_issueMore')) {
+			e.preventDefault();
+			var $pLi = $this.parent('li');
+			if (!$pLi.hasClass('active')) {
+				$pLi.siblings().removeClass('active');
+				$pLi.addClass('active');
+				$notice_tabCont.removeClass('active');
+				$($this.attr('href')).addClass('active');
+			}
 		}
 	});
 
@@ -334,65 +336,3 @@ $(document).ready(function () {
 $window.load(function () {
 	Elsword.init();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-(function ($, window, document, undefined) {
-
-  $(function () {
-
-
-	// 상단 네비게이션
-	var $gnbWrapper = $('#header .nav'),
-		$gnb = $gnbWrapper.find('.gnb'),
-		$gnbLi = $gnb.children('li');
-	$gnb.on({
-	  'mouseenter': function () {
-		if (!$gnbWrapper.hasClass('on')) {
-		  $gnbWrapper.addClass('on');
-		}
-	  },
-	  'mouseleave': function () {
-		if ($gnbWrapper.hasClass('on')) {
-		  $gnbWrapper.removeClass('on');
-		}
-	  }
-	});
-
-	// 메인 공지사항 탭
-	var $notice_tabLink = $('#main').find('.notice_tab_nav li > a');
-	var $notice_tabCont = $('#main').find('.notice_tab_cont');
-	$notice_tabLink.on('click', function (e) {
-	  e.preventDefault();
-	  var $this = $(this);
-	  var $pLi = $this.parent('li');
-	  if (!$pLi.hasClass('active')) {
-		$pLi.siblings().removeClass('active');
-		$pLi.addClass('active');
-		$notice_tabCont.removeClass('active');
-		$($this.attr('href')).addClass('active');
-	  }
-	});
-
-  });
-
-})(jQuery, window, document);

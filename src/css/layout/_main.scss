@@ -171,13 +171,16 @@ animation-timing-function: ease;
 .wrap_issue .issue_notice {float:left;width:570px}
 .wrap_issue .issue_notice .notice_tab_nav {position:relative}
 .wrap_issue .issue_notice .notice_tab_nav > ul {position:absolute;bottom:3px;right:0;height:30px}
-.wrap_issue .issue_notice .notice_tab_nav > ul > li {position:relative;float:left;height:20px;padding:0 0 0 36px}
-.wrap_issue .issue_notice .notice_tab_nav > ul > li:before {position:absolute;display:block;top:4px;left:13px;content:'';width:1px;height:13px;margin: 0 8px 0 5px;background-color:#888}
+.wrap_issue .issue_notice .notice_tab_nav > ul > li {position:relative;float:left;height:20px;padding:0 0 0 31px}
+.wrap_issue .issue_notice .notice_tab_nav > ul > li:before {position:absolute;display:block;top:4px;left:10px;content:'';width:1px;height:13px;margin: 0 8px 0 5px;background-color:#888}
 .wrap_issue .issue_notice .notice_tab_nav > ul > li:first-child {padding:0}
 .wrap_issue .issue_notice .notice_tab_nav > ul > li:first-child:before {display:none}
 .wrap_issue .issue_notice .notice_tab_nav > ul > li > a {font-size:14px;line-height:20px;color:#444}
 .wrap_issue .issue_notice .notice_tab_nav > ul > li > a:hover {text-decoration:none}
 .wrap_issue .issue_notice .notice_tab_nav > ul > li.active > a {font-weight:bold;color:#e65700}
+.wrap_issue .issue_notice .notice_tab_nav > ul > li > .btn_issueMore {display:none;float:right;padding:3px 0 0 7px}
+.wrap_issue .issue_notice .notice_tab_nav > ul > li.active > .btn_issueMore {display:block}
+.wrap_issue .issue_notice .notice_tab_nav > ul > li > .btn_issueMore > span {width:15px;height:15px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat -415px -119px}
 .wrap_issue .issue_notice .notice_tab_cont {display:none}
 .wrap_issue .issue_notice .notice_tab_cont.active {display:block}
 .wrap_issue .issue_notice .tit {position:relative;height:48px;margin:0 0 13px 0;padding:10px 0 0 0;border-bottom:1px solid #cdcdcd}
