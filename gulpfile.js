@@ -77,7 +77,7 @@ gulp.task('html', function () {
 gulp.task('css', function () {
     return gulp.src(cssInputPath)
 
-    .pipe(sourcemaps.init({largeFile: true}))    
+    .pipe(sourcemaps.init({largeFile: true}))
     .pipe(sass({outputStyle: 'compact', errLogToConsole: true}))
     .pipe(autoprefixer('last 4 version'))
     // .pipe(header(banner, { package : package })) // package.json에 있는 프로젝트 정보를 .min 파일 상단에 주석으로 넣어줌
@@ -93,7 +93,7 @@ gulp.task('cssnano', function () {
     .pipe(sourcemaps.init({largeFile: true}))
     .pipe(sass({errLogToConsole: true}))
     .pipe(autoprefixer('last 4 version'))
-    
+
     .pipe(cssnano()) // 압축해
     .pipe(rename({ suffix: '.min' })) // 뒤에 .min 이름 붙여
     .pipe(sourcemaps.write('../maps'))
