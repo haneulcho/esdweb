@@ -133,7 +133,8 @@
 			<div class="inner">
 				<section class="issue_notice">
 					<!--
-						메인 엘소드 소식 공지사항, 업데이트 탭 추가
+						2018.01.19 업데이트 -> 이벤트 탭으로 수정
+						메인 엘소드 소식 공지사항, 이벤트 탭 추가
 						탭 활성화 시, li class="active", class="notice_tab_cont active" active 클래스 추가
 					-->
 					<div class="notice_tab_nav">
@@ -141,8 +142,8 @@
 							<a href="/news/notice/list.aspx" class="btn_titMore"><span class="txt">엘소드 소식</span></a>
 						</h3>
 						<ul>
-							<li class="active"><a href="#tab_notice">공지사항</a></li>
-							<li><a href="#tab_update">업데이트</a></li>
+							<li class="active"><a href="#tab_notice">공지사항</a><a href="/news/notice/list.aspx" class="btn_issueMore"><span class="txt">공지사항 더보기</span></a></li>
+							<li><a href="#tab_event">이벤트</a><a href="/news/events/list.aspx?n4ArticleCategorySN=2" class="btn_issueMore"><span class="txt">진행중인 이벤트 더보기</span></a></li>
 						</ul>
 					</div>
 					<!-- //.notice_tab_nav -->
@@ -188,7 +189,7 @@
 						<!-- //.lists -->
 					</div>
 					<!-- //#tab_notice.notice_tab_cont -->
-					<div id="tab_update" class="notice_tab_cont">
+					<div id="tab_event" class="notice_tab_cont">
 						<ul class="lists">
 							<li>
 								<a href="/main/../news/notice/view.aspx?noticearticlesn=120757">
@@ -229,7 +230,7 @@
 						</ul>
 						<!-- //.lists -->
 					</div>
-					<!-- //#tab_update.notice_tab_cont -->
+					<!-- //#tab_event.notice_tab_cont -->
 				</section>
 				<!-- //.issue_notice -->
 
