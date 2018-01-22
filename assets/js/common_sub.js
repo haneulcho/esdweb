@@ -70,6 +70,12 @@ var Elsword = Elsword || (function () {
 	UI.setCarousel = function ($target, options) {
 		if ($target.length) {
 			$target.owlCarousel(options);
+			if (options.autoplayTimeout != 'undefined' && options.autoplayTimeout != null) {
+				$target.on('mouseleave', function () {
+					$target.trigger('stop.owl.autoplay');
+					$target.trigger('play.owl.autoplay', [options.autoplayTimeout]);
+				});
+			}
 		}
 	}; // setCarousel
 
@@ -201,6 +207,7 @@ $(document).ready(function () {
 		pullDrag: false,
 		dotsEach: true,
 		autoplay: true,
+		autoplayTimeout: 2500,
 		autoplayHoverPause: true,
 		animateIn: 'fadeIn',
 		animateOut: 'fadeOut'
