@@ -31,8 +31,8 @@
 /* 전직 라인 테이블 */
 .cv_cont .cv_line {position:relative;float:right;margin:0 43px 0 0}
 .cv_cont .cv_line.line4 {margin:0}
-.cv_cont .cv_line:before {position:absolute;top:92px;left:50%;display:block;width:353px;height:26px;margin-left:-176px;content:'';background-repeat:no-repeat;background-position:0 0;background-image:url('../img/common/bg_character_line3.png')}
-.cv_cont .cv_line.line4:before {width:445px;height:23px;margin-left:-223px;background-image:url('../img/common/bg_character_line4.png')}
+.cv_cont .cv_line:before {position:absolute;top:92px;left:50%;display:block;width:353px;height:26px;margin-left:-176px;content:'';background-repeat:no-repeat;background-position:0 0;background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_character_line3.png')}
+.cv_cont .cv_line.line4:before {width:445px;height:23px;margin-left:-223px;background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_character_line4.png')}
 
 .cv_cont .cv_line .cvl_name {display:block;width:144px;margin:41px auto 34px;padding:15px 0;text-align:center;font-size:14px;color:#fff}
 .cv_cont .cv_line .cvl_list {float:left;width:143px;margin:0 0 0 27px;padding:1px;border:1px solid #bebebe}
