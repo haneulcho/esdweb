@@ -111,27 +111,20 @@ var Elsword = Elsword || (function () {
 
 	UI.layerControl = {
 		setLayerSize: function (target) {
-			var $target = $(target), minHeight = 200;
+			var $target = $(target);
 			var layerTop, layerLeft, scrollHeight;
 			layerTop = ($window.height() - $target.outerHeight()) / 2;
 			layerLeft = ($target.outerWidth() / 2) * -1;
-			scrollHeight = ($window.scrollTop() + layerTop);
+			scrollHeight = ($window.scrollTop() + layerTop) + 50;
 
-			if ($('#GNB_Wrapper').hasClass('gnbWrapperOpen')) {
-				scrollHeight = scrollHeight - $('#GNB_Wrapper').outerHeight();
+			if ($('#GNB_Wrapper').length && $window.scrollTop() < 300) {
+				scrollHeight = scrollHeight + $('#GNB_Wrapper').outerHeight();
 			}
 
-			if (scrollHeight > minHeight) {
-				$target.css({
-					'top': scrollHeight,
-					'margin-left': layerLeft
-				});
-			} else {
-				$target.css({
-					'top': minHeight,
-					'margin-left': layerLeft
-				});
-			}
+			$target.css({
+				'top': scrollHeight,
+				'margin-left': layerLeft
+			});
 		}, // layerControl.setLayerSize
 
 		openLayer: function (target) {
