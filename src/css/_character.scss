@@ -25,7 +25,7 @@
 
 /* 시놉시스 */
 .cv_cont .cv_synopsis{position:relative;float:left;width:600px;padding:35px 65px 68px 8px}
-.cv_cont .cv_synopsis p{line-height:28.5px;font-size:14px;color:#555}
+.cv_cont .cv_synopsis p{line-height:28.5px;font-size:14px;color:#555;text-align:justify;word-break:keep-all}
 .cv_cont .cv_synopsis:after{position:absolute;right:0;top:50%;width:2px;height:84px;margin-top:-42px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_line_dotted.png') no-repeat 0 0;content:''}
 
 /* 전직 라인 테이블 */
