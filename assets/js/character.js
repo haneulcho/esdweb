@@ -1,7 +1,7 @@
 /* ================================================================
 	* FILENAME: character.js
 	* PROJECT: 엘소드 2018 리뉴얼 캐릭터 소개 UI 공통 스크립트
-	* UPDATE: 18.01.23
+	* UPDATE: 18.01.25
 ================================================================ */
 
 (function ($, window, document, undefined) {
@@ -1081,6 +1081,9 @@
 					e.preventDefault();
 					// 미공개 접근 시 Coming Soon 출력
 					if (!$this.hasClass('comingSoon')) {
+						if (chaName == 'rose' && idx > 9) {
+							idx = i - 1;
+						}
 						cnt = i;
 						owl_characterList.trigger("to.owl.carousel", idx);
 					} else {
