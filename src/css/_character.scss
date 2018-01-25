@@ -133,7 +133,8 @@ transition:all ease .3s;
 .cv_cont .cv_skill {clear:both}
 .cv_cont .cv_skill .tit {margin:0 0 43px 0;padding:0 0 14px 0;font-size:20px;letter-spacing:-1px;color:#3a312a;border-bottom:2px solid #ccc}
 .cv_cont .cv_skill .skill_list {overflow:hidden;margin:0 0 57px 0}
-.cv_cont .cv_skill .skill_list li {float:left;margin:0 0 0 16px}
+// .cv_cont .cv_skill .skill_list li {float:left;margin:0 0 0 16px}
+.cv_cont .cv_skill .skill_list li {float:left;margin:0 0 0 168px}
 .cv_cont .cv_skill .skill_list li:first-child {margin-left:0}
 .cv_cont .cv_skill .skill_list li .thumb {display:block;overflow:hidden;width:288px;height:162px}
 .cv_cont .cv_skill .skill_list li .thumb img {width:100%}
