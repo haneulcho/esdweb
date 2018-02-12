@@ -1,7 +1,7 @@
 /* ================================================================
 	* FILENAME: character.js
 	* PROJECT: 엘소드 2018 리뉴얼 캐릭터 소개 UI 공통 스크립트
-	* UPDATE: 18.02.07
+	* UPDATE: 18.02.12
 ================================================================ */
 
 (function ($, window, document, undefined) {
@@ -124,62 +124,74 @@
 			chaSkillArr.elsword = [
 				{ 'name': '트리플 게이저', 'ytb_src': 'AjLXcBUMNfE' },
 				{ 'name': '앱솔루트 저지먼트', 'ytb_src': 'QO7j5Vd1XrA' },
-				{ 'name': '이클립스', 'ytb_src': 'pIjEXgDlEv0' }
+				{ 'name': '이클립스', 'ytb_src': 'pIjEXgDlEv0' },
+				{ 'name': '인피니티 스톰', 'ytb_src': 'UnUVxNLdbRc' }
 			];
 			chaSkillArr.aisha = [
 				{ 'name': '메테오 콜', 'ytb_src': '38uxSYusz6w' },
 				{ 'name': '에테르 센세이션', 'ytb_src': 'fPPFo4pXdEo' },
-				{ 'name': '오즈 플라즈마', 'ytb_src': 'LE5mTphNNIE' }
+				{ 'name': '오즈 플라즈마', 'ytb_src': 'LE5mTphNNIE' },
+				{ 'name': '마법소녀가 되어줘!', 'ytb_src': 'Bw18mHA2_U8' }
 			];
 			chaSkillArr.rena = [
 				{ 'name': '피닉스 스트라이크', 'ytb_src': '-Uuyn_Z2m0A' },
 				{ 'name': '타이푼 스트라이크', 'ytb_src': 'faoPUVaIj_U' },
-				{ 'name': '윈드 레저넌스', 'ytb_src': 'EHTj4KDW2k8' }
+				{ 'name': '윈드 레저넌스', 'ytb_src': 'EHTj4KDW2k8' },
+				{ 'name': '에인션트 소울', 'ytb_src': 'ZKkrG0VBOd4' }
 			];
 			chaSkillArr.raven = [
 				{ 'name': '세븐 버스트', 'ytb_src': 'NgI50rATfvo' },
 				{ 'name': '파이널 블레이드', 'ytb_src': 'B9VKx4bv41I' },
-				{ 'name': '페네트레이트 에너미', 'ytb_src': 'GLIORPZ9JDk' }
+				{ 'name': '페네트레이트 에너미', 'ytb_src': 'GLIORPZ9JDk' },
+				{ 'name': '인투더헬', 'ytb_src': 'Hi9N2DPc80M' }
 			];
 			chaSkillArr.eve = [
 				{ 'name': '디멘션 링크', 'ytb_src': 'DmGZcqJ5s6U' },
 				{ 'name': '오딘 스피어', 'ytb_src': 'ZPyqX8S_ljA' },
-				{ 'name': '코드 소사이어티', 'ytb_src': 'm5xaKoYgWkE' }
+				{ 'name': '코드 소사이어티', 'ytb_src': 'm5xaKoYgWkE' },
+				{ 'name': '데토네이션', 'ytb_src': 'NqlQzEYWUiY' }
 			];
 			chaSkillArr.chung = [
 				{ 'name': '아겔다마', 'ytb_src': 'd2Xj8whydbA' },
 				{ 'name': '티아매트', 'ytb_src': 'B5q4GfApPCY' },
-				{ 'name': '아주르 피날레', 'ytb_src': 'ngkUXQurwHA' }
+				{ 'name': '아주르 피날레', 'ytb_src': 'ngkUXQurwHA' },
+				{ 'name': '레이니즘', 'ytb_src': 'jak_IXNZA0g' }
 			];
 			chaSkillArr.ara = [
 				{ 'name': '선풍', 'ytb_src': '7s8pcYzH63I' },
 				{ 'name': '용의 진노', 'ytb_src': '_bEMPu7-Kgg' },
-				{ 'name': '무간지옥', 'ytb_src': '01OmsES6GT0' }
+				{ 'name': '무간지옥', 'ytb_src': '01OmsES6GT0' },
+				{ 'name': '요호합일', 'ytb_src': 'vpjmAVIMA3k' }
 			];
 			chaSkillArr.elesis = [
 				{ 'name': '메가 버스터', 'ytb_src': 'g6hdcugY--U' },
 				{ 'name': '윌 오브 나이트', 'ytb_src': 'o7OCX_37HqM' },
-				{ 'name': '이그나이트 밤', 'ytb_src': 'h15b1yFp8JI' }
+				{ 'name': '이그나이트 밤', 'ytb_src': 'h15b1yFp8JI' },
+				{ 'name': '블러드 레인', 'ytb_src': 'J_B8ZeOlIhg' }
 			];
 			chaSkillArr.add = [
 				{ 'name': '뉴트란 밤', 'ytb_src': '4woMmcfqXJA' },
 				{ 'name': '버스트 플라즈마', 'ytb_src': 'TNr4NjG24lw' },
-				{ 'name': '디스토션 존', 'ytb_src': '-ZvntOC_8gE' }
+				{ 'name': '디스토션 존', 'ytb_src': '-ZvntOC_8gE' },
+				{ 'name': '그리운 손길', 'ytb_src': 'H5LIajSgUF0' }
 			];
 			chaSkillArr.luciel = [
 				{ 'name': '네더 쉬레더', 'ytb_src': '6rLZdjdrDeI' },
 				{ 'name': '앙그라마이뉴', 'ytb_src': 'Z7r7JqMZwJo' },
-				{ 'name': '세피로스 판타즈마', 'ytb_src': '-jkRBY99r5w' }
+				{ 'name': '세피로스 판타즈마', 'ytb_src': '-jkRBY99r5w' },
+				{ 'name': '마인의 섬광', 'ytb_src': 'u_c01Ahnh-A' }
 			];
 			chaSkillArr.rose = [
-				{ 'name': 'M-137 개틀링 건', 'ytb_src': '190bi-R2C54' },
 				{ 'name': '슈퍼소닉 버스터', 'ytb_src': 'EP0yUfYpD8c' },
-				{ 'name': '체인 디스트로이', 'ytb_src': 'J7V7_C0B-Ck' }
+				{ 'name': '체인 디스트로이', 'ytb_src': 'J7V7_C0B-Ck' },
+				{ 'name': '세틀라이트 드랍', 'ytb_src': '8PITV_57DsY' },
+				{ 'name': '데스 그레네이드', 'ytb_src': 'SZ00h0CoHZQ' }
 			];
 			chaSkillArr.ain = [
 				{ 'name': '자코잔크트 젤투데이튼', 'ytb_src': 'mIoyWZmZtTE' },
 				{ 'name': '푼트 · 글렌슨 슈비어트', 'ytb_src': '2yIUIWKCQgU' },
-				{ 'name': '피날레', 'ytb_src': '_cpdSxkvwMY' }
+				{ 'name': '피날레', 'ytb_src': '_cpdSxkvwMY' },
+				{ 'name': '저그린느', 'ytb_src': 'NYBLW2xMoDo' }
 			];
 
 			var chaArr = {};
