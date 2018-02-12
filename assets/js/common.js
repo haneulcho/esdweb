@@ -200,8 +200,8 @@ $(document).ready(function () {
 		pullDrag: false,
 		dotsEach: true,
 		autoplay: true,
-		autoplaySpeed: 5000,
-		autoplayTimeout: 5000,
+		autoplaySpeed: 4000,
+		autoplayTimeout: 4000,
 		autoplayHoverPause: true,
 		animateIn: 'fadeIn',
 		animateOut: 'fadeOut'
