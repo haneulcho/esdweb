@@ -144,7 +144,7 @@ var Elsword = Elsword || (function () {
 		closeLayer: function (target) {
 			if (isModalOpen && $(target).length) {
 				$(target + ', .modal_bg').fadeOut(200, function () {
-					$(this).remove();
+					if (target != '#declareNoticePopup') { $(this).remove(); }
 					isModalOpen = false;
 				});
 			}
@@ -270,6 +270,14 @@ $(document).ready(function () {
 		var target = '#' + $(this).parents('.popup').attr('id');
 		Elsword.layerControl.closeLayer(target);
 	});
+
+	// 비매너/버그 신고 게시글 팝업 열기
+	if ($('body').find('#contents.declare').length) {
+		$('body').on('click', '.gf_btn_declare', function (e) {
+			e.preventDefault();
+			Elsword.layerControl.openLayer('#declareNoticePopup');
+		});
+	}
 
 	// 비매너/버그 신고 게시판 파일명 표시
 	if ($('body').find('.bw_file').length) {
