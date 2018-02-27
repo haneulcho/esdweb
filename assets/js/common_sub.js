@@ -1,7 +1,7 @@
 /* ================================================================
 	* FILENAME: common_sub.js
 	* PROJECT: 엘소드 2018 리뉴얼 서브 UI 공통 스크립트
-	* UPDATE: 18.01.08
+	* UPDATE: 18.02.27
 ================================================================ */
 
 // 공통 변수 캐싱
@@ -115,7 +115,7 @@ var Elsword = Elsword || (function () {
 			var layerTop, layerLeft, scrollHeight;
 			layerTop = ($window.height() - $target.outerHeight()) / 2;
 			layerLeft = ($target.outerWidth() / 2) * -1;
-			scrollHeight = ($window.scrollTop() + layerTop) + 50;
+			scrollHeight = (!$target.hasClass('dcn_modal')) ? ($window.scrollTop() + layerTop) + 50 : ($window.scrollTop() + layerTop - $('#promotion').height());
 
 			if ($('#GNB_Wrapper').length && $window.scrollTop() < 300) {
 				scrollHeight = scrollHeight + $('#GNB_Wrapper').outerHeight();
@@ -144,7 +144,7 @@ var Elsword = Elsword || (function () {
 		closeLayer: function (target) {
 			if (isModalOpen && $(target).length) {
 				$(target + ', .modal_bg').fadeOut(200, function () {
-					if (target != '#declareNoticePopup') { $(this).remove(); }
+					if (!$(target).hasClass('dcn_modal')) { $(this).remove(); }
 					isModalOpen = false;
 				});
 			}
@@ -273,9 +273,19 @@ $(document).ready(function () {
 
 	// 비매너/버그 신고 게시글 팝업 열기
 	if ($('body').find('#contents.declare').length) {
-		$('body').on('click', '.gf_btn_declare', function (e) {
+		$('body').on('click', '.gf_btn_declare, .gf_btn_declareView', function (e) {
 			e.preventDefault();
-			Elsword.layerControl.openLayer('#declareNoticePopup');
+			var declareTargetPopup = (!$(this).hasClass('gf_btn_declareView')) ? '#declareNoticePopup' : '#declareViewPopup';
+			Elsword.layerControl.openLayer(declareTargetPopup);
+			// 레이어팝업 디자인 스크롤 삽입
+			if ($(this).hasClass('gf_btn_declareView')) {
+				$('#declareViewPopup').find('.scroll_wrap').addClass('scrollbar-macosx').scrollbar({
+					'disableBodyScroll': true
+				});
+				setTimeout(function () {
+					$('#declareViewPopup').find('.scroll-content').scrollTop(0);
+				}, 0);
+			}
 		});
 	}
 
