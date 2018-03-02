@@ -115,7 +115,7 @@ var Elsword = Elsword || (function () {
 			var layerTop, layerLeft, scrollHeight;
 			layerTop = ($window.height() - $target.outerHeight()) / 2;
 			layerLeft = ($target.outerWidth() / 2) * -1;
-			scrollHeight = (!$target.hasClass('dcn_modal')) ? ($window.scrollTop() + layerTop) + 50 : ($window.scrollTop() + layerTop - $('#promotion').height());
+			scrollHeight = (!$target.hasClass('dcn_modal')) ? ($window.scrollTop() + layerTop) + 50 : ($window.scrollTop() + layerTop - $('#promotion').height() - $('#GNB_Wrapper').outerHeight());
 
 			if ($('#GNB_Wrapper').length && $window.scrollTop() < 300) {
 				scrollHeight = scrollHeight + $('#GNB_Wrapper').outerHeight();
