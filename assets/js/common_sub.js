@@ -1,7 +1,7 @@
 /* ================================================================
 	* FILENAME: common_sub.js
 	* PROJECT: 엘소드 2018 리뉴얼 서브 UI 공통 스크립트
-	* UPDATE: 18.03.02
+	* UPDATE: 18.03.05
 ================================================================ */
 
 // 공통 변수 캐싱
@@ -34,6 +34,7 @@ var Elsword = Elsword || (function () {
 	UI.init = function () {
 		UI.pageLoader();
 		UI.globalNavigation();
+		UI.floatingBanner();
 	}; // init
 
 	UI.pageLoader = function () {
@@ -66,6 +67,34 @@ var Elsword = Elsword || (function () {
 			}
 		}
 	}; // globalNavigation
+
+	UI.floatingBanner = function () {
+		var $snb = $('#aside .wrap_aside');
+
+		if ($snb.length) {
+			var initPos = $('#main').offset().top + 135;
+			var footerPos, snbTopMargin = 60;
+
+			$snb.stop().animate({ top: initPos }, 800);			
+			$window.on('scroll resize', function () {
+				var top_value,
+					wPos = $(window).scrollTop(),
+					footerPos = $('#footer').offset().top;
+				
+				// 플로팅 배너가 footer에 닿거나 footer를 넘어갈 때
+				if (wPos > (footerPos - $snb.height() - snbTopMargin)) {
+					top_value = footerPos - $snb.height() - snbTopMargin - 20;
+
+				// 일반적인 상황
+				} else {
+					// 브라우저 스크롤이 플로팅 배너의 첫 위치(initPos)를 스치면 스크롤 따라다님
+					// 아니면, 첫 위치(initPos)로 되돌아감
+					top_value = (wPos > (initPos - snbTopMargin)) ? wPos + snbTopMargin : initPos;
+				}
+				$snb.stop().animate({ top: top_value }, 800);
+			});
+		}
+	}; // floatingBanner
 
 	UI.setCarousel = function ($target, options) {
 		if ($target.length) {
@@ -315,33 +344,6 @@ $(document).ready(function () {
 				});
 				$pLi.addClass('active');
 			}
-		});
-	}
-
-	// 플로팅 배너
-	if ($('#aside .wrap_aside').length) {
-		var $snb = $('#aside .wrap_aside');
-		$snb.addClass('sub');
-
-		var	footerPos, snbPos = 645, snbTopMargin = 60,
-			snbTop = $snb.css('top');
-		
-		$window.on('scroll resize', function () {
-			var top_value,
-				wPos = $(window).scrollTop(),
-				footerPos = $('#footer').offset().top;
-			
-			// 플로팅 배너가 footer에 닿거나 footer를 넘어갈 때
-			if (wPos > (footerPos - $snb.height() - snbTopMargin)) {
-				top_value = footerPos - $snb.height() - snbTopMargin - 20;
-			
-			// 일반적인 상황
-			} else {
-				// 브라우저 스크롤이 플로팅 배너의 첫 위치(snbPos)를 스치면 스크롤 따라다님
-				// 아니면, 첫 위치(snbPos)로 되돌아감
-				top_value = (wPos > (snbPos - snbTopMargin)) ? wPos + snbTopMargin : snbTop;
-			}
-			$snb.stop().animate({ top: top_value }, 800);
 		});
 	}
 
