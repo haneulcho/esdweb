@@ -65,7 +65,8 @@
 .dcn_modal .dcn_modal_body .dcn_cont .dcn_status > strong:before {content:'>';position:absolute;top:1px;left:13px;display:block;font-size:13px;color:#999}
 .dcn_modal .dcn_modal_body .dcn_comment {margin-top:31px;padding-top:28px;border-top:1px solid #ccc}
 .dcn_modal .dcn_modal_body .dcn_cont + .dcn_comment {padding-top:0;border-top:none}
-.dcn_modal .dcn_modal_body .dcn_comment .tit_sub {margin-bottom:10px;font-size:15px;color:#3a312a}
+.dcn_modal .dcn_modal_body .dcn_comment .tit_sub {margin-top:10px;margin-bottom:10px;padding-top:28px;font-size:15px;color:#3a312a;border-top:1px solid #ccc}
+.dcn_modal .dcn_modal_body .dcn_comment .tit_sub:first-child {padding-top:0;border-top:none}
 .dcn_modal .dcn_modal_body .dcn_comment .tit_sub .dcn_date_sub {margin-left:3px;font-size:13px;font-weight:normal;color:#adacac}
 #declareNoticePopup .dcn_modal_body {background-color:#fafafa}
 #declareViewPopup .scroll_wrap {max-height:495px;overflow-x:hidden;overflow-y:auto;background-color:#fafafa}
