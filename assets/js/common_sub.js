@@ -1,7 +1,7 @@
 /* ================================================================
 	* FILENAME: common_sub.js
 	* PROJECT: 엘소드 2018 리뉴얼 서브 UI 공통 스크립트
-	* UPDATE: 18.03.06
+	* UPDATE: 18.03.09
 ================================================================ */
 
 // 공통 변수 캐싱
@@ -307,17 +307,17 @@ $(document).ready(function () {
 			var declareTargetPopup = (!$(this).hasClass('gf_btn_declareView')) ? '#declareNoticePopup' : '#declareViewPopup';
 			Elsword.layerControl.openLayer(declareTargetPopup);
 			// 레이어팝업 디자인 스크롤 삽입
-			if ($(this).hasClass('gf_btn_declareView')) {
-				$('#declareViewPopup').find('.scroll_wrap').addClass('scrollbar-macosx').scrollbar({
-					'disableBodyScroll': true
-				});
-				setTimeout(function () {
-					$('#declareViewPopup').find('.scroll-content').scrollTop(0);
-				}, 0);
-			}
+			$('.dcn_modal').find('.scroll_wrap').addClass('scrollbar-macosx').scrollbar({
+				'disableBodyScroll': true
+			});
+			setTimeout(function () {
+				$('.dcn_modal').find('.scroll-content').scrollTop(0);
+			}, 0);
 		});
 		// 비매너/버그 신고 최근 버그 현황 안내 디자인 스크롤 삽입
-		$('#contents.declare').find('.dc_box .dc_latest .dc_txt').addClass('scrollbar-macosx').scrollbar();
+		if ($('#contents.declare').find('.dc_txt').length) {
+			$('#contents.declare').find('.dc_box .dc_latest .dc_txt').addClass('scrollbar-macosx').scrollbar();
+		}
 	}
 
 	// 비매너/버그 신고 게시판 파일명 표시
