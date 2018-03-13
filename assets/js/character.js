@@ -50,27 +50,21 @@
 
 			UI.layerControl = {
 				setLayerSize: function (target) {
-					var $target = $(target), minHeight = 200;
-					var layerTop, layerLeft, scrollHeight;
+					var $target = $(target);
+					var layerTop, layerLeft, scrollHeight, gap;
 					layerTop = ($window.height() - $target.outerHeight()) / 2;
 					layerLeft = ($target.outerWidth() / 2) * -1;
-					scrollHeight = ($window.scrollTop() + layerTop);
+					gap = ($('#GNB_Wrapper').length) ? $('#GNB_Wrapper').outerHeight() : 0;
+					scrollHeight = ($window.scrollTop() + layerTop) - gap;
 
-					if ($('#GNB_Wrapper').hasClass('gnbWrapperOpen')) {
-						scrollHeight = scrollHeight - $('#GNB_Wrapper').outerHeight();
+					if (target == '#pop_illust') {
+						scrollHeight = ($window.height() < 1150) ? $window.scrollTop() + 200 : scrollHeight + 50;
 					}
 
-					if (scrollHeight > minHeight) {
-						$target.css({
-							'top': scrollHeight,
-							'margin-left': layerLeft
-						});
-					} else {
-						$target.css({
-							'top': minHeight,
-							'margin-left': layerLeft
-						});
-					}
+					$target.css({
+						'top': scrollHeight,
+						'margin-left': layerLeft
+					});
 				}, // layerControl.setLayerSize
 
 				openLayer: function (target) {
@@ -1354,7 +1348,6 @@
 
 					// CASE: 캐릭터 일러스트
 					} else if ($this.hasClass('gf_btn_illust')) {
-						console.log('캐릭터 팝업 클릭');
 						var illustSrc = $this.attr('href'),
 							popup_str = '';
 

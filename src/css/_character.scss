@@ -151,6 +151,9 @@ transition:all ease .3s;
 .cv_cont .cv_illust .illust_list li .gf_btn_illust {width:470px;height:50px;line-height:50px;text-align:center;font-size:14px;font-weight:bold;color:#fff;background-color:#bebebe}
 .cv_cont .cv_illust .illust_list li .gf_btn_illust.narrow {width:235px}
 
+/* 일러스트 보기 팝업 */
+#pop_illust {width:1200px;height:1000px;margin-left:-600px !important}
+
 /* 주요 스킬 */
 .cv_cont .cv_skill {clear:both}
 .cv_cont .cv_skill .tit {margin:0 0 43px 0;padding:0 0 14px 0;font-size:20px;letter-spacing:-1px;color:#3a312a;border-bottom:2px solid #ccc}
