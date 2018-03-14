@@ -51,18 +51,20 @@
 			UI.layerControl = {
 				setLayerSize: function (target) {
 					var $target = $(target);
-					var layerTop, layerLeft, scrollHeight, gap;
-					layerTop = ($window.height() - $target.outerHeight()) / 2;
+					var gnbHeight = $('#GNB_Wrapper').outerHeight() || 0;
+					var layerTop, layerLeft, isInContents;
+					layerTop = $window.scrollTop() + (($window.height() - $target.outerHeight()) / 2);
 					layerLeft = ($target.outerWidth() / 2) * -1;
-					gap = ($('#GNB_Wrapper').length) ? $('#GNB_Wrapper').outerHeight() : 0;
-					scrollHeight = ($window.scrollTop() + layerTop) - gap;
+					isInContents = ($('#contents').find(target).length) ? true : false;
 
-					if (target == '#pop_illust') {
-						scrollHeight = ($window.height() < 1150) ? $window.scrollTop() + 200 : scrollHeight + 50;
+					if (!isInContents) {
+						layerTop = ($window.height() - 200 < $target.outerHeight()) ? $window.scrollTop() + 150 : layerTop + (gnbHeight/2) - 30;
+					} else {
+						layerTop = layerTop - gnbHeight;
 					}
 
 					$target.css({
-						'top': scrollHeight,
+						'top': layerTop,
 						'margin-left': layerLeft
 					});
 				}, // layerControl.setLayerSize
