@@ -44,6 +44,10 @@ td,th{padding:0}
 ::selection{background:#ccc;color:#fff;text-shadow:none}
 ::-moz-selection{background:#ccc;color:#fff;text-shadow:none}
 ::-webkit-selection{background:#ccc;color:#fff;text-shadow:none}
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {color:transparent}
+input:focus:-moz-placeholder, textarea:focus:-moz-placeholder {color:transparent}
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {color:transparent}
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {color:transparent}
 
 /* RESET DEFAULT ELEMENTS STYLE */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
