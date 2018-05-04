@@ -1,0 +1,378 @@
+@@@include('../header_sub.html')
+	<main id="main" class="sub" role="main">
+		<div class="wrap_information row">
+			<div class="inner">
+				<!-- TODO, DEV: [S] 게임 스타트 버튼 시작!! -->
+				<div id="gameStart" class="gameStart">
+					<a href="#" class="btn_gameStart" onclick="GnxGameStartOnClick();return false;"><span class="motions"><span class="mo g" aria-hidden="true">g</span><span class="mo a" aria-hidden="true">a</span><span class="mo m" aria-hidden="true">m</span><span class="mo e" aria-hidden="true">e</span><span class="mo s" aria-hidden="true">s</span><span class="mo t" aria-hidden="true">t</span><span class="mo a2" aria-hidden="true">a</span><span class="mo r" aria-hidden="true">r</span><span class="mo t2" aria-hidden="true">t</span></span><span class="blind">GAME START</span></a><a href="../pds/download.html" class="btn_gameStartDownload">GAME DOWNLOAD</a></div>
+				</div>
+				<!-- //#gameStart -->
+				<!-- TODO, DEV: [E] 게임 스타트 버튼 끝!! -->
+			</div>
+			<!-- //.inner -->
+		</div>
+		<!-- //.wrap_information -->
+
+		<section id="contents" class="balance" role="main">
+			<div class="wrap_cont row">
+				<div class="cont_header inner">
+					<div class="titles">
+						<h2 class="tit">밸런스 토론장</h2>
+					</div>
+					<div class="des">
+						<p>공평한 밸런스를 위해 많은 제보 부탁 드립니다.</p>
+					</div>
+				</div>
+				<!-- //.cont_header -->
+				<div class="cont_header_notice inner">
+					<!-- [S] TODO, DEV: 의견 작성 전 읽어주세요 -->
+					<div class="bl_latest">
+						<h3 class="tit">의견 작성 전 읽어주세요!</h3>
+						<article class="bl_txt">
+							<h1 class="bl_tit">토론 주제 안내: 도대체 어디로 향하고 있는 것인가, 레이븐</h1>
+							<p class="bl_term">토론 기간: 2018-05-11 ~ 2018-05-28</p>
+							<p>많은 참여 부탁드립니다!</p>
+							<p>많은 참여 부탁드립니다! 줄 수가 길어지면 어떻게 되나 테스트 중.. 1234</p>
+							<p>많은 참여 부탁드립니다! 줄 수가 길어지면 어떻게 되나 테스트 중 많은 참여 부탁드립니다! 줄 수가 길어지면 어떻게 되나 테스트 중 많은 참여 부탁드립니다! 줄 수가 길어지면 어떻게 되나 테스트 중 많은 참여 부탁드립니다! 줄 수가 길어지면 어떻게 되나 테스트 중 많은 참여 부탁드립니다! 줄 수가 길어지면 어떻게 되나 테스트 중 많은 참여 부탁드립니다! 줄 수가 길어지면 어떻게 되나 테스트 중 많은 참여 부탁드립니다! 줄 수가 길어지면 어떻게 되나 테스트 중 많은 참여 부탁드립니다! 줄 수가 길어지면 어떻게 되나 테스트 중</p>
+							<p>많은 참여 부탁드립니다!</p>
+							<p>많은 참여 부탁드립니다!</p>
+						</article>
+						<!-- //.bl_txt -->
+					</div>
+					<!-- //.bl_latest -->
+					<!-- [E] //TODO, DEV: 의견 작성 전 읽어주세요 -->
+				</div>
+				<!-- //.cont_header_notice -->
+				<div class="cont_body">
+					<div id="boardList" class="inner">
+						<h2 class="blind">게시판 목록입니다.</h2>
+						<div class="board_list_header">
+							<h3 class="blind">게시판 정렬 기준을 선택하세요. (기본: ALL and 최신글 and 전체 기간)</h3>
+							<div class="bl_order character">
+								<h4 class="blind">정렬 캐릭터 선택</h4>
+								<ul class="blo_list">
+									<li class="c0">
+										<input id="orderAll" type="radio" name="orderCharacter" class="ipt_radio" value=""><label for="orderAll" class="ipt_label_radio">ALL</label>
+									</li>
+									<li class="c1">
+										<input id="orderCharacter1" type="radio" name="orderCharacter" class="ipt_radio" value=""><label for="orderCharacter1" class="ipt_label_radio">엘소드</label>
+									</li>
+									<li class="c2">
+										<input id="orderCharacter2" type="radio" name="orderCharacter" class="ipt_radio" value=""><label for="orderCharacter2" class="ipt_label_radio">아이샤</label>
+									</li>
+									<li class="c3">
+										<input id="orderCharacter3" type="radio" name="orderCharacter" class="ipt_radio" value=""><label for="orderCharacter3" class="ipt_label_radio">레나</label>
+									</li>
+									<li class="c4">
+										<input id="orderCharacter4" type="radio" name="orderCharacter" class="ipt_radio" value=""><label for="orderCharacter4" class="ipt_label_radio">레이븐</label>
+									</li>
+									<li class="c5">
+										<input id="orderCharacter5" type="radio" name="orderCharacter" class="ipt_radio" value=""><label for="orderCharacter5" class="ipt_label_radio">이브</label>
+									</li>
+									<li class="c6">
+										<input id="orderCharacter6" type="radio" name="orderCharacter" class="ipt_radio" value=""><label for="orderCharacter6" class="ipt_label_radio">청</label>
+									</li>
+									<li class="c7">
+										<input id="orderCharacter7" type="radio" name="orderCharacter" class="ipt_radio" value=""><label for="orderCharacter7" class="ipt_label_radio">아라</label>
+									</li>
+									<li class="c8">
+										<input id="orderCharacter8" type="radio" name="orderCharacter" class="ipt_radio" value=""><label for="orderCharacter8" class="ipt_label_radio">엘리시스</label>
+									</li>
+									<li class="c9">
+										<input id="orderCharacter9" type="radio" name="orderCharacter" class="ipt_radio" value=""><label for="orderCharacter9" class="ipt_label_radio">애드</label>
+									</li>
+									<li class="c10">
+										<input id="orderCharacter10" type="radio" name="orderCharacter" class="ipt_radio" value=""><label for="orderCharacter10" class="ipt_label_radio">루시엘</label>
+									</li>
+									<li class="c11">
+										<input id="orderCharacter11" type="radio" name="orderCharacter" class="ipt_radio" value=""><label for="orderCharacter11" class="ipt_label_radio">로제</label>
+									</li>
+									<li class="c12">
+										<input id="orderCharacter12" type="radio" name="orderCharacter" class="ipt_radio" value=""><label for="orderCharacter12" class="ipt_label_radio">아인</label>
+									</li>
+								</ul>
+							</div>
+							<!-- //.bl_order -->
+							<div class="bl_order normal">
+								<h4 class="blind">최신글, 추천수, 댓글수 중 정렬 기준 선택</h4>
+								<ul class="blo_list">
+									<li class="latest">
+										<input id="orderLatest" type="radio" name="orderNormal" class="ipt_radio" value=""><label for="orderLatest" class="ipt_label_radio">최신글</label>
+									</li>
+									<li class="upvote">
+										<input id="orderUpvote" type="radio" name="orderNormal" class="ipt_radio" value=""><label for="orderUpvote" class="ipt_label_radio">추천수</label>
+									</li>
+									<li class="comment">
+										<input id="orderComment" type="radio" name="orderNormal" class="ipt_radio" value=""><label for="orderComment" class="ipt_label_radio">댓글수</label>
+									</li>
+								</ul>
+							</div>
+							<!-- //.bl_order -->
+							<div class="bl_order terms">
+								<h4 class="blind">정렬 기간 선택</h4>
+								<div class="iptBox_select">
+									<select id="orderTerm" class="ipt_select" title="기간별 검색 조건 선택">
+										<option value="">전체 기간</option>
+										<option value="">최근 일주일</option>
+										<option value="">최근 1개월</option>
+										<option value="">최근 6개월</option>
+									</select>
+								</div>
+							</div>
+							<!-- //.bl_order -->
+						</div>
+						<!-- //.board_list_header -->
+						<ul class="board_list default">
+							<!-- TODO: <li class="label">은 Table thead 역할입니다! -->
+							<li class="label">
+								<div class="b_subject"><strong>제목</strong></div>
+								<div class="b_author"><strong>작성자</strong></div>
+								<div class="b_like"><strong>추천/비추천</strong></div>
+								<div class="b_date"><strong>작성일</strong></div>
+								<div class="b_hit"><strong>조회수</strong></div>
+							</li>
+							<!-- TODO: //<li class="label">은 Table thead 역할입니다! -->
+
+							<!--
+								공지사항: <li class="notice">
+							-->
+							<li class="notice">
+								<div class="b_subject">
+									<div class="subject_header">
+										<span class="category">공지</span>
+										<span class="num">No. -</span>
+									</div>
+									<h3 class="subject">
+										<a href="../common/view_balance.html">밸런스 토론장 운영 안내</a>
+										<span class="cmt">[10000]</span>
+										<span class="ico new">New</span>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<span class="author">엘소드</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_like"><span class="like">0</span></div>
+								<!-- //b_like -->
+								<div class="b_date"><span class="date">PM 04:23</span></div>
+								<!-- //b_date -->
+								<div class="b_hit"><span class="hit">213001</span></div>
+								<!-- //b_hit -->
+							</li>
+							<!-- //li.notice -->
+							<li class="notice">
+								<div class="b_subject">
+									<div class="subject_header">
+										<span class="category">공지</span>
+										<span class="num">No. -</span>
+									</div>
+									<h3 class="subject">
+										<a href="../common/view_balance.html">밸런스 토론장 운영 안내</a>
+										<span class="cmt">[10000]</span>
+										<span class="ico new">New</span>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<span class="author">엘소드</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_like"><span class="like">0</span></div>
+								<!-- //b_like -->
+								<div class="b_date"><span class="date">PM 04:23</span></div>
+								<!-- //b_date -->
+								<div class="b_hit"><span class="hit">213001</span></div>
+								<!-- //b_hit -->
+							</li>
+							<!-- //li.notice -->
+
+							<!-- TODO: <li>는 Table tbody 역할입니다! -->
+								<li>
+									<div class="b_subject">
+										<div class="subject_header">
+										<!-- TODO, DEV: 공략게시판 카테고리 색상 class 구분입니다. -->
+										<!--
+											베스트: <span class="category cr1">베스트</span>
+											던전:   <span class="category cr2">던전</span>
+											대전:   <span class="category cr3">대전</span>
+											캐릭터: <span class="category cr4">캐릭터</span>
+											아이템: <span class="category cr5">아이템</span>
+											퀘스트: <span class="category cr6">퀘스트</span>
+											펫:     <span class="category cr7">펫</span>
+											기타:   <span class="category cr8">기타</span>
+										-->
+										<span class="category cr4">캐릭터</span>
+										<span class="num">No. 12345678900</span>
+									</div>
+									<h3 class="subject">
+										<a href="../common/view_strategy.html">일위아조씨가 도발해서</a>
+										<span class="cmt">[10000]</span>
+										<span class="ico new">New</span>
+										<span class="ico mobile">Mobile</span>
+										<span class="ico pic">Picture</span>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<!-- TODO, DEV: [S] 개인화 영역 메달 시작!! -->
+									<!--
+										금메달: <span class="medal gold">메달</span>
+										은메달: <span class="medal silver">메달</span>
+										동메달: <span class="medal bronze">메달</span>
+									-->
+									<span class="medal gold">메달</span>
+									<!-- TODO, DEV: [E] 개인화 영역 메달 끝!! -->
+									<div class="author_header">
+										<span class="server">서버 <span class="g">가이아</span></span>
+									</div>
+									<span class="nickname">한글이름여덟글자</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_like"><span class="like">9999</span></div>
+								<!-- //b_like -->
+								<div class="b_date"><span class="date">2017.12.30</span></div>
+								<!-- //b_date -->
+								<div class="b_hit"><span class="hit">213001</span></div>
+								<!-- //b_hit -->
+							</li>
+							<!-- //li -->
+
+							<li>
+								<div class="b_subject">
+									<div class="subject_header">
+										<span class="category cr4">캐릭터</span>
+										<span class="num">No. 12345678900</span>
+									</div>
+									<h3 class="subject">
+										<a href="../common/view_strategy.html">일위아조씨가 도발해서</a>
+										<span class="cmt">[10000]</span>
+										<span class="ico new">New</span>
+										<span class="ico mobile">Mobile</span>
+										<span class="ico pic">Picture</span>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<!-- TODO, DEV: [S] 개인화 영역 메달 시작!! -->
+									<span class="medal silver">메달</span>
+									<!-- TODO, DEV: [E] 개인화 영역 메달 끝!! -->
+									<div class="author_header">
+										<span class="server">서버 <span class="g">가이아</span></span>
+									</div>
+									<span class="nickname">한글이름여덟글자</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_like"><span class="like">9999</span></div>
+								<!-- //b_like -->
+								<div class="b_date"><span class="date">2017.12.30</span></div>
+								<!-- //b_date -->
+								<div class="b_hit"><span class="hit">213001</span></div>
+								<!-- //b_hit -->
+							</li>
+							<!-- //li -->
+
+							<li>
+								<div class="b_subject">
+									<div class="subject_header">
+										<span class="category cr2">던전</span>
+										<span class="num">No. 12345678900</span>
+									</div>
+									<h3 class="subject">
+										<a href="../common/view_strategy.html">일위아조씨가 도발해서</a>
+										<span class="cmt">[10000]</span>
+										<span class="ico new">New</span>
+										<span class="ico mobile">Mobile</span>
+										<span class="ico pic">Picture</span>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<div class="author_header">
+										<span class="server">서버 <span class="g">가이아</span></span>
+									</div>
+									<span class="nickname">한글이름여덟글자</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_like"><span class="like">9999</span></div>
+								<!-- //b_like -->
+								<div class="b_date"><span class="date">2017.12.30</span></div>
+								<!-- //b_date -->
+								<div class="b_hit"><span class="hit">213001</span></div>
+								<!-- //b_hit -->
+							</li>
+							<!-- //li -->
+							<!-- TODO: //<li>는 Table tbody 역할입니다! -->
+						</ul>
+						<!-- //.board_list.default -->
+					</div>
+					<!-- //#boardList -->
+				</div>
+				<!-- //.cont_body -->
+				<div class="cont_footer">
+					<div id="boardFooter">
+						<div class="b_btns inner">
+							<!-- TODO: 글쓰기 경로 수정할 것 -->
+							<a href="../common/write_strategy.html" class="btn write">글쓰기</a>
+						</div>
+						<!-- [S] DEV: 게시판 페이지네이션 START!! -->
+						<div class="b_paging inner">
+							<!--
+								현재 페이지일 경우 <li class="num current">1</li>
+							-->
+							<ul class="paging">
+								<li class="btn first">첫 페이지</li>
+								<li class="btn prev"><a href="#">이전 페이지</a></li>
+								<li class="num current">1</li>
+								<li class="num"><a href="#">2</a></li>
+								<li class="num"><a href="#">3</a></li>
+								<li class="num"><a href="#">4</a></li>
+								<li class="num"><a href="#">5</a></li>
+								<li class="btn next"><a href="#">다음 페이지</a></li>
+								<li class="btn last">마지막 페이지</li>
+							</ul>
+							<!-- //.paging -->
+						</div>
+						<!-- //.b_paging -->
+						<!-- [E] DEV: 게시판 페이지네이션 END!! -->
+
+						<div class="b_search">
+							<!-- [S] DEV: 게시물 검색 FORM (pb-formSearch) START!! -->
+							<div class="b_search_form">
+								<form id="" action="" method="post" autocomplete="off">
+									<h3 class="blind">게시물 검색하기</h3>
+									<fieldset>
+										<legend class="blind">조건 검색</legend>
+										<div class="iptBox_select">
+											<select id="searchCategory" class="ipt_select" title="검색 조건 선택">
+												<option value="">제목</option>
+												<option value="">작성자</option>
+											</select>
+										</div>
+										<div class="iptBox_search">
+											<input type="text" id="" class="ipt_keyword" maxlength="20" placeholder="검색어를 입력하세요">
+											<a href="#" onclick="" class="btn search">SEARCH</a>
+											<input type="image" name="ctl00$Contents$btnListAll" id="Contents_btnListAll" class="btn listAll" src="http://s.nx.com/S2/Game/Elsword/site/2018/renewal/img_input.png" alt="전체목록">
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<!-- .b_search_form END -->
+							<!-- [E] DEV: 게시물 검색 FORM (pb-formSearch) END!! -->
+						</div>
+						<!-- //.b_search -->
+					</div>
+					<!-- //#boardFooter -->
+				</div>
+				<!-- //.cont_footer -->
+			</div>
+			<!-- //.wrap_cont -->
+		</section>
+		<!-- //===========================================================
+				#contents END
+		=========================================================== // -->
+	</main>
+	<!-- //===========================================================
+			#main END
+	=========================================================== // -->
+@@@include('../footer.html')
