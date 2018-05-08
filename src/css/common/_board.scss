@@ -271,7 +271,10 @@
 /* Board Write */
 .write .cont_body > .inner {padding:20px 0 0 !important;border-top:2px solid #acacac}
 .bw_header {margin:0 0 20px 0;padding:0 0 20px 0;border-bottom:2px solid #acacac}
-.bw_header:after {clear:both;display:table;content:'';*zoom:1}
+.bw_header:after, .bw_header .iptRow:after {clear:both;display:table;content:'';*zoom:1}
+.bw_header .iptHelp {width:118px;padding:7px 0 0 20px}
+.bw_header .iptHelp h5 {color:#3a312a;font-size:22px;font-weight:bold;line-height:1.1}
+.bw_header .iptHelp span {clear:both;display:block;color:#db6006;font-size:12px}
 .bw_header .iptBox .ipt_select,
 .bw_header .iptBox .ipt_keyword {height:48px;line-height:48px}
 .bw_header .iptBox .ipt_select {border-color:#acacac}
@@ -304,6 +307,13 @@
 .trade .bw_header .iptBox.bw_subject {margin-left:468px}
 .ucc .bw_header .iptBox.bw_subject {margin-left:15px}
 .declare .bw_editor {margin-bottom:21px}
+.balance .bw_header .iptBox.bw_category {margin:0 0 0 15px}
+.balance .bw_header .iptBox.bw_category.c_dungeon {width:171px}
+.balance .bw_header .iptBox.bw_category.c_character {width:171px}
+.balance .bw_header .iptBox.bw_category.c_job {width:234px}
+.balance .bw_header .iptBox.bw_category.c_skill {width:240px}
+.balance .bw_header .iptBox.bw_category.c_updown {width:171px}
+.balance .bw_header .iptBox.bw_subject {margin:16px 0 0 0;padding:18px 19px 0 17px;border-top:1px solid #e0d7d6}
 
 /* Declare File Upload Form */
 .declare .bw_uploader {height:215px;margin:0 0 35px 0;border:1px solid #d7d7d7}
