@@ -27,7 +27,7 @@
 				<div class="cont_header_notice inner">
 					<!-- [S] TODO, DEV: 의견 작성 전 읽어주세요 -->
 					<div class="bl_latest">
-						<h3 class="tit">의견 작성 전 읽어주세요!</h3>
+						<h3 class="tit">의견 작성 전 읽어주세요</h3>
 						<article class="bl_txt">
 							<h1 class="bl_tit">토론 주제 안내: 도대체 어디로 향하고 있는 것인가, 레이븐</h1>
 							<p class="bl_term">토론 기간: 2018-05-11 ~ 2018-05-28</p>
@@ -50,9 +50,10 @@
 							<h3 class="blind">게시판 정렬 기준을 선택하세요. (기본: ALL and 최신글 and 전체 기간)</h3>
 							<div class="bl_order character">
 								<h4 class="blind">정렬 캐릭터 선택</h4>
+								<!-- ALL 버튼 선택되어 있으므로 li class="c0 selected" -->
 								<ul class="blo_list">
-									<li class="c0">
-										<input id="orderAll" type="radio" name="orderCharacter" class="ipt_radio" value=""><label for="orderAll" class="ipt_label_radio">ALL</label>
+									<li class="c0 selected">
+										<input id="orderAll" type="radio" name="orderCharacter" class="ipt_radio" value="" checked="checked"><label for="orderAll" class="ipt_label_radio">ALL</label>
 									</li>
 									<li class="c1">
 										<input id="orderCharacter1" type="radio" name="orderCharacter" class="ipt_radio" value=""><label for="orderCharacter1" class="ipt_label_radio">엘소드</label>
@@ -95,24 +96,19 @@
 							<!-- //.bl_order -->
 							<div class="bl_order normal">
 								<h4 class="blind">최신글, 추천수, 댓글수 중 정렬 기준 선택</h4>
-								<ul class="blo_list">
-									<li class="latest">
-										<input id="orderLatest" type="radio" name="orderNormal" class="ipt_radio" value=""><label for="orderLatest" class="ipt_label_radio">최신글</label>
-									</li>
-									<li class="upvote">
-										<input id="orderUpvote" type="radio" name="orderNormal" class="ipt_radio" value=""><label for="orderUpvote" class="ipt_label_radio">추천수</label>
-									</li>
-									<li class="comment">
-										<input id="orderComment" type="radio" name="orderNormal" class="ipt_radio" value=""><label for="orderComment" class="ipt_label_radio">댓글수</label>
-									</li>
-								</ul>
+								<div class="iptBox_select">
+									<select id="orderNormal" class="ipt_select" title="최신글, 추천수, 댓글수 중 정렬 기준 선택">
+										<option value="">최신글</option>
+										<option value="">추천수</option>
+										<option value="">댓글수</option>
+									</select>
+								</div>
 							</div>
 							<!-- //.bl_order -->
 							<div class="bl_order terms">
 								<h4 class="blind">정렬 기간 선택</h4>
 								<div class="iptBox_select">
 									<select id="orderTerm" class="ipt_select" title="기간별 검색 조건 선택">
-										<option value="">전체 기간</option>
 										<option value="">최근 일주일</option>
 										<option value="">최근 1개월</option>
 										<option value="">최근 6개월</option>
@@ -120,6 +116,11 @@
 								</div>
 							</div>
 							<!-- //.bl_order -->
+							<div class="bl_order_btns">
+								<input type="image" name="" id="" class="btn orderSuccess" src="http://s.nx.com/S2/Game/Elsword/site/2018/renewal/img_input.png" alt="적용하기">
+								<a href="#" onclick="" class="btn orderRefresh">새로고침</a>
+							</div>
+							<!-- //.bl_order_btns -->
 						</div>
 						<!-- //.board_list_header -->
 						<ul class="board_list default">
@@ -127,7 +128,7 @@
 							<li class="label">
 								<div class="b_subject"><strong>제목</strong></div>
 								<div class="b_author"><strong>작성자</strong></div>
-								<div class="b_like"><strong>추천/비추천</strong></div>
+								<div class="b_like"><strong>추천 / 비추천</strong></div>
 								<div class="b_date"><strong>작성일</strong></div>
 								<div class="b_hit"><strong>조회수</strong></div>
 							</li>
@@ -188,25 +189,17 @@
 							<!-- //li.notice -->
 
 							<!-- TODO: <li>는 Table tbody 역할입니다! -->
-								<li>
-									<div class="b_subject">
-										<div class="subject_header">
-										<!-- TODO, DEV: 공략게시판 카테고리 색상 class 구분입니다. -->
-										<!--
-											베스트: <span class="category cr1">베스트</span>
-											던전:   <span class="category cr2">던전</span>
-											대전:   <span class="category cr3">대전</span>
-											캐릭터: <span class="category cr4">캐릭터</span>
-											아이템: <span class="category cr5">아이템</span>
-											퀘스트: <span class="category cr6">퀘스트</span>
-											펫:     <span class="category cr7">펫</span>
-											기타:   <span class="category cr8">기타</span>
-										-->
-										<span class="category cr4">캐릭터</span>
+							<li>
+								<div class="b_subject">
+									<div class="subject_header">
 										<span class="num">No. 12345678900</span>
+										<span class="vcategory">[던전]</span>
+										<span class="vcategory">[레이븐]</span>
+										<span class="vcategory">[노바 임퍼레이터]</span>
+										<span class="vcategory">[체인지/이그니션 크로우-인시너레이션]</span>
 									</div>
 									<h3 class="subject">
-										<a href="../common/view_strategy.html">일위아조씨가 도발해서</a>
+										<a href="../common/view_balance.html">지금 제목 제한은 30자였다. 기껏 다 쓰게하고 등록할라니까 막네.. 요상하군</a>
 										<span class="cmt">[10000]</span>
 										<span class="ico new">New</span>
 										<span class="ico mobile">Mobile</span>
@@ -229,7 +222,7 @@
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
 								<!-- //.b_author -->
-								<div class="b_like"><span class="like">9999</span></div>
+								<div class="b_like"><span class="like">9999</span> / <span class="dislike">333</span></div>
 								<!-- //b_like -->
 								<div class="b_date"><span class="date">2017.12.30</span></div>
 								<!-- //b_date -->
@@ -241,11 +234,48 @@
 							<li>
 								<div class="b_subject">
 									<div class="subject_header">
-										<span class="category cr4">캐릭터</span>
 										<span class="num">No. 12345678900</span>
+										<span class="vcategory">[던전]</span>
+										<span class="vcategory">[레이븐]</span>
+										<span class="vcategory">[노바 임퍼레이터]</span>
+										<span class="vcategory">[체인지/이그니션 크로우-인시너레이션]</span>
 									</div>
 									<h3 class="subject">
-										<a href="../common/view_strategy.html">일위아조씨가 도발해서</a>
+										<a href="../common/view_balance.html">지금 제목 제한은 30자였다. 기껏 다 쓰게하고 등록할라니까 막네.. 요상하군</a>
+										<span class="cmt">[10000]</span>
+										<span class="ico new">New</span>
+										<span class="ico mobile">Mobile</span>
+										<span class="ico pic">Picture</span>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<div class="author_header">
+										<span class="server">서버 <span class="s">솔레스</span></span>
+									</div>
+									<span class="nickname">한글이름여덟글자</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_like"><span class="like">9999</span> / <span class="dislike">333</span></div>
+								<!-- //b_like -->
+								<div class="b_date"><span class="date">2017.12.30</span></div>
+								<!-- //b_date -->
+								<div class="b_hit"><span class="hit">213001</span></div>
+								<!-- //b_hit -->
+							</li>
+							<!-- //li -->
+
+							<li>
+								<div class="b_subject">
+									<div class="subject_header">
+										<span class="num">No. 12345678900</span>
+										<span class="vcategory">[던전]</span>
+										<span class="vcategory">[레이븐]</span>
+										<span class="vcategory">[노바 임퍼레이터]</span>
+										<span class="vcategory">[체인지/이그니션 크로우-인시너레이션]</span>
+									</div>
+									<h3 class="subject">
+										<a href="../common/view_balance.html">지금 제목 제한은 30자였다. 기껏 다 쓰게하고 등록할라니까 막네.. 요상하군</a>
 										<span class="cmt">[10000]</span>
 										<span class="ico new">New</span>
 										<span class="ico mobile">Mobile</span>
@@ -255,7 +285,12 @@
 								<!-- //.b_subject -->
 								<div class="b_author">
 									<!-- TODO, DEV: [S] 개인화 영역 메달 시작!! -->
-									<span class="medal silver">메달</span>
+									<!--
+										금메달: <span class="medal gold">메달</span>
+										은메달: <span class="medal silver">메달</span>
+										동메달: <span class="medal bronze">메달</span>
+									-->
+									<span class="medal gold">메달</span>
 									<!-- TODO, DEV: [E] 개인화 영역 메달 끝!! -->
 									<div class="author_header">
 										<span class="server">서버 <span class="g">가이아</span></span>
@@ -263,38 +298,7 @@
 									<span class="nickname">한글이름여덟글자</span>
 								</div>
 								<!-- //.b_author -->
-								<div class="b_like"><span class="like">9999</span></div>
-								<!-- //b_like -->
-								<div class="b_date"><span class="date">2017.12.30</span></div>
-								<!-- //b_date -->
-								<div class="b_hit"><span class="hit">213001</span></div>
-								<!-- //b_hit -->
-							</li>
-							<!-- //li -->
-
-							<li>
-								<div class="b_subject">
-									<div class="subject_header">
-										<span class="category cr2">던전</span>
-										<span class="num">No. 12345678900</span>
-									</div>
-									<h3 class="subject">
-										<a href="../common/view_strategy.html">일위아조씨가 도발해서</a>
-										<span class="cmt">[10000]</span>
-										<span class="ico new">New</span>
-										<span class="ico mobile">Mobile</span>
-										<span class="ico pic">Picture</span>
-									</h3>
-								</div>
-								<!-- //.b_subject -->
-								<div class="b_author">
-									<div class="author_header">
-										<span class="server">서버 <span class="g">가이아</span></span>
-									</div>
-									<span class="nickname">한글이름여덟글자</span>
-								</div>
-								<!-- //.b_author -->
-								<div class="b_like"><span class="like">9999</span></div>
+								<div class="b_like"><span class="like">9999</span> / <span class="dislike">333</span></div>
 								<!-- //b_like -->
 								<div class="b_date"><span class="date">2017.12.30</span></div>
 								<!-- //b_date -->
@@ -313,7 +317,7 @@
 					<div id="boardFooter">
 						<div class="b_btns inner">
 							<!-- TODO: 글쓰기 경로 수정할 것 -->
-							<a href="../common/write_strategy.html" class="btn write">글쓰기</a>
+							<a href="../common/write_balance.html" class="btn write">글쓰기</a>
 						</div>
 						<!-- [S] DEV: 게시판 페이지네이션 START!! -->
 						<div class="b_paging inner">

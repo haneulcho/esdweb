@@ -60,7 +60,7 @@
 										<!-- //.bv_subject -->
 										<!-- 게시글 등록일, 조회수 등 표기 -->
 										<div class="bv_des">
-											<div class="bv_date"><span class="date">2018-05-08 PM 7:52</span></div>
+											<div class="bv_date"><span class="date">2018.05.08 PM 7:52</span></div>
 											<div class="bv_hit"><span class="hit">조회수 : 21301212501</span></div>
 											<div class="bv_like"><span class="like"><span class="blind">추천수 : </span>213001</span></div>
 											<div class="bv_dislike"><span class="dislike"><span class="blind">비추천수 : </span>213001</span></div>
@@ -158,9 +158,15 @@
 											수정/삭제: 내 글 일 때 표기
 											추천하기/비추천: 필요한 경우 표기
 										-->
-										<a href="#" id="btnRecommend" class="btn like">추천하기</a>
+										<a href="#" id="btnRecommend" class="btn like_m">추천하기</a>
 										<a href="#" id="" class="btn dislike">비추천</a>
-										<a href="/community/balance/list.aspx?n4ArticleSN=0" class="btn list"><span class="ir">목록으로</span></a>
+										<!--
+											내 글이 아닐 때는, 목록버튼 우측정렬입니다.
+											내 글일 때 목록버튼 class에 notMine 제거 부탁드립니다.
+
+											<a href="/community/balance/list.aspx?n4ArticleSN=0" class="btn list_m"><span class="ir">목록으로</span></a>
+										-->
+										<a href="/community/balance/list.aspx?n4ArticleSN=0" class="btn list_m notMine"><span class="ir">목록으로</span></a>
 										<a href="/community/balance/write.aspx?n4ArticleSN=4810924" id="btnArticleEdit" class="btn modify">글수정</a>
 										<a href="#" id="btnArticleRemove" class="btn delete">글삭제</a>
 									</div>
@@ -223,24 +229,23 @@
 												<!-- //.bc_contents -->
 												<div class="bc_likes">
 													<div class="bc_likes_count">
-														<div class="bc_like"><span class="like"><span class="blind">댓글 추천수 : </span>12345</span></div>
-														<div class="bc_dislike"><span class="dislike"><span class="blind">댓글 비추천수 : </span>12345</span></div>
-													</div>
-													<div class="bc_likes_btns">
-														<a href="#" class="btn clike"><span class="ir">추천하기</span></a>
-														<a href="#" class="btn cdislike"><span class="ir">비추천</span></a>
+														<div class="bc_like">
+															<span class="blind">댓글 추천수 : </span>
+															<span class="like">12345</span>
+															<a href="#" class="btn clike"><span class="ir">추천하기</span></a>
+														</div>
+														<div class="bc_dislike">
+															<span class="blind">댓글 비추천수 : </span>
+															<span class="dislike">12345</span>
+															<a href="#" class="btn cdislike"><span class="ir">비추천</span></a>
+														</div>
 													</div>
 												</div>
 												<!-- //.bc_likes -->
 												<div class="bc_aside">
 													<!-- 댓글 등록일 표기 -->
-													<div class="bc_date"><span class="date">2018-05-05 PM 7:52:00</span></div>
+													<div class="bc_date"><span class="date">2018.05.05 PM 7:52</span></div>
 													<!-- //.bc_date -->
-													<!-- 내 댓글일 경우 댓글 삭제 표기 -->
-													<div class="bc_btns">
-														<a href="#" class="btn cdelete"><span class="ir">삭제</span></a>
-													</div>
-													<!-- //.bc_btns -->
 												</div>
 												<!-- //.bc_aside -->
 											</div>
@@ -264,23 +269,25 @@
 												</div>
 												<!-- //.bc_author -->
 												<div class="bc_contents">
-													<p>내용 들어 가 쟈 ㄴ ㅏ 쟈나 쟈나~</p>
+													<p>제가 쓴 댓글이라서 추천하기, 비추천 버튼 (div class="bc_lieks_btns"가 보이지 않습니다.)</p>
 												</div>
 												<!-- //.bc_contents -->
 												<div class="bc_likes">
 													<div class="bc_likes_count">
-														<div class="bc_like"><span class="like"><span class="blind">댓글 추천수 : </span>12345</span></div>
-														<div class="bc_dislike"><span class="dislike"><span class="blind">댓글 비추천수 : </span>12345</span></div>
-													</div>
-													<div class="bc_likes_btns">
-														<a href="#" class="btn clike"><span class="ir">추천하기</span></a>
-														<a href="#" class="btn cdislike"><span class="ir">비추천</span></a>
+														<div class="bc_like">
+															<span class="blind">댓글 추천수 : </span>
+															<span class="like">0</span>
+														</div>
+														<div class="bc_dislike">
+															<span class="blind">댓글 비추천수 : </span>
+															<span class="dislike">0</span>
+														</div>
 													</div>
 												</div>
 												<!-- //.bc_likes -->
 												<div class="bc_aside">
 													<!-- 댓글 등록일 표기 -->
-													<div class="bc_date"><span class="date">2018-05-05 PM 7:52:00</span></div>
+													<div class="bc_date"><span class="date">2018.05.05 PM 7:52</span></div>
 													<!-- //.bc_date -->
 													<!-- 내 댓글일 경우 댓글 삭제 표기 -->
 													<div class="bc_btns">
@@ -302,29 +309,28 @@
 												</div>
 												<!-- //.bc_author -->
 												<div class="bc_contents">
-													<p>추천없고/글은 좌측정렬/ 한줄이면 높이값의 센터에 정렬해주시고/ 댓글 최소높이값 85px/ 댓글 페이지당 10개하죠? 보다 넘길면 5개! 라고 지혜 과장님께서 말씀하셨습니다.</p>
+													<p>추천없고/글은 좌측정렬/ 한줄이면 높이값의 센터에 정렬해주시고/ 댓글 최소높이값 85px/ 댓글 페이지당 10개하죠? 보다 넘길면 5개! 라고 지혜 차장님께서 말씀하셨습니다.</p>
 												</div>
 												<!-- //.bc_contents -->
 												<div class="bc_likes">
 													<div class="bc_likes_count">
-														<div class="bc_like"><span class="like"><span class="blind">댓글 추천수 : </span>12345</span></div>
-														<div class="bc_dislike"><span class="dislike"><span class="blind">댓글 비추천수 : </span>12345</span></div>
-													</div>
-													<div class="bc_likes_btns">
-														<a href="#" class="btn clike"><span class="ir">추천하기</span></a>
-														<a href="#" class="btn cdislike"><span class="ir">비추천</span></a>
+														<div class="bc_like">
+															<span class="blind">댓글 추천수 : </span>
+															<span class="like">12345</span>
+															<a href="#" class="btn clike"><span class="ir">추천하기</span></a>
+														</div>
+														<div class="bc_dislike">
+															<span class="blind">댓글 비추천수 : </span>
+															<span class="dislike">12345</span>
+															<a href="#" class="btn cdislike"><span class="ir">비추천</span></a>
+														</div>
 													</div>
 												</div>
 												<!-- //.bc_likes -->
 												<div class="bc_aside">
 													<!-- 댓글 등록일 표기 -->
-													<div class="bc_date"><span class="date">2018-05-05 PM 7:52:00</span></div>
+													<div class="bc_date"><span class="date">2018.05.05 PM 7:52</span></div>
 													<!-- //.bc_date -->
-													<!-- 내 댓글일 경우 댓글 삭제 표기 -->
-													<div class="bc_btns">
-														<a href="#" class="btn cdelete"><span class="ir">삭제</span></a>
-													</div>
-													<!-- //.bc_btns -->
 												</div>
 												<!-- //.bc_aside -->
 											</div>
@@ -348,29 +354,28 @@
 												</div>
 												<!-- //.bc_author -->
 												<div class="bc_contents">
-													<p>네줄부터는 세로가길어지면 됩니당. 뭐 사실 꼭 그러지는 않아도 되요. 보기에이뻤다더라~~ 정도면 되겠쬬. 디자인이라는게 다 그런거 아니겟습니까라랄랄라라다 그런거 아니겟습니까라랄랄라라다 그런거 아니겟습니까라랄랄라라다 그런거 아니겟습니까라랄랄라라다 그런거 아니겟습니까라랄랄라라</p>
+													<p>네줄부터는 세로가길어지면 됩니당. 뭐 사실 꼭 그러지는 않아도 되요. 보기에이뻤다더라~~ 정도면 되겠쬬. 디자인이라는게 다 그런거 아니겟습니까라랄랄라라다 그런거 아니겟습니까라랄랄라라다 그런거 아니겟습니까라랄랄라라다 그런거 아니겟습니까라랄랄라라다 네줄부터는 세로가길어지면 됩니당. 뭐 사실 꼭 그러지는 않아도 되요. 보기에이뻤다더라~~ 정도면 되겠쬬. 디자인이라는게 다 그런거 아니겟습니까라랄랄라라다 그런거 아니겟습니까라랄랄라라다 그런거 아니겟습니까라랄랄라라다 그런거 아니겟습니까라랄랄라라다네줄부터는 세로가길어지면 됩니당. 뭐 사실 꼭 그러지는 않아도 되요. 보기에이뻤다더라~~ 정도면 되겠쬬. 디자인이라는게 다 그런거 아니겟습니까라랄랄라라다 그런거 아니겟습니까라랄랄라라다 그런거 아니겟습니까라랄랄라라다 그런거 아니겟습니까라랄랄라라다네줄부터는 세로가길어지면 됩니당. 뭐 사실 꼭 그러지는 않아도 되요. 보기에이뻤다더라~~ 정도면 되겠쬬. 디자인이라는게 다 그런거 아니겟습니까라랄랄라라다 그런거 아니겟습니까라랄랄라라다 그런거 아니겟습니까라랄랄라라다 그런거 아니겟습니까라랄랄라라다네줄부터는 세로가길어지면 됩니당. 뭐 사실 꼭 그러지는 않아도 되요. 보기에이뻤다더라~~ 정도면 되겠쬬. 디자인이라는게 다 그런거 아니겟습니까라랄랄라라다 그런거 아니겟습니까라랄랄라라다 그런거 아니겟습니까라랄랄라라다 그런거 아니겟습니까라랄랄라라다그런거 아니겟습니까라랄랄라라</p>
 												</div>
 												<!-- //.bc_contents -->
 												<div class="bc_likes">
 													<div class="bc_likes_count">
-														<div class="bc_like"><span class="like"><span class="blind">댓글 추천수 : </span>12345</span></div>
-														<div class="bc_dislike"><span class="dislike"><span class="blind">댓글 비추천수 : </span>12345</span></div>
-													</div>
-													<div class="bc_likes_btns">
-														<a href="#" class="btn clike"><span class="ir">추천하기</span></a>
-														<a href="#" class="btn cdislike"><span class="ir">비추천</span></a>
+														<div class="bc_like">
+															<span class="blind">댓글 추천수 : </span>
+															<span class="like">12345</span>
+															<a href="#" class="btn clike"><span class="ir">추천하기</span></a>
+														</div>
+														<div class="bc_dislike">
+															<span class="blind">댓글 비추천수 : </span>
+															<span class="dislike">12345</span>
+															<a href="#" class="btn cdislike"><span class="ir">비추천</span></a>
+														</div>
 													</div>
 												</div>
 												<!-- //.bc_likes -->
 												<div class="bc_aside">
 													<!-- 댓글 등록일 표기 -->
-													<div class="bc_date"><span class="date">2018-05-05 PM 7:52:00</span></div>
+													<div class="bc_date"><span class="date">2018.05.05 PM 7:52</span></div>
 													<!-- //.bc_date -->
-													<!-- 내 댓글일 경우 댓글 삭제 표기 -->
-													<div class="bc_btns">
-														<a href="#" class="btn cdelete"><span class="ir">삭제</span></a>
-													</div>
-													<!-- //.bc_btns -->
 												</div>
 												<!-- //.bc_aside -->
 											</div>
@@ -383,29 +388,6 @@
 								<!-- //#commentList.inner -->
 							</div>
 							<!-- //.bc_body -->
-							<div class="bc_footer">
-								<!-- DEV: 댓글 페이지네이션 START!! -->
-								<div class="b_paging inner">
-									<!--
-										현재 페이지일 경우 <li class="num current">1</li>
-									-->
-									<ul class="paging">
-										<li class="btn first">첫 페이지</li>
-										<li class="btn prev"><a href="#">이전 페이지</a></li>
-										<li class="num current">1</li>
-										<li class="num"><a href="#">2</a></li>
-										<li class="num"><a href="#">3</a></li>
-										<li class="num"><a href="#">4</a></li>
-										<li class="num"><a href="#">5</a></li>
-										<li class="btn next"><a href="#">다음 페이지</a></li>
-										<li class="btn last">마지막 페이지</li>
-									</ul>
-									<!-- //.paging -->
-								</div>
-								<!-- //.b_paging -->
-								<!-- DEV: 댓글 페이지네이션 END!! -->
-							</div>
-							<!-- //.bc_footer -->
 						</section>
 						<!-- //section.board_comment -->
 

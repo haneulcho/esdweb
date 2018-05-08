@@ -134,7 +134,10 @@
 .b_btns .btn.vote {width:421px;height:69px;background-position:-423px -300px}
 .b_btns .btn.submit {width:419px;height:69px;background-position:0 -376px}
 .b_btns .btn.like {width:421px;height:69px;background-position:-423px -376px}
+.b_btns .btn.like_m {width:319px;height:69px;background-position:0 -534px}
+.b_btns .btn.dislike {width:321px;height:69px;background-position:-329px -534px}
 .b_btns .btn.list {width:420px;height:69px;background-position:0 -453px}
+.b_btns .btn.list_m {width:319px;height:69px;background-position:0 -612px}
 .b_btns .btn.modify {width:339px;height:69px;background-position:-423px -453px}
 .b_btns .btn.delete {width:339px;height:69px;background-position:-439px -224px}
 .bc_btns .btn.cdelete {width:64px;height:21px;background-position:-548px 0}
@@ -194,8 +197,10 @@
 .bv_header .bv_info .bv_des > div:after {float:right;content:'';width:1px;height:13px;margin:2px -23px 0 20px;background:#adacac}
 .bv_header .bv_info .bv_des > div:first-child {margin-left:0}
 .bv_header .bv_info .bv_des > div:last-child:after {display:none}
-.bv_header .bv_info .bv_des .bv_like {position:relative;padding:0 0 0 20px}
+.bv_header .bv_info .bv_des .bv_like,
+.bv_header .bv_info .bv_des .bv_dislike {position:relative;padding:0 0 0 20px}
 .bv_header .bv_info .bv_des .bv_like:before {position:absolute;top:3px;left:0;display:block;content:'';width:13px;height:11px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -326px -108px}
+.bv_header .bv_info .bv_des .bv_dislike:before {position:absolute;top:0;left:0;display:block;content:'';width:10px;height:16px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -349px -108px}
 .bv_header .bv_userInfo {float:right;display:table;width:380px;padding:3px 30px 0 35px;background:#f5f5f5}
 .bv_header .bv_userInfo.none {height:68px;margin:34px 0 0 0;padding:0;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/logo.png') no-repeat 50% 0}
 .bv_header .bv_userInfo .bv_author {display:table-cell;width:160px;vertical-align:middle}
@@ -246,6 +251,7 @@
 .comment_list .bc_row.none > p {display:table-cell;vertical-align:middle;text-align:center}
 .comment_list .bc_author,
 .comment_list .bc_contents,
+.comment_list .bc_likes,
 .comment_list .bc_aside {display:table-cell;vertical-align:middle}
 .comment_list .bc_author {position:relative;width:215px;padding:0 20px 0 50px}
 .comment_list .bc_author .medal {position:absolute;top:50%;left:20px;width:24px;height:34px;margin:-16px 0 0 0;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global.png') no-repeat 0 0}
@@ -263,6 +269,15 @@
 .comment_list .bc_author .author_header .level:before {float:left;content:'';width:1px;height:9px;margin:3px 7px 0 0;background:#989898}
 .comment_list .bc_author .nickname {font-size:14px;line-height:19px;color:#444}
 .comment_list .bc_contents {position:relative;width:795px;padding:22px 40px 22px 20px;font-size:14px;line-height:18px;word-break:break-all}
+.comment_list .bc_likes {width:180px}
+.comment_list .bc_likes .bc_likes_count {overflow:hidden;text-align:center;border-left:1px solid #cacaca;border-right:1px solid #cacaca}
+.comment_list .bc_likes .bc_likes_count > div {display:inline-block;position:relative;width:67px;padding:20px 0 0 0;text-align:center;color:#adacac}
+.comment_list .bc_likes .bc_likes_count .bc_like:before {position:absolute;top:3px;left:50%;display:block;content:'';width:13px;height:11px;margin-left:-6px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -326px -108px}
+.comment_list .bc_likes .bc_likes_count .bc_dislike:before {position:absolute;top:0;left:50%;display:block;content:'';width:10px;height:16px;margin-left:-5px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -349px -108px}
+.comment_list .bc_likes .bc_likes_count .bc_dislike {margin-left:2px}
+.comment_list .bc_likes .bc_likes_count .btn {display:block;overflow:hidden;width:64px;height:21px;margin:8px auto 0;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat 0 0}
+.comment_list .bc_likes .bc_likes_count .btn.clike {background-position:-616px 0}
+.comment_list .bc_likes .bc_likes_count .btn.cdislike {background-position:-683px 0}
 .comment_list .bc_aside {width:180px;padding:20px;text-align:center}
 .comment_list .bc_date {font-size:12px;color:#adacac}
 .comment_list .bc_btns {clear:both;margin:5px 0 0 0}

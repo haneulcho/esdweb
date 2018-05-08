@@ -1,12 +1,72 @@
 /* Board List: Type Balance */
 .balance .bw_header .iptHelp {float:left}
-
-
-
-
-// .balance .board_list .b_subject {width:605px}
-// .balance .board_list .b_subject .subject > a {max-width:460px}
-// .balance .board_list.default .b_date {width:180px}
-// .balance .board_list.default .b_date .date {font-size:13px !important}
-// .balance .board_list.default .b_hit {width:110px}
-
+.balance .bv_header .bv_info {padding:30px 27px 31px !important}
+.balance .bv_header .bv_info .bv_subject .subject_top:after,
+.balance .bv_footer .b_btns:after,
+.balance .board_list_header:after,
+.balance .board_list_header .blo_list:after {clear:both;display:table;content:'';*zoom:1}
+.balance .bv_header .bv_info .bv_subject .subject_top .category {display:block;float:left;margin-right:2px;color:#e65700;font-size:12px;line-height:1.1}
+.balance .bv_header .bv_info .bv_subject .subject .tit {max-width:100%}
+.balance .bv_footer .b_btns .btn {margin:0 0 0 15px}
+.balance .bv_footer .b_btns .btn.like_m, .balance .bv_footer .b_btns .btn.dislike {float:left;margin:0 15px 0 0}
+.balance .bv_footer .b_btns .btn.list_m.notMine {float:right}
+.balance .comment_list .bc_contents {width:647px;padding-right:25px}
+.balance .comment_list .bc_aside {width:145px;padding:20px 10px}
+.balance .cont_header_notice .bl_latest {overflow:hidden;height:120px;margin:0 auto 30px;padding:17px 0;border-top:2px solid #acacac;border-bottom:2px solid #acacac}
+.balance .cont_header_notice .bl_latest .tit {float:left;width:260px;padding:0 28px 0 27px;font-size:20px;line-height:80px;color:#3a312a;border-right:1px solid #acacac}
+.balance .cont_header_notice .bl_latest .bl_txt {overflow-y:auto;height:80px;padding:12px 25px 0 38px;font-size:13px;line-height:21px;color:#888}
+.balance .cont_header_notice .bl_latest .bl_txt .bl_tit {color:#000}
+.balance .cont_header_notice .bl_latest .bl_txt .bl_term {color:#f0783b}
+.balance .board_list_header {height:70px;padding:16px 16px 0 16px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/img_board_category.png') no-repeat 0 0}
+.balance .board_list_header .bl_order {float:left}
+.balance .board_list_header .bl_order.normal,
+.balance .board_list_header .bl_order.terms {position:relative;margin-left:26px}
+.balance .board_list_header .bl_order.normal:before,
+.balance .board_list_header .bl_order.terms:before {position:absolute;content:'';top:13px;left:-14px;display:block;width:1px;height:11px;background-color:#acacac}
+.balance .board_list_header .bl_order .iptBox_select {width:140px}
+.balance .blo_list li {position:relative;float:left;width:40px;height:38px;margin-right:4px}
+.balance .blo_list li:first-child {width:105px}
+.balance .blo_list li .ipt_radio {opacity:0}
+.balance .blo_list li .ipt_label_radio {overflow:hidden;width:100%;height:100%;font-size:0;text-indent:-9999px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat 0 0}
+.balance .blo_list li .ipt_label_radio:before,
+.balance .blo_list li .ipt_label_radio:after {display:none !important}
+.balance .blo_list li.c0 .ipt_label_radio {background-position:-531px -694px}
+.balance .blo_list li.selected.c0 .ipt_label_radio {background-position:-531px -736px}
+.balance .blo_list li.c1 .ipt_label_radio {background-position:0 -694px}
+.balance .blo_list li.selected.c1 .ipt_label_radio {background-position:0 -736px}
+.balance .blo_list li.c2 .ipt_label_radio {background-position:-44px -694px}
+.balance .blo_list li.selected.c2 .ipt_label_radio {background-position:-44px -736px}
+.balance .blo_list li.c3 .ipt_label_radio {background-position:-88px -694px}
+.balance .blo_list li.selected.c3 .ipt_label_radio {background-position:-88px -736px}
+.balance .blo_list li.c4 .ipt_label_radio {background-position:-132px -694px}
+.balance .blo_list li.selected.c4 .ipt_label_radio {background-position:-132px -736px}
+.balance .blo_list li.c5 .ipt_label_radio {background-position:-177px -694px}
+.balance .blo_list li.selected.c5 .ipt_label_radio {background-position:-177px -736px}
+.balance .blo_list li.c6 .ipt_label_radio {background-position:-221px -694px}
+.balance .blo_list li.selected.c6 .ipt_label_radio {background-position:-221px -736px}
+.balance .blo_list li.c7 .ipt_label_radio {background-position:-265px -694px}
+.balance .blo_list li.selected.c7 .ipt_label_radio {background-position:-265px -736px}
+.balance .blo_list li.c8 .ipt_label_radio {background-position:-309px -694px}
+.balance .blo_list li.selected.c8 .ipt_label_radio {background-position:-309px -736px}
+.balance .blo_list li.c9 .ipt_label_radio {background-position:-353px -694px}
+.balance .blo_list li.selected.c9 .ipt_label_radio {background-position:-353px -736px}
+.balance .blo_list li.c10 .ipt_label_radio {background-position:-398px -694px}
+.balance .blo_list li.selected.c10 .ipt_label_radio {background-position:-398px -736px}
+.balance .blo_list li.c11 .ipt_label_radio {background-position:-442px -694px}
+.balance .blo_list li.selected.c11 .ipt_label_radio {background-position:-442px -736px}
+.balance .blo_list li.c12 .ipt_label_radio {background-position:-486px -694px}
+.balance .blo_list li.selected.c12 .ipt_label_radio {background-position:-486px -736px}
+.balance .board_list_header .bl_order_btns {float:right}
+.balance .board_list_header .bl_order_btns .btn {display:block;float:left}
+.balance .board_list_header .bl_order_btns .btn.orderSuccess {width:139px;height:38px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -642px -24px}
+.balance .board_list_header .bl_order_btns .btn.orderRefresh {width:38px;height:38px;margin-left:4px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -785px -24px}
+.balance .board_list .b_subject {width:605px}
+.balance .board_list .b_subject .subject > a {max-width:460px}
+.balance .board_list.default .b_date {width:120px}
+.balance .board_list.default .b_date .date {font-size:13px !important}
+.balance .board_list.default .b_hit {width:100px}
+.balance .board_list.default .b_author {width:170px}
+.balance .board_list.default .label .b_like {color:#444}
+.balance .board_list.default .b_like {width:150px;color:#888}
+.balance .board_list.default .b_like .like {color:#d75404}
+.balance .board_list .b_subject .subject_header .vcategory {display:block;float:left;margin-right:2px;color:#e65700;font-size:12px;line-height:14px}

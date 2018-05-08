@@ -1,7 +1,7 @@
 /* ================================================================
 	* FILENAME: common_sub.js
 	* PROJECT: 엘소드 2018 리뉴얼 서브 UI 공통 스크립트
-	* UPDATE: 18.03.09
+	* UPDATE: 18.05.08
 ================================================================ */
 
 // 공통 변수 캐싱
@@ -242,6 +242,9 @@ $(document).ready(function () {
 
 	// 설문조사 Radio 버튼
 	Elsword.inputControl.setRadio($('#pollView .vote_list'));
+
+	// 밸런스 토론장 Radio 버튼
+	Elsword.inputControl.setRadio($('#boardList .blo_list'));
 
 	// 레이어 팝업 열기
 	$('body').on('click', '.gf_btn_popup, .gf_btn_ytb', function (e) {
