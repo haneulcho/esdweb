@@ -1,0 +1,133 @@
+@@@include('../header_sub.html')
+	<main id="main" class="sub" role="main">
+		<div class="wrap_information row">
+			<div class="inner">
+				<!-- TODO, DEV: [S] 게임 스타트 버튼 시작!! -->
+				<div id="gameStart" class="gameStart">
+					<a href="#" class="btn_gameStart" onclick="GnxGameStartOnClick();return false;"><span class="motions"><span class="mo g" aria-hidden="true">g</span><span class="mo a" aria-hidden="true">a</span><span class="mo m" aria-hidden="true">m</span><span class="mo e" aria-hidden="true">e</span><span class="mo s" aria-hidden="true">s</span><span class="mo t" aria-hidden="true">t</span><span class="mo a2" aria-hidden="true">a</span><span class="mo r" aria-hidden="true">r</span><span class="mo t2" aria-hidden="true">t</span></span><span class="blind">GAME START</span></a><a href="../pds/download.html" class="btn_gameStartDownload">GAME DOWNLOAD</a></div>
+				</div>
+				<!-- //#gameStart -->
+				<!-- TODO, DEV: [E] 게임 스타트 버튼 끝!! -->
+			</div>
+			<!-- //.inner -->
+		</div>
+		<!-- //.wrap_information -->
+
+		<section id="contents" class="write balance" role="main">
+			<div class="wrap_cont row">
+				<div class="cont_header inner">
+					<div class="titles">
+						<h2 class="tit">밸런스 토론장</h2>
+					</div>
+					<div class="des">
+						<p>공평한 밸런스를 위해 많은 제보 부탁 드립니다.</p>
+					</div>
+				</div>
+				<!-- //.cont_header -->
+				<div class="cont_body">
+					<div id="boardWrite" class="inner">
+						<div class="board_write">
+							<h3 class="blind">글쓰기</h3>
+							<div class="bw_header">
+								<fieldset>
+									<legend class="blind"><h4>분류 선택 및 글제목 작성</h4></legend>
+									<div class="iptRow">
+										<div class="iptHelp">
+											<h5>카테고리</h5>
+											<span class="ipt_helpTxt">필수 항목입니다.</span>
+										</div>
+										<div class="iptBox bw_category c_dungeon">
+											<select name="ctl00$Contents$m_CategorySelectBox" id="Contents_m_CategorySelectBox" class="ipt_select">
+												<option data-display="던전을 선택해 주세요">던전을 선택해 주세요</option>
+												<option value="1">던전</option>
+												<option value="2">대전</option>
+												<option value="3">그 외</option>
+											</select>
+										</div>
+										<div class="iptBox bw_category c_character">
+											<select name="ctl00$Contents$m_CategorySelectBox" id="Contents_m_CategorySelectBox" class="ipt_select">
+												<option data-display="캐릭터를 선택해 주세요">캐릭터를 선택해 주세요</option>
+												<option value="0">엘소드</option>
+												<option value="1">아이샤</option>
+												<option value="2">레나</option>
+												<option value="3">레이븐</option>
+												<option value="4">이브</option>
+												<option value="5">청</option>
+												<option value="6">아라</option>
+												<option value="7">엘리시스</option>
+												<option value="8">애드</option>
+												<option value="9">루시엘</option>
+												<option value="10">로제</option>
+												<option value="11">아인</option>
+												<option value="12">공용 스킬</option>
+											</select>
+										</div>
+										<div class="iptBox bw_category c_job">
+											<select name="ctl00$Contents$m_CategorySelectBox" id="Contents_m_CategorySelectBox" class="ipt_select">
+												<option data-display="전직명을 선택해 주세요">전직명을 선택해 주세요</option>
+												<option value="0"></option>
+											</select>
+										</div>
+										<div class="iptBox bw_category c_skill">
+											<select name="ctl00$Contents$m_CategorySelectBox" id="Contents_m_CategorySelectBox" class="ipt_select">
+												<option data-display="스킬을 선택해 주세요">스킬을 선택해 주세요</option>
+												<option value="0"></option>
+											</select>
+										</div>
+										<div class="iptBox bw_category c_updown">
+											<select name="ctl00$Contents$m_CategorySelectBox" id="Contents_m_CategorySelectBox" class="ipt_select">
+												<option data-display="상/하향을 선택해 주세요">상/하향을 선택해 주세요</option>
+												<option value="0">상향</option>
+												<option value="1">하향</option>
+												<option value="2">기타 의견</option>
+											</select>
+										</div>
+									</div>
+									<div class="iptRow">
+										<div class="iptBox bw_subject">
+											<input name="ctl00$Contents$m_txtTitle" type="text" id="Contents_m_txtTitle" class="ipt_keyword" maxlength="40" placeholder="제목을 입력하세요. (40자까지 입력 가능)">
+										</div>
+									</div>
+								</fieldset>
+							</div>
+							<!-- //.bw_header -->
+							<div class="bw_editor">
+								<fieldset>
+									<legend class="blind"><h4>글내용 작성</h4></legend>
+									<!-- DEV: 글쓰기 에디터 START!! -->
+									<!--
+										..........................................................
+										..........................................................
+										..........................................................
+										....................... 에디터 공간 .......................
+										..........................................................
+										..........................................................
+										..........................................................
+									-->
+									<!-- DEV: 글쓰기 에디터 END!! -->
+								</fieldset>
+							</div>
+							<!-- //.bw_editor -->
+							<div class="bw_footer">
+								<div class="b_btns inner">
+									<a href="#" onclick="history.back(-1);return false;" class="btn list"><span class="ir">목록으로</span></a><input type="image" name="ctl00$Contents$btnWrite" id="Contents_btnWrite" class="btn submit" alt="등록하기" src="http://s.nx.com/S2/Game/Elsword/site/2018/renewal/img_input.png">
+								</div>
+							</div>
+							<!-- //.bw_footer -->
+						</div>
+						<!-- //.board_write -->
+					</div>
+					<!-- //#boardWrite -->
+				</div>
+				<!-- //.cont_body -->
+			</div>
+			<!-- //.wrap_cont -->
+		</section>
+		<!-- //===========================================================
+				#contents END
+		=========================================================== // -->
+	</main>
+	<!-- //===========================================================
+			#main END
+	=========================================================== // -->
+@@@include('../footer.html')
