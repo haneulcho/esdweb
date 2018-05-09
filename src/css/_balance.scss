@@ -25,13 +25,13 @@
 .balance .board_list_header .bl_order.terms:before {position:absolute;content:'';top:13px;left:-14px;display:block;width:1px;height:11px;background-color:#acacac}
 .balance .board_list_header .bl_order .iptBox_select {width:140px}
 .balance .blo_list li {position:relative;float:left;width:40px;height:38px;margin-right:4px}
-.balance .blo_list li:first-child {width:105px}
+.balance .blo_list li:first-child {width:83px}
 .balance .blo_list li .ipt_radio {opacity:0}
 .balance .blo_list li .ipt_label_radio {overflow:hidden;width:100%;height:100%;font-size:0;text-indent:-9999px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat 0 0}
 .balance .blo_list li .ipt_label_radio:before,
 .balance .blo_list li .ipt_label_radio:after {display:none !important}
-.balance .blo_list li.c0 .ipt_label_radio {background-position:-531px -694px}
-.balance .blo_list li.selected.c0 .ipt_label_radio {background-position:-531px -736px}
+.balance .blo_list li.c0 .ipt_label_radio {background-position:-573px -694px}
+.balance .blo_list li.selected.c0 .ipt_label_radio {background-position:-573px -736px}
 .balance .blo_list li.c1 .ipt_label_radio {background-position:0 -694px}
 .balance .blo_list li.selected.c1 .ipt_label_radio {background-position:0 -736px}
 .balance .blo_list li.c2 .ipt_label_radio {background-position:-44px -694px}
@@ -56,10 +56,13 @@
 .balance .blo_list li.selected.c11 .ipt_label_radio {background-position:-442px -736px}
 .balance .blo_list li.c12 .ipt_label_radio {background-position:-486px -694px}
 .balance .blo_list li.selected.c12 .ipt_label_radio {background-position:-486px -736px}
+.balance .blo_list li.c13 {width:39px}
+.balance .blo_list li.c13 .ipt_label_radio {background-position:-530px -694px}
+.balance .blo_list li.selected.c13 .ipt_label_radio {background-position:-530px -736px}
 .balance .board_list_header .bl_order_btns {float:right}
 .balance .board_list_header .bl_order_btns .btn {display:block;float:left}
-.balance .board_list_header .bl_order_btns .btn.orderSuccess {width:139px;height:38px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -642px -24px}
-.balance .board_list_header .bl_order_btns .btn.orderRefresh {width:38px;height:38px;margin-left:4px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -785px -24px}
+.balance .board_list_header .bl_order_btns .btn.orderSuccess {width:111px;height:38px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -642px -24px}
+.balance .board_list_header .bl_order_btns .btn.orderRefresh {width:38px;height:38px;margin-left:4px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -757px -24px}
 .balance .board_list .b_subject {width:605px}
 .balance .board_list .b_subject .subject > a {max-width:460px}
 .balance .board_list.default .b_date {width:120px}
