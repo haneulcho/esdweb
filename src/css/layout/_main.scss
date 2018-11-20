@@ -62,110 +62,64 @@
 .wrap_information .box .myInfo .logged_menu .btn_logout {width:69px;height:23px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global_181122.png') no-repeat -661px -541px}
 
 /* Game Start */
-.wrap_information .gameStart {position:absolute;top:-72px;left:397px;z-index:3}
-.wrap_information .gameStart .btn_gameStart {width:400px;height:165px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/gamestart/btn_gameStart.png') no-repeat 0 0}
-.wrap_information .gameStart .btn_gameStartDownload {width:400px;height:75px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/gamestart/btn_gameStart.png') no-repeat 0 -165px}
-.wrap_information .gameStart .motions {position:relative;display:block;width:400px;height:165px}
-.wrap_information .gameStart .motions .mo {position:absolute;display:block;transition:all ease .3s;
--webkit-animation:stop 1200ms normal forwards;
--moz-animation:stop 1200ms normal forwards;
--o-animation:stop 1200ms normal forwards;
-animation:stop 1200ms normal forwards;
-}
-.wrap_information .gameStart .motions .mo.g {top:34px;left:84px;width:57px;height:60px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/gamestart/img_game_g.png') no-repeat 0 0}
-.wrap_information .gameStart .motions .mo.a {top:26px;left:140px;width:52px;height:69px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/gamestart/img_game_a.png') no-repeat 0 0}
-.wrap_information .gameStart .motions .mo.m {top:25px;left:197px;width:61px;height:55px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/gamestart/img_game_m.png') no-repeat 0 0}
-.wrap_information .gameStart .motions .mo.e {top:28px;left:265px;width:42px;height:55px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/gamestart/img_game_e.png') no-repeat 0 0}
-.wrap_information .gameStart .motions .mo.s {top:94px;left:122px;width:32px;height:48px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/gamestart/img_start_s.png') no-repeat 0 0}
-.wrap_information .gameStart .motions .mo.t {top:94px;left:152px;width:39px;height:48px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/gamestart/img_start_t.png') no-repeat 0 0}
-.wrap_information .gameStart .motions .mo.a2 {top:92px;left:188px;width:40px;height:55px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/gamestart/img_start_a.png') no-repeat 0 0}
-.wrap_information .gameStart .motions .mo.r {top:91px;left:231px;width:44px;height:55px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/gamestart/img_start_r.png') no-repeat 0 0}
-.wrap_information .gameStart .motions .mo.t2 {top:90px;left:270px;width:39px;height:48px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/gamestart/img_start_t2.png') no-repeat 0 0}
-.wrap_information .btn_gameStart:hover .motions .mo {
--webkit-animation:updown 1000ms infinite 1000ms;
--moz-animation:updown 1000ms infinite 1000ms;
--o-animation:updown 1000ms infinite 1000ms;
-animation:updown 1000ms infinite 1000ms
-}
-.wrap_information .btn_gameStart:hover .motions .mo.g {animation-delay:200ms;-webkit-animation-delay:200ms}
-.wrap_information .btn_gameStart:hover .motions .mo.a {animation-delay:400ms;-webkit-animation-delay:400ms}
-.wrap_information .btn_gameStart:hover .motions .mo.m {animation-delay:300ms;-webkit-animation-delay:300ms}
-.wrap_information .btn_gameStart:hover .motions .mo.e {animation-delay:500ms;-webkit-animation-delay:500ms}
-.wrap_information .btn_gameStart:hover .motions .mo.s {animation-delay:600ms;-webkit-animation-delay:600ms}
-.wrap_information .btn_gameStart:hover .motions .mo.t {animation-delay:900ms;-webkit-animation-delay:900ms}
-.wrap_information .btn_gameStart:hover .motions .mo.a2 {animation-delay:700ms;-webkit-animation-delay:700ms}
-.wrap_information .btn_gameStart:hover .motions .mo.r {animation-delay:1000ms;-webkit-animation-delay:1000ms}
-.wrap_information .btn_gameStart:hover .motions .mo.t2 {animation-delay:800ms;-webkit-animation-delay:800ms}
+.wrap_information .gameStart {position:absolute;top:-129px;left:438px;width:342px;height:341px;background:url("http://s.nx.com/S2/Game/Elsword/site/2018/renewal/gamestart/bg.png") no-repeat 0 46px;z-index:3}
+.wrap_information .gameStart:before {position:absolute;display:block;content:'';top:0;left:0;width:342px;height:341px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/gamestart/img_front.png') no-repeat 0 0;z-index:2}
+.wrap_information .gameStart > a {position:absolute;display:block;z-index:3}
+.wrap_information .gameStart .btn_gameStart {top:116px;left:74px;width:166px;height:100px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/gamestart/btn_gameStart_1122.png') no-repeat 0 0}
+.wrap_information .gameStart .btn_gameStartDownload {top:232px;left:97px;width:118px;height:12px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/gamestart/btn_gameDownload_1122.png') no-repeat 0 0}
+.wrap_information .gameStart .motions {opacity:0;position:absolute;top:50%;left:50%;display:block;width:190px;height:190px;margin:-92px 0 0 -109px;z-index:1;transition:all cubic-bezier(0.390, 0.575, 0.565, 1.000) 600ms}
+.wrap_information .gameStart .motions .mo {position:absolute;display:block;top:50%;left:50%;width:1px;height:1px;margin:0;transition:all ease .3s;border-radius:50%;animation:ripple 0.7s linear infinite;-webkit-animation:ripple 0.7s linear infinite;-moz-animation:ripple 0.7s linear infinite}
+.wrap_information .gameStart .points {opacity:0;position:absolute;z-index:2;transition:all cubic-bezier(0.390, 0.575, 0.565, 1.000) 600ms}
+.wrap_information .gameStart .points > span {opacity:0;position:absolute;display:block;width:10px;height:10px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/gamestart/img_particle.png') no-repeat 0 0}
+.wrap_information .gameStart .points .p1 {top:159px;left:71px;animation:blink 2s 1150ms cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite;-webkit-animation:blink 2s 1150ms cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite;-moz-animation:blink 2s 1150ms cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite}
+.wrap_information .gameStart .points .p2 {top:98px;left:195px;animation:blink 2s 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite;-webkit-animation:blink 2s 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite;-moz-animation:blink 2s 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite}
+.wrap_information .gameStart .points .p3 {top:253px;left:164px;animation:blink 2s 750ms cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite;-webkit-animation:blink 2s 750ms cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite;-moz-animation:blink 2s 750ms cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite}
+.wrap_information .gameStart .points .p4 {top:181px;left:229px;animation:blink 2s 50ms cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite;-webkit-animation:blink 2s 50ms cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite;-moz-animation:blink 2s 50ms cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite}
+.wrap_information .gameStart .points .p5 {top:86px;left:150px;animation:blink 2s 900ms cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite;-webkit-animation:blink 2s 900ms cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite;-moz-animation:blink 2s 900ms cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite}
+.wrap_information .gameStart:hover .motions {opacity:0.85}
+.wrap_information .gameStart:hover .points,
+.wrap_information .gameStart:hover .points > span {opacity:1}
 
-@-webkit-keyframes updown {
-0% {
-transform: translateY(0);
--webkit-transform: translateY(0);
-animation-timing-function: ease;
+@keyframes ripple {
+0% { box-shadow: 0 0 0 0 rgba(#8e91dd, 0.15),
+                0 0 0 1em rgba(#8e91dd, 0.15),
+                0 0 0 3em rgba(#8e91dd, 0.15),
+                0 0 0 5em rgba(#8e91dd, 0.15),
+                0 0 0 8em rgba(#8e91dd, 0.15)}
+100% { box-shadow: 0 0 0 1em rgba(#8e91dd, 0.15),
+                0 0 0 3em rgba(#8e91dd, 0.15),
+                0 0 0 5em rgba(#8e91dd, 0.15),
+                0 0 0 8em rgba(#8e91dd, 0.15),
+                0 0 0 11em rgba(#8e91dd, 0)}
 }
-50% {
-transform: translateY(-4px);
--webkit-transform: translateY(-4px);
-animation-timing-function: ease;
+@-webkit-keyframes ripple {
+0% { box-shadow: 0 0 0 0 rgba(#8e91dd, 0.15),
+                0 0 0 1em rgba(#8e91dd, 0.15),
+                0 0 0 3em rgba(#8e91dd, 0.15),
+                0 0 0 5em rgba(#8e91dd, 0.15),
+                0 0 0 8em rgba(#8e91dd, 0.15)}
+100% { box-shadow: 0 0 0 1em rgba(#8e91dd, 0.15),
+                0 0 0 3em rgba(#8e91dd, 0.15),
+                0 0 0 5em rgba(#8e91dd, 0.15),
+                0 0 0 8em rgba(#8e91dd, 0.15),
+                0 0 0 11em rgba(#8e91dd, 0)}
 }
-100% {
-transform: translateY(0);
--webkit-transform: translateY(0);
-animation-timing-function: ease;
+@-moz-keyframes ripple {
+0% { box-shadow: 0 0 0 0 rgba(#8e91dd, 0.15),
+                0 0 0 1em rgba(#8e91dd, 0.15),
+                0 0 0 3em rgba(#8e91dd, 0.15),
+                0 0 0 5em rgba(#8e91dd, 0.15),
+                0 0 0 8em rgba(#8e91dd, 0.15)}
+100% { box-shadow: 0 0 0 1em rgba(#8e91dd, 0.15),
+                0 0 0 3em rgba(#8e91dd, 0.15),
+                0 0 0 5em rgba(#8e91dd, 0.15),
+                0 0 0 8em rgba(#8e91dd, 0.15),
+                0 0 0 11em rgba(#8e91dd, 0)}
 }
-}
-@keyframes updown {
-0% {
-transform: translateY(0);
--webkit-transform: translateY(0);
-animation-timing-function: ease;
-}
-50% {
-transform: translateY(-4px);
--webkit-transform: translateY(-4px);
-animation-timing-function: ease;
-}
-100% {
-transform: translateY(0);
--webkit-transform: translateY(0);
-animation-timing-function: ease;
-}
-}
-
-@-webkit-keyframes stop {
-0% {
-transform: translateY(-2px);
--webkit-transform: translateY(-2px);
-animation-timing-function: ease;
-}
-50% {
-transform: translateY(-4px);
--webkit-transform: translateY(-4px);
-animation-timing-function: ease;
-}
-100% {
-transform: translateY(0);
--webkit-transform: translateY(0);
-animation-timing-function: ease;
-}
-}
-@keyframes stop {
-0% {
-transform: translateY(-2px);
--webkit-transform: translateY(-2px);
-animation-timing-function: ease;
-}
-50% {
-transform: translateY(-4px);
--webkit-transform: translateY(-4px);
-animation-timing-function: ease;
-}
-100% {
-transform: translateY(0);
--webkit-transform: translateY(0);
-animation-timing-function: ease;
-}
-}
+@keyframes blink { 0% {opacity:0} 50% {opacity:1} 100% {opacity:0} }
+@-webkit-keyframes blink { 0% {opacity:0} 50% {opacity:1} 100% {opacity:0} }
+@-moz-keyframes blink { 0% {opacity:0} 50% {opacity:1} 100% {opacity:0} }
+@-o-keyframes blink { 0% {opacity:0} 50% {opacity:1} 100% {opacity:0} }
 
 /* Notice, GM Megaphone, Animation Banner */
 .wrap_issue {height:400px;padding:56px 0 0 0;background:#fff}
