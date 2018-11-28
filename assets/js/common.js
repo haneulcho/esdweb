@@ -1,7 +1,7 @@
 /* ================================================================
 	* FILENAME: common.js
 	* PROJECT: 엘소드 2018 리뉴얼 메인 UI 공통 스크립트
-	* UPDATE: 18.03.05
+	* UPDATE: 18.11.28
 ================================================================ */
 
 // 공통 변수 캐싱
@@ -72,10 +72,21 @@ var Elsword = Elsword || (function () {
 		var $snb = $('#aside .wrap_aside');
 
 		if ($snb.length) {
-			var initPos = $('#main').offset().top + 135;
-			var footerPos, snbTopMargin = 60;
+			var initPos = 0, snbTopMargin = 60;
 
-			$snb.stop().animate({ top: initPos }, 800);			
+			function init () {
+				initPos = $('#main').offset().top + 235;
+				$snb.stop().animate({ top: initPos }, 800);
+			}
+
+			if ($('#GNB_BtBanner').length) {
+				document.getElementById('GNB_BtBanner').addEventListener('click', function () {
+					init();
+				});
+			}
+
+			init();
+
 			$window.on('scroll resize', function () {
 				var top_value,
 					wPos = $(window).scrollTop(),
