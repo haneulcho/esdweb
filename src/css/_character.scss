@@ -10,11 +10,14 @@
 .cv_header .owl-nav .owl-prev {left:-170px;background-position:-135px -485px}
 .cv_header .owl-nav .owl-next {right:-170px;background-position:-314px -485px}
 .elsword .cv_header .owl-nav .owl-prev.disabled,
-.ain .cv_header .owl-nav .owl-next.disabled {cursor:default}
+.laby .cv_header .owl-nav .owl-next.disabled {cursor:default}
 .cv_header .owl-dots {position:relative;width:1200px;height:0;margin:680px auto 0;padding:0 0 0 8px;z-index:3}
 .cv_header .owl-dots .owl-dot {float:left;margin:0 0 0 12px}
 .cv_header .owl-dots .owl-dot > span {display:block;width:19px;height:19px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global_181122.png') no-repeat -386px -95px}
 .cv_header .owl-dots .owl-dot.active > span {background-position:-409px -95px}
+
+/* 컨텐츠 컨테이너 */
+.cv_cont.inner {width:1220px}
 
 /* 타이틀, 시스템 */
 .cv_cont .cv_title {position:relative;height:58px;margin-top:43px;border-bottom:2px solid #ccc}
@@ -26,15 +29,14 @@
 /* 시놉시스 */
 .cv_cont .cv_synopsis{position:relative;float:left;width:600px;padding:35px 65px 68px 8px}
 .cv_cont .cv_synopsis p{line-height:28.5px;font-size:14px;color:#555;text-align:justify;word-break:keep-all}
-.cv_cont .cv_synopsis:after{position:absolute;right:0;top:50%;width:2px;height:84px;margin-top:-42px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_line_dotted.png') no-repeat 0 0;content:''}
-.rose .cv_cont .cv_synopsis:after {right:27px}
+.cv_cont .cv_synopsis:after{position:absolute;right:-10px;top:50%;width:2px;height:84px;margin-top:-42px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_line_dotted.png') no-repeat 0 0;content:''}
+.rose .cv_cont .cv_synopsis:after {right:17px}
 
 /* 전직 라인 테이블 */
 .cv_cont .cv_line {position:relative;float:right;margin:0 43px 58px 0}
 .cv_cont .cv_line.line4 {margin:0 0 58px 0}
 .cv_cont .cv_line:before {position:absolute;top:92px;left:50%;display:block;width:353px;height:26px;margin-left:-176px;content:'';background-repeat:no-repeat;background-position:0 0;background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_character_line3.png')}
 .cv_cont .cv_line.line4:before {width:445px;height:23px;margin-left:-223px;background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_character_line4.png')}
-
 .cv_cont .cv_line .cvl_name {display:block;width:144px;margin:41px auto 34px;padding:15px 0;text-align:center;font-size:14px;font-weight:bold;color:#fff}
 .cv_cont .cv_line .cvl_list {float:left;width:143px;margin:0 0 0 27px;padding:1px;border:1px solid #bebebe}
 .cv_cont .cv_line.line4 .cvl_list {margin:0 0 0 5px}
@@ -78,7 +80,8 @@ transition:all ease .3s;
 .rose .cv_cont .cv_line .cvl_list.active li.tit:after{border-top:12px solid #fff653}
 .ain .cv_cont .cv_line .cvl_list.active li.tit {background-color:#19d2a8;border-bottom-color:#a3eddc}
 .ain .cv_cont .cv_line .cvl_list.active li.tit:after{border-top:12px solid #19d2a8}
-
+.laby .cv_cont .cv_line .cvl_list.active li.tit {background-color:#fe2d87;border-bottom-color:#ffd2e5}
+.laby .cv_cont .cv_line .cvl_list.active li.tit:after{border-top:12px solid #fe2d87}
 .elsword .cv_cont .cv_line .cvl_list li.des.active .btn_job {color:#c71c00}
 .aisha .cv_cont .cv_line .cvl_list li.des.active .btn_job {color:#853ec8}
 .rena .cv_cont .cv_line .cvl_list li.des.active .btn_job {color:#75ce18}
@@ -91,6 +94,7 @@ transition:all ease .3s;
 .luciel .cv_cont .cv_line .cvl_list li.des.active .btn_job {color:#202cf5}
 .rose .cv_cont .cv_line .cvl_list li.des.active .btn_job {color:#000}
 .ain .cv_cont .cv_line .cvl_list li.des.active .btn_job {color:#19d2a8}
+.laby .cv_cont .cv_line .cvl_list li.des.active .btn_job {color:#fe2d87}
 
 .elsword .cv_cont .cv_title:after,
 .elsword .cv_cont .cv_title .system,
@@ -141,6 +145,10 @@ transition:all ease .3s;
 .ain .cv_cont .cv_title .system,
 .ain .cv_cont .cv_line .cvl_name,
 .ain .cv_cont .cv_illust .illust_list li:first-child .gf_btn_illust {background-color:#19d2a8}
+.laby .cv_cont .cv_title:after,
+.laby .cv_cont .cv_title .system,
+.laby .cv_cont .cv_line .cvl_name,
+.laby .cv_cont .cv_illust .illust_list li:first-child .gf_btn_illust {background-color:#fe2d87}
 
 /* 일러스트 보기 */
 .cv_cont .cv_illust {clear:both}
@@ -168,18 +176,18 @@ transition:all ease .3s;
 /* 캐릭터 딱지 기본 */
 .cv_nav {position:absolute;bottom:0;width:100%;height:116px;z-index:2}
 .cv_nav:after {position:absolute;display:block;bottom:0;width:100%;height:100%;background-color:#000;opacity:.7;content:'';z-index:2;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";filter:alpha(opacity=70)}
-.cv_nav .nav_list {position:absolute;top:13px;left:50%;width:1200px;margin-left:-600px;z-index:3}
-.cv_nav .nav_list li {float:left;margin-left:9px}
+.cv_nav .nav_list {position:absolute;top:13px;left:50%;width:1240px;margin-left:-617px;z-index:3}
+.cv_nav .nav_list li {float:left;margin-left:3px}
 .cv_nav .nav_list li.aisha,
 .cv_nav .nav_list li.rena,
 .cv_nav .nav_list li.raven,
 .cv_nav .nav_list li.eve,
-.cv_nav .nav_list li.chung {margin-left:8px}
+.cv_nav .nav_list li.chung {margin-left:3px}
 .cv_nav .nav_list li:first-child {margin-left:0}
 .cv_nav .nav_list li a,
 .cv_nav .nav_list li a > span {display:block;text-align:left;text-indent:-9999px;line-height:0;font-size:0}
-.cv_nav .nav_list li a {position:relative;width:92px;height:92px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/spr_character_sub_off.png') no-repeat 0 0}
-.cv_nav .nav_list li a > span {opacity:0;position:absolute;top:0;left:0;width:100%;height:100%;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/spr_character_sub.png') no-repeat 0 0;
+.cv_nav .nav_list li a {position:relative;width:92px;height:92px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/spr_character_sub_off_laby.png') no-repeat 0 0}
+.cv_nav .nav_list li a > span {opacity:0;position:absolute;top:0;left:0;width:100%;height:100%;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/spr_character_sub_laby.png') no-repeat 0 0;
 -webkit-transition: opacity .4s cubic-bezier(0.645, 0.045, 0.355, 1);
 -moz-transition: opacity .4s cubic-bezier(0.645, 0.045, 0.355, 1);
 transition: opacity .4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -208,13 +216,10 @@ filter:alpha(opacity=100)}
 .cv_nav .nav_list li.elsword.c101 a > span {background-position:-294px -187px}
 .cv_nav .nav_list li.elsword.c112 a,
 .cv_nav .nav_list li.elsword.c112 a > span {background-position:-294px -303px}
-
 .cv_nav .nav_list li.elsword.c150 a,
 .cv_nav .nav_list li.elsword.c150 a > span {background-position:-417px -76px}
-
 .cv_nav .nav_list li.elsword.c151 a,
 .cv_nav .nav_list li.elsword.c151 a > span {background-position:-417px -187px}
-
 .cv_nav .nav_list li.elsword.c152 a,
 .cv_nav .nav_list li.elsword.c152 a > span {background-position:-417px -303px}
 
@@ -235,13 +240,10 @@ filter:alpha(opacity=100)}
 .cv_nav .nav_list li.aisha.c105 a > span {background-position:-829px -187px}
 .cv_nav .nav_list li.aisha.c113 a,
 .cv_nav .nav_list li.aisha.c113 a > span {background-position:-829px -303px}
-
 .cv_nav .nav_list li.aisha.c153 a,
 .cv_nav .nav_list li.aisha.c153 a > span {background-position:-953px -76px}
-
 .cv_nav .nav_list li.aisha.c154 a,
 .cv_nav .nav_list li.aisha.c154 a > span {background-position:-953px -187px}
-
 .cv_nav .nav_list li.aisha.c155 a,
 .cv_nav .nav_list li.aisha.c155 a > span {background-position:-953px -303px}
 
@@ -262,13 +264,10 @@ filter:alpha(opacity=100)}
 .cv_nav .nav_list li.rena.c103 a > span {background-position:-294px -567px}
 .cv_nav .nav_list li.rena.c114 a,
 .cv_nav .nav_list li.rena.c114 a > span {background-position:-294px -683px}
-
 .cv_nav .nav_list li.rena.c156 a,
 .cv_nav .nav_list li.rena.c156 a > span {background-position:-417px -455px}
-
 .cv_nav .nav_list li.rena.c157 a,
 .cv_nav .nav_list li.rena.c157 a > span {background-position:-417px -567px}
-
 .cv_nav .nav_list li.rena.c158 a,
 .cv_nav .nav_list li.rena.c158 a > span {background-position:-417px -682px}
 
@@ -289,13 +288,10 @@ filter:alpha(opacity=100)}
 .cv_nav .nav_list li.raven.c107 a > span {background-position:-829px -566px}
 .cv_nav .nav_list li.raven.c115 a,
 .cv_nav .nav_list li.raven.c115 a > span {background-position:-829px -681px}
-
 .cv_nav .nav_list li.raven.c159 a,
 .cv_nav .nav_list li.raven.c159 a > span {background-position:-952px -455px}
-
 .cv_nav .nav_list li.raven.c160 a,
 .cv_nav .nav_list li.raven.c160 a > span {background-position:-952px -566px}
-
 .cv_nav .nav_list li.raven.c161 a,
 .cv_nav .nav_list li.raven.c161 a > span {background-position:-952px -681px}
 
@@ -316,13 +312,10 @@ filter:alpha(opacity=100)}
 .cv_nav .nav_list li.eve.c109 a > span {background-position:-294px -951px}
 .cv_nav .nav_list li.eve.c116 a,
 .cv_nav .nav_list li.eve.c116 a > span {background-position:-294px -1067px}
-
 .cv_nav .nav_list li.eve.c162 a,
 .cv_nav .nav_list li.eve.c162 a > span {background-position:-418px -839px}
-
 .cv_nav .nav_list li.eve.c163 a,
 .cv_nav .nav_list li.eve.c163 a > span {background-position:-418px -951px}
-
 .cv_nav .nav_list li.eve.c164 a,
 .cv_nav .nav_list li.eve.c164 a > span {background-position:-418px -1066px}
 
@@ -343,13 +336,10 @@ filter:alpha(opacity=100)}
 .cv_nav .nav_list li.chung.c111 a > span {background-position:-829px -951px}
 .cv_nav .nav_list li.chung.c117 a,
 .cv_nav .nav_list li.chung.c117 a > span {background-position:-829px -1067px}
-
 .cv_nav .nav_list li.chung.c165 a,
 .cv_nav .nav_list li.chung.c165 a > span {background-position:-953px -839px}
-
 .cv_nav .nav_list li.chung.c166 a,
 .cv_nav .nav_list li.chung.c166 a > span {background-position:-953px -951px}
-
 .cv_nav .nav_list li.chung.c167 a,
 .cv_nav .nav_list li.chung.c167 a > span {background-position:-953px -1066px}
 
@@ -370,13 +360,10 @@ filter:alpha(opacity=100)}
 .cv_nav .nav_list li.ara.c119 a > span {background-position:-294px -1366px}
 .cv_nav .nav_list li.ara.c124 a,
 .cv_nav .nav_list li.ara.c124 a > span {background-position:-294px -1477px}
-
 .cv_nav .nav_list li.ara.c168 a,
 .cv_nav .nav_list li.ara.c168 a > span {background-position:-417px -1250px}
-
 .cv_nav .nav_list li.ara.c169 a,
 .cv_nav .nav_list li.ara.c169 a > span {background-position:-417px -1366px}
-
 .cv_nav .nav_list li.ara.c170 a,
 .cv_nav .nav_list li.ara.c170 a > span {background-position:-417px -1476px}
 
@@ -397,13 +384,10 @@ filter:alpha(opacity=100)}
 .cv_nav .nav_list li.elesis.c121 a > span {background-position:-829px -1359px}
 .cv_nav .nav_list li.elesis.c125 a,
 .cv_nav .nav_list li.elesis.c125 a > span {background-position:-829px -1470px}
-
 .cv_nav .nav_list li.elesis.c171 a,
 .cv_nav .nav_list li.elesis.c171 a > span {background-position:-951px -1250px}
-
 .cv_nav .nav_list li.elesis.c172 a,
 .cv_nav .nav_list li.elesis.c172 a > span {background-position:-951px -1359px}
-
 .cv_nav .nav_list li.elesis.c173 a,
 .cv_nav .nav_list li.elesis.c173 a > span {background-position:-951px -1469px}
 
@@ -424,13 +408,10 @@ filter:alpha(opacity=100)}
 .cv_nav .nav_list li.add.c123 a > span {background-position:-294px -1742px}
 .cv_nav .nav_list li.add.c126 a,
 .cv_nav .nav_list li.add.c126 a > span {background-position:-294px -1859px}
-
 .cv_nav .nav_list li.add.c174 a,
 .cv_nav .nav_list li.add.c174 a > span {background-position:-417px -1631px}
-
 .cv_nav .nav_list li.add.c175 a,
 .cv_nav .nav_list li.add.c175 a > span {background-position:-417px -1742px}
-
 .cv_nav .nav_list li.add.c176 a,
 .cv_nav .nav_list li.add.c176 a > span {background-position:-417px -1858px}
 
@@ -451,13 +432,10 @@ filter:alpha(opacity=100)}
 .cv_nav .nav_list li.luciel.c128 a > span {background-position:-829px -1742px}
 .cv_nav .nav_list li.luciel.c129 a,
 .cv_nav .nav_list li.luciel.c129 a > span {background-position:-829px -1858px}
-
 .cv_nav .nav_list li.luciel.c177 a,
 .cv_nav .nav_list li.luciel.c177 a > span {background-position:-953px -1631px}
-
 .cv_nav .nav_list li.luciel.c178 a,
 .cv_nav .nav_list li.luciel.c178 a > span {background-position:-953px -1742px}
-
 .cv_nav .nav_list li.luciel.c179 a,
 .cv_nav .nav_list li.luciel.c179 a > span {background-position:-953px -1857px}
 
@@ -482,16 +460,12 @@ filter:alpha(opacity=100)}
 .cv_nav .nav_list li.rose.c133 a > span {background-position:-294px -2242px}
 .cv_nav .nav_list li.rose.c132 a,
 .cv_nav .nav_list li.rose.c132 a > span {background-position:-294px -2358px}
-
 .cv_nav .nav_list li.rose.c180 a,
 .cv_nav .nav_list li.rose.c180 a > span {background-position:-417px -2014px}
-
 .cv_nav .nav_list li.rose.c181 a,
 .cv_nav .nav_list li.rose.c181 a > span {background-position:-417px -2125px}
-
 .cv_nav .nav_list li.rose.c182 a,
 .cv_nav .nav_list li.rose.c182 a > span {background-position:-417px -2242px}
-
 .cv_nav .nav_list li.rose.c183 a,
 .cv_nav .nav_list li.rose.c183 a > span {background-position:-417px -2358px}
 
@@ -512,15 +486,24 @@ filter:alpha(opacity=100)}
 .cv_nav .nav_list li.ain.c135 a > span {background-position:-829px -2126px}
 .cv_nav .nav_list li.ain.c136 a,
 .cv_nav .nav_list li.ain.c136 a > span {background-position:-829px -2243px}
-
 .cv_nav .nav_list li.ain.c184 a,
 .cv_nav .nav_list li.ain.c184 a > span {background-position:-952px -2014px}
-
 .cv_nav .nav_list li.ain.c185 a,
 .cv_nav .nav_list li.ain.c185 a > span {background-position:-952px -2126px}
-
 .cv_nav .nav_list li.ain.c186 a,
 .cv_nav .nav_list li.ain.c186 a > span {background-position:-952px -2242px}
+
+/* 라비 딱지 */
+.cv_nav .nav_list li.laby a,
+.cv_nav .nav_list li.laby a > span,
+.cv_nav .nav_list li.laby.c203 a,
+.cv_nav .nav_list li.laby.c203 a > span {background-position:-45px -2508px}
+.cv_nav .nav_list li.laby.c47 a,
+.cv_nav .nav_list li.laby.c47 a > span {background-position:-169px -2508px}
+.cv_nav .nav_list li.laby.c137 a,
+.cv_nav .nav_list li.laby.c137 a > span {background-position:-294px -2508px}
+.cv_nav .nav_list li.laby.c187 a,
+.cv_nav .nav_list li.laby.c187 a > span {background-position:-417px -2508px}
 
 /* 시스템 팝업 */
 .cv_system {display:none;position:absolute;top:0;left:50%;z-index:100}
@@ -555,3 +538,5 @@ filter:alpha(opacity=100)}
 #cvs_rose .cvs_body .cvs_side {background:url('http://s.nx.com/S2/Game/Elsword/2016/characterinfo/system/bg_10.jpg') no-repeat 0 0}
 #cvs_ain .cvs_body {border-color:#19d2a8}
 #cvs_ain .cvs_body .cvs_side {background:url('http://s.nx.com/S2/Game/Elsword/2016/characterinfo/system/bg_11.jpg') no-repeat 0 0}
+#cvs_laby .cvs_body {border-color:#fe2d87}
+#cvs_laby .cvs_body .cvs_side {background:url('http://s.nx.com/S2/Game/Elsword/2016/characterinfo/system/bg_12.jpg') no-repeat 0 0}
