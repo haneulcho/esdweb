@@ -80,10 +80,6 @@ blockquote:before,blockquote:after,q:before,q:after {content:'';content:none}
 
 body {width:100%;min-width:1240px;background:#fff}
 
-
-
-
-
 /* Common Class */
 .row {clear:both;min-width:1200px;margin:0 auto}
 .cell {display:table-cell;width:100%;height:100%;vertical-align:middle}
@@ -117,7 +113,6 @@ border-radius:50%;
 
 /* TODO: 임시 display:none 처리 */
 .u_skip {display:none}
-
 
 /* Character Badge */
 .characterBadge {position:relative;width:130px;height:130px;background-repeat:no-repeat;background-position:-9px -137px}
@@ -185,7 +180,8 @@ opacity:0.9;}
 .characterBadge.add,
 .characterBadge.ru,
 .characterBadge.rose,
-.characterBadge.ain {background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/spr_character3.png')}
+.characterBadge.ain,
+.characterBadge.laby {background-image:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/spr_character3.png')}
 
 /* 엘소드 딱지 */
 /* 기본: 1 */
@@ -545,7 +541,6 @@ opacity:0.9;}
 /* 기본: 202 */
 .characterBadge.c202 {background-position:-600px -414px}
 
-
 /* 1_1 롭티:익스큐터: 44 */
 .characterBadge.c44 {background-position:-739px -414px}
 
@@ -572,6 +567,19 @@ opacity:0.9;}
 
 /* 3_3 헤르셔: 186 */
 .characterBadge.c186 {background-position:-1022px -682px}
+
+/* 라비 딱지 */
+/* 기본: 203 */
+.characterBadge.c203 {background-position:-8px -965px}
+
+/* 1_1 스파키 차일드: 47 */
+.characterBadge.c47 {background-position:-150px -965px}
+
+/* 2_1 럼블 펌: 137 */
+.characterBadge.c137 {background-position:-291px -965px}
+
+/* 3_1 이터니티 위너: 187 */
+.characterBadge.c187 {background-position:-433px -965px}
 
 /* Text Hidden */
 .btn_login,

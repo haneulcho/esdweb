@@ -158,6 +158,7 @@ transition:all ease .3s;
 .cv_cont .cv_illust .illust_list li .gf_btn_illust {display:inline-block;*display:inline;zoom:1}
 .cv_cont .cv_illust .illust_list li .gf_btn_illust {width:470px;height:50px;line-height:50px;text-align:center;font-size:14px;font-weight:bold;color:#fff;background-color:#bebebe}
 .cv_cont .cv_illust .illust_list li .gf_btn_illust.narrow {width:235px}
+.laby .cv_cont .cv_illust .illust_list li .gf_btn_illust.narrow {width:260px}
 
 /* 일러스트 보기 팝업 */
 #pop_illust {width:1200px;height:1000px;margin-left:-600px !important}
@@ -186,8 +187,8 @@ transition:all ease .3s;
 .cv_nav .nav_list li:first-child {margin-left:0}
 .cv_nav .nav_list li a,
 .cv_nav .nav_list li a > span {display:block;text-align:left;text-indent:-9999px;line-height:0;font-size:0}
-.cv_nav .nav_list li a {position:relative;width:92px;height:92px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/spr_character_sub_off_laby.png') no-repeat 0 0}
-.cv_nav .nav_list li a > span {opacity:0;position:absolute;top:0;left:0;width:100%;height:100%;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/spr_character_sub_laby.png') no-repeat 0 0;
+.cv_nav .nav_list li a {position:relative;width:92px;height:92px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/spr_character_sub_off.png') no-repeat 0 0}
+.cv_nav .nav_list li a > span {opacity:0;position:absolute;top:0;left:0;width:100%;height:100%;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/character/spr_character_sub.png') no-repeat 0 0;
 -webkit-transition: opacity .4s cubic-bezier(0.645, 0.045, 0.355, 1);
 -moz-transition: opacity .4s cubic-bezier(0.645, 0.045, 0.355, 1);
 transition: opacity .4s cubic-bezier(0.645, 0.045, 0.355, 1);
