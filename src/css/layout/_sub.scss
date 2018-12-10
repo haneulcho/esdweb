@@ -11,7 +11,53 @@
 /* Game Start */
 .sub .wrap_information {height:145px;padding:35px 0 0 0;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/bg_main_login.jpg') repeat-x 0 0}
 .sub .wrap_information .inner {position:relative}
-.sub .wrap_information .gameStart {top:-217px}
+.sub .wrap_information .gameStart {top:-191px;left:468px;width:290px;height:290px;background:url("http://s.nx.com/S2/Game/Elsword/site/2018/renewal/gamestart/bg_sub.png") no-repeat 0 37px}
+.sub .wrap_information .gameStart:before {width:275px;height:290px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/gamestart/img_front_sub.png') no-repeat 0 0}
+.sub .wrap_information .gameStart .btn_gameStart {top:98px;left:60px;width:144px;height:87px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/gamestart/btn_gameStart_1122_sub.png') no-repeat 0 0}
+.sub .wrap_information .gameStart .btn_gameStartDownload {top:196px;left:79px;width:102px;height:11px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/gamestart/btn_gameDownload_1122_sub.png') no-repeat 0 0}
+.sub .wrap_information .gameStart .motions {width:180px;height:180px;margin:-88px 0 0 -103px}
+.sub .wrap_information .gameStart .motions .mo {animation:rippleSub 0.7s linear infinite;-webkit-animation:rippleSub 0.7s linear infinite;-moz-animation:rippleSub 0.7s linear infinite}
+.sub .wrap_information .gameStart .points .p1 {top:136px;left:57px}
+.sub .wrap_information .gameStart .points .p2 {top:87px;left:163px}
+.sub .wrap_information .gameStart .points .p3 {top:215px;left:138px}
+.sub .wrap_information .gameStart .points .p4 {top:153px;left:192px}
+.sub .wrap_information .gameStart .points .p5 {top:71px;left:124px}
+@keyframes rippleSub {
+0% { box-shadow: 0 0 0 0 rgba(#8e91dd, 0.15),
+                0 0 0 1em rgba(#8e91dd, 0.15),
+                0 0 0 2.5em rgba(#8e91dd, 0.15),
+                0 0 0 4.2em rgba(#8e91dd, 0.15),
+                0 0 0 6.5em rgba(#8e91dd, 0.15)}
+100% { box-shadow: 0 0 0 1em rgba(#8e91dd, 0.15),
+                0 0 0 2.5em rgba(#8e91dd, 0.15),
+                0 0 0 4.2em rgba(#8e91dd, 0.15),
+                0 0 0 6.5em rgba(#8e91dd, 0.15),
+                0 0 0 8em rgba(#8e91dd, 0)}
+}
+@-webkit-keyframes rippleSub {
+0% { box-shadow: 0 0 0 0 rgba(#8e91dd, 0.15),
+                0 0 0 1em rgba(#8e91dd, 0.15),
+                0 0 0 2.5em rgba(#8e91dd, 0.15),
+                0 0 0 4.2em rgba(#8e91dd, 0.15),
+                0 0 0 6.5em rgba(#8e91dd, 0.15)}
+100% { box-shadow: 0 0 0 1em rgba(#8e91dd, 0.15),
+                0 0 0 2.5em rgba(#8e91dd, 0.15),
+                0 0 0 4.2em rgba(#8e91dd, 0.15),
+                0 0 0 6.5em rgba(#8e91dd, 0.15),
+                0 0 0 8em rgba(#8e91dd, 0)}
+}
+@-moz-keyframes rippleSub {
+0% { box-shadow: 0 0 0 0 rgba(#8e91dd, 0.15),
+                0 0 0 1em rgba(#8e91dd, 0.15),
+                0 0 0 2.5em rgba(#8e91dd, 0.15),
+                0 0 0 4.2em rgba(#8e91dd, 0.15),
+                0 0 0 6.5em rgba(#8e91dd, 0.15)}
+100% { box-shadow: 0 0 0 1em rgba(#8e91dd, 0.15),
+                0 0 0 2.5em rgba(#8e91dd, 0.15),
+                0 0 0 4.2em rgba(#8e91dd, 0.15),
+                0 0 0 6.5em rgba(#8e91dd, 0.15),
+                0 0 0 8em rgba(#8e91dd, 0)}
+}
 
 /* Contents Container */
 .wrap_cont:after {clear:both;display:table;content:'';*zoom:1}
