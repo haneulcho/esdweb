@@ -1,7 +1,7 @@
 /* Board List: Type Event */
 .event .board_list {padding:55px 0 0;border-top:2px solid #acacac}
 .event .board_list > li {float:left;display:block;width:363px;margin:0 0 44px 55px;padding:0;text-align:center;border:none}
-.event .board_list > li:first-child, .event .board_list > li:nth-child(3n+1) {margin-left:0}
+.event .board_list > li:first-child, .event .board_list > li:nth-child(3n+1) {margin-left:0;clear:left}
 .event .board_list > li > div {display:block;padding:0}
 .event .board_list .b_subject {display:inline-block;margin:0 0 9px 0}
 .event .board_list .b_subject .subject {line-height:21px}
