@@ -33,6 +33,15 @@
 .declare .dc_count_box .dc_btns {width:180px;}
 .declare .dc_count_box .dc_btns .btn.write {display:block;width:169px;height:128px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -438px -88px}
 
+/* Declare Page - Bad Manners */
+.declare.badmanners .wrap_cont .cont_body {margin:0 0 32px 0}
+.declare.badmanners .cont_body > .inner {padding:28px 0 0}
+.declare.badmanners .cont_footer .b_paging {margin-bottom:63px}
+.declare.badmanners .dc_box {padding:0 0 24px 0}
+.declare.badmanners .dc_box .dc_notice {width:100%}
+.declare.badmanners .dc_box .dc_latest > .dc_txt {margin-top:24px !important}
+.declare.badmanners #declareNoticeList {margin-bottom:90px}
+
 /* Declare Notice List - Table */
 #declareNoticeList {padding-bottom:0}
 .declareNotice_list .dcn_tbl {table-layout:fixed;width:1200px}
