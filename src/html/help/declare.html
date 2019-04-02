@@ -136,8 +136,9 @@
 								<!-- [E] //TODO, DEV: 비매너/버그 신고 포인트, 신고 횟수, 진행중 신고건 집계 박스 -->
 
 								<div class="dc_btns">
-									<!-- TODO: 글쓰기 경로 수정할 것 -->
-									<a href="../common/write_declare.html" class="btn write">비매너/버그 신고 글쓰기</a>
+									<!-- TODO: 190404 글쓰기 버튼 클릭 시 안내 레이어팝업 호출 -->
+									<!-- 기존 a 버튼 href 값이 '#'으로 변경되며 class에 gf_btn_declareWrite 추가하였습니다. -->
+									<a href="#" class="btn write gf_btn_declareWrite">비매너/버그 신고 글쓰기</a>
 								</div>
 								<!-- //.dc_btns -->
 							</div>
@@ -242,6 +243,38 @@
 		<!-- //===========================================================
 				#contents END
 		=========================================================== // -->
+		<!-- [S] TODO, DEV: 190404 버그 신고 글쓰기 안내 레이어 팝업 -->
+		<div id="declareWritePopup" class="popup dcn_modal">
+			<div class="gf_btn_popupClose"><a href="#declareWritePopup"><span class="ir">버그 신고 글쓰기 안내 팝업 닫기</span></a></div>
+			<div class="blind">
+				<article>
+					<h1>필독! 버그 제보 전에 읽어주세요!</h1>
+					<ol>
+						<li><h2>버그는 한 번에 하나씩 제보해주세요.</h2></li>
+						<li><h2>버그 게시판은 게임 이용 중 발생한 버그만 제보 받고 있어요! 아래 내용들은 고객센터로 접수해주세요~</h2>
+							<ul>
+								<li>ED(아이템이)가 사라졌어요, 해킹 당했어요.</li>
+								<li>엘소드 접속하려C는데 검은 화면이 떠요, 서버가 끊깁니다.</li>
+								<li>비매너 캐릭터를 발견했어요, 제재 사유를 알고 싶습니다.</li>
+								<li>비밀번호를 10회 틀렸어요, 아이디를 찾아주세요.</li>
+								<li>보안 패드 해제해주세요, 거래 정지 해제해주세요.</li>
+								<li>실수로 아이템을 분해/삭제했어요, 우편을 실수로 다른 사람에게 발송했어요.</li>
+							</ul>
+						</li>
+						<li><h2>구체적인 내용을 적어 주시거나, 오류를 확인할 수 있는 영상을 주셔야만 더욱! 빠르게! 오류 여부를 확인해드릴 수 있습니다.</h2></li>
+					</ol>
+				</article>
+			</div>
+			<!-- // .blind END -->
+			<div class="dcn_write">
+				<label for="chkDeclareWrite" class="gf_btn_chk"><input type="checkbox" id="chkDeclareWrite" /><span class="blind">위 내용을 읽었습니다.</span></label>
+				<a href="../common/write_declare.html" onclick="_transfer.AbleWrt();" class="btn write">버그 신고 글쓰기</a>
+				<!-- <a href="#none" onclick="_transfer.AbleWrt();" class="btn write">버그 신고 글쓰기</a> -->
+			</div>
+		</div>
+		<!-- //#declareViewPopup -->
+		<!-- [E] TODO, DEV: //190404 버그 신고 글쓰기 안내 레이어 팝업 -->
+
 		<!-- [S] TODO, DEV: 버그 신고 공지사항 레이어 팝업 -->
 		<div id="declareNoticePopup" class="popup dcn_modal">
 			<div class="gf_btn_popupClose"><a href="#declareNoticePopup"><span class="ir">버그 신고 공지사항 팝업 닫기</span></a></div>

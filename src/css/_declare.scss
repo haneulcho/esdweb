@@ -79,6 +79,14 @@
 .dcn_modal .scroll_wrap {overflow:auto;background-color:#fafafa}
 #declareNoticePopup .scroll_wrap {max-height:500px}
 #declareViewPopup .scroll_wrap {max-height:495px}
+#declareWritePopup {width:651px;height:727px;margin-left:-325.5px;background:url("http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/img_declare_note.png") no-repeat 0 0}
+#declareWritePopup .gf_btn_popupClose {top:-49px}
+#declareWritePopup .gf_btn_popupClose > a, #declareWritePopup .gf_btn_popupClose > a .ir {width:49px;height:49px}
+#declareWritePopup .gf_btn_popupClose > a .ir {background:url("http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_global_181122.png") no-repeat -679px -431px}
+.dcn_modal .dcn_write {position:absolute;bottom:21px;width:100%;z-index:10}
+.dcn_modal .dcn_write .gf_btn_chk {display:block;width:150px;height:18px;margin:0 auto 25px;cursor:pointer;*display:inline;zoom:1}
+.dcn_modal .dcn_write .gf_btn_chk input {display:block;float:left;margin:2px 8px 0 4px;padding:0}
+.dcn_modal .dcn_write .btn.write {display:block;width:420px;height:69px;margin:0 auto;background:url("http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png") no-repeat 0 -300px}
 @media screen and (max-height:850px) {
 .dcn_modal {top:120px;margin-top:0}
 }

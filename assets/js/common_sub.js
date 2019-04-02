@@ -328,6 +328,12 @@ $(document).ready(function () {
 				$('.dcn_modal').find('.scroll-content').scrollTop(0);
 			}, 0);
 		});
+		// 버그 신고 글쓰기 버튼 클릭 시 안내 레이어 팝업 열기
+		$('body').on('click', '.gf_btn_declareWrite', function (e) {
+			e.preventDefault();
+			var declareTargetPopup = '#declareWritePopup';
+			Elsword.layerControl.openLayer(declareTargetPopup);
+		});
 		// 비매너/버그 신고 최근 버그 현황 안내 디자인 스크롤 삽입
 		if ($('#contents.declare').find('.dc_txt').length) {
 			$('#contents.declare').find('.dc_box .dc_latest .dc_txt').addClass('scrollbar-macosx').scrollbar();
