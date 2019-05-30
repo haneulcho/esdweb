@@ -81,5 +81,5 @@
 #balanceWritePopup.dcn_modal .dcn_modal_body {position:relative;display:block;width:auto;height:auto;padding:64px 23px 154px;border-top:1px solid #c3c3c3;border-bottom:none;z-index:2}
 #balanceWritePopup.dcn_modal .dcn_modal_body .tit {position:relative;padding:0 10px 10px;font-size:34px;line-height:42px;letter-spacing:-1px;margin-bottom:20px;color:#ee741b;border-bottom:1px solid #ee741b;background:none}
 #balanceWritePopup.dcn_modal .dcn_modal_body .dcn_txt {width:100%;max-width:100%;max-height:320px;font-size:14px;line-height:22px;padding:26px 22px 0;word-break:break-all}
-#balanceWritePopup.dcn_modal .dcn_modal_body .dcn_txt > p:last-child {margin-bottom:26px}
-#balanceWritePopup.dcn_modal .scroll_wrap {background-color:#f7f7f7}
+#balanceWritePopup.dcn_modal .dcn_modal_body .dcn_txt > p:last-child {margin-bottom:0;padding-bottom:26px}
+#balanceWritePopup.dcn_modal .scroll_wrap {max-height:346px !important;margin-bottom:0 !important;background-color:#f7f7f7}
