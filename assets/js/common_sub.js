@@ -159,7 +159,7 @@ var Elsword = Elsword || (function () {
 						promotionHeight = (!$target.hasClass('dcn_modal')) ? 0 : $('#promotion').height(),
 						layerTopMargin = 0,
 						layerLeftMargin = -($target.width() / 2),
-						min = (!$target.hasClass('dcn_modal')) ? 150 : 100,
+						min = (!$target.hasClass('dcn_modal')) ? 150 + gnbHeight : 100,
 						max = $window.height() - gnbHeight;
 
 					if (max < targetHeight + (min * 2)) {
@@ -379,6 +379,20 @@ $(document).ready(function () {
 			$(this).next('.ipt_fileName').val($(this).val().replace(/C:\\fakepath\\/i, ''));
 		});
 	}
+
+	// 블라인드 내용 보기
+	$('body').on('click', '.bc_contents_blind button', function (e) {
+		e.preventDefault();
+		var $this = $(this),
+			$parent = $this.parent('.bc_contents_blind');
+		if ($parent.hasClass('opened')) {
+			$parent.removeClass('opened');
+			$this.text('[내용보기]');
+		} else {
+			$parent.addClass('opened');
+			$this.text('[내용감추기]');
+		}
+	});
 
 }); // @ready function END
 

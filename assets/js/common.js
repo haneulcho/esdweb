@@ -159,7 +159,7 @@ var Elsword = Elsword || (function () {
 						promotionHeight = (!$target.hasClass('dcn_modal')) ? 0 : $('#promotion').height(),
 						layerTopMargin = 0,
 						layerLeftMargin = -($target.width() / 2),
-						min = (!$target.hasClass('dcn_modal')) ? 150 : 100,
+						min = (!$target.hasClass('dcn_modal')) ? 150 + gnbHeight : 100,
 						max = $window.height() - gnbHeight;
 
 					if (max < targetHeight + (min * 2)) {

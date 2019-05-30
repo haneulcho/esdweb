@@ -322,8 +322,9 @@
 				<div class="cont_footer">
 					<div id="boardFooter">
 						<div class="b_btns inner">
-							<!-- TODO: 글쓰기 경로 수정할 것 -->
-							<a href="../common/write_balance.html" class="btn write">글쓰기</a>
+							<!-- TODO: 190530 글쓰기 버튼 클릭 시 안내 레이어팝업 호출 -->
+							<!-- 기존 a 버튼 href 값이 '#'으로 변경되며 class에 gf_btn_balanceWrite 추가하였습니다. -->
+							<a href="#" class="btn write gf_btn_balanceWrite">밸런스 토론장 글쓰기</a>
 						</div>
 						<!-- [S] DEV: 게시판 페이지네이션 START!! -->
 						<div class="b_paging inner">
@@ -381,6 +382,56 @@
 		<!-- //===========================================================
 				#contents END
 		=========================================================== // -->
+		<!-- [S] TODO, DEV: 190530 밴런스 토론장 글쓰기 안내 레이어 팝업 -->
+		<div id="balanceWritePopup" class="popup dcn_modal">
+			<div class="gf_btn_popupClose"><a href="#balanceWritePopup"><span class="ir">밸런스 토론장 글쓰기 안내 팝업 닫기</span></a></div>
+			<article class="dcn_modal_body">
+				<!-- GWMS 안내 제목 시작 -->
+				<h1 class="tit">GWMS에서 입력한 제목입니다.</h1>
+				<!-- GWMS 안내 제목 끝 -->
+				<!-- GWMS 안내 내용 시작 -->
+				<div class="scroll_wrap">
+					<div class="dcn_txt">
+						<p>
+							최근 무슨무슨 현상은 확인이 완료되어 수정 작업 진행 중입니다.<br>
+							오류로 인한 보상 지급을 원하는 경우 스크린샷과 함께 1:1 문의 접수 부탁 드립니다.
+						</p>
+						<p>
+							최근 무슨무슨 현상은 확인이 완료되어 수정 작업 진행 중입니다.<br>
+							오류로 인한 보상 지급을 원하는 경우 스크린샷과 함께 1:1 문의 접수 부탁 드립니다.
+						</p>
+						<p>
+							최근 무슨무슨 현상은 확인이 완료되어 수정 작업 진행 중입니다.<br>
+							오류로 인한 보상 지급을 원하는 경우 스크린샷과 함께 1:1 문의 접수 부탁 드립니다.
+						</p>
+						<p>
+							최근 무슨무슨 현상은 확인이 완료되어 수정 작업 진행 중입니다.<br>
+							오류로 인한 보상 지급을 원하는 경우 스크린샷과 함께 1:1 문의 접수 부탁 드립니다.
+						</p>
+						<p>
+							최근 무슨무슨 현상은 확인이 완료되어 수정 작업 진행 중입니다.<br>
+							오류로 인한 보상 지급을 원하는 경우 스크린샷과 함께 1:1 문의 접수 부탁 드립니다. 오류로 인한 보상 지급을 원하는 경우 스크린샷과 함께 1:1 문의 접수 부탁 드립니다. 오류로 인한 보상 지급을 원하는 경우 스크린샷과 함께 1:1 문의 접수 부탁 드립니다.
+						</p>
+						<p>
+							최근 무슨무슨 현상은 확인이 완료되어 수정 작업 진행 중입니다.<br>
+							오류로 인한 보상 지급을 원하는 경우 스크린샷과 함께 1:1 문의 접수 부탁 드립니다. 오류로 인한 보상 지급을 원하는 경우 스크린샷과 함께 1:1 문의 접수 부탁 드립니다. 오류로 인한 보상 지급을 원하는 경우 스크린샷과 함께 1:1 문의 접수 부탁 드립니다.
+						</p>
+					</div>
+					<!-- //.dcn_txt -->
+				</div>
+				<!-- //.scroll_wrap -->
+				<!-- GWMS 안내 내용 끝 -->
+			</article>
+			<div class="dcn_write">
+				<label for="chkDeclareWrite" class="gf_btn_chk"><input type="checkbox" id="chkDeclareWrite" /><span class="blind">위 내용을 읽었습니다.</span></label>
+				<a href="../common/write_balance.html" id="btnArticleWrite" class="btn write">밸런스 토론장 글쓰기</a>
+				<!-- <a href="/community/balance/write.aspx?n4ArticleSN=0" id="btnArticleWrite" class="btn write">밸런스 토론장 글쓰기</a> -->
+			</div>
+		</div>
+		<!-- //#balanceWritePopup -->
+		<!-- [E] TODO, DEV: //190530 밴런스 토론장 글쓰기 안내 레이어 팝업 -->
+		<!-- [S] TODO, DEV: 레이어 팝업 스크롤바 플러그인 삽입 -->
+		<script type="text/javascript" src="http://js.nx.com/s1/elsword/OBT/jquery.scrollbar.min.js"></script>
 	</main>
 	<!-- //===========================================================
 			#main END
