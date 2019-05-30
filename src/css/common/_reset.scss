@@ -146,8 +146,9 @@ border-radius:50%;
 /* Layer Popup */
 #pop_img .modal_body {width:960px}
 #pop_img .modal_body > img {display:block;max-width:100%;margin:0 auto}
-.popup {display:none;position:absolute;left:50%;z-index:999}
-.modal_bg {display:none;position:fixed;z-index:30;top:0;left:0;width:100%;height:100%;background-color:#000;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+.popup {opacity:0;display:none;position:absolute;left:50%;z-index:999;cursor:default}
+.modal_bg {display:none;position:fixed;z-index:30;top:0;left:0;width:100%;height:100%;background-color:#000;cursor:url(http://s.nx.com/s2/game/elsword/2019/event/0228_h9c0n73s7/btns/btn_close_cursor.cur), pointer;
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
 filter:alpha(opacity=90);
 -moz-opacity:0.9;
 -khtml-opacity:0.9;

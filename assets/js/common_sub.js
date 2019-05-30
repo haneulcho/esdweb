@@ -1,7 +1,7 @@
 /* ================================================================
 	* FILENAME: common_sub.js
 	* PROJECT: 엘소드 2018 리뉴얼 서브 UI 공통 스크립트
-	* UPDATE: 18.11.28
+	* UPDATE: 19.05.30
 ================================================================ */
 
 // 공통 변수 캐싱
@@ -10,25 +10,17 @@ var $window = $(window), isModalOpen = false;
 var Elsword = Elsword || (function () {
 	var UI = {};
 	UI.checkIE = function () {
-		var ua = window.navigator.userAgent;
-		var other = 999;
-		var msie = ua.indexOf('MSIE ');
+		var ua = window.navigator.userAgent, other = 999, msie = ua.indexOf('MSIE '), trident = ua.indexOf('Trident/'), edge = ua.indexOf('Edge/');
 		if (msie > 0) {
-			// IE 10 or older
 			return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
-		}
-		var trident = ua.indexOf('Trident/');
-		if (trident > 0) {
-			// IE 11
+		} else if (trident > 0) {
 			var rv = ua.indexOf('rv:');
 			return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
-		}
-		var edge = ua.indexOf('Edge/');
-		if (edge > 0) {
-			// Edge (IE 12+)
+		} else if (edge > 0) {
 			return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+		} else {
+			return other;
 		}
-		return other;
 	}; // checkIE
 
 	UI.init = function () {
@@ -150,33 +142,59 @@ var Elsword = Elsword || (function () {
 	}; // inputControl
 
 	UI.layerControl = {
-		setLayerSize: function (target) {
-			var $target = $(target);
-			var layerTop, layerLeft, scrollHeight;
-			layerTop = ($window.height() - $target.outerHeight()) / 2;
-			layerLeft = ($target.outerWidth() / 2) * -1;
-			scrollHeight = (!$target.hasClass('dcn_modal')) ? ($window.scrollTop() + layerTop) + 50 : ($window.scrollTop() + layerTop - $('#promotion').height() - $('#GNB_Wrapper').outerHeight());
+		getGnbHeight: function () {
+			return $('#GNB_Wrapper').length ? ($('#GNB_Wrapper').hasClass('gnbWrapperOpen') ? 220 : 50) : ($('.gnbWrapper').length ? 63 : ($('.global_wrap').length ? 60 : 0));
+		}, // layerControl.getGnbHeight
 
-			if ($('#GNB_Wrapper').length && $window.scrollTop() < 300) {
-				scrollHeight = scrollHeight + $('#GNB_Wrapper').outerHeight();
+		setLayerSize: function (target, callBack) {
+			if ($(target).length) {
+				var $target = $(target),
+					isSetCallBack = (callBack && $.isFunction(callBack)) ? true : false,
+					timeLimit = (isSetCallBack) ? 270 : 0;
+
+				setTimeout(function () {
+					var wTop = $window.scrollTop(),
+						gnbHeight = UI.layerControl.getGnbHeight(),
+						targetHeight = parseInt($target.height()),
+						promotionHeight = (!$target.hasClass('dcn_modal')) ? 0 : $('#promotion').height(),
+						layerTopMargin = 0,
+						layerLeftMargin = -($target.width() / 2),
+						min = (!$target.hasClass('dcn_modal')) ? 150 : 100,
+						max = $window.height() - gnbHeight;
+
+					if (max < targetHeight + (min * 2)) {
+						layerTopMargin = (gnbHeight < wTop) ? (wTop - gnbHeight) + min : min;
+					} else {
+						layerTopMargin = (gnbHeight < wTop) ? wTop + (($window.height() - targetHeight) / 2) - gnbHeight : (($window.height() - (gnbHeight - wTop)) - targetHeight) / 2;
+					}
+
+					layerTopMargin -= promotionHeight;
+
+					if (isSetCallBack) {
+						$target.css({ 'top': layerTopMargin, 'margin-left': layerLeftMargin });
+						callBack();
+					} else {
+						$target.stop().animate({ top: layerTopMargin }, 700, 'easeInOutQuint');
+					}
+					
+				}, timeLimit);
 			}
-
-			$target.css({
-				'top': scrollHeight,
-				'margin-left': layerLeft
-			});
 		}, // layerControl.setLayerSize
 
 		openLayer: function (target) {
 			if (!isModalOpen && $(target).length) {
 				isModalOpen = true;
-				var isVisible = $(target).is(':visible');
+				var $target = $(target),
+					isVisible = $target.is(':visible');
 				if (!isVisible) {
-					UI.layerControl.setLayerSize(target);
 					if (!$('.modal_bg').length) {
 						$('body').append('<div class="modal_bg"></div>');
 					}
-					$(target + ', .modal_bg').fadeIn(200);
+					$('.modal_bg').fadeIn(200);
+					$target.css('display', 'block');
+					UI.layerControl.setLayerSize(target, function () {
+						$(target).stop().animate({ opacity: 1 }, 150);
+					});
 				}
 			}
 		}, // layerControl.openLayer
@@ -308,31 +326,46 @@ $(document).ready(function () {
 	});
 
 	// 레이어 팝업 닫기
-	$('body').on('click', '.gf_btn_popupClose', function (e) {
+	$('body').on('click', '.gf_btn_popupClose a', function (e) {
 		e.preventDefault();
 		var target = '#' + $(this).parents('.popup').attr('id');
 		Elsword.layerControl.closeLayer(target);
 	});
+	$(document).on('click', '.modal_bg', function () {
+		if ($(this).is(':visible')) {
+			var target = '.popup';
+			Elsword.layerControl.closeLayer(target);
+		}
+	});
 
-	// 비매너/버그 신고 게시글 팝업 열기
-	if ($('body').find('#contents.declare').length) {
-		$('body').on('click', '.gf_btn_declare, .gf_btn_declareView', function (e) {
+	// 비매너/버그 신고, 밸런스 토론장 게시글 팝업 열기
+	if ($('body').find('#contents.declare').length || $('body').find('#contents.balance').length) {
+		$('body').on('click', '.gf_btn_declare, .gf_btn_declareView, .gf_btn_declareWrite, .gf_btn_balanceWrite', function (e) {
 			e.preventDefault();
-			var declareTargetPopup = (!$(this).hasClass('gf_btn_declareView')) ? '#declareNoticePopup' : '#declareViewPopup';
-			Elsword.layerControl.openLayer(declareTargetPopup);
-			// 레이어팝업 디자인 스크롤 삽입
-			$('.dcn_modal').find('.scroll_wrap').addClass('scrollbar-macosx').scrollbar({
-				'disableBodyScroll': true
-			});
-			setTimeout(function () {
-				$('.dcn_modal').find('.scroll-content').scrollTop(0);
-			}, 0);
-		});
-		// 버그 신고 글쓰기 버튼 클릭 시 안내 레이어 팝업 열기
-		$('body').on('click', '.gf_btn_declareWrite', function (e) {
-			e.preventDefault();
-			var declareTargetPopup = '#declareWritePopup';
-			Elsword.layerControl.openLayer(declareTargetPopup);
+			var $this = $(this), target = null;
+			if ($this.hasClass('gf_btn_declare')) {
+				target = '#declareNoticePopup';
+			} else if ($this.hasClass('gf_btn_declareView')) {
+				target = '#declareViewPopup';
+			} else if ($this.hasClass('gf_btn_declareWrite')) {
+				target = '#declareWritePopup';
+			} else if ($this.hasClass('gf_btn_balanceWrite')) {
+				target = '#balanceWritePopup';
+			} else {
+				target = null;
+			}
+
+			// 팝업 안에 시스템 내용 들어가는 경우 스크롤바 처리
+			if (target != null && $(target).length) {
+				// UI 공통 모듈 호출
+				Elsword.layerControl.openLayer(target);
+				$(target).find('.scroll_wrap').addClass('scrollbar-macosx').scrollbar({
+					'disableBodyScroll': true
+				});
+				setTimeout(function () {
+					$(target).find('.scroll-content').scrollTop(0);
+				}, 0);
+			}
 		});
 		// 비매너/버그 신고 최근 버그 현황 안내 디자인 스크롤 삽입
 		if ($('#contents.declare').find('.dc_txt').length) {
@@ -347,31 +380,15 @@ $(document).ready(function () {
 		});
 	}
 
-	// 멀티미디어 탭 기능
-	if ($('body').find('.multimedia').length) {
-		$(document).on('click', '#tab_year .media_calendar .btn.all_year', function (e) {
-			e.preventDefault();
-			$('#mediaYearList').toggleClass('active');
-		});
-		$(document).on('click', '#mediaList .media_tab_nav li a', function (e) {
-			e.preventDefault();
-			var $this = $(this);
-			var $pLi = $this.parent('li');
-			var $target = $($this.attr('href'));
-			if (!$pLi.hasClass('active') && !$target.hasClass('active')) {
-				$('.media_tab_cont.active').hide().removeClass('active');
-				$('.media_tab_nav li.active').removeClass('active');
-				$target.fadeIn(250, function () {
-					$(this).addClass('active');
-				});
-				$pLi.addClass('active');
-			}
-		});
-	}
-
 }); // @ready function END
 
 // 기본 페이지 로더 호출
 $window.load(function () {
 	Elsword.init();
+});
+
+$window.on('resize', function () {
+	if (isModalOpen) {
+		Elsword.layerControl.setLayerSize($('.popup:visible'));
+	}
 });
