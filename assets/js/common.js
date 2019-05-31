@@ -1,8 +1,12 @@
 /* ================================================================
 	* FILENAME: common.js
 	* PROJECT: 엘소드 2018 리뉴얼 메인 UI 공통 스크립트
-	* UPDATE: 19.05.30
+	* UPDATE: 19.05.31
 ================================================================ */
+
+// 네이버 아이프레임 분기 변수 정의
+var isNaver = (document.domain.indexOf('naver.com') != -1) ? true : false;
+document.domain = (isNaver) ? 'game.naver.com' : document.domain;
 
 // 공통 변수 캐싱
 var $window = $(window), isModalOpen = false;
@@ -143,7 +147,7 @@ var Elsword = Elsword || (function () {
 
 	UI.layerControl = {
 		getGnbHeight: function () {
-			return $('#GNB_Wrapper').length ? ($('#GNB_Wrapper').hasClass('gnbWrapperOpen') ? 220 : 50) : ($('.gnbWrapper').length ? 63 : ($('.global_wrap').length ? 60 : 0));
+			return $('#GNB_Wrapper').length ? ($('#GNB_Wrapper').hasClass('gnbWrapperOpen') ? 220 : 50) : ($('.gnbWrapper').length ? 63 : (isNaver ? 60 : 0));
 		}, // layerControl.getGnbHeight
 
 		setLayerSize: function (target, callBack) {
@@ -153,19 +157,23 @@ var Elsword = Elsword || (function () {
 					timeLimit = (isSetCallBack) ? 270 : 0;
 
 				setTimeout(function () {
-					var wTop = $window.scrollTop(),
+					// 네이버용 변수 재정의
+					var $pDocument = (isNaver) ? $(parent.document.documentElement) || $(parent.document.body) : $window,
+						pDocumentViewPortHeight = (isNaver) ? parent.document.documentElement.clientHeight : $window.height();
+	
+					var wTop = $pDocument.scrollTop(),
 						gnbHeight = UI.layerControl.getGnbHeight(),
 						targetHeight = parseInt($target.height()),
 						promotionHeight = (!$target.hasClass('dcn_modal')) ? 0 : $('#promotion').height(),
 						layerTopMargin = 0,
 						layerLeftMargin = -($target.width() / 2),
 						min = (!$target.hasClass('dcn_modal')) ? 150 + gnbHeight : 100,
-						max = $window.height() - gnbHeight;
+						max = pDocumentViewPortHeight - gnbHeight;
 
 					if (max < targetHeight + (min * 2)) {
 						layerTopMargin = (gnbHeight < wTop) ? (wTop - gnbHeight) + min : min;
 					} else {
-						layerTopMargin = (gnbHeight < wTop) ? wTop + (($window.height() - targetHeight) / 2) - gnbHeight : (($window.height() - (gnbHeight - wTop)) - targetHeight) / 2;
+						layerTopMargin = (gnbHeight < wTop) ? wTop + ((pDocumentViewPortHeight - targetHeight) / 2) - gnbHeight : ((pDocumentViewPortHeight - (gnbHeight - wTop)) - targetHeight) / 2;
 					}
 
 					layerTopMargin -= promotionHeight;
@@ -202,7 +210,7 @@ var Elsword = Elsword || (function () {
 		closeLayer: function (target) {
 			if (isModalOpen && $(target).length) {
 				$(target + ', .modal_bg').fadeOut(200, function () {
-					if (!$(target).hasClass('dcn_modal')) { $(this).remove(); }
+					if (!$(target).hasClass('dcn_modal') && !$(target).hasClass('cv_system')) { $(this).remove(); }
 					isModalOpen = false;
 				});
 			}
@@ -348,7 +356,7 @@ $(document).ready(function () {
 	});
 	$(document).on('click', '.modal_bg', function () {
 		if ($(this).is(':visible')) {
-			var target = '.popup';
+			var target = ($('.cv_system:visible').length) ? '.cv_system' : '.popup';
 			Elsword.layerControl.closeLayer(target);
 		}
 	});

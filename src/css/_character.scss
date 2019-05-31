@@ -519,7 +519,7 @@ filter:alpha(opacity=100)}
 .cv_nav .nav_list li.laby.c189 a > span {background-position:-417px -2739px}
 
 /* 시스템 팝업 */
-.cv_system {display:none;position:absolute;top:0;left:50%;z-index:100}
+.cv_system {opacity:0;display:none;position:absolute;top:0;left:50%;z-index:100;cursor:default}
 .cv_system .cvs_body {overflow:hidden;width:747px;height:500px;background-color:#121b29;border-width:2px;border-style:solid}
 .cv_system .cvs_body .cvs_side {float:left;width:175px;height:500px}
 .cv_system .cvs_body .cvs_side .tit {overflow:hidden}
