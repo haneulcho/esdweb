@@ -6,7 +6,7 @@
 
 // 네이버 아이프레임 분기 변수 정의
 var isNaver = (document.domain.indexOf('naver.com') != -1) ? true : false;
-document.domain = (isNaver) ? 'game.naver.com' : document.domain;
+var cachedDomain = document.domain;
 
 // 공통 변수 캐싱
 var $window = $(window), isModalOpen = false;
@@ -158,6 +158,7 @@ var Elsword = Elsword || (function () {
 
 				setTimeout(function () {
 					// 네이버용 변수 재정의
+					document.domain = (isNaver) ? 'game.naver.com' : document.domain;
 					var $pDocument = (isNaver) ? $(parent.document.documentElement) || $(parent.document.body) : $window,
 						pDocumentViewPortHeight = (isNaver) ? parent.document.documentElement.clientHeight : $window.height();
 	
@@ -211,6 +212,7 @@ var Elsword = Elsword || (function () {
 			if (isModalOpen && $(target).length) {
 				$(target + ', .modal_bg').fadeOut(200, function () {
 					if (!$(target).hasClass('dcn_modal') && !$(target).hasClass('cv_system')) { $(this).remove(); }
+					document.domain = cachedDomain;
 					isModalOpen = false;
 				});
 			}
