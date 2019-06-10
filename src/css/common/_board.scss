@@ -1,5 +1,10 @@
 /* Board List: Type Default */
-#boardList {}
+.cont_header_notice .bl_latest {overflow:hidden;height:120px;margin:0 auto 30px;padding:17px 0;border-top:2px solid #acacac;border-bottom:2px solid #acacac}
+.cont_header_notice .bl_latest .tit {float:left;width:260px;padding:0 28px 0 27px;font-size:20px;line-height:80px;color:#3a312a;border-right:1px solid #acacac}
+.cont_header_notice .bl_latest .bl_txt {overflow-y:auto;height:80px;padding:12px 25px 0 38px;font-size:13px;line-height:21px;color:#888}
+.cont_header_notice .bl_latest .bl_txt .bl_tit {color:#000}
+.cont_header_notice .bl_latest .bl_txt .bl_term {color:#f0783b}
+
 .board_list {border-bottom:2px solid #acacac}
 .board_list:after {clear:both;display:table;content:'';*zoom:1}
 .board_list.default .b_subject {width:735px}
@@ -8,6 +13,21 @@
 .board_list.default .b_date {width:140px}
 .board_list.default .b_hit {width:120px}
 .board_list.default .b_server {width:100px}
+
+.board_list_header:after,
+.board_list_header .blo_list:after {clear:both;display:table;content:'';*zoom:1}
+.board_list_header {height:70px;padding:16px 16px 0 16px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/common/img_board_category.png') no-repeat 0 0}
+.board_list_header .bl_order {float:left;position:relative;margin-left:26px}
+.board_list_header .bl_order:before {position:absolute;content:'';top:13px;left:-14px;display:block;width:1px;height:11px;background-color:#acacac}
+.board_list_header .bl_order .iptBox_select {width:140px}
+.balance .board_list_header .bl_order.character,
+.party .board_list_header .bl_order.depth1 {margin-left:0}
+.balance .board_list_header .bl_order.character:before,
+.party .board_list_header .bl_order.depth1:before {display:none}
+.board_list_header .bl_order_btns {float:right}
+.board_list_header .bl_order_btns .btn {display:block;float:left}
+.board_list_header .bl_order_btns .btn.orderSuccess {width:111px;height:38px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -642px -24px}
+.board_list_header .bl_order_btns .btn.orderRefresh {width:38px;height:38px;margin-left:4px;background:url('http://s.nx.com/S2/Game/Elsword/site/2018/renewal/spr_asset.png') no-repeat -757px -24px}
 
 .board_list > li {display:table;width:100%;min-height:60px;padding:22px 0 19px;border-top:1px solid #ccc}
 .board_list > li:first-child {border-width:2px}
@@ -24,6 +44,7 @@
 .board_list .b_subject .subject_header > span {float:left;margin:0 8px 0 0;font-size:12px;line-height:14px}
 .board_list .b_subject .subject_header .category {color:#e65700}
 .board_list .b_subject .subject_header .category:after {float:right;content:'';width:1px;height:9px;margin:3px 0 0 8px;background:#989898}
+.board_list .b_subject .subject_header .vcategory {display:block;margin-right:2px;color:#e65700}
 .board_list .b_subject .subject_header .num {color:#888}
 .board_list .b_subject .subject {clear:both}
 .board_list .b_subject .subject:after {clear:both;display:table;content:'';*zoom:1}
@@ -327,14 +348,19 @@
 .trade .bw_header .iptBox.bw_subject {margin-left:468px}
 .ucc .bw_header .iptBox.bw_subject {margin-left:15px}
 .declare .bw_editor {margin-bottom:21px}
-.balance .bw_header .nice-select.open .list {overflow-y:auto;max-height:360px}
-.balance .bw_header .iptBox.bw_category {margin:0 0 0 15px}
+.balance .bw_header .nice-select.open .list,
+.party .bw_header .nice-select.open .list {overflow-y:auto;max-height:360px}
+.balance .bw_header .iptBox.bw_category,
+.party .bw_header .iptBox.bw_category {margin:0 0 0 15px}
 .balance .bw_header .iptBox.bw_category.c_dungeon {width:171px}
 .balance .bw_header .iptBox.bw_category.c_character {width:171px}
 .balance .bw_header .iptBox.bw_category.c_job {width:234px}
 .balance .bw_header .iptBox.bw_category.c_skill {width:240px}
 .balance .bw_header .iptBox.bw_category.c_updown {width:171px}
-.balance .bw_header .iptBox.bw_subject {margin:16px 0 0 0;padding:18px 19px 0 17px;border-top:1px solid #e0d7d6}
+.party .bw_header .iptBox.bw_category.c_depth1 {width:180px}
+.party .bw_header .iptBox.bw_category.c_depth2 {width:280px}
+.balance .bw_header .iptBox.bw_subject,
+.party .bw_header .iptBox.bw_subject {margin:16px 0 0 0;padding:18px 19px 0 17px;border-top:1px solid #e0d7d6}
 
 /* Declare File Upload Form */
 .declare .bw_uploader {height:215px;margin:0 0 35px 0;border:1px solid #d7d7d7}

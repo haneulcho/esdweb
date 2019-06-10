@@ -1,0 +1,381 @@
+@@@include('../header_sub.html')
+	<main id="main" class="sub" role="main">
+		<div class="wrap_information row">
+			<div class="inner">
+				<!-- TODO, DEV: [S] 게임 스타트 버튼 시작!! -->
+				<div id="gameStart" class="gameStart">
+					<span class="motions"><span class="mo" aria-hidden="true"></span></span><span class="points"><span class="p1"></span><span class="p2"></span><span class="p3"></span><span class="p4"></span><span class="p5"></span></span><a href="#" class="btn_gameStart" onclick="GnxGameStartOnClick();return false;"><span class="blind">GAME START</span></a><a href="../pds/download.html" class="btn_gameStartDownload">GAME DOWNLOAD</a></div>
+				</div>
+				<!-- //#gameStart -->
+				<!-- TODO, DEV: [E] 게임 스타트 버튼 끝!! -->
+			</div>
+			<!-- //.inner -->
+		</div>
+		<!-- //.wrap_information -->
+
+		<section id="contents" class="party" role="main">
+			<div class="wrap_cont row">
+				<div class="cont_header inner">
+					<div class="titles">
+						<h2 class="tit">파티 모집 게시판</h2>
+					</div>
+					<div class="des">
+						<p>자유롭게 파티를 구하는 공간입니다.</p>
+					</div>
+				</div>
+				<!-- //.cont_header -->
+				<div class="cont_body">
+					<div id="boardList" class="inner">
+						<h2 class="blind">게시판 목록입니다.</h2>
+						<div class="board_list_header">
+							<h3 class="blind">게시판 정렬 기준을 선택하세요.</h3>
+							<div class="bl_order depth1">
+								<h4 class="blind">1차 카테고리 선택</h4>
+								<div class="iptBox_select">
+									<select name="" id="" class="ipt_select" title="1차 카테고리 선택" onchange="">
+										<option selected="selected" value="1">전체</option>
+										<option value="2">던전</option>
+										<option value="3">대전</option>
+										<option value="4">기타</option>
+										<!-- 1차 카테고리 중 글로벌엘챔스는 권한 있는 회원에게만 접근 가능합니다. -->
+										<option value="5">글로벌엘챔스</option>
+									</select>
+								</div>
+							</div>
+							<!-- //.bl_order -->
+
+							<!--
+								2차 카테고리 <div class="bl_order depth2"></div> 영역은
+								1차 카테고리 중 던전을 선택 시 활성화 됩니다.
+							-->
+							<div class="bl_order depth2">
+								<h4 class="blind">2차 카테고리 선택</h4>
+								<div class="iptBox_select">
+									<select name="" id="" class="ipt_select" title="2차 카테고리 선택" onchange="">
+										<option selected="selected" value="1">전체</option>
+										<option value="2">루벤~베스마</option>
+										<option value="3">알테라~벨더</option>
+										<option value="4">하멜~라녹스</option>
+										<option value="5">엘리시온~엘리아노드</option>
+										<option value="6">바니미르</option>
+										<option value="7">비밀던전</option>
+										<option value="8">영웅던전</option>
+										<option value="9">뒤틀린 시공 – 파르만의 봉우리</option>
+									</select>
+								</div>
+							</div>
+							<!-- //.bl_order.depth2 -->
+
+							<div class="bl_order_btns">
+								<input type="image" name="" id="" class="btn orderSuccess" src="http://s.nx.com/S2/Game/Elsword/site/2018/renewal/img_input.png" alt="검색">
+								<a href="#" onclick="document.location.href='list.aspx'" class="btn orderRefresh">새로고침</a>
+							</div>
+							<!-- //.bl_order_btns -->
+						</div>
+						<ul class="board_list default">
+							<!-- TODO: <li class="label">은 Table thead 역할입니다! -->
+							<li class="label">
+								<div class="b_subject"><strong>제목</strong></div>
+								<div class="b_author"><strong>작성자</strong></div>
+								<div class="b_date"><strong>작성일</strong></div>
+								<div class="b_hit"><strong>조회수</strong></div>
+							</li>
+							<!-- TODO: //<li class="label">은 Table thead 역할입니다! -->
+
+							<!--
+								공지사항: <li class="notice">
+							-->
+							<li class="notice">
+								<div class="b_subject">
+									<div class="subject_header">
+										<span class="category">공지</span>
+										<span class="num">No. -</span>
+									</div>
+									<h3 class="subject">
+										<a href="../common/view_party.html">파티 모집 게시판 안내</a>
+										<span class="cmt">[10000]</span>
+										<span class="ico new">New</span>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<span class="author">엘소드</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_date"><span class="date">PM 04:23</span></div>
+								<!-- //b_date -->
+								<div class="b_hit"><span class="hit">213001</span></div>
+								<!-- //b_hit -->
+							</li>
+							<!-- //li.notice -->
+							<li class="notice">
+								<div class="b_subject">
+									<div class="subject_header">
+										<span class="category">공지</span>
+										<span class="num">No. -</span>
+									</div>
+									<h3 class="subject">
+										<a href="../common/view_party.html">파티 모집 게시판 안내</a>
+										<span class="cmt">[10000]</span>
+										<span class="ico new">New</span>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<span class="author">엘소드</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_date"><span class="date">PM 04:23</span></div>
+								<!-- //b_date -->
+								<div class="b_hit"><span class="hit">213001</span></div>
+								<!-- //b_hit -->
+							</li>
+							<!-- //li.notice -->
+
+							<!-- TODO: <li>는 Table tbody 역할입니다! -->
+							<li>
+								<div class="b_subject">
+									<div class="subject_header">
+										<span class="num">No. 12345678900</span>
+										<span class="vcategory">[전체]</span>
+									</div>
+									<h3 class="subject">
+										<a href="../common/view_party.html">지금 제목 제한은 30자였다. 기껏 다 쓰게하고 등록할라니까 막네.. 요상하군</a>
+										<span class="cmt">[10000]</span>
+										<span class="ico new">New</span>
+										<span class="ico mobile">Mobile</span>
+										<span class="ico pic">Picture</span>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<!-- TODO, DEV: [S] 개인화 영역 메달 시작!! -->
+									<!--
+										금메달: <span class="medal gold">메달</span>
+										은메달: <span class="medal silver">메달</span>
+										동메달: <span class="medal bronze">메달</span>
+									-->
+									<span class="medal gold">메달</span>
+									<!-- TODO, DEV: [E] 개인화 영역 메달 끝!! -->
+									<div class="author_header">
+										<span class="server">서버 <span class="g">가이아</span></span>
+									</div>
+									<span class="nickname">한글이름여덟글자</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_date"><span class="date">2019.06.05</span></div>
+								<!-- //b_date -->
+								<div class="b_hit"><span class="hit">213001</span></div>
+								<!-- //b_hit -->
+							</li>
+							<!-- //li -->
+
+							<!-- TODO, DEV: [S] 190605 글로벌엘챔스 카테고리 게시글인 경우 블라인드 처리 -->
+							<li>
+								<div class="b_subject">
+									<div class="subject_header">
+										<span class="num">No. 12345678900</span>
+									</div>
+									<h3 class="subject">
+										<a href="#">노출이 제한된 글입니다.</a>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+							</li>
+							<!-- //li -->
+							<!-- TODO, DEV: [E] 190605 글로벌엘챔스 카테고리 게시글인 경우 블라인드 처리 -->
+
+
+							<!-- TODO, DEV: [S] 190605 글로벌엘챔스 카테고리 게시글인 경우 블라인드 처리 -->
+							<li>
+								<div class="b_subject">
+									<div class="subject_header">
+										<span class="num">No. 12345678900</span>
+									</div>
+									<h3 class="subject">
+										<a href="#">노출이 제한된 글입니다.</a>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+							</li>
+							<!-- //li -->
+							<!-- TODO, DEV: [E] 190605 글로벌엘챔스 카테고리 게시글인 경우 블라인드 처리 -->
+
+							<li>
+								<div class="b_subject">
+									<div class="subject_header">
+										<span class="num">No. 12345678900</span>
+										<span class="vcategory">[대전]</span>
+									</div>
+									<h3 class="subject">
+										<a href="../common/view_party.html">지금 제목 제한은 30자였다. 기껏 다 쓰게하고 등록할라니까 막네.. 요상하군</a>
+										<span class="cmt">[10000]</span>
+										<span class="ico new">New</span>
+										<span class="ico mobile">Mobile</span>
+										<span class="ico pic">Picture</span>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<div class="author_header">
+										<span class="server">서버 <span class="s">솔레스</span></span>
+									</div>
+									<span class="nickname">한글이름여덟글자</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_date"><span class="date">2019.06.05</span></div>
+								<!-- //b_date -->
+								<div class="b_hit"><span class="hit">213001</span></div>
+								<!-- //b_hit -->
+							</li>
+							<!-- //li -->
+
+							<li>
+								<div class="b_subject">
+									<div class="subject_header">
+										<span class="num">No. 12345678900</span>
+										<span class="vcategory">[던전]</span>
+										<span class="vcategory">[루벤~베스마]</span>
+									</div>
+									<h3 class="subject">
+										<a href="../common/view_party.html">지금 제목 제한은 30자였다. 기껏 다 쓰게하고 등록할라니까 막네.. 요상하군</a>
+										<span class="cmt">[10000]</span>
+										<span class="ico new">New</span>
+										<span class="ico mobile">Mobile</span>
+										<span class="ico pic">Picture</span>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<!-- TODO, DEV: [S] 개인화 영역 메달 시작!! -->
+									<!--
+										금메달: <span class="medal gold">메달</span>
+										은메달: <span class="medal silver">메달</span>
+										동메달: <span class="medal bronze">메달</span>
+									-->
+									<span class="medal gold">메달</span>
+									<!-- TODO, DEV: [E] 개인화 영역 메달 끝!! -->
+									<div class="author_header">
+										<span class="server">서버 <span class="g">가이아</span></span>
+									</div>
+									<span class="nickname">한글이름여덟글자</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_date"><span class="date">2019.06.05</span></div>
+								<!-- //b_date -->
+								<div class="b_hit"><span class="hit">213001</span></div>
+								<!-- //b_hit -->
+							</li>
+							<!-- //li -->
+
+							<li>
+								<div class="b_subject">
+									<div class="subject_header">
+										<span class="num">No. 12345678900</span>
+										<span class="vcategory">[던전]</span>
+										<span class="vcategory">[하멜~라녹스]</span>
+									</div>
+									<h3 class="subject">
+										<a href="../common/view_party.html">지금 제목 제한은 30자였다. 기껏 다 쓰게하고 등록할라니까 막네.. 요상하군</a>
+										<span class="cmt">[10000]</span>
+										<span class="ico new">New</span>
+										<span class="ico mobile">Mobile</span>
+										<span class="ico pic">Picture</span>
+									</h3>
+								</div>
+								<!-- //.b_subject -->
+								<div class="b_author">
+									<!-- TODO, DEV: [S] 개인화 영역 메달 시작!! -->
+									<!--
+										금메달: <span class="medal gold">메달</span>
+										은메달: <span class="medal silver">메달</span>
+										동메달: <span class="medal bronze">메달</span>
+									-->
+									<span class="medal gold">메달</span>
+									<!-- TODO, DEV: [E] 개인화 영역 메달 끝!! -->
+									<div class="author_header">
+										<span class="server">서버 <span class="g">가이아</span></span>
+									</div>
+									<span class="nickname">한글이름여덟글자</span>
+								</div>
+								<!-- //.b_author -->
+								<div class="b_date"><span class="date">2019.06.05</span></div>
+								<!-- //b_date -->
+								<div class="b_hit"><span class="hit">213001</span></div>
+								<!-- //b_hit -->
+							</li>
+							<!-- //li -->
+							<!-- TODO: //<li>는 Table tbody 역할입니다! -->
+						</ul>
+						<!-- //.board_list.default -->
+					</div>
+					<!-- //#boardList -->
+				</div>
+				<!-- //.cont_body -->
+				<div class="cont_footer">
+					<div id="boardFooter">
+						<div class="b_btns inner">
+							<!-- TODO: 글쓰기 경로 수정할 것 -->
+							<a href="../common/write_party.html" class="btn write">글쓰기</a>
+						</div>
+						<!-- [S] DEV: 게시판 페이지네이션 START!! -->
+						<div class="b_paging inner">
+							<!--
+								현재 페이지일 경우 <li class="num current">1</li>
+							-->
+							<ul class="paging">
+								<li class="btn first">첫 페이지</li>
+								<li class="btn prev"><a href="#">이전 페이지</a></li>
+								<li class="num current">1</li>
+								<li class="num"><a href="#">2</a></li>
+								<li class="num"><a href="#">3</a></li>
+								<li class="num"><a href="#">4</a></li>
+								<li class="num"><a href="#">5</a></li>
+								<li class="btn next"><a href="#">다음 페이지</a></li>
+								<li class="btn last">마지막 페이지</li>
+							</ul>
+							<!-- //.paging -->
+						</div>
+						<!-- //.b_paging -->
+						<!-- [E] DEV: 게시판 페이지네이션 END!! -->
+
+						<div class="b_search">
+							<!-- [S] DEV: 게시물 검색 FORM (pb-formSearch) START!! -->
+							<div class="b_search_form">
+								<form id="" action="" method="post" autocomplete="off">
+									<h3 class="blind">게시물 검색하기</h3>
+									<fieldset>
+										<legend class="blind">조건 검색</legend>
+										<div class="iptBox_select">
+											<select id="searchCategory" class="ipt_select" title="검색 조건 선택">
+												<option value="">제목</option>
+												<option value="">작성자</option>
+											</select>
+										</div>
+										<div class="iptBox_search">
+											<input type="text" id="" class="ipt_keyword" maxlength="20" placeholder="검색어를 입력하세요">
+											<a href="#" onclick="" class="btn search">SEARCH</a>
+											<input type="image" name="ctl00$Contents$btnListAll" id="Contents_btnListAll" class="btn listAll" src="http://s.nx.com/S2/Game/Elsword/site/2018/renewal/img_input.png" alt="전체목록">
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<!-- .b_search_form END -->
+							<!-- [E] DEV: 게시물 검색 FORM (pb-formSearch) END!! -->
+						</div>
+						<!-- //.b_search -->
+					</div>
+					<!-- //#boardFooter -->
+				</div>
+				<!-- //.cont_footer -->
+			</div>
+			<!-- //.wrap_cont -->
+		</section>
+		<!-- //===========================================================
+				#contents END
+		=========================================================== // -->
+	</main>
+	<!-- //===========================================================
+			#main END
+	=========================================================== // -->
+@@@include('../footer.html')

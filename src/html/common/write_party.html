@@ -1,0 +1,111 @@
+@@@include('../header_sub.html')
+	<main id="main" class="sub" role="main">
+		<div class="wrap_information row">
+			<div class="inner">
+				<!-- TODO, DEV: [S] 게임 스타트 버튼 시작!! -->
+				<div id="gameStart" class="gameStart">
+					<span class="motions"><span class="mo" aria-hidden="true"></span></span><span class="points"><span class="p1"></span><span class="p2"></span><span class="p3"></span><span class="p4"></span><span class="p5"></span></span><a href="#" class="btn_gameStart" onclick="GnxGameStartOnClick();return false;"><span class="blind">GAME START</span></a><a href="../pds/download.html" class="btn_gameStartDownload">GAME DOWNLOAD</a></div>
+				</div>
+				<!-- //#gameStart -->
+				<!-- TODO, DEV: [E] 게임 스타트 버튼 끝!! -->
+			</div>
+			<!-- //.inner -->
+		</div>
+		<!-- //.wrap_information -->
+
+		<section id="contents" class="write party" role="main">
+			<div class="wrap_cont row">
+				<div class="cont_header inner">
+					<div class="titles">
+						<h2 class="tit">파티 모집 게시판</h2>
+					</div>
+					<div class="des">
+						<p>자유롭게 파티를 구하는 공간입니다.</p>
+					</div>
+				</div>
+				<!-- //.cont_header -->
+				<div class="cont_body">
+					<div id="boardWrite" class="inner">
+						<div class="board_write">
+							<h3 class="blind">글쓰기</h3>
+							<div class="bw_header">
+								<fieldset>
+									<legend class="blind"><h4>분류 선택 및 글제목 작성</h4></legend>
+									<div class="iptRow">
+										<div class="iptHelp">
+											<h5>카테고리</h5>
+											<span class="ipt_helpTxt">필수 항목입니다.</span>
+										</div>
+										<div class="iptBox bw_category c_depth1">
+											<select name="ctl00$Contents$m_CategorySelectBox" id="Contents_m_CategorySelectBox" onchange="" class="ipt_select">
+												<option data-display="카테고리">카테고리 선택</option>
+												<option value="1">던전</option>
+												<option value="2">대전</option>
+												<option value="3">기타</option>
+												<option value="4">글로벌엘챔스</option>
+											</select>
+										</div>
+										<!-- TODO, DEV: [S] 글보기 화면 첫 번째 카테고리에서 [던전] 선택 시 두 번째 카테고리가 보여집니다. -->
+										<div class="iptBox bw_category c_depth2">
+											<select name="ctl00$Contents$m_Category2SelectBox" id="ctl00$Contents$m_Category2SelectBox" onchange="" class="ipt_select">
+												<option data-display="세부 카테고리">세부 카테고리 선택</option>
+												<option value="1">루벤~베스마</option>
+												<option value="2">알테라~벨더</option>
+												<option value="3">하멜~라녹스</option>
+												<option value="4">엘리시온~엘리아노드</option>
+												<option value="5">바니미르</option>
+												<option value="6">비밀던전</option>
+												<option value="7">영웅던전</option>
+												<option value="8">뒤틀린 시공 – 파르만의 봉우리</option>
+											</select>
+										</div>
+										<!-- TODO, DEV: [E] // 글보기 화면 첫 번째 카테고리에서 [던전] 선택 시 두 번째 카테고리가 보여집니다. -->
+									</div>
+									<div class="iptRow">
+										<div class="iptBox bw_subject">
+											<input name="ctl00$Contents$m_txtTitle" type="text" id="Contents_m_txtTitle" class="ipt_keyword" maxlength="50" placeholder="제목을 입력하세요. (50자까지 입력 가능)">
+										</div>
+									</div>
+								</fieldset>
+							</div>
+							<!-- //.bw_header -->
+							<div class="bw_editor">
+								<fieldset>
+									<legend class="blind"><h4>글내용 작성</h4></legend>
+									<!-- DEV: 글쓰기 에디터 START!! -->
+									<!--
+										..........................................................
+										..........................................................
+										..........................................................
+										....................... 에디터 공간 .......................
+										..........................................................
+										..........................................................
+										..........................................................
+									-->
+									<!-- DEV: 글쓰기 에디터 END!! -->
+								</fieldset>
+							</div>
+							<!-- //.bw_editor -->
+							<div class="bw_footer">
+								<div class="b_btns inner">
+									<a href="#" onclick="history.back(-1);return false;" class="btn list"><span class="ir">목록으로</span></a><input type="image" name="ctl00$Contents$btnWrite" id="Contents_btnWrite" class="btn submit" alt="등록하기" src="http://s.nx.com/S2/Game/Elsword/site/2018/renewal/img_input.png">
+								</div>
+							</div>
+							<!-- //.bw_footer -->
+						</div>
+						<!-- //.board_write -->
+					</div>
+					<!-- //#boardWrite -->
+				</div>
+				<!-- //.cont_body -->
+			</div>
+			<!-- //.wrap_cont -->
+		</section>
+		<!-- //===========================================================
+				#contents END
+		=========================================================== // -->
+	</main>
+	<!-- //===========================================================
+			#main END
+	=========================================================== // -->
+@@@include('../footer.html')
