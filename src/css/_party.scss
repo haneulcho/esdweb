@@ -11,5 +11,8 @@
 .party .board_list.default .b_date .date {font-size:13px !important}
 .party .board_list.default .b_hit {width:100px}
 .party .board_list.default .b_author {width:170px}
+.party .board_list_header {position:relative;padding-right:184px;text-align:right;font-size:0}
+.party .board_list_header .bl_order {float:none;display:inline-block}
 .party .board_list_header .bl_order .iptBox_select {width:180px}
 .party .board_list_header .bl_order.depth2 .iptBox_select {width:280px}
+.party .board_list_header .bl_order_btns {position:absolute;float:none;top:16px;right:16px}
