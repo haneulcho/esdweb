@@ -16,7 +16,7 @@
 #main {position:relative}
 
 /* HOT Item */
-.wrap_goods {position:absolute;top:-201px;right:50%;width:402px;height:376px;margin-right:-600px;z-index:2}
+.wrap_goods {position:absolute;top:0;right:50%;width:420px;height:175px;margin-right:-647px;z-index:2}
 .wrap_goods > a {display:block}
 
 /* Login */
@@ -148,11 +148,20 @@
 .wrap_issue .issue_notice .lists li .subject .ico.new {background-position:-326px -85px}
 .wrap_issue .issue_notice .lists li .date {float:right;font-size:13px;line-height:36px;color:#888}
 .wrap_issue .issue_megaphone .owl-carousel.megaphone {overflow:hidden;width:288px;height:288px}
+.wrap_issue .issue_banner .owl-carousel.ibanner {overflow:hidden;width:273px;height:275px}
+.wrap_issue .owl-dots {position:absolute;bottom:11px;left:12px;z-index:2}
+.wrap_issue .owl-dots .owl-dot {float:left;margin:0 0 0 4px}
+.wrap_issue .owl-dots .owl-dot:first-child {margin-left:0}
+.wrap_issue .owl-dots .owl-dot > span {display:block;width:12px;height:7px;background-color:#fff;-webkit-border-radius:4px;border-radius:4px;-webkit-transition:all 300ms ease-in-out;-moz-transition:all 300ms ease-in-out;transition:all 300ms ease-in-out}
+.wrap_issue .owl-dots .owl-dot > span:hover,
+.wrap_issue .owl-dots .owl-dot.active > span {background-color:#ffdc39}
+.wrap_issue .owl-dots .owl-dot.active > span {width:24px}
 .issue_megaphone, .issue_banner {position:relative;float:left;width:288px;height:288px}
 .issue_megaphone {margin:0 0 0 29px}
-.issue_banner {margin:0 0 0 25px}
-.megaphone_item {height:288px}
-.megaphone_item, .banner_item {position:absolute;overflow:hidden;top:0;left:0;width:100%}
+.issue_banner {margin:0 0 0 25px;padding:6px;border:1px solid #c0c0c0}
+.issue_banner .banner_item {position:static;width:273px;height:275px}
+.banner_item {position:absolute;overflow:hidden;top:0;left:0;width:100%}
+.megaphone_item {width:100%;height:288px}
 .megaphone_item > a, .banner_item > a {display:block}
 .megaphone_item .thumb, .banner_item .thumb {width:100%;height:100%}
 .megaphone_item .thumb img {width:100%;height:100%}

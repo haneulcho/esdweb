@@ -1,7 +1,7 @@
 /* ================================================================
 	* FILENAME: common.js
 	* PROJECT: 엘소드 2018 리뉴얼 메인 UI 공통 스크립트
-	* UPDATE: 19.05.31
+	* UPDATE: 19.06.21
 ================================================================ */
 
 // 네이버 아이프레임 분기 변수 정의
@@ -281,9 +281,25 @@ $(document).ready(function () {
 		loop: true,
 		margin: 0,
 		nav: false,
+		dots: false,
 		autoplay: true,
 		autoplaySpeed: 600,
 		autoplayHoverPause: true
+	});
+
+	// 인덱스 배너 슬라이더
+	Elsword.setCarousel($('.owl-carousel.ibanner'), {
+		items: 1,
+		loop: true,
+		margin: 0,
+		nav: false,
+		dotsEach: true,
+		autoplay: true,
+		autoplaySpeed: 4000,
+		autoplayTimeout: 4000,
+		autoplayHoverPause: true,
+		animateIn: 'fadeIn',
+		animateOut: 'fadeOut'
 	});
 
 	// 엘소드 UCC 슬라이더
@@ -293,6 +309,8 @@ $(document).ready(function () {
 		margin: 20,
 		nav: false,
 		dotsEach: true,
+		mouseDrag: false,
+		pullDrag: false,
 		autoplay: true,
 		autoplayHoverPause: true,
 		dragEndSpeed: 350,
