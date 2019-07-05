@@ -84,7 +84,7 @@ $(function () {
 			{ 'name': '인투더헬', 'ytb_src': 'Hi9N2DPc80M' }
 		];
 		chaSkillArr.eve = [
-			{ 'name': '디멘션 링크', 'ytb_src': 'DmGZcqJ5s6U' },
+			{ 'name': '디멘션 링크-가디언', 'ytb_src': 'DmGZcqJ5s6U' },
 			{ 'name': '오딘 스피어', 'ytb_src': 'ZPyqX8S_ljA' },
 			{ 'name': '코드 소사이어티', 'ytb_src': 'm5xaKoYgWkE' },
 			{ 'name': '데토네이션', 'ytb_src': 'NqlQzEYWUiY' }
@@ -96,7 +96,7 @@ $(function () {
 			{ 'name': '레이니즘', 'ytb_src': 'jak_IXNZA0g' }
 		];
 		chaSkillArr.ara = [
-			{ 'name': '선풍', 'ytb_src': '7s8pcYzH63I' },
+			{ 'name': '강룡추', 'ytb_src': 'utO6MMxlKx4' },
 			{ 'name': '용의 진노', 'ytb_src': '_bEMPu7-Kgg' },
 			{ 'name': '무간지옥', 'ytb_src': '01OmsES6GT0' },
 			{ 'name': '요호합일', 'ytb_src': 'vpjmAVIMA3k' }
