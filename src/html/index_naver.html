@@ -109,12 +109,7 @@
 
 				<!-- TODO, DEV: [S] 네이버 게임 스타트 버튼 시작!! -->
 				<div id="gameStart" class="gameStart">
-					<span class="motions"><span class="mo" aria-hidden="true"></span></span>
-					<span class="points"><span class="p1"></span><span class="p2"></span><span class="p3"></span><span class="p4"></span><span class="p5"></span></span>
-					<a href="#" class="btn_gameStart" onclick="GnxGameStartOnClick();EventClickLogGa('게임시작', '버튼클릭', '메인페이지');return false;">
-						<span class="blind">GAME START</span>	
-					</a>
-					<a href="pds/download.html" class="btn_gameStartDownload">GAME DOWNLOAD</a>
+					<span class="shadow"></span><span class="fakeBg"></span><span class="wheels"><span class="w1"></span><span class="w2"></span><span class="w3"></span><span class="w4"></span></span><a href="#" class="btn_gameStart" onclick="GnxGameStartOnClick();EventClickLogGa('게임시작', '버튼클릭', '메인페이지');return false;"><span class="blind">GAME START</span>	</a><a href="pds/download.html" class="btn_gameStartDownload">GAME DOWNLOAD</a>
 				</div>
 				<!-- //#gameStart -->
 				<!-- TODO, DEV: [E] 네이버 게임 스타트 버튼 끝!! -->
@@ -266,22 +261,45 @@
 							</a>
 						</article>
 						<!-- [E] //TODO, DEV: article class="megaphnoe_item" 반복 -->
-					</section>
 					</div>
 					<!-- //.owl-carousel.megaphone -->
+				</section>
 				<!-- //.issue_megaphone -->
 
+				<!-- [S] TODO, DEV: 190621 메인 배너 롤링 형식으로 수정 -->
 				<section class="issue_banner">
-					<article class="banner_item">
-						<a href="#" target="_blank">
-							<h3 class="blind">엘소드 애니메이션: 엘의 여인</h3>
-							<div class="thumb">
-								<img src="http://s.nx.com/S2/Game/Elsword/site/2018/renewal/dum/banner.jpg" alt="엘소드 엘의여인 애니메이션 4화 지금 시청하기">
-							</div>
-						</a>
-					</article>
+					<div class="owl-carousel ibanner">
+						<!-- [S] TODO, DEV: article class="banner_item" 반복 -->
+						<article class="banner_item">
+							<a href="#" target="_blank">
+								<h3 class="blind">PROJECT EL★STAR 아바타[ver.스위칭]1</h3>
+								<div class="thumb">
+									<img src="http://s.nx.com/S2/Game/Elsword/site/2018/renewal/dum/banner.png" alt="PROJECT EL★STAR 아바타[ver.스위칭] 이동">
+								</div>
+							</a>
+						</article>
+						<article class="banner_item">
+							<a href="#" target="_blank">
+								<h3 class="blind">PROJECT EL★STAR 아바타[ver.스위칭]2</h3>
+								<div class="thumb">
+									<img src="http://s.nx.com/S2/Game/Elsword/site/2018/renewal/dum/banner.png" alt="PROJECT EL★STAR 아바타[ver.스위칭] 이동">
+								</div>
+							</a>
+						</article>
+						<article class="banner_item">
+							<a href="#" target="_blank">
+								<h3 class="blind">PROJECT EL★STAR 아바타[ver.스위칭]3</h3>
+								<div class="thumb">
+									<img src="http://s.nx.com/S2/Game/Elsword/site/2018/renewal/dum/banner.png" alt="PROJECT EL★STAR 아바타[ver.스위칭] 이동">
+								</div>
+							</a>
+						</article>
+						<!-- [E] //TODO, DEV: article class="banner_item" 반복 -->
+					</div>
+					<!-- //.owl-carousel.ibanner -->
 				</section>
 				<!-- //.issue_banner -->
+				<!-- [E] //TODO, DEV: 190621 메인 배너 롤링 형식으로 수정 -->
 
 			</div>
 			<!-- //.inner -->
