@@ -1,7 +1,7 @@
 /* ================================================================
 	* FILENAME: common.js
 	* PROJECT: 엘소드 2018 리뉴얼 메인 UI 공통 스크립트
-	* UPDATE: 19.06.21
+	* UPDATE: 19.07.18
 ================================================================ */
 
 // 네이버 아이프레임 분기 변수 정의
@@ -229,6 +229,14 @@ var Elsword = Elsword || (function () {
 		} // popupControl.openWindow
 	};
 
+	UI.fixGamestartPos = function () {
+		if ($('#gameStart').length) {
+			var wWidth = parseInt($window.width());
+			var fixPos = (wWidth % 2 != 0) ? 429.5 : 429;
+			$('#gameStart').css('left', fixPos + 'px');
+		}
+	};
+
 	return UI;
 })(); // Elsword Module END
 
@@ -398,6 +406,9 @@ $(document).ready(function () {
 		}
 	});
 
+	// 게임스타트 버튼 IE 위치 수정
+	Elsword.fixGamestartPos();
+
 }); // @ready function END
 
 // 기본 페이지 로더 호출
@@ -406,6 +417,7 @@ $window.load(function () {
 });
 
 $window.on('resize', function () {
+	Elsword.fixGamestartPos();
 	if (isModalOpen) {
 		Elsword.layerControl.setLayerSize($('.popup:visible'));
 	}
