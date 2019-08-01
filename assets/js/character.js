@@ -1,7 +1,7 @@
 /* ================================================================
 * FILENAME: character.js
 * PROJECT: 엘소드 2018 리뉴얼 캐릭터 소개 UI 공통 스크립트
-* UPDATE: 19.05.31
+* UPDATE: 19.08.01
 ================================================================ */
 
 $(function () {
@@ -90,7 +90,7 @@ $(function () {
 			{ 'name': '데토네이션', 'ytb_src': 'NqlQzEYWUiY' }
 		];
 		chaSkillArr.chung = [
-			{ 'name': '아겔다마', 'ytb_src': 'd2Xj8whydbA' },
+			{ 'name': '아겔다마', 'ytb_src': 'NvFiph8vYKc' },
 			{ 'name': '티아매트', 'ytb_src': 'B5q4GfApPCY' },
 			{ 'name': '아주르 피날레', 'ytb_src': 'ngkUXQurwHA' },
 			{ 'name': '레이니즘', 'ytb_src': 'jak_IXNZA0g' }
