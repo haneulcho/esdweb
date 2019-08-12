@@ -1,7 +1,7 @@
 /* ================================================================
 	* FILENAME: common_sub.js
 	* PROJECT: 엘소드 2018 리뉴얼 서브 UI 공통 스크립트
-	* UPDATE: 19.07.18
+	* UPDATE: 19.08.12
 ================================================================ */
 
 // 네이버 아이프레임 분기 변수 정의
@@ -210,9 +210,9 @@ var Elsword = Elsword || (function () {
 
 		closeLayer: function (target) {
 			if (isModalOpen && $(target).length) {
-				$(target + ', .modal_bg').fadeOut(200, function () {
+				$('.modal_bg').fadeOut(200);
+				$(target).fadeOut(200, function () {
 					if (!$(target).hasClass('dcn_modal') && !$(target).hasClass('cv_system')) { $(this).remove(); }
-					document.domain = cachedDomain;
 					isModalOpen = false;
 				});
 			}
